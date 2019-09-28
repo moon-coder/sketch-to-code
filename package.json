@@ -7,7 +7,7 @@
   },
   "skpm": {
     "name": "sketch-to-code",
-    "manifest": "src/manifest.json",
+    "manifest": "manifest.json",
     "main": "sketch-to-code.sketchplugin",
     "assets": [
       "assets/**/*"
@@ -15,12 +15,13 @@
     "sketch-assets-file": "sketch-assets/icons.sketch"
   },
   "scripts": {
-    "build": "skpm-build",
-    "watch": "skpm-build --watch",
+    "build": "tsc && skpm-build",
+    "watch": "skpm-build --watch & tsc --watch",
     "start": "skpm-build --watch --run",
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.7.0"
+    "@skpm/builder": "^0.7.0",
+    "typescript": "^3.5.2"
   }
 }

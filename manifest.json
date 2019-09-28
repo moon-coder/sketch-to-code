@@ -5,7 +5,7 @@
     {
       "name": "my-command",
       "identifier": "sketch-to-code.my-command-identifier",
-      "script": "./my-command.js"
+      "script": "./build/my-command.js"
     }
   ],
   "menu": {
