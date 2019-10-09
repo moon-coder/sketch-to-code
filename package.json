@@ -17,10 +17,15 @@
   "scripts": {
     "build": "tsc && skpm-build",
     "watch": "skpm-build --watch & tsc --watch",
-    "start": "skpm-build --watch --run",
-    "postinstall": "npm run build && skpm-link"
+    "start": "skpm-build --watch --run"
+  },
+  "dependencies": {
+    "@skpm/fs": "^0.2.5",
+    "@types/uuid": "^3.4.5",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
+    "@imgcook/dsl-helper": "^0.0.1-alpha.0",
     "@skpm/builder": "^0.7.0",
     "typescript": "^3.5.2"
   }
