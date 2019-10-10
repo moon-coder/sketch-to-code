@@ -1,4 +1,4 @@
-import {Coords, IAttrs, ILayoutNode, INode, IPosition, IStyle} from "../types";
+import { INode } from "../types";
 import {
   isOverlap,
   calcBoundaryNode,
@@ -7,6 +7,8 @@ import {
   calcInnerSpacings,
   calcBoundaryBox,
   calcHSpacing,
+  mergeLog,
+  canMergeLog
 } from "./utils";
 
 /**
@@ -20,12 +22,19 @@ const phaseOne = (nodes: INode[]) => {
   // 2.合并结点
   let i = 0;
   while (!mergeSure(node)) {
-    i++; if(i > 1000) throw new Error('超出循环上线');
+    i++; if(i > 3) throw new Error('超出循环上线');
     mergeOptional(node);
   }
 
   // 3.去掉同行同列
   mergeLineRow(node);
+
+  // 4.重新排列
+  reSort(node);
+
+  // 5.重命名样式
+  renameClassName(node);
+
   if (node.children.length == 1) return node.children[0];
   return node;
 }
@@ -56,11 +65,14 @@ const preDeal = (nodes: INode[]): INode => {
  * 合并所有确定结点
  */
 const mergeSure = (node: INode) => {
-  // 合并容器结点
+
+  // 2.对Block结点进行确定合并
   const mergeNode = (node: INode) => {
-    let i = 0;
+    if (node.children.length == 0) return true;
+    let k = 0;
+    // 2.1.不断循环遍历node的子结点
     while (true) {
-      i++; if(i > 1000) throw new Error('超出循环上线');
+      k++; if(k > 20) throw new Error('超出循环上线2');
       for (let i = 0; i < node.children.length; i++) {
         const child = node.children[i];
         const others = node.children.filter(item => item != child);
@@ -68,9 +80,10 @@ const mergeSure = (node: INode) => {
           const extras = others.filter(item => item != other);
           return extras.every(extra => !isOverlap(calcBoundaryNode([child, other]), extra));
         });
+        canMergeLog(child, canMerges);
         if (canMerges.length == 1) {
-          console.log('进行了一次确定合并');
-          console.log(`结点A:${JSON.stringify(child.position)}, 结点B:${JSON.stringify(canMerges[0].position)}`);
+          // 2.2.当发现可以进行一次确定的合并时，合并并重新遍历；
+          console.log('进行了一次确定合并：' + mergeLog(child, canMerges[0]));
           // 判断方向
           const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
           if (child.points[1].x <= canMerges[0].points[0].x
@@ -85,17 +98,22 @@ const mergeSure = (node: INode) => {
               .concat(boundaryNode);
           break;
         }
+        if (i == (node.children.length - 1)) {
+          // 2.3.node子结点遍历完成后返回
+          // fixme 能不能这么判断
+          return node.children.length == 1 || node.children.length == 0;
+        }
       }
-      // fixme 能不能这么判断
-      return node.children.length == 1 || node.children.length == 0;
     }
   }
 
-  // walk整棵树中的容器结点，进行合并
+  // 1.walk整棵布局树
   const walkNode = (node: INode): boolean => {
-    if (node.type === 'Block') {
+    if (node.type === 'Block' && !node.style.flexDirection) {
       const childrenFlag = node.children.every(child => walkNode(child));
+      // 2.针对Block结点进行确定合并
       const nodeFlag = mergeNode(node);
+      // 利用返回参数 fixme
       return childrenFlag && nodeFlag;
     }
     return true;
@@ -107,30 +125,43 @@ const mergeSure = (node: INode) => {
  * 合并一次可选结点
  */
 const mergeOptional = (node: INode) => {
-  for (let i = 0; i < node.children.length; i++) {
-    const child = node.children[i];
-    const others = node.children.filter(item => item != child);
-    const canMerges =  others.filter(other => {
-      const extras = others.filter(item => item != other);
-      return extras.every(extra => !isOverlap(calcBoundaryNode([child, other]), extra));
-    });
-    if (canMerges.length > 0) { // fixme 这边判断条件还要改
-      console.log('进行了一次选择合并');
-      console.log(`结点A:${JSON.stringify(child.position)}, 结点B:${JSON.stringify(canMerges[0].position)}`);
-      const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
-      if (child.points[1].x <= canMerges[0].points[0].x
-          || child.points[0].x >= canMerges[0].points[1].x) {
-        boundaryNode.style.flexDirection = 'row';
-      } else {
-        boundaryNode.style.flexDirection = 'column';
+  const mergeNode = (node: INode) => {
+    for (let i = 0; i < node.children.length; i++) {
+      const child = node.children[i];
+      const others = node.children.filter(item => item != child);
+      const canMerges =  others.filter(other => {
+        const extras = others.filter(item => item != other);
+        return extras.every(extra => !isOverlap(calcBoundaryNode([child, other]), extra));
+      });
+      canMergeLog(child, canMerges);
+      console.log(`${node.children.length}  ${canMerges.length}`);
+      if (canMerges.length > 0) { // fixme 这边判断条件还要改
+        console.log('进行了一次选择合并：' + mergeLog(child, canMerges[0]));
+        const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
+        if (child.points[1].x <= canMerges[0].points[0].x
+            || child.points[0].x >= canMerges[0].points[1].x) {
+          boundaryNode.style.flexDirection = 'row';
+        } else {
+          boundaryNode.style.flexDirection = 'column';
+        }
+        // 合并结点
+        node.children = node.children
+            .filter(item => !(item == child || item == canMerges[0]))
+            .concat(boundaryNode);
+        return;
       }
-      // 合并结点
-      node.children = node.children
-          .filter(item => !(item == child || item == canMerges[0]))
-          .concat(boundaryNode);
-      return;
     }
   }
+
+  // 1.walk整棵布局树
+  const walkNode = (node: INode) => {
+    if (node.type === 'Block' && !node.style.flexDirection) {
+      node.children.every(child => walkNode(child));
+      // 2.针对Block结点进行确定合并
+      mergeNode(node);
+    }
+  }
+  walkNode(node);
 }
 
 const mergeLineRow = (node: INode) => {
@@ -144,6 +175,32 @@ const mergeLineRow = (node: INode) => {
     node.parent.children.splice(node.parent.children.indexOf(node), 1, ...node.children);
     node.children.forEach(child => child.parent = node.parent);
   }
+}
+
+const reSort = (node: INode) => {
+  if (node.type === 'Block' && node.style.flexDirection) {
+    node.children.sort((a, b) => {
+      if (node.style.flexDirection === 'row') {
+        return a.points[4].x - b.points[4].x;
+      } else {
+        return a.points[4].y - b.points[4].y;
+      }
+    });
+  }
+  node.children.forEach(child => reSort(child));
+}
+
+const renameClassName = (node: INode) => {
+  let imgIdx = 0, blockIdx = 0, textIdx = 0;
+  ((node: INode) => {
+    const walk = (node: INode) => {
+      if (node.type == 'Text') node.attrs.className = 'text' + textIdx++;
+      if (node.type == 'Block') node.attrs.className = 'block' + blockIdx++;
+      if (node.type == 'Image') node.attrs.className = 'img' + imgIdx++;
+      node.children.forEach(child => walk(child));
+    }
+    walk(node);
+  })(node);
 }
 
 

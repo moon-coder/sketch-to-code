@@ -2,21 +2,6 @@ import { Border, Fill, IStyle, Layer, Text, Container } from './types-sketch';
 import { INode } from './types';
 import * as uuid from "uuid";
 
-// 要转哪些结点：Artboard/SymbolMaster/Group/Text/Image/Shape/ShapePath/SymbolInstance
-// 要处理的样式：
-// opacity、fills、borders、borderOptions、shadows、innerShadows、alignment
-// verticalAlignment、kerning、lineHeight、paragraphSpacing、textColor
-// fontSize、textTransform、fontFamily、fontWeight、fontStyle、fontVariant、fontStretch、textUnderline、textStrikethrough
-// 不处理的样式：blendingMode、blur
-
-// 分析imgcook和sketch-to-html是如何处理样式的，优先以imgcook的为主；
-
-
-// 共有 border/background/
-// 文本 fontSize/fontWeight/lineHeight/letterSpacing/color/textShadow...
-// 图片 boxShadow
-// 矩形框 boxShadow
-
 export default (layer: Layer): INode[] => {
 
   const layerToNode = (layer: Layer) => {
@@ -41,7 +26,6 @@ export default (layer: Layer): INode[] => {
 
   const layers: Layer[] = [];
   const walk = (layer: Layer) => {
-    console.log(layer.id);
     if (!['Artboard', 'Group'].includes(layer.type)) {
       layers.push(layer);
     } else {
@@ -52,27 +36,22 @@ export default (layer: Layer): INode[] => {
   }
   walk(layer);
 
-  return layers.map(layer => layerToNode(layer));
-
-  // return layers.map(layer => {
-  //   let node: INode = {
-  //     id: uuid.v1(),
-  //     parent: undefined,
-  //     type: 'Block',
-  //     position: { x: 0, y: 0, width: 0, height: 0 },
-  //     style: {},
-  //     children: [],
-  //     points: []
-  //   };
-  //   node.type = layerType(layer);
-  //   node.position = layer.frame;
-  //   node.points = calcNodeCoords(node);
-  //   node.children = [];
-  //   return node;
-  // });
+  return layers.filter(layer => !layer.hidden).map(layer => layerToNode(layer));
 }
 
 const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
+  // Block
+  if(['Artboard', 'Group'].includes(layer.type)) {
+    return 'Block';
+  }
+  // Text
+  if ('Text' === layer.type) {
+    return 'Text';
+  }
+  // Image
+  if ('Image' === layer.type || ('Group' === layer.type && layer.name.endsWith('-合并'))) {
+    return 'Image';
+  }
   return 'Block';
 }
 

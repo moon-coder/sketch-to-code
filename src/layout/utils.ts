@@ -139,3 +139,35 @@ export function calcBoundaryBox(nodes: INode[]): Coords[] {
   ];
 }
 
+/**
+ * 合并日志
+ */
+export function mergeLog(source: INode, target: INode) {
+  const sourceStr = getNodeStr(source);
+  const targetStr = getNodeStr(target);
+  return `${sourceStr}、${targetStr}`;
+}
+
+/**
+ * 可合并日志
+ */
+export function canMergeLog(source: INode, canMerges: INode[]) {
+  if (canMerges && canMerges.length > 0) {
+    console.log(`结点：${getNodeStr(source)}可与${canMerges.reduce((a, b) => `${a}、${getNodeStr(b)}`, '')}结点合并`);
+  }
+}
+
+const getNodeStr = (node: INode): string => {
+  let result: string = '';
+  if (node.type === 'Block') {
+    result = node.children.reduce((a: string, b: INode) => a + getNodeStr(b), '');
+    result = result ? result : '颜色块';
+  }
+  if (node.type === 'Image') {
+    return '一张图片';
+  }
+  if (node.type === 'Text') {
+    result = node.attrs.text ? node.attrs.text : '';
+  }
+  return result;
+}
