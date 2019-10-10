@@ -157,7 +157,7 @@ export function canMergeLog(source: INode, canMerges: INode[]) {
   }
 }
 
-const getNodeStr = (node: INode): string => {
+export function getNodeStr(node: INode): string {
   let result: string = '';
   if (node.type === 'Block') {
     result = node.children.reduce((a: string, b: INode) => a + getNodeStr(b), '');

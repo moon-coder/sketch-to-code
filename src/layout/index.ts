@@ -50,8 +50,8 @@ const preDeal = (nodes: INode[]): INode => {
 
   // 将结点加入最近的外框结点
   const addToOuter = (node: INode, nodes: INode[]) => {
-    const outers = nodes.filter(item => item.type === 'Block' && isContainer(node, item));
-    outers.sort((a, b) =>  isContainer(a, b) ? 1 : 0);
+    const outers = nodes.filter(item => item.type === 'Block' && item != node && isContainer(node, item));
+    outers.sort((a, b) =>  isContainer(a, b) ? -1 : 1);
     outers[0].children.push(node);
   }
   // 遍历所有节点，将其加入最近外框

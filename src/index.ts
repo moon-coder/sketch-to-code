@@ -1,5 +1,4 @@
-import { Document } from './types-sketch';
-import {ICompData, ILayoutNode, INode} from "./types";
+import {ICompData, INode} from "./types";
 import getNodes from './get-nodes';
 import layout from './layout/index';
 import h5Generrator from './code-generators/html5';
