@@ -114,7 +114,7 @@ export interface IAttrs {
 export interface INode {
   id: string;
   parent?: INode;
-  type: 'Text' | 'Image' | 'Block';
+  type: 'Text' | 'Image' | 'Block' | 'Link';
   position: IPosition;
   points: Coords[];
   style: IStyle;
