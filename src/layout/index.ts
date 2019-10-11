@@ -16,13 +16,12 @@ import {
  */
 const phaseOne = (nodes: INode[]) => {
   // 1.预处理
-
   const node = preDeal(nodes);
 
   // 2.合并结点
   let i = 0;
   while (!mergeSure(node)) {
-    i++; if(i > 3) throw new Error('超出循环上线');
+    i++; if(i > 30) throw new Error('超出循环上线');
     mergeOptional(node);
   }
 

@@ -37,7 +37,6 @@ export function isContainer(inner: INode, outer: INode): boolean {
  * 判断两个区块是否重合
  */
 export function isCoincide(first: INode, second: INode) {
-  // 第一个区块中有任意一个顶点在第二个区块中
   const { x: xMin, y: yMin } = second.points[0];
   const { x: xMax, y: yMax } = second.points[2];
   const fPoints = first.points;
