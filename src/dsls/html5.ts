@@ -60,7 +60,7 @@ export default (data: INode): ICompData => {
   const transVal = (key: string, val: any) => {
     val = val ? val : 0;
     if (typeof(val) === 'number'
-      && !(key === 'lineHeight' && val < 5)) {
+        && !(key === 'lineHeight' && val < 5)) {
       val = val / 50 + 'rem';
     }
     return val;

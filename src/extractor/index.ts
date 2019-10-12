@@ -1,5 +1,5 @@
 import { Border, Fill, IStyle, Layer, Text, Container } from './types-sketch';
-import { INode } from './types';
+import { INode } from '../types';
 import * as uuid from "uuid";
 
 export default (layer: Layer): INode[] => {
@@ -98,7 +98,7 @@ const layerStyle = (layer: Layer, node: INode) => {
       // 图片
       style.pattern = fill.pattern;
     }
-    // let attrs = { src: '', text:'' };
+    // let attrs = { src-bak: '', text:'' };
   }
 
   if (layer.type === 'Text') {
