@@ -1,5 +1,5 @@
-import { Border, Fill, IStyle, Layer, Text, Container } from './types-sketch';
-import { INode } from '../types';
+import { Border, Fill, IStyle, Layer, Text, Container } from '../types-sketch';
+import { INode } from '../../types';
 import * as uuid from "uuid";
 
 export default (layer: Layer): INode[] => {

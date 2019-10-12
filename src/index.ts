@@ -1,5 +1,5 @@
 import {ICompData, INode} from "./types";
-import extractor from './extractor';
+import extractor from './sketch/extractor';
 import layout from './layout/index';
 import h5Dsl from './dsls/html5';
 let sketch = require('sketch');
