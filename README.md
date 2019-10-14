@@ -90,3 +90,22 @@ You will need to specify a `repository` in the `package.json`:
 +  }
 ...
 ```
+
+
+## FAQ
+### 开发过程中, 插件不能过去
+手工建立软链接;类似于
+```shell
+➜  my-plugin pwd
+/Users/dong/Library/Application Support/com.bohemiancoding.sketch3/Plugins/my-plugin
+➜  my-plugin ll
+total 0
+lrwxr-xr-x  1 dong  staff  51 10 14 09:35 my-plugin.sketchplugin -> /Users/dong/Falcon/my-plugin/my-plugin.sketchplugin
+➜  my-plugin
+```
+
+
+建立软链接执行以下命令
+```shell
+ln -s /Users/dong/Falcon/sketch-to-code/sketch-to-code.sketchplugin/ ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/sketch-to-code
+```

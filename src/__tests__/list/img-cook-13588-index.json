@@ -1,1 +1,1156 @@
-{"nodeLayerName":"矩形","selfId":"341C8F04-953B-43E1-A0FB-E1A61C113CFF","id":"Shape_0","props":{"style":{"boxSizing":"border-box","display":"flex","alignItems":"center","flexDirection":"row","borderRadius":6,"backgroundColor":"#ffffff","paddingLeft":6,"height":104},"attrs":{"y":0,"x":0,"__ARGS__":{"x":0,"y":0,"width":351,"height":104},"className":"shape_0"}},"__VERSION__":"2.0","type":"Shape","children":[{"props":{"attrs":{"x":6,"y":20,"__ARGS__":{"x":6,"y":20,"width":76,"height":66},"className":"block_314766"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","width":76,"height":66}},"type":"Block","id":"Block_314766","__VERSION__":"2.0","children":[{"nodeLayerName":"coupons-合并","selfId":"32A9A25F-5ECB-480F-9911-79A8D0D151EE","id":"Image_1","props":{"style":{"opacity":"1.00","width":44,"height":44},"attrs":{"y":20,"x":22,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png","__ARGS__":{"x":22,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png","className":"image_1"}},"__VERSION__":"2.0","type":"Image","children":[],"sketchId":"Image_1","componentType":"picture","_jsonId":"Image_1","_jsonElementId":"Image_1","title":"Image","attrs":{"y":20,"x":22,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png","__ARGS__":{"x":22,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png","className":"huzhujin"},"style":{"opacity":"1.00","width":44,"height":44},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"pic","prefix":"","id":277411}],"dvc_picture":[{"name":"dvc_picture","level":88,"result":"huzhujin","prefix":"","id":127038,"choose":true}]},"picBind":{"originType":""}},"output":{"className":{"value":"huzhujin"}}}},{"nodeLayerName":"优惠券","selfId":"ABA87EE6-4F36-45E6-8CA9-E65DC609DC6E0","children":[],"props":{"style":{"marginTop":6,"width":36,"maxWidth":44,"height":16,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":16,"whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"attrs":{"y":70,"x":26,"lines":1,"text":"优惠券","__ARGS__":{"x":26,"y":70,"width":36,"height":16},"className":"text_5_0"}},"__VERSION__":"2.0","type":"Text","id":"Text_5_0","sketchId":"Text_5_0","componentType":"text","innerText":"优惠券","_jsonId":"Text_5_0","_jsonElementId":"Text_5_0","title":"Text","attrs":{"y":70,"x":26,"lines":1,"text":"优惠券","__ARGS__":{"x":26,"y":70,"width":36,"height":16},"className":"coupon"},"style":{"marginTop":6,"maxWidth":44,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":"16px","whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"txt","prefix":"","id":344683}],"dvc_text":[{"name":"dvc_text","level":55,"result":"coupon","prefix":"","id":672849,"choose":true}]},"textBind":{"originType":""}},"output":{"className":{"value":"coupon"}}}}],"repeatId":"Shape_0_0","identification":{"repeat":{"group":"359740","sequence":"0"}},"componentType":"view","_jsonId":"Block_314766","_jsonElementId":"Block_314766","title":"Block","attrs":{"x":6,"y":20,"__ARGS__":{"x":6,"y":20,"width":76,"height":66},"className":"primary"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","width":76,"height":66},"semantic":{"result":{"rule":{"dvc_layout":[{"name":"dvc_layout","level":100,"result":"primary","prefix":"","id":938283,"choose":true}],"dvc_default":[{"name":"dvc_default","level":100,"result":"view","prefix":"","id":676004}],"dvc_view":[{"name":"dvc_view","level":95,"result":"wrap","prefix":"","id":38849}]}},"output":{"className":{"value":"primary"}}}},{"props":{"attrs":{"x":94,"y":20,"__ARGS__":{"x":94,"y":20,"width":76,"height":66},"className":"block_370687"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","marginLeft":12,"width":76,"height":66}},"type":"Block","id":"Block_370687","__VERSION__":"2.0","children":[{"nodeLayerName":"would-合并","selfId":"30CBB56D-967C-44EA-B3DA-2B761BF40AC3","id":"Image_2","props":{"style":{"opacity":"1.00","width":44,"height":44},"attrs":{"y":20,"x":110,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png","__ARGS__":{"x":110,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png","className":"image_2"}},"__VERSION__":"2.0","type":"Image","children":[],"sketchId":"Image_2","componentType":"picture","_jsonId":"Image_2","_jsonElementId":"Image_2","title":"Image","attrs":{"y":20,"x":110,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png","__ARGS__":{"x":110,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png","className":"iconTest"},"style":{"opacity":"1.00","width":44,"height":44},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"img","prefix":"","id":2486}],"dvc_picture":[{"name":"dvc_picture","level":88,"result":"iconTest","prefix":"","id":907494,"choose":true}]},"picBind":{"originType":""}},"output":{"className":{"value":"iconTest"}}}},{"nodeLayerName":"计次卡","selfId":"0BAC6A18-4409-4727-B7BC-3A44F2837A500","children":[],"props":{"style":{"marginTop":6,"width":36,"maxWidth":44,"height":16,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":16,"whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"attrs":{"y":70,"x":114,"lines":1,"text":"计次卡","__ARGS__":{"x":114,"y":70,"width":36,"height":16},"className":"text_6_0"}},"__VERSION__":"2.0","type":"Text","id":"Text_6_0","sketchId":"Text_6_0","componentType":"text","innerText":"计次卡","_jsonId":"Text_6_0","_jsonElementId":"Text_6_0","title":"Text","attrs":{"y":70,"x":114,"lines":1,"text":"计次卡","__ARGS__":{"x":114,"y":70,"width":36,"height":16},"className":"countingCard"},"style":{"marginTop":6,"maxWidth":44,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":"16px","whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"word","prefix":"","id":408040}],"dvc_text":[{"name":"dvc_text","level":55,"result":"countingCard","prefix":"","id":781086,"choose":true}]},"textBind":{"originType":""}},"output":{"className":{"value":"countingCard"}}}}],"repeatId":"Shape_0_0","identification":{"repeat":{"group":"359740","sequence":"1"}},"componentType":"view","_jsonId":"Block_370687","_jsonElementId":"Block_370687","title":"Block","attrs":{"x":94,"y":20,"__ARGS__":{"x":94,"y":20,"width":76,"height":66},"className":"sub"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","marginLeft":12,"width":76,"height":66},"semantic":{"result":{"rule":{"dvc_layout":[{"name":"dvc_layout","level":100,"result":"sub","prefix":"","id":79352,"choose":true}],"dvc_default":[{"name":"dvc_default","level":100,"result":"block","prefix":"","id":454897}],"dvc_view":[{"name":"dvc_view","level":95,"result":"block","prefix":"","id":422654}]}},"output":{"className":{"value":"sub"}}}},{"props":{"attrs":{"x":181,"y":20,"__ARGS__":{"x":181,"y":20,"width":76,"height":66},"className":"block_755348"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","marginLeft":11,"width":76,"height":66}},"type":"Block","id":"Block_755348","__VERSION__":"2.0","children":[{"nodeLayerName":"recharge-合并","selfId":"ACF0E4D6-B6D8-43DB-9299-C1F38AF784D3","id":"Image_3","props":{"style":{"opacity":"1.00","width":44,"height":44},"attrs":{"y":20,"x":197,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png","__ARGS__":{"x":197,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png","className":"image_3"}},"__VERSION__":"2.0","type":"Image","children":[],"sketchId":"Image_3","componentType":"picture","_jsonId":"Image_3","_jsonElementId":"Image_3","title":"Image","attrs":{"y":20,"x":197,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png","__ARGS__":{"x":197,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png","className":"iconTest_2"},"style":{"opacity":"1.00","width":44,"height":44},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"image","prefix":"","id":156777}],"dvc_picture":[{"name":"dvc_picture","level":88,"result":"iconTest","prefix":"","id":138808,"choose":true}]},"picBind":{"originType":""}},"output":{"className":{"value":"iconTest"}}}},{"nodeLayerName":"充值卡","selfId":"BDCE7B15-0301-4587-8E42-713ADCAF6D850","children":[],"props":{"style":{"marginTop":6,"width":36,"maxWidth":44,"height":16,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":16,"whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"attrs":{"y":70,"x":201,"lines":1,"text":"充值卡","__ARGS__":{"x":201,"y":70,"width":36,"height":16},"className":"text_7_0"}},"__VERSION__":"2.0","type":"Text","id":"Text_7_0","sketchId":"Text_7_0","componentType":"text","innerText":"充值卡","_jsonId":"Text_7_0","_jsonElementId":"Text_7_0","title":"Text","attrs":{"y":70,"x":201,"lines":1,"text":"充值卡","__ARGS__":{"x":201,"y":70,"width":36,"height":16},"className":"prepaidCard"},"style":{"marginTop":6,"maxWidth":44,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":"16px","whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"text","prefix":"","id":787983}],"dvc_text":[{"name":"dvc_text","level":55,"result":"prepaidCard","prefix":"","id":74536,"choose":true}]},"textBind":{"originType":""}},"output":{"className":{"value":"prepaidCard"}}}}],"repeatId":"Shape_0_1","identification":{"repeat":{"group":"359740","sequence":"2"}},"componentType":"view","_jsonId":"Block_755348","_jsonElementId":"Block_755348","title":"Block","attrs":{"x":181,"y":20,"__ARGS__":{"x":181,"y":20,"width":76,"height":66},"className":"side"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","marginLeft":11,"width":76,"height":66},"semantic":{"result":{"rule":{"dvc_layout":[{"name":"dvc_layout","level":100,"result":"side","prefix":"","id":32244,"choose":true}],"dvc_default":[{"name":"dvc_default","level":100,"result":"view","prefix":"","id":621611}],"dvc_view":[{"name":"dvc_view","level":95,"result":"group","prefix":"","id":792420}]}},"output":{"className":{"value":"side"}}}},{"props":{"attrs":{"x":264,"y":20,"__ARGS__":{"x":264,"y":20,"width":86,"height":66},"className":"block_93623"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","marginLeft":7,"width":86,"height":66}},"type":"Block","id":"Block_93623","__VERSION__":"2.0","children":[{"nodeLayerName":"goods-合并","selfId":"DF4B1A8B-7D7A-443A-91D5-61E992E9B2FF","id":"Image_4","props":{"style":{"opacity":"1.00","width":44,"height":44},"attrs":{"y":20,"x":285,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png","__ARGS__":{"x":285,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png","className":"image_4"}},"__VERSION__":"2.0","type":"Image","children":[],"sketchId":"Image_4","componentType":"picture","_jsonId":"Image_4","_jsonElementId":"Image_4","title":"Image","attrs":{"y":20,"x":285,"source":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png","__ARGS__":{"x":285,"y":20,"width":44,"height":44},"src":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png","className":"magichuabanfuben"},"style":{"opacity":"1.00","width":44,"height":44},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"picture","prefix":"","id":894660}],"dvc_picture":[{"name":"dvc_picture","level":88,"result":"magichuabanfuben","prefix":"","id":714445,"choose":true}]},"picBind":{"originType":""}},"output":{"className":{"value":"magichuabanfuben"}}}},{"nodeLayerName":"服务/商品","selfId":"9BA37CAB-240B-4068-BD79-5B87639393250","children":[],"props":{"style":{"marginTop":6,"width":54,"maxWidth":59,"height":16,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":16,"whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"attrs":{"y":70,"x":280,"lines":1,"text":"服务/商品","__ARGS__":{"x":280,"y":70,"width":54,"height":16},"className":"text_8_0"}},"__VERSION__":"2.0","type":"Text","id":"Text_8_0","sketchId":"Text_8_0","componentType":"text","innerText":"服务/商品","_jsonId":"Text_8_0","_jsonElementId":"Text_8_0","title":"Text","attrs":{"y":70,"x":280,"lines":1,"text":"服务/商品","__ARGS__":{"x":280,"y":70,"width":54,"height":16},"className":"serviceGoods"},"style":{"marginTop":6,"maxWidth":59,"overflow":"hidden","textOverflow":"ellipsis","lineHeight":"16px","whiteSpace":"nowrap","color":"#333333","fontSize":12,"fontWeight":400,"lines":1},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"txt","prefix":"","id":600567}],"dvc_text":[{"name":"dvc_text","level":55,"result":"serviceGoods","prefix":"","id":480475,"choose":true}]},"textBind":{"originType":""}},"output":{"className":{"value":"serviceGoods"}}}}],"repeatId":"Shape_0_2","componentType":"view","_jsonId":"Block_93623","_jsonElementId":"Block_93623","title":"Block","attrs":{"x":264,"y":20,"__ARGS__":{"x":264,"y":20,"width":86,"height":66},"className":"col"},"style":{"display":"flex","alignItems":"center","flexDirection":"column","marginLeft":7,"width":86,"height":66},"semantic":{"result":{"rule":{"dvc_layout":[{"name":"dvc_layout","level":100,"result":"col","prefix":"","id":551909,"choose":true}],"dvc_default":[{"name":"dvc_default","level":100,"result":"block","prefix":"","id":560370}],"dvc_view":[{"name":"dvc_view","level":95,"result":"container","prefix":"","id":592167}]}},"output":{"className":{"value":"col"}}}}],"sketchId":"Shape_0","deleteStyle":{"maxWidth":351},"artboardImg":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a534ecd0ee3411e99fdb6d783e5d1306.png","name":"编组 6备份","componentType":"view","_jsonId":"Shape_0","_jsonElementId":"Shape_0","title":"Shape","attrs":{"y":0,"x":0,"__ARGS__":{"x":0,"y":0,"width":351,"height":104},"className":"box"},"style":{"boxSizing":"border-box","display":"flex","alignItems":"center","flexDirection":"row","borderRadius":6,"backgroundColor":"#ffffff","paddingLeft":6,"height":104},"semantic":{"result":{"rule":{"dvc_default":[{"name":"dvc_default","level":100,"result":"block","prefix":"","id":401578}],"dvc_layout":[{"name":"dvc_layout","level":100,"result":"box","prefix":"","id":846392,"choose":true}]}},"output":{"className":{"value":"box"}}},"dataConfig":{"customerAttrs":{},"dynamicOrigin":[{"name":"data","origin":{"type":"expression","expression":"let data = this.props.data || {};"},"merge":[]}],"schema":null,"schemaConfigId":108844,"schemaConfigSelf":null,"schemaConfigExtend":[],"schemaLaunch":null,"schemaLaunchConfigId":"self","schemaLaunchTempId":108844,"schemaLaunchSelf":null,"schemaMockData":null,"schemaFromOrigin":108844},"dataBindingStore":[{"belongId":"Image_1","target":["source"],"value":{"isStatic":true,"staticType":"STRING","value":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png"},"defaultValue":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Text_5_0","target":["innerText"],"value":{"isStatic":true,"staticType":"STRING","value":"优惠券"},"defaultValue":"优惠券","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Image_2","target":["source"],"value":{"isStatic":true,"staticType":"STRING","value":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png"},"defaultValue":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Text_6_0","target":["innerText"],"value":{"isStatic":true,"staticType":"STRING","value":"计次卡"},"defaultValue":"计次卡","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Image_3","target":["source"],"value":{"isStatic":true,"staticType":"STRING","value":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png"},"defaultValue":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Text_7_0","target":["innerText"],"value":{"isStatic":true,"staticType":"STRING","value":"充值卡"},"defaultValue":"充值卡","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Image_4","target":["source"],"value":{"isStatic":true,"staticType":"STRING","value":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png"},"defaultValue":"https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png","smart":{"type":"dynamic","rule":"default"}},{"belongId":"Text_8_0","target":["innerText"],"value":{"isStatic":true,"staticType":"STRING","value":"服务/商品"},"defaultValue":"服务/商品","smart":{"type":"dynamic","rule":"default"}}],"scriptConfig":{"version":1.3,"func":{"lifeCycles":{"includes":["created","mounted"],"required":["created","mounted"]},"custom":{"includes":[],"required":[]}},"raxHooks":{"actions":["custom"],"builtinActions":["created","mounted","getModuleRows","getModuleRowHeight"],"staticFunc":["getModuleRows","getModuleRowHeight"]},"eventConfig":{"raxEvnet":[{"label":"点击事件","value":"onClick"},{"label":"曝光事件","value":"onAppear"},{"label":"消失事件","value":"onDisAppear"}]},"raxDefaultDependencies":[{"alias":"Rax","packageRax1":"rax","versionRax1":"1.x.x","packageRaxEagle":"rax","versionRaxEagle":"1.x.x"},{"alias":"Picture","packageRax1":"rax-picture","versionRax1":"*","packageRaxEagle":"rax-picture","versionRaxEagle":"*","componentType":"picture"},{"alias":"Text","packageRax1":"rax-text","versionRax1":"*","packageRaxEagle":"rax-text","versionRaxEagle":"*","componentType":"text"},{"alias":"View","packageRax1":"rax-view","versionRax1":"*","packageRaxEagle":"rax-view","versionRaxEagle":"*","componentType":"view"}],"eventInfo":{"created":"视图初次渲染之前触发","mounted":"视图初次渲染完成时触发","getModuleRows":"搭建场景下拆行的实现方法","getModuleRowHeight":"搭建场景下行高计算方法"}},"eventStore":[],"scriptStore":[{"type":"lifeCycles","name":"created","id":"1","content":"function created() {\n\n}\nexport default created;"},{"type":"lifeCycles","name":"mounted","id":"2","content":"function mounted() {\n\n}\nexport default mounted;"}],"dependence":[],"globalConfig":[],"loops":[],"modStyleConfig":{"designWidth":750,"designHeight":1334,"viewportWidth":375}}
+{
+  "nodeLayerName": "矩形",
+  "selfId": "341C8F04-953B-43E1-A0FB-E1A61C113CFF",
+  "id": "Shape_0",
+  "props": {
+    "style": {
+      "boxSizing": "border-box",
+      "display": "flex",
+      "alignItems": "center",
+      "flexDirection": "row",
+      "borderRadius": 6,
+      "backgroundColor": "#ffffff",
+      "paddingLeft": 6,
+      "height": 104
+    },
+    "attrs": {
+      "y": 0,
+      "x": 0,
+      "__ARGS__": { "x": 0, "y": 0, "width": 351, "height": 104 },
+      "className": "shape_0"
+    }
+  },
+  "__VERSION__": "2.0",
+  "type": "Shape",
+  "children": [
+    {
+      "props": {
+        "attrs": {
+          "x": 6,
+          "y": 20,
+          "__ARGS__": { "x": 6, "y": 20, "width": 76, "height": 66 },
+          "className": "block_314766"
+        },
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexDirection": "column",
+          "width": 76,
+          "height": 66
+        }
+      },
+      "type": "Block",
+      "id": "Block_314766",
+      "__VERSION__": "2.0",
+      "children": [
+        {
+          "nodeLayerName": "coupons-合并",
+          "selfId": "32A9A25F-5ECB-480F-9911-79A8D0D151EE",
+          "id": "Image_1",
+          "props": {
+            "style": { "opacity": "1.00", "width": 44, "height": 44 },
+            "attrs": {
+              "y": 20,
+              "x": 22,
+              "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png",
+              "__ARGS__": { "x": 22, "y": 20, "width": 44, "height": 44 },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png",
+              "className": "image_1"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Image",
+          "children": [],
+          "sketchId": "Image_1",
+          "componentType": "picture",
+          "_jsonId": "Image_1",
+          "_jsonElementId": "Image_1",
+          "title": "Image",
+          "attrs": {
+            "y": 20,
+            "x": 22,
+            "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png",
+            "__ARGS__": { "x": 22, "y": 20, "width": 44, "height": 44 },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png",
+            "className": "huzhujin"
+          },
+          "style": { "opacity": "1.00", "width": 44, "height": 44 },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "pic",
+                    "prefix": "",
+                    "id": 277411
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 88,
+                    "result": "huzhujin",
+                    "prefix": "",
+                    "id": 127038,
+                    "choose": true
+                  }
+                ]
+              },
+              "picBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "huzhujin" } }
+          }
+        },
+        {
+          "nodeLayerName": "优惠券",
+          "selfId": "ABA87EE6-4F36-45E6-8CA9-E65DC609DC6E0",
+          "children": [],
+          "props": {
+            "style": {
+              "marginTop": 6,
+              "width": 36,
+              "maxWidth": 44,
+              "height": 16,
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": 16,
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": 12,
+              "fontWeight": 400,
+              "lines": 1
+            },
+            "attrs": {
+              "y": 70,
+              "x": 26,
+              "lines": 1,
+              "text": "优惠券",
+              "__ARGS__": { "x": 26, "y": 70, "width": 36, "height": 16 },
+              "className": "text_5_0"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Text",
+          "id": "Text_5_0",
+          "sketchId": "Text_5_0",
+          "componentType": "text",
+          "innerText": "优惠券",
+          "_jsonId": "Text_5_0",
+          "_jsonElementId": "Text_5_0",
+          "title": "Text",
+          "attrs": {
+            "y": 70,
+            "x": 26,
+            "lines": 1,
+            "text": "优惠券",
+            "__ARGS__": { "x": 26, "y": 70, "width": 36, "height": 16 },
+            "className": "coupon"
+          },
+          "style": {
+            "marginTop": 6,
+            "maxWidth": 44,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "16px",
+            "whiteSpace": "nowrap",
+            "color": "#333333",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lines": 1
+          },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "txt",
+                    "prefix": "",
+                    "id": 344683
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 55,
+                    "result": "coupon",
+                    "prefix": "",
+                    "id": 672849,
+                    "choose": true
+                  }
+                ]
+              },
+              "textBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "coupon" } }
+          }
+        }
+      ],
+      "repeatId": "Shape_0_0",
+      "identification": { "repeat": { "group": "359740", "sequence": "0" } },
+      "componentType": "view",
+      "_jsonId": "Block_314766",
+      "_jsonElementId": "Block_314766",
+      "title": "Block",
+      "attrs": {
+        "x": 6,
+        "y": 20,
+        "__ARGS__": { "x": 6, "y": 20, "width": 76, "height": 66 },
+        "className": "primary"
+      },
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "flexDirection": "column",
+        "width": 76,
+        "height": 66
+      },
+      "semantic": {
+        "result": {
+          "rule": {
+            "dvc_layout": [
+              {
+                "name": "dvc_layout",
+                "level": 100,
+                "result": "primary",
+                "prefix": "",
+                "id": 938283,
+                "choose": true
+              }
+            ],
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "view",
+                "prefix": "",
+                "id": 676004
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "wrap",
+                "prefix": "",
+                "id": 38849
+              }
+            ]
+          }
+        },
+        "output": { "className": { "value": "primary" } }
+      }
+    },
+    {
+      "props": {
+        "attrs": {
+          "x": 94,
+          "y": 20,
+          "__ARGS__": { "x": 94, "y": 20, "width": 76, "height": 66 },
+          "className": "block_370687"
+        },
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexDirection": "column",
+          "marginLeft": 12,
+          "width": 76,
+          "height": 66
+        }
+      },
+      "type": "Block",
+      "id": "Block_370687",
+      "__VERSION__": "2.0",
+      "children": [
+        {
+          "nodeLayerName": "would-合并",
+          "selfId": "30CBB56D-967C-44EA-B3DA-2B761BF40AC3",
+          "id": "Image_2",
+          "props": {
+            "style": { "opacity": "1.00", "width": 44, "height": 44 },
+            "attrs": {
+              "y": 20,
+              "x": 110,
+              "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png",
+              "__ARGS__": { "x": 110, "y": 20, "width": 44, "height": 44 },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png",
+              "className": "image_2"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Image",
+          "children": [],
+          "sketchId": "Image_2",
+          "componentType": "picture",
+          "_jsonId": "Image_2",
+          "_jsonElementId": "Image_2",
+          "title": "Image",
+          "attrs": {
+            "y": 20,
+            "x": 110,
+            "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png",
+            "__ARGS__": { "x": 110, "y": 20, "width": 44, "height": 44 },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png",
+            "className": "iconTest"
+          },
+          "style": { "opacity": "1.00", "width": 44, "height": 44 },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "img",
+                    "prefix": "",
+                    "id": 2486
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 88,
+                    "result": "iconTest",
+                    "prefix": "",
+                    "id": 907494,
+                    "choose": true
+                  }
+                ]
+              },
+              "picBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "iconTest" } }
+          }
+        },
+        {
+          "nodeLayerName": "计次卡",
+          "selfId": "0BAC6A18-4409-4727-B7BC-3A44F2837A500",
+          "children": [],
+          "props": {
+            "style": {
+              "marginTop": 6,
+              "width": 36,
+              "maxWidth": 44,
+              "height": 16,
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": 16,
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": 12,
+              "fontWeight": 400,
+              "lines": 1
+            },
+            "attrs": {
+              "y": 70,
+              "x": 114,
+              "lines": 1,
+              "text": "计次卡",
+              "__ARGS__": { "x": 114, "y": 70, "width": 36, "height": 16 },
+              "className": "text_6_0"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Text",
+          "id": "Text_6_0",
+          "sketchId": "Text_6_0",
+          "componentType": "text",
+          "innerText": "计次卡",
+          "_jsonId": "Text_6_0",
+          "_jsonElementId": "Text_6_0",
+          "title": "Text",
+          "attrs": {
+            "y": 70,
+            "x": 114,
+            "lines": 1,
+            "text": "计次卡",
+            "__ARGS__": { "x": 114, "y": 70, "width": 36, "height": 16 },
+            "className": "countingCard"
+          },
+          "style": {
+            "marginTop": 6,
+            "maxWidth": 44,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "16px",
+            "whiteSpace": "nowrap",
+            "color": "#333333",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lines": 1
+          },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "word",
+                    "prefix": "",
+                    "id": 408040
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 55,
+                    "result": "countingCard",
+                    "prefix": "",
+                    "id": 781086,
+                    "choose": true
+                  }
+                ]
+              },
+              "textBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "countingCard" } }
+          }
+        }
+      ],
+      "repeatId": "Shape_0_0",
+      "identification": { "repeat": { "group": "359740", "sequence": "1" } },
+      "componentType": "view",
+      "_jsonId": "Block_370687",
+      "_jsonElementId": "Block_370687",
+      "title": "Block",
+      "attrs": {
+        "x": 94,
+        "y": 20,
+        "__ARGS__": { "x": 94, "y": 20, "width": 76, "height": 66 },
+        "className": "sub"
+      },
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "flexDirection": "column",
+        "marginLeft": 12,
+        "width": 76,
+        "height": 66
+      },
+      "semantic": {
+        "result": {
+          "rule": {
+            "dvc_layout": [
+              {
+                "name": "dvc_layout",
+                "level": 100,
+                "result": "sub",
+                "prefix": "",
+                "id": 79352,
+                "choose": true
+              }
+            ],
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "block",
+                "prefix": "",
+                "id": 454897
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "block",
+                "prefix": "",
+                "id": 422654
+              }
+            ]
+          }
+        },
+        "output": { "className": { "value": "sub" } }
+      }
+    },
+    {
+      "props": {
+        "attrs": {
+          "x": 181,
+          "y": 20,
+          "__ARGS__": { "x": 181, "y": 20, "width": 76, "height": 66 },
+          "className": "block_755348"
+        },
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexDirection": "column",
+          "marginLeft": 11,
+          "width": 76,
+          "height": 66
+        }
+      },
+      "type": "Block",
+      "id": "Block_755348",
+      "__VERSION__": "2.0",
+      "children": [
+        {
+          "nodeLayerName": "recharge-合并",
+          "selfId": "ACF0E4D6-B6D8-43DB-9299-C1F38AF784D3",
+          "id": "Image_3",
+          "props": {
+            "style": { "opacity": "1.00", "width": 44, "height": 44 },
+            "attrs": {
+              "y": 20,
+              "x": 197,
+              "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png",
+              "__ARGS__": { "x": 197, "y": 20, "width": 44, "height": 44 },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png",
+              "className": "image_3"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Image",
+          "children": [],
+          "sketchId": "Image_3",
+          "componentType": "picture",
+          "_jsonId": "Image_3",
+          "_jsonElementId": "Image_3",
+          "title": "Image",
+          "attrs": {
+            "y": 20,
+            "x": 197,
+            "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png",
+            "__ARGS__": { "x": 197, "y": 20, "width": 44, "height": 44 },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png",
+            "className": "iconTest_2"
+          },
+          "style": { "opacity": "1.00", "width": 44, "height": 44 },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "image",
+                    "prefix": "",
+                    "id": 156777
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 88,
+                    "result": "iconTest",
+                    "prefix": "",
+                    "id": 138808,
+                    "choose": true
+                  }
+                ]
+              },
+              "picBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "iconTest" } }
+          }
+        },
+        {
+          "nodeLayerName": "充值卡",
+          "selfId": "BDCE7B15-0301-4587-8E42-713ADCAF6D850",
+          "children": [],
+          "props": {
+            "style": {
+              "marginTop": 6,
+              "width": 36,
+              "maxWidth": 44,
+              "height": 16,
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": 16,
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": 12,
+              "fontWeight": 400,
+              "lines": 1
+            },
+            "attrs": {
+              "y": 70,
+              "x": 201,
+              "lines": 1,
+              "text": "充值卡",
+              "__ARGS__": { "x": 201, "y": 70, "width": 36, "height": 16 },
+              "className": "text_7_0"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Text",
+          "id": "Text_7_0",
+          "sketchId": "Text_7_0",
+          "componentType": "text",
+          "innerText": "充值卡",
+          "_jsonId": "Text_7_0",
+          "_jsonElementId": "Text_7_0",
+          "title": "Text",
+          "attrs": {
+            "y": 70,
+            "x": 201,
+            "lines": 1,
+            "text": "充值卡",
+            "__ARGS__": { "x": 201, "y": 70, "width": 36, "height": 16 },
+            "className": "prepaidCard"
+          },
+          "style": {
+            "marginTop": 6,
+            "maxWidth": 44,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "16px",
+            "whiteSpace": "nowrap",
+            "color": "#333333",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lines": 1
+          },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "text",
+                    "prefix": "",
+                    "id": 787983
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 55,
+                    "result": "prepaidCard",
+                    "prefix": "",
+                    "id": 74536,
+                    "choose": true
+                  }
+                ]
+              },
+              "textBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "prepaidCard" } }
+          }
+        }
+      ],
+      "repeatId": "Shape_0_1",
+      "identification": { "repeat": { "group": "359740", "sequence": "2" } },
+      "componentType": "view",
+      "_jsonId": "Block_755348",
+      "_jsonElementId": "Block_755348",
+      "title": "Block",
+      "attrs": {
+        "x": 181,
+        "y": 20,
+        "__ARGS__": { "x": 181, "y": 20, "width": 76, "height": 66 },
+        "className": "side"
+      },
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "flexDirection": "column",
+        "marginLeft": 11,
+        "width": 76,
+        "height": 66
+      },
+      "semantic": {
+        "result": {
+          "rule": {
+            "dvc_layout": [
+              {
+                "name": "dvc_layout",
+                "level": 100,
+                "result": "side",
+                "prefix": "",
+                "id": 32244,
+                "choose": true
+              }
+            ],
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "view",
+                "prefix": "",
+                "id": 621611
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "group",
+                "prefix": "",
+                "id": 792420
+              }
+            ]
+          }
+        },
+        "output": { "className": { "value": "side" } }
+      }
+    },
+    {
+      "props": {
+        "attrs": {
+          "x": 264,
+          "y": 20,
+          "__ARGS__": { "x": 264, "y": 20, "width": 86, "height": 66 },
+          "className": "block_93623"
+        },
+        "style": {
+          "display": "flex",
+          "alignItems": "center",
+          "flexDirection": "column",
+          "marginLeft": 7,
+          "width": 86,
+          "height": 66
+        }
+      },
+      "type": "Block",
+      "id": "Block_93623",
+      "__VERSION__": "2.0",
+      "children": [
+        {
+          "nodeLayerName": "goods-合并",
+          "selfId": "DF4B1A8B-7D7A-443A-91D5-61E992E9B2FF",
+          "id": "Image_4",
+          "props": {
+            "style": { "opacity": "1.00", "width": 44, "height": 44 },
+            "attrs": {
+              "y": 20,
+              "x": 285,
+              "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png",
+              "__ARGS__": { "x": 285, "y": 20, "width": 44, "height": 44 },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png",
+              "className": "image_4"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Image",
+          "children": [],
+          "sketchId": "Image_4",
+          "componentType": "picture",
+          "_jsonId": "Image_4",
+          "_jsonElementId": "Image_4",
+          "title": "Image",
+          "attrs": {
+            "y": 20,
+            "x": 285,
+            "source": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png",
+            "__ARGS__": { "x": 285, "y": 20, "width": 44, "height": 44 },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png",
+            "className": "magichuabanfuben"
+          },
+          "style": { "opacity": "1.00", "width": 44, "height": 44 },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "picture",
+                    "prefix": "",
+                    "id": 894660
+                  }
+                ],
+                "dvc_picture": [
+                  {
+                    "name": "dvc_picture",
+                    "level": 88,
+                    "result": "magichuabanfuben",
+                    "prefix": "",
+                    "id": 714445,
+                    "choose": true
+                  }
+                ]
+              },
+              "picBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "magichuabanfuben" } }
+          }
+        },
+        {
+          "nodeLayerName": "服务/商品",
+          "selfId": "9BA37CAB-240B-4068-BD79-5B87639393250",
+          "children": [],
+          "props": {
+            "style": {
+              "marginTop": 6,
+              "width": 54,
+              "maxWidth": 59,
+              "height": 16,
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": 16,
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": 12,
+              "fontWeight": 400,
+              "lines": 1
+            },
+            "attrs": {
+              "y": 70,
+              "x": 280,
+              "lines": 1,
+              "text": "服务/商品",
+              "__ARGS__": { "x": 280, "y": 70, "width": 54, "height": 16 },
+              "className": "text_8_0"
+            }
+          },
+          "__VERSION__": "2.0",
+          "type": "Text",
+          "id": "Text_8_0",
+          "sketchId": "Text_8_0",
+          "componentType": "text",
+          "innerText": "服务/商品",
+          "_jsonId": "Text_8_0",
+          "_jsonElementId": "Text_8_0",
+          "title": "Text",
+          "attrs": {
+            "y": 70,
+            "x": 280,
+            "lines": 1,
+            "text": "服务/商品",
+            "__ARGS__": { "x": 280, "y": 70, "width": 54, "height": 16 },
+            "className": "serviceGoods"
+          },
+          "style": {
+            "marginTop": 6,
+            "maxWidth": 59,
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "16px",
+            "whiteSpace": "nowrap",
+            "color": "#333333",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lines": 1
+          },
+          "semantic": {
+            "result": {
+              "rule": {
+                "dvc_default": [
+                  {
+                    "name": "dvc_default",
+                    "level": 100,
+                    "result": "txt",
+                    "prefix": "",
+                    "id": 600567
+                  }
+                ],
+                "dvc_text": [
+                  {
+                    "name": "dvc_text",
+                    "level": 55,
+                    "result": "serviceGoods",
+                    "prefix": "",
+                    "id": 480475,
+                    "choose": true
+                  }
+                ]
+              },
+              "textBind": { "originType": "" }
+            },
+            "output": { "className": { "value": "serviceGoods" } }
+          }
+        }
+      ],
+      "repeatId": "Shape_0_2",
+      "componentType": "view",
+      "_jsonId": "Block_93623",
+      "_jsonElementId": "Block_93623",
+      "title": "Block",
+      "attrs": {
+        "x": 264,
+        "y": 20,
+        "__ARGS__": { "x": 264, "y": 20, "width": 86, "height": 66 },
+        "className": "col"
+      },
+      "style": {
+        "display": "flex",
+        "alignItems": "center",
+        "flexDirection": "column",
+        "marginLeft": 7,
+        "width": 86,
+        "height": 66
+      },
+      "semantic": {
+        "result": {
+          "rule": {
+            "dvc_layout": [
+              {
+                "name": "dvc_layout",
+                "level": 100,
+                "result": "col",
+                "prefix": "",
+                "id": 551909,
+                "choose": true
+              }
+            ],
+            "dvc_default": [
+              {
+                "name": "dvc_default",
+                "level": 100,
+                "result": "block",
+                "prefix": "",
+                "id": 560370
+              }
+            ],
+            "dvc_view": [
+              {
+                "name": "dvc_view",
+                "level": 95,
+                "result": "container",
+                "prefix": "",
+                "id": 592167
+              }
+            ]
+          }
+        },
+        "output": { "className": { "value": "col" } }
+      }
+    }
+  ],
+  "sketchId": "Shape_0",
+  "deleteStyle": { "maxWidth": 351 },
+  "artboardImg": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a534ecd0ee3411e99fdb6d783e5d1306.png",
+  "name": "编组 6备份",
+  "componentType": "view",
+  "_jsonId": "Shape_0",
+  "_jsonElementId": "Shape_0",
+  "title": "Shape",
+  "attrs": {
+    "y": 0,
+    "x": 0,
+    "__ARGS__": { "x": 0, "y": 0, "width": 351, "height": 104 },
+    "className": "box"
+  },
+  "style": {
+    "boxSizing": "border-box",
+    "display": "flex",
+    "alignItems": "center",
+    "flexDirection": "row",
+    "borderRadius": 6,
+    "backgroundColor": "#ffffff",
+    "paddingLeft": 6,
+    "height": 104
+  },
+  "semantic": {
+    "result": {
+      "rule": {
+        "dvc_default": [
+          {
+            "name": "dvc_default",
+            "level": 100,
+            "result": "block",
+            "prefix": "",
+            "id": 401578
+          }
+        ],
+        "dvc_layout": [
+          {
+            "name": "dvc_layout",
+            "level": 100,
+            "result": "box",
+            "prefix": "",
+            "id": 846392,
+            "choose": true
+          }
+        ]
+      }
+    },
+    "output": { "className": { "value": "box" } }
+  },
+  "dataConfig": {
+    "customerAttrs": {},
+    "dynamicOrigin": [
+      {
+        "name": "data",
+        "origin": {
+          "type": "expression",
+          "expression": "let data = this.props.data || {};"
+        },
+        "merge": []
+      }
+    ],
+    "schema": null,
+    "schemaConfigId": 108844,
+    "schemaConfigSelf": null,
+    "schemaConfigExtend": [],
+    "schemaLaunch": null,
+    "schemaLaunchConfigId": "self",
+    "schemaLaunchTempId": 108844,
+    "schemaLaunchSelf": null,
+    "schemaMockData": null,
+    "schemaFromOrigin": 108844
+  },
+  "dataBindingStore": [
+    {
+      "belongId": "Image_1",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png"
+      },
+      "defaultValue": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a594e720ee3411e98f17593c0918096d.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text_5_0",
+      "target": ["innerText"],
+      "value": { "isStatic": true, "staticType": "STRING", "value": "优惠券" },
+      "defaultValue": "优惠券",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Image_2",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png"
+      },
+      "defaultValue": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5b84da0ee3411e98ee3f101b0ccb447.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text_6_0",
+      "target": ["innerText"],
+      "value": { "isStatic": true, "staticType": "STRING", "value": "计次卡" },
+      "defaultValue": "计次卡",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Image_3",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png"
+      },
+      "defaultValue": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a5e57820ee3411e9a22a4d3ec4cb8c77.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text_7_0",
+      "target": ["innerText"],
+      "value": { "isStatic": true, "staticType": "STRING", "value": "充值卡" },
+      "defaultValue": "充值卡",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Image_4",
+      "target": ["source"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png"
+      },
+      "defaultValue": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/a60e0ec0ee3411e9a1d9c1e927dcad36.png",
+      "smart": { "type": "dynamic", "rule": "default" }
+    },
+    {
+      "belongId": "Text_8_0",
+      "target": ["innerText"],
+      "value": {
+        "isStatic": true,
+        "staticType": "STRING",
+        "value": "服务/商品"
+      },
+      "defaultValue": "服务/商品",
+      "smart": { "type": "dynamic", "rule": "default" }
+    }
+  ],
+  "scriptConfig": {
+    "version": 1.3,
+    "func": {
+      "lifeCycles": {
+        "includes": ["created", "mounted"],
+        "required": ["created", "mounted"]
+      },
+      "custom": { "includes": [], "required": [] }
+    },
+    "raxHooks": {
+      "actions": ["custom"],
+      "builtinActions": [
+        "created",
+        "mounted",
+        "getModuleRows",
+        "getModuleRowHeight"
+      ],
+      "staticFunc": ["getModuleRows", "getModuleRowHeight"]
+    },
+    "eventConfig": {
+      "raxEvnet": [
+        { "label": "点击事件", "value": "onClick" },
+        { "label": "曝光事件", "value": "onAppear" },
+        { "label": "消失事件", "value": "onDisAppear" }
+      ]
+    },
+    "raxDefaultDependencies": [
+      {
+        "alias": "Rax",
+        "packageRax1": "rax",
+        "versionRax1": "1.x.x",
+        "packageRaxEagle": "rax",
+        "versionRaxEagle": "1.x.x"
+      },
+      {
+        "alias": "Picture",
+        "packageRax1": "rax-picture",
+        "versionRax1": "*",
+        "packageRaxEagle": "rax-picture",
+        "versionRaxEagle": "*",
+        "componentType": "picture"
+      },
+      {
+        "alias": "Text",
+        "packageRax1": "rax-text",
+        "versionRax1": "*",
+        "packageRaxEagle": "rax-text",
+        "versionRaxEagle": "*",
+        "componentType": "text"
+      },
+      {
+        "alias": "View",
+        "packageRax1": "rax-view",
+        "versionRax1": "*",
+        "packageRaxEagle": "rax-view",
+        "versionRaxEagle": "*",
+        "componentType": "view"
+      }
+    ],
+    "eventInfo": {
+      "created": "视图初次渲染之前触发",
+      "mounted": "视图初次渲染完成时触发",
+      "getModuleRows": "搭建场景下拆行的实现方法",
+      "getModuleRowHeight": "搭建场景下行高计算方法"
+    }
+  },
+  "eventStore": [],
+  "scriptStore": [
+    {
+      "type": "lifeCycles",
+      "name": "created",
+      "id": "1",
+      "content": "function created() {\n\n}\nexport default created;"
+    },
+    {
+      "type": "lifeCycles",
+      "name": "mounted",
+      "id": "2",
+      "content": "function mounted() {\n\n}\nexport default mounted;"
+    }
+  ],
+  "dependence": [],
+  "globalConfig": [],
+  "loops": [],
+  "modStyleConfig": {
+    "designWidth": 750,
+    "designHeight": 1334,
+    "viewportWidth": 375
+  }
+}
