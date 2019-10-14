@@ -182,14 +182,11 @@ export interface SymbolOverride {
 export type Container = Group | Artboard;
 
 export interface Rectangle {
-  x: number; // todo  | Rectangle
+  x: number;
   y: number;
   width: number;
   height: number;
 }
-
-
-
 
 export interface Style {
   // The opacity of a Layer, between 0 (transparent) and 1 (opaque)
