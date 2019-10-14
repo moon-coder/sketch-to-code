@@ -36,22 +36,6 @@ export function isContainer(inner: INode, outer: INode): boolean {
 /**
  * 判断两个区块是否重合
  */
-export function isCoincide(first: INode, second: INode) {
-  const { x: xMin, y: yMin } = second.points[0];
-  const { x: xMax, y: yMax } = second.points[2];
-  const fPoints = first.points;
-  return fPoints[0].x > xMin && fPoints[0].x <xMax && fPoints[0].y > yMin && fPoints[0].y <yMax
-    && fPoints[1].x > xMin && fPoints[1].x <xMax && fPoints[1].y > yMin && fPoints[1].y <yMax
-    && fPoints[2].x > xMin && fPoints[2].x <xMax && fPoints[2].y > yMin && fPoints[2].y <yMax
-    && fPoints[3].x > xMin && fPoints[3].x <xMax && fPoints[3].y > yMin && fPoints[3].y <yMax;
-
-}
-
-/**
- * @brief 判断两个轴对齐的矩形是否重叠
- * @param rc1 第一个矩形的位置
- * @param rc2 第二个矩形的位置
- */
 export function isOverlap(first: INode, second: INode) {
   const fp = first.position;
   const sp = second.position;
@@ -64,8 +48,6 @@ export function isOverlap(first: INode, second: INode) {
     return false;
   }
 }
-
-
 
 /**
  * 计算一组结点的外框结点
