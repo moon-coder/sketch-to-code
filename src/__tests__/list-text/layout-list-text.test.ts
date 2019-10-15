@@ -30,10 +30,11 @@ it('list-text', function () {
 });
 
 
+const IgnoreKey = ['__layer','parent'];
 function toJSON(node: INode) {
 
   return JSON.parse(JSON.stringify(node, (key, value)=>{
-    if(key === "parent") {
+    if(IgnoreKey.includes(key)) {
       return  undefined;
     }
     return value;

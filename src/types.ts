@@ -62,7 +62,9 @@ export interface INode {
   __layer:Layer;
   parent?: INode;
   type: 'Text' | 'Image' | 'Block' | 'Link';
-  position: IPosition;
+  //@deprecated 使用frame与sketch表达一样的意思. .
+  position?: IPosition;
+  frame: IPosition;
   points: Coords[];
   style: IStyle;
   attrs: IAttrs;

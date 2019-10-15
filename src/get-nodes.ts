@@ -37,6 +37,7 @@ const layerToNode = (layer: Layer):INode => {
     parent: undefined,
     type: 'Block',
     position: { x: 0, y: 0, width: 0, height: 0 },
+    frame: { x: 0, y: 0, width: 0, height: 0 },
     style: {},
     children: [],
     points: [],
@@ -44,13 +45,20 @@ const layerToNode = (layer: Layer):INode => {
   };
   node.type = layerType(layer);
   layerStyle(layer, node);
+  //TODO 这里后面要去掉
   node.position = layer.frame;
+  node.frame = layer.frame;
   node.points = calcNodeCoords(node);
   node.children = [];
   return node;
 }
 
 
+/**
+ * 类型映射
+ * @param {Layer} layer
+ * @returns {"Block" | "Image" | "Text"}
+ */
 const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
   // Block
   if(['Artboard', 'Group'].includes(layer.type)) {
@@ -140,7 +148,7 @@ const layerAttrs = (layer: Layer) => {
  */
 export function calcNodeCoords(node: INode) {
   let coords = [];
-  const { x, y, width, height } = node.position;
+  const { x, y, width, height } = node.frame;
   // 顶点坐标
   coords.push({ x, y });
   // 右上点坐标
