@@ -221,6 +221,15 @@ const renameClassName = (node: INode) => {
 }
 
 
+/**
+ * 布局算法核心;
+ * https://www.yuque.com/dscga7/bz0gzn/neh95s#PDMkL
+ 行优先: 一行且块行高一致,优先合为一组;
+ 从面积最小元素开始选择合并:
+ 合关后面积应该最小;
+ * @param {INode[]} nodes
+ * @returns {INode}
+ */
 export default (nodes: INode[]): INode => {
   const node: INode = phaseOne(nodes);
   calcRowLayout(node);
