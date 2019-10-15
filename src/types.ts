@@ -59,7 +59,10 @@ export interface IAttrs {
 
 export interface INode {
   id: string;
-  __layer:Layer;
+  /**
+   * 虚拟生成出来的节点没有对应的__layer 信息
+   */
+  __layer?:Layer;
   parent?: INode;
   type: 'Text' | 'Image' | 'Block' | 'Link';
   //@deprecated 使用frame与sketch表达一样的意思. .

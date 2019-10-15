@@ -241,7 +241,7 @@ const calcRowLayout = (node: INode) => {
   const isNDivide = (node: INode) => {
     // 依次判断子结点中点是否在等分点上
     for (let i = 0; i < children.length; i++) {
-      const x1 = node.points[0].x, n = children.length, w = node.position.width;
+      const x1 = node.points[0].x, n = children.length, w = node.frame.width;
       let x = x1 + 1 / 2 * n + (i - 1) * w / n;
       if (children[i].points[4].x != x) {
         return false;
@@ -250,7 +250,7 @@ const calcRowLayout = (node: INode) => {
     return true;
   }
 
-  const { width: nodeWidth } = node.position;
+  const { width: nodeWidth } = node.frame;
   const connSpace = nodeWidth / 10;
   // fixme 要用到breakSpace
   const breakSpace = nodeWidth / 5;
