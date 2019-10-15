@@ -1,12 +1,5 @@
 import {Layer} from "./types-sketch";
 
-export interface IPosition {
-  x: number,
-  y: number,
-  width: number,
-  height: number
-}
-
 export interface ICompData {
   imports: string;
   vdom: string;
@@ -65,11 +58,17 @@ export interface INode {
   __layer?:Layer;
   parent?: INode;
   type: 'Text' | 'Image' | 'Block' | 'Link';
-  //@deprecated 使用frame与sketch表达一样的意思. .
-  position?: IPosition;
-  frame: IPosition;
+  frame: IFrame;
   points: Coords[];
   style: IStyle;
   attrs: IAttrs;
   children: INode[],
+}
+
+
+export interface IFrame {
+  x: number,
+  y: number,
+  width: number,
+  height: number
 }

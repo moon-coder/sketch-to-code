@@ -352,19 +352,6 @@ export interface Border {
   thickness: number;
 }
 
-
-export interface IPosition {
-  x: number,
-  y: number,
-  width: number,
-  height: number
-}
-
-export interface Coords {
-  x: number,
-  y: number
-}
-
 export interface IStyle {
   justifyContent?: string;
   alignItems?: string;
