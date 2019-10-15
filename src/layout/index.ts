@@ -11,6 +11,9 @@ import {
   canMergeLog
 } from "./utils";
 
+import rowMerge from  './row-merge';
+import blockMerge from  './block-merge';
+
 /**
  *
  */
@@ -231,11 +234,18 @@ const renameClassName = (node: INode) => {
  * @returns {INode}
  */
 export default (nodes: INode[]): INode => {
-  const node: INode = phaseOne(nodes);
-  calcRowLayout(node);
-  calcColLayout(node);
-  return node;
+
+  nodes =  rowMerge(nodes);
+  let rootNode = blockMerge(nodes);
+
+
+  // calcRowLayout(rootNode);
+  // calcColLayout(rootNode);
+  return rootNode;
 }
+
+
+
 
 /**
  * 行布局计算
