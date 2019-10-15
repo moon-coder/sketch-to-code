@@ -1,9 +1,3 @@
-export interface IPosition {
-  x: number,
-  y: number,
-  width: number,
-  height: number
-}
 
 export interface ICompData {
   imports: string;
@@ -59,9 +53,17 @@ export interface INode {
   id: string;
   parent?: INode;
   type: 'Text' | 'Image' | 'Block' | 'Link';
-  position: IPosition;
+  frame: IFrame;
   points: Coords[];
   style: IStyle;
   attrs: IAttrs;
   children: INode[],
+}
+
+
+export interface IFrame {
+  x: number,
+  y: number,
+  width: number,
+  height: number
 }

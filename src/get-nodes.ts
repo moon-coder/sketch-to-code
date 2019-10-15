@@ -10,7 +10,7 @@ export default (layer: Layer): INode[] => {
       id,
       parent: undefined,
       type: 'Block',
-      position: { x: 0, y: 0, width: 0, height: 0 },
+      frame: { x: 0, y: 0, width: 0, height: 0 },
       style: {},
       children: [],
       points: [],
@@ -18,7 +18,7 @@ export default (layer: Layer): INode[] => {
     };
     node.type = layerType(layer);
     layerStyle(layer, node);
-    node.position = layer.frame;
+    node.frame = layer.frame;
     node.points = calcNodeCoords(node);
     node.children = [];
     return node;
@@ -65,16 +65,16 @@ const layerStyle = (layer: Layer, node: INode) => {
     // 位置
     switch (border.position.toLowerCase()) {
       case 'center':
-        node.position.x = node.position.x - (border.thickness / 2);
-        node.position.y = node.position.y - (border.thickness / 2);
-        node.position.width = node.position.width + border.thickness;
-        node.position.height = node.position.height + border.thickness;
+        node.frame.x = node.frame.x - (border.thickness / 2);
+        node.frame.y = node.frame.y - (border.thickness / 2);
+        node.frame.width = node.frame.width + border.thickness;
+        node.frame.height = node.frame.height + border.thickness;
         break;
       case 'outside':
-        node.position.x = node.position.x - border.thickness;
-        node.position.y = node.position.y - border.thickness;
-        node.position.width = node.position.width + (border.thickness * 2);
-        node.position.height = node.position.height + (border.thickness * 2);
+        node.frame.x = node.frame.x - border.thickness;
+        node.frame.y = node.frame.y - border.thickness;
+        node.frame.width = node.frame.width + (border.thickness * 2);
+        node.frame.height = node.frame.height + (border.thickness * 2);
         break;
       case 'inside':
         break;
@@ -128,7 +128,7 @@ const layerAttrs = (layer: Layer) => {
  */
 export function calcNodeCoords(node: INode) {
   let coords = [];
-  const { x, y, width, height } = node.position;
+  const { x, y, width, height } = node.frame;
   // 顶点坐标
   coords.push({ x, y });
   // 右上点坐标

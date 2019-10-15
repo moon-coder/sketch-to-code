@@ -7,7 +7,7 @@ import * as uuid from 'uuid';
  */
 export function calcNodeCoordsNew(node: INode) {
   let coords = [];
-  const { x, y, width, height } = node.position;
+  const { x, y, width, height } = node.frame;
   // 顶点坐标
   coords.push({ x, y });
   // 右上点坐标
@@ -37,8 +37,8 @@ export function isContainer(inner: INode, outer: INode): boolean {
  * 判断两个区块是否重合
  */
 export function isOverlap(first: INode, second: INode) {
-  const fp = first.position;
-  const sp = second.position;
+  const fp = first.frame;
+  const sp = second.frame;
   if (fp.x + fp.width > sp.x &&
     sp.x + sp.width > fp.x &&
     fp.y + fp.height > sp.y &&
@@ -65,7 +65,7 @@ export function calcBoundaryNode(nodes: INode[]): INode {
     {x: xMin, y: yMax},
     {x: (xMin + xMax) / 2, y: (yMin + yMax) / 2},
   ];
-  const position = {
+  const frame = {
     x: xMin,
     y: yMin,
     width: xMax - xMin,
@@ -74,7 +74,7 @@ export function calcBoundaryNode(nodes: INode[]): INode {
   return {
     id: uuid.v1(),
     type: 'Block',
-    position: position,
+    frame: frame,
     points: points,
     style: {},
     attrs: { className: uuid.v1() },
