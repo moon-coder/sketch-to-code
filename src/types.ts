@@ -1,3 +1,5 @@
+import {Layer} from "./types-sketch";
+
 export interface IPosition {
   x: number,
   y: number,
@@ -57,6 +59,7 @@ export interface IAttrs {
 
 export interface INode {
   id: string;
+  __layer:Layer;
   parent?: INode;
   type: 'Text' | 'Image' | 'Block' | 'Link';
   position: IPosition;

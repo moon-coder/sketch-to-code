@@ -2,28 +2,12 @@ import { Border, Fill, IStyle, Layer, Text, Container } from './types-sketch';
 import { INode } from './types';
 import * as uuid from "uuid";
 
+/**
+ * 把节点打平, 全部以绝对定位处理
+ * @param {Layer} layer
+ * @returns {INode[]}
+ */
 export default (layer: Layer): INode[] => {
-
-  const layerToNode = (layer: Layer) => {
-    const id = uuid.v1();
-    let node: INode = {
-      id,
-      parent: undefined,
-      type: 'Block',
-      position: { x: 0, y: 0, width: 0, height: 0 },
-      style: {},
-      children: [],
-      points: [],
-      attrs: { className: id }
-    };
-    node.type = layerType(layer);
-    layerStyle(layer, node);
-    node.position = layer.frame;
-    node.points = calcNodeCoords(node);
-    node.children = [];
-    return node;
-  }
-
   const layers: Layer[] = [];
   const walk = (layer: Layer) => {
     if (!['Artboard', 'Group'].includes(layer.type)) {
@@ -38,6 +22,34 @@ export default (layer: Layer): INode[] => {
 
   return layers.filter(layer => !layer.hidden).map(layer => layerToNode(layer));
 }
+
+
+/**
+ * 把sketch  layer节点转换为node节点;
+ * @param {Layer} layer
+ * @returns {INode}
+ */
+const layerToNode = (layer: Layer):INode => {
+  const id = uuid.v1();
+  let node: INode = {
+    id,
+    __layer:layer,
+    parent: undefined,
+    type: 'Block',
+    position: { x: 0, y: 0, width: 0, height: 0 },
+    style: {},
+    children: [],
+    points: [],
+    attrs: { className: id }
+  };
+  node.type = layerType(layer);
+  layerStyle(layer, node);
+  node.position = layer.frame;
+  node.points = calcNodeCoords(node);
+  node.children = [];
+  return node;
+}
+
 
 const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
   // Block

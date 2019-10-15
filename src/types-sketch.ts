@@ -74,10 +74,13 @@ export interface Artboard {
   exportFormats?: any;
 }
 
+/**
+ * sketch layer节点类型
+ */
 export interface Layer {
   // The unique ID of the Layer.
   id: string;
-  type: string;
+  type: "Artboard"|"Group"|string;
   // The name of the Layer
   name: string;
   // The group the layer is in.
