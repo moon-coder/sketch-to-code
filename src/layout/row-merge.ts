@@ -47,10 +47,11 @@ export default function(nodes: INode[]): INode[] {
       let sameNodes = heightIndex[height];
       if (sameNodes.length === 1) {
         //没有相同节点直接合并;
-        results.concat(sameNodes);
+        results = results.concat(sameNodes);
       } else {
         //多个节点合并起来..
         let mergeNode = calcBoundaryNode(sameNodes);
+        mergeNode.style.flexDirection='row'
         results.push(mergeNode);
       }
     }

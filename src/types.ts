@@ -62,6 +62,7 @@ export interface INode {
   __layer?:Layer;
   parent?: INode;
   type: 'Text' | 'Image' | 'Block' | 'Link';
+  //绝对定位的位置 信息, 相对于根节点而言的.
   frame: IFrame;
   points: Coords[];
   style: IStyle;

@@ -10,6 +10,13 @@ import * as uuid from "uuid";
 export default (layer: Layer): INode[] => {
   const layers: Layer[] = [];
   const walk = (layer: Layer) => {
+
+    if(layer.parent && layer.parent.frame) {
+      let {x:px,y:py} = layer.parent.frame;
+      let {x,y} = layer.frame;
+      layer.__absFrame=Object.assign({},layer.frame,{x:x+px,y:y+py})
+    }
+
     if (!['Artboard', 'Group'].includes(layer.type)) {
       layers.push(layer);
     } else {
@@ -44,7 +51,7 @@ const layerToNode = (layer: Layer):INode => {
   };
   node.type = layerType(layer);
   layerStyle(layer, node);
-  node.frame = layer.frame;
+  node.frame = layer.__absFrame;
   node.points = calcNodeCoords(node);
   node.children = [];
   return node;

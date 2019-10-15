@@ -91,6 +91,8 @@ export interface Layer {
   hidden: boolean;
   // The frame of the Layer. This is given in coordinates that are local to the parent of the layer.
   frame: Rectangle;
+  //绝对位置信息,相对于根节点
+  __absFrame: Rectangle;
   // If the layer is selected.
   selected: boolean;
   // The transformation applied to the Layer.

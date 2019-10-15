@@ -1,0 +1,264 @@
+{
+  "layers": [
+    {
+      "type": "Group",
+      "id": "265CA799-247E-48DC-983E-5794CF01007D",
+      "frame": { "x": 0, "y": 224, "width": 375, "height": 48 },
+      "name": "矩形 2",
+      "selected": true,
+      "hidden": false,
+      "locked": false,
+      "exportFormats": [],
+      "transform": {
+        "rotation": 0,
+        "flippedHorizontally": false,
+        "flippedVertically": false
+      },
+      "style": {
+        "type": "Style",
+        "id": "07837C59-DDE5-4218-A3BA-6985293D62AF",
+        "opacity": 1,
+        "blendingMode": "Normal",
+        "borderOptions": {
+          "startArrowhead": "None",
+          "endArrowhead": "None",
+          "dashPattern": [],
+          "lineEnd": "Butt",
+          "lineJoin": "Miter"
+        },
+        "blur": {
+          "center": { "x": 0.5, "y": 0.5 },
+          "motionAngle": 0,
+          "radius": 10,
+          "enabled": false,
+          "blurType": "Gaussian"
+        },
+        "fills": [],
+        "borders": [],
+        "shadows": [],
+        "innerShadows": [],
+        "styleType": "Layer"
+      },
+      "sharedStyleId": null,
+      "layers": [
+        {
+          "type": "ShapePath",
+          "id": "501D725D-23F8-4726-81F5-5DF8F2DAC2B3",
+          "frame": { "x": 0, "y": 0, "width": 375, "height": 48 },
+          "name": "矩形",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "61C5F9D2-E9BA-4BEC-AA5E-C4A6AB282BCB",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 5,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [
+              {
+                "fillType": "Color",
+                "color": "#ffffffff",
+                "gradient": {
+                  "gradientType": "Linear",
+                  "from": { "x": 0.5, "y": 0 },
+                  "to": { "x": 0.5, "y": 1 },
+                  "aspectRatio": 0,
+                  "stops": [
+                    { "position": 0, "color": "#ffffffff" },
+                    { "position": 1, "color": "#000000ff" }
+                  ]
+                },
+                "pattern": {
+                  "patternType": "Tile",
+                  "image": null,
+                  "tileScale": 1
+                },
+                "enabled": true
+              }
+            ],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [
+              {
+                "blur": 0,
+                "x": 0,
+                "y": -0.5,
+                "spread": 0,
+                "color": "#ebebebff",
+                "enabled": true
+              }
+            ],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": "53216A6F-895F-47E7-B18C-74907B8C4381",
+          "shapeType": "Rectangle",
+          "points": [
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 0,
+              "curveFrom": { "x": 0, "y": 0 },
+              "curveTo": { "x": 0, "y": 0 },
+              "point": { "x": 0, "y": 0 },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 0,
+              "curveFrom": { "x": 1, "y": 0 },
+              "curveTo": { "x": 1, "y": 0 },
+              "point": { "x": 1, "y": 0 },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 0,
+              "curveFrom": { "x": 1, "y": 1 },
+              "curveTo": { "x": 1, "y": 1 },
+              "point": { "x": 1, "y": 1 },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 0,
+              "curveFrom": { "x": 0, "y": 1 },
+              "curveTo": { "x": 0, "y": 1 },
+              "point": { "x": 0, "y": 1 },
+              "pointType": "Straight"
+            }
+          ],
+          "closed": true
+        },
+        {
+          "type": "Text",
+          "id": "C364C927-6268-4DA2-83DC-7556BE407733",
+          "frame": { "x": 12, "y": 17, "width": 28, "height": 14 },
+          "name": "售价",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "63AFC4F5-9FF0-4496-9AA6-F7B33A964BE8",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 14,
+            "paragraphSpacing": 0,
+            "textColor": "#333333ff",
+            "fontSize": 14,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "售价",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        },
+        {
+          "type": "Text",
+          "id": "A24894F0-B41F-4FAF-84F9-E0CFA5A26945",
+          "frame": { "x": 306, "y": 14, "width": 57, "height": 20 },
+          "name": "¥1000",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "DE708686-011F-4807-B228-0C164CA0AB74",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "right",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 20,
+            "paragraphSpacing": 0,
+            "textColor": "#ff6600ff",
+            "fontSize": 20,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "¥1000",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        }
+      ]
+    }
+  ],
+  "length": 1,
+  "isEmpty": false
+}

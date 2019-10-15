@@ -11,6 +11,7 @@ import {INode} from "./types";
 
 
 const IgnoreKey = ['__layer','parent'];
+
 export function toJSON(node: INode) {
 
   return JSON.parse(JSON.stringify(node, (key, value)=>{

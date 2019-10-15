@@ -19,9 +19,10 @@ import blockMerge from  './block-merge';
 const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
   const rootNode = preDeal(nodes);
-
+  debugger
   walk(rootNode,(node)=>{
     if(node.children && node.children.length >0) {
+      debugger
       node.children = rowMerge(node.children);
       //一个节点只有一个子节点, 则这个关系 可以去除
       node.children = [blockMerge(node.children)];
@@ -29,6 +30,7 @@ const phaseOne = (nodes: INode[]) => {
     }
   })
 
+  debugger
   // // 2.合并结点  合并规则查看文档
   // let i = 0;
   // while (!mergeSure(rootNode)) {
@@ -39,13 +41,18 @@ const phaseOne = (nodes: INode[]) => {
   // 3.去掉同行同列
   mergeLineRow(rootNode);
 
+  debugger
   // 4.重新排列
   reSort(rootNode);
 
+  debugger
   // 5.重命名样式
   renameClassName(rootNode);
 
+  debugger
   if (rootNode.children.length == 1) return rootNode.children[0];
+
+  debugger
   return rootNode;
 }
 
@@ -54,12 +61,16 @@ const phaseOne = (nodes: INode[]) => {
  */
 const preDeal = (nodes: INode[]): INode => {
   const root = calcBoundaryNode(nodes);
+
   const children: INode[] = root.children;
-  root.children = [];
   children.forEach(node => node.points = calcNodeCoordsNew(node));
+
+
+  root.children = [];
 
   // 将结点加入最近的外框结点
   const addToOuter = (node: INode, nodes: INode[]) => {
+    debugger;
     const outers = nodes.filter(item => item.type === 'Block' && item != node && isContainer(node, item));
     outers.sort((a, b) =>  isContainer(a, b) ? -1 : 1);
     outers[0].children.push(node);
