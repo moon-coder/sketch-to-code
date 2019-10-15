@@ -2,6 +2,12 @@
   "name": "sketch-to-code",
   "description": "",
   "version": "0.1.0",
+  "scripts": {
+    "test": "jest -u",
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run"
+  },
   "engines": {
     "sketch": ">=49.0"
   },
@@ -14,17 +20,11 @@
     ],
     "sketch-assets-file": "sketch-assets/icons.sketch"
   },
-  "scripts": {
-    "build": "tsc && skpm-build",
-    "watch": "skpm-build --watch & tsc --watch",
-    "start": "skpm-build --watch --run"
-  },
   "dependencies": {
-    "@skpm/fs": "^0.2.5",
-    "@types/uuid": "^3.4.5",
-    "uuid": "^3.3.3"
+    "@skpm/fs": "^0.2.5"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.6.0",
     "@imgcook/dsl-helper": "^0.0.1-alpha.0",
     "@skpm/builder": "^0.7.0",
     "@types/fs-extra": "^8.0.0",

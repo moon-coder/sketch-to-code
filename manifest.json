@@ -3,7 +3,7 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
+      "name": "导出",
       "identifier": "sketch-to-code.my-command-identifier",
       "script": "./build/index.js"
     }
