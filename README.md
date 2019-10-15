@@ -109,3 +109,12 @@ lrwxr-xr-x  1 dong  staff  51 10 14 09:35 my-plugin.sketchplugin -> /Users/dong/
 ```shell
 ln -s /Users/dong/Falcon/sketch-to-code/sketch-to-code.sketchplugin/ ~/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/sketch-to-code
 ```
+
+### 节点合并规则
+
+以水平布局, 垂直布局去合并元素;
+
+
+
+## sektch设计稿处理技巧
+### img-cook指令 " -合并",把相关区域合成一个图片;

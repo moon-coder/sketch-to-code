@@ -69,6 +69,8 @@ export function isOverlap(first: INode, second: INode) {
 
 /**
  * 计算一组结点的外框结点
+ * 即能包含所有元素的最小矩形框;
+ *
  */
 export function calcBoundaryNode(nodes: INode[]): INode {
   // x最小最大值、y最小最大值

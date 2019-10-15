@@ -1,0 +1,636 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`简易列表代码生成: list-layout 1`] = `
+Object {
+  "attrs": Object {
+    "className": "block1",
+  },
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "className": "block2",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "block3",
+          },
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "className": "block4",
+              },
+              "children": Array [],
+              "id": "b5e458f1-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                Object {
+                  "x": 44,
+                  "y": 0,
+                },
+                Object {
+                  "x": 44,
+                  "y": 44,
+                },
+                Object {
+                  "x": 0,
+                  "y": 44,
+                },
+                Object {
+                  "x": 22,
+                  "y": 22,
+                },
+              ],
+              "position": Object {
+                "height": 44,
+                "width": 44,
+                "x": 0,
+                "y": 0,
+              },
+              "style": Object {},
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {
+                "className": "block5",
+              },
+              "children": Array [],
+              "id": "b5e458f2-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 88,
+                  "y": 0,
+                },
+                Object {
+                  "x": 132,
+                  "y": 0,
+                },
+                Object {
+                  "x": 132,
+                  "y": 44,
+                },
+                Object {
+                  "x": 88,
+                  "y": 44,
+                },
+                Object {
+                  "x": 110,
+                  "y": 22,
+                },
+              ],
+              "position": Object {
+                "height": 44,
+                "width": 44,
+                "x": 88,
+                "y": 0,
+              },
+              "style": Object {},
+              "type": "Block",
+            },
+          ],
+          "id": "b5e9d730-ee56-11e9-8126-4fbeeb8f9e56",
+          "points": Array [
+            Object {
+              "x": 0,
+              "y": 0,
+            },
+            Object {
+              "x": 132,
+              "y": 0,
+            },
+            Object {
+              "x": 132,
+              "y": 44,
+            },
+            Object {
+              "x": 0,
+              "y": 44,
+            },
+            Object {
+              "x": 66,
+              "y": 22,
+            },
+          ],
+          "position": Object {
+            "height": 44,
+            "width": 132,
+            "x": 0,
+            "y": 0,
+          },
+          "style": Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+          },
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "className": "block6",
+          },
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "className": "text0",
+                "text": "优惠券",
+              },
+              "children": Array [],
+              "id": "b5e458f5-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 4,
+                  "y": 52,
+                },
+                Object {
+                  "x": 40,
+                  "y": 52,
+                },
+                Object {
+                  "x": 40,
+                  "y": 64,
+                },
+                Object {
+                  "x": 4,
+                  "y": 64,
+                },
+                Object {
+                  "x": 22,
+                  "y": 58,
+                },
+              ],
+              "position": Object {
+                "height": 12,
+                "width": 36,
+                "x": 4,
+                "y": 52,
+              },
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 12,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 12,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "className": "text1",
+                "text": "计次卡",
+              },
+              "children": Array [],
+              "id": "b5e458f6-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 92,
+                  "y": 52,
+                },
+                Object {
+                  "x": 128,
+                  "y": 52,
+                },
+                Object {
+                  "x": 128,
+                  "y": 64,
+                },
+                Object {
+                  "x": 92,
+                  "y": 64,
+                },
+                Object {
+                  "x": 110,
+                  "y": 58,
+                },
+              ],
+              "position": Object {
+                "height": 12,
+                "width": 36,
+                "x": 92,
+                "y": 52,
+              },
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 12,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 12,
+              },
+              "type": "Text",
+            },
+          ],
+          "id": "b5eb36c0-ee56-11e9-8126-4fbeeb8f9e56",
+          "points": Array [
+            Object {
+              "x": 4,
+              "y": 52,
+            },
+            Object {
+              "x": 128,
+              "y": 52,
+            },
+            Object {
+              "x": 128,
+              "y": 64,
+            },
+            Object {
+              "x": 4,
+              "y": 64,
+            },
+            Object {
+              "x": 66,
+              "y": 58,
+            },
+          ],
+          "position": Object {
+            "height": 12,
+            "width": 124,
+            "x": 4,
+            "y": 52,
+          },
+          "style": Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+          },
+          "type": "Block",
+        },
+      ],
+      "id": "b5f0b500-ee56-11e9-8126-4fbeeb8f9e56",
+      "points": Array [
+        Object {
+          "x": 0,
+          "y": 0,
+        },
+        Object {
+          "x": 132,
+          "y": 0,
+        },
+        Object {
+          "x": 132,
+          "y": 64,
+        },
+        Object {
+          "x": 0,
+          "y": 64,
+        },
+        Object {
+          "x": 66,
+          "y": 32,
+        },
+      ],
+      "position": Object {
+        "height": 64,
+        "width": 132,
+        "x": 0,
+        "y": 0,
+      },
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingTop": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block7",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "block8",
+          },
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "className": "block9",
+              },
+              "children": Array [],
+              "id": "b5e458f3-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 175,
+                  "y": 0,
+                },
+                Object {
+                  "x": 219,
+                  "y": 0,
+                },
+                Object {
+                  "x": 219,
+                  "y": 44,
+                },
+                Object {
+                  "x": 175,
+                  "y": 44,
+                },
+                Object {
+                  "x": 197,
+                  "y": 22,
+                },
+              ],
+              "position": Object {
+                "height": 44,
+                "width": 44,
+                "x": 175,
+                "y": 0,
+              },
+              "style": Object {},
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {
+                "className": "block10",
+              },
+              "children": Array [],
+              "id": "b5e458f4-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 263,
+                  "y": 0,
+                },
+                Object {
+                  "x": 307,
+                  "y": 0,
+                },
+                Object {
+                  "x": 307,
+                  "y": 44,
+                },
+                Object {
+                  "x": 263,
+                  "y": 44,
+                },
+                Object {
+                  "x": 285,
+                  "y": 22,
+                },
+              ],
+              "position": Object {
+                "height": 44,
+                "width": 44,
+                "x": 263,
+                "y": 0,
+              },
+              "style": Object {},
+              "type": "Block",
+            },
+          ],
+          "id": "b5edced0-ee56-11e9-8126-4fbeeb8f9e56",
+          "points": Array [
+            Object {
+              "x": 175,
+              "y": 0,
+            },
+            Object {
+              "x": 307,
+              "y": 0,
+            },
+            Object {
+              "x": 307,
+              "y": 44,
+            },
+            Object {
+              "x": 175,
+              "y": 44,
+            },
+            Object {
+              "x": 241,
+              "y": 22,
+            },
+          ],
+          "position": Object {
+            "height": 44,
+            "width": 132,
+            "x": 175,
+            "y": 0,
+          },
+          "style": Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+          },
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "className": "block11",
+          },
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "className": "text2",
+                "text": "充值卡",
+              },
+              "children": Array [],
+              "id": "b5e458f7-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 179,
+                  "y": 52,
+                },
+                Object {
+                  "x": 215,
+                  "y": 52,
+                },
+                Object {
+                  "x": 215,
+                  "y": 64,
+                },
+                Object {
+                  "x": 179,
+                  "y": 64,
+                },
+                Object {
+                  "x": 197,
+                  "y": 58,
+                },
+              ],
+              "position": Object {
+                "height": 12,
+                "width": 36,
+                "x": 179,
+                "y": 52,
+              },
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 12,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 12,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "className": "text3",
+                "text": "服务/商品",
+              },
+              "children": Array [],
+              "id": "b5e458f8-ee56-11e9-8126-4fbeeb8f9e56",
+              "points": Array [
+                Object {
+                  "x": 258,
+                  "y": 52,
+                },
+                Object {
+                  "x": 312,
+                  "y": 52,
+                },
+                Object {
+                  "x": 312,
+                  "y": 64,
+                },
+                Object {
+                  "x": 258,
+                  "y": 64,
+                },
+                Object {
+                  "x": 285,
+                  "y": 58,
+                },
+              ],
+              "position": Object {
+                "height": 12,
+                "width": 54,
+                "x": 258,
+                "y": 52,
+              },
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 12,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 12,
+              },
+              "type": "Text",
+            },
+          ],
+          "id": "b5ef0750-ee56-11e9-8126-4fbeeb8f9e56",
+          "points": Array [
+            Object {
+              "x": 179,
+              "y": 52,
+            },
+            Object {
+              "x": 312,
+              "y": 52,
+            },
+            Object {
+              "x": 312,
+              "y": 64,
+            },
+            Object {
+              "x": 179,
+              "y": 64,
+            },
+            Object {
+              "x": 245.5,
+              "y": 58,
+            },
+          ],
+          "position": Object {
+            "height": 12,
+            "width": 133,
+            "x": 179,
+            "y": 52,
+          },
+          "style": Object {
+            "alignItems": "center",
+            "alignSelf": "flex-end",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+          },
+          "type": "Block",
+        },
+      ],
+      "id": "b5f19f60-ee56-11e9-8126-4fbeeb8f9e56",
+      "points": Array [
+        Object {
+          "x": 175,
+          "y": 0,
+        },
+        Object {
+          "x": 312,
+          "y": 0,
+        },
+        Object {
+          "x": 312,
+          "y": 64,
+        },
+        Object {
+          "x": 175,
+          "y": 64,
+        },
+        Object {
+          "x": 243.5,
+          "y": 32,
+        },
+      ],
+      "position": Object {
+        "height": 64,
+        "width": 137,
+        "x": 175,
+        "y": 0,
+      },
+      "style": Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingLeft": 0,
+        "paddingTop": 0,
+      },
+      "type": "Block",
+    },
+  ],
+  "id": "b5f21490-ee56-11e9-8126-4fbeeb8f9e56",
+  "points": Array [
+    Object {
+      "x": 0,
+      "y": 0,
+    },
+    Object {
+      "x": 312,
+      "y": 0,
+    },
+    Object {
+      "x": 312,
+      "y": 64,
+    },
+    Object {
+      "x": 0,
+      "y": 64,
+    },
+    Object {
+      "x": 156,
+      "y": 32,
+    },
+  ],
+  "position": Object {
+    "height": 64,
+    "width": 312,
+    "x": 0,
+    "y": 0,
+  },
+  "style": Object {
+    "alignItems": "center",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "paddingLeft": 0,
+    "paddingRight": 0,
+  },
+  "type": "Block",
+}
+`;

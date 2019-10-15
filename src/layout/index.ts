@@ -18,10 +18,10 @@ const phaseOne = (nodes: INode[]) => {
   // 1.预处理
   const node = preDeal(nodes);
 
-  // 2.合并结点
+  // 2.合并结点  合并规则查看文档
   let i = 0;
   while (!mergeSure(node)) {
-    i++; if(i > 30) throw new Error('超出循环上线');
+     if(i++ > 30) throw new Error('超出循环上线');
     mergeOptional(node);
   }
 
@@ -65,47 +65,6 @@ const preDeal = (nodes: INode[]): INode => {
  */
 const mergeSure = (node: INode) => {
 
-  // 2.对Block结点进行确定合并
-  const mergeNode = (node: INode) => {
-    if (node.children.length == 0) return true;
-    let k = 0;
-    // 2.1.不断循环遍历node的子结点
-    while (true) {
-      k++; if(k > 20) throw new Error('超出循环上线2');
-      for (let i = 0; i < node.children.length; i++) {
-        const child = node.children[i];
-        const others = node.children.filter(item => item != child);
-        const canMerges =  others.filter(other => {
-          const extras = others.filter(item => item != other);
-          return extras.every(extra => !isOverlap(calcBoundaryNode([child, other]), extra));
-        });
-        canMergeLog(child, canMerges);
-        if (canMerges.length == 1) {
-          // 2.2.当发现可以进行一次确定的合并时，合并并重新遍历；
-          console.log('进行了一次确定合并：' + mergeLog(child, canMerges[0]));
-          // 判断方向
-          const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
-          if (child.points[1].x <= canMerges[0].points[0].x
-              || child.points[0].x >= canMerges[0].points[1].x) {
-            boundaryNode.style.flexDirection = 'row';
-          } else {
-            boundaryNode.style.flexDirection = 'column';
-          }
-          // 合并结点
-          node.children = node.children
-              .filter(item => !(item == child || item == canMerges[0]))
-              .concat(boundaryNode);
-          break;
-        }
-        if (i == (node.children.length - 1)) {
-          // 2.3.node子结点遍历完成后返回
-          // fixme 能不能这么判断
-          return node.children.length == 1 || node.children.length == 0;
-        }
-      }
-    }
-  }
-
   // 1.walk整棵布局树
   const walkNode = (node: INode): boolean => {
     if (node.type === 'Block' && !node.style.flexDirection) {
@@ -118,6 +77,65 @@ const mergeSure = (node: INode) => {
     return true;
   }
   return walkNode(node);
+}
+
+/**
+ * 2.对Block 下children 结点逐个进行合并测试
+ *  两个节点
+ *
+ * @param {INode} node
+ * @returns {boolean}
+ */
+function mergeNode(node: INode):boolean {
+
+
+  if (node.children.length == 0) return true;
+  let k = 0;
+  // 2.1.不断循环遍历node的子结点
+  while (true) {
+    k++; if(k > 20) throw new Error('超出循环上线2');
+    for (let i = 0; i < node.children.length; i++) {
+
+      //选中对比节点
+      const child = node.children[i];
+      const others = node.children.filter(item => item != child);
+
+      const canMerges =  others.filter(otherNode => {
+        //otherNode =>即将合并测试节点
+
+        //extras 其他节点
+        const extras = others.filter(item => item != otherNode);
+
+        return extras.every(extra => !isOverlap(calcBoundaryNode([child, otherNode]), extra));
+      });
+      canMergeLog(child, canMerges);
+      if (canMerges.length == 1) {
+        // 2.2.当发现可以进行一次确定的合并时，合并并重新遍历；
+        console.log('进行了一次确定合并：' + mergeLog(child, canMerges[0]));
+        // 判断方向
+        const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
+        if (child.points[1].x <= canMerges[0].points[0].x
+          || child.points[0].x >= canMerges[0].points[1].x) {
+          boundaryNode.style.flexDirection = 'row';
+        } else {
+          boundaryNode.style.flexDirection = 'column';
+        }
+        // 合并结点
+        node.children = node.children
+          .filter(item => !(item == child || item == canMerges[0]))
+          .concat(boundaryNode);
+        break;
+      }
+
+      if (i == (node.children.length - 1)) {
+        // 2.3.node子结点遍历完成后返回
+        // fixme 能不能这么判断
+        return node.children.length == 1 || node.children.length == 0;
+      }
+    }
+  }
+
+
 }
 
 /**
