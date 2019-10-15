@@ -3,6 +3,7 @@ import getNodes from "../../get-nodes";
 import layout from "../../layout";
 import {readJSONSync,writeJSONSync} from  'fs-extra';
 import {join} from 'path';
+import {toJSON} from "../../util";
 
 /**
  * @desc
@@ -15,8 +16,6 @@ import {join} from 'path';
 
 
 it('list-text', function () {
-  console.log("hello");
-
   let layers = readJSONSync(join(__dirname,"origin.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
 
@@ -28,15 +27,3 @@ it('list-text', function () {
   writeJSONSync(join(__dirname,"list-text-layout-result.json"),result,{spaces:2});
   expect(result).toMatchSnapshot("list-text-layout");
 });
-
-
-const IgnoreKey = ['__layer','parent'];
-function toJSON(node: INode) {
-
-  return JSON.parse(JSON.stringify(node, (key, value)=>{
-    if(IgnoreKey.includes(key)) {
-      return  undefined;
-    }
-    return value;
-  },2))
-}

@@ -50,6 +50,10 @@ export interface IAttrs {
   className: string;
 }
 
+export interface IWalkHandle{
+  (node:INode,pNode?:INode):void;
+}
+
 export interface INode {
   id: string;
   /**

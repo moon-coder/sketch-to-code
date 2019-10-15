@@ -15,6 +15,7 @@ import {calcBoundaryNode} from './utils';
  **/
 export default function(nodes: INode[]): INode[] {
   //按y坐标 分组, 每一组中高度进行对比 如果一致则在结果中返回;
+
   nodes.map(node => node.frame.y);
 
   let rowIndexNodes: IndexNode = {};
@@ -57,6 +58,7 @@ export default function(nodes: INode[]): INode[] {
 
   return results;
 }
-interface IndexNode {
+
+export interface IndexNode {
   [key: number]: INode[];
 }

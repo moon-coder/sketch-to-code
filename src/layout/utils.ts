@@ -1,4 +1,4 @@
-import { Coords, INode } from "../types";
+import {Coords, INode, IWalkHandle} from "../types";
 import * as uuid from 'uuid';
 
 
@@ -129,6 +129,18 @@ export function mergeLog(source: INode, target: INode) {
   const sourceStr = getNodeStr(source);
   const targetStr = getNodeStr(target);
   return `${sourceStr}、${targetStr}`;
+}
+
+
+export function walk(rootNode:INode,callBack:IWalkHandle) {
+
+  if(rootNode.children && rootNode.children.length>0) {
+    rootNode.children.forEach((childrenNode)=>{
+      callBack(childrenNode,rootNode);
+    })
+  } else {
+    callBack(rootNode)
+  }
 }
 
 /**

@@ -8,9 +8,8 @@ import {
   calcBoundaryBox,
   calcHSpacing,
   mergeLog,
-  canMergeLog
+  canMergeLog, walk
 } from "./utils";
-
 import rowMerge from  './row-merge';
 import blockMerge from  './block-merge';
 
@@ -18,31 +17,40 @@ import blockMerge from  './block-merge';
  *
  */
 const phaseOne = (nodes: INode[]) => {
-  // 1.预处理
-  const node = preDeal(nodes);
+  // 1.预处理  包含关系的划分;
+  const rootNode = preDeal(nodes);
 
-  // 2.合并结点  合并规则查看文档
-  let i = 0;
-  while (!mergeSure(node)) {
-     if(i++ > 30) throw new Error('超出循环上线');
-    mergeOptional(node);
-  }
+  walk(rootNode,(node)=>{
+    if(node.children && node.children.length >0) {
+      node.children = rowMerge(node.children);
+      //一个节点只有一个子节点, 则这个关系 可以去除
+      node.children = [blockMerge(node.children)];
+      return ;
+    }
+  })
+
+  // // 2.合并结点  合并规则查看文档
+  // let i = 0;
+  // while (!mergeSure(rootNode)) {
+  //    if(i++ > 30) throw new Error('超出循环上线');
+  //   mergeOptional(rootNode);
+  // }
 
   // 3.去掉同行同列
-  mergeLineRow(node);
+  mergeLineRow(rootNode);
 
   // 4.重新排列
-  reSort(node);
+  reSort(rootNode);
 
   // 5.重命名样式
-  renameClassName(node);
+  renameClassName(rootNode);
 
-  if (node.children.length == 1) return node.children[0];
-  return node;
+  if (rootNode.children.length == 1) return rootNode.children[0];
+  return rootNode;
 }
 
 /**
- * 预处理
+ * 预处理 image text 等叶子 节点倒推一步;
  */
 const preDeal = (nodes: INode[]): INode => {
   const root = calcBoundaryNode(nodes);
@@ -235,12 +243,10 @@ const renameClassName = (node: INode) => {
  */
 export default (nodes: INode[]): INode => {
 
-  nodes =  rowMerge(nodes);
-  let rootNode = blockMerge(nodes);
+  let rootNode =phaseOne(nodes);
 
-
-  // calcRowLayout(rootNode);
-  // calcColLayout(rootNode);
+  calcRowLayout(rootNode);
+  calcColLayout(rootNode);
   return rootNode;
 }
 
