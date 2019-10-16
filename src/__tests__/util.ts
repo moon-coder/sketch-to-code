@@ -9,7 +9,7 @@
 import {readJSONSync} from "fs-extra";
 
 export function loadeOrigin(repoPath: string) {
-  let layers = readJSONSync(repoPath)
+  let layers = readJSONSync(repoPath);
 
   //把断掉的关系添加起来;
   addParent(layers);
