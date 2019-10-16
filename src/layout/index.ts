@@ -18,8 +18,9 @@ import blockMerge from  './block-merge';
  */
 const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
+  debugger
   const rootNode = preDeal(nodes);
-  walk(rootNode,(node)=>{
+  walk(rootNode,(node) => {
     if(node.children && node.children.length >0) {
       node.children = rowMerge(node.children);
       //一个节点只有一个子节点, 则这个关系 可以去除
@@ -27,18 +28,6 @@ const phaseOne = (nodes: INode[]) => {
       return ;
     }
   })
-
-  // "x":12,"y":70,"width":84,"height":14},"name":"凶悍大叔洗澡"
-  // {"x":340,"y":48,"width":23,"height":14},"name":"×10","select
-  //{"x":340,"y":144,"width":23,"height":14},"name":"×10备份"
-
-  // // 2.合并结点  合并规则查看文档
-  // let i = 0;
-  // while (!mergeSure(rootNode)) {
-  //    if(i++ > 30) throw new Error('超出循环上线');
-  //   mergeOptional(rootNode);
-  // }
-
   // 3.去掉同行同列
   mergeLineRow(rootNode);
 
@@ -199,14 +188,26 @@ const mergeOptional = (node: INode) => {
   walkNode(node);
 }
 
+/**
+ *
+ * 如果节点的父与此节点flexDirection 一致, 且此节点只有一个节点, 那么除去此中间节点;
+ * TODO 要考虑下这个中间节点 什么时候产生的;
+ *
+ * @param {INode} node
+ */
 const mergeLineRow = (node: INode) => {
   const children = [...node.children];
+  debugger;
+
+  //建立父子关系
   children.forEach(child => {
     child.parent = node;
     mergeLineRow(child);
   });
+
+
   if (node.parent
-      && (node.parent.style.flexDirection == node.style.flexDirection || node.children.length == 1)) {
+      && ( (node.parent.style.flexDirection && node.parent.style.flexDirection == node.style.flexDirection )|| node.children.length == 1)) {
     node.parent.children.splice(node.parent.children.indexOf(node), 1, ...node.children);
     node.children.forEach(child => child.parent = node.parent);
   }

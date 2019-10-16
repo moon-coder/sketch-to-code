@@ -15,7 +15,7 @@ import {loadeOrigin} from "./util";
  * @Date    2019/10/15
  **/
 
-let layers =loadeOrigin(join(__dirname, 'origin.json'));
+let layers =loadeOrigin(join(__dirname, 'list-text/origin-3.json'));
 
 const nodes: INode[] = getNodes(layers.layers[0]);
 
