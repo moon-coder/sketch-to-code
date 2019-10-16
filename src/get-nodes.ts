@@ -9,23 +9,28 @@ import * as uuid from "uuid";
  */
 export default (layer: Layer): INode[] => {
   const layers: Layer[] = [];
-  const walk = (layer: Layer) => {
+  const walk = (layer: Layer,lv:number=0) => {
+    debugger;
 
-    if(layer.parent && layer.parent.frame) {
-      let {x:px,y:py} = layer.parent.frame;
+    if(lv !=0 && layer.parent && layer.parent.__absFrame) {
+      let {x:px,y:py} = layer.parent.__absFrame;
       let {x,y} = layer.frame;
       layer.__absFrame=Object.assign({},layer.frame,{x:x+px,y:y+py})
+    }else if(lv===0) {
+      let {x,y} = layer.frame;
+      layer.__absFrame=Object.assign({},layer.frame,{x:x,y:y})
     }
 
     if (!['Artboard', 'Group'].includes(layer.type)) {
       layers.push(layer);
     } else {
       (layer as Container).layers.forEach(layer => {
-        walk(layer);
+        walk(layer,lv+1);
       });
     }
   }
-  walk(layer);
+
+  walk(layer)
 
   return layers.filter(layer => !layer.hidden).map(layer => layerToNode(layer));
 }

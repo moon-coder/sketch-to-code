@@ -28,7 +28,7 @@ debugger;
 const result = toJSON(node);
 
 function loadeOrigin() {
-  let layers = readJSONSync(join(__dirname, 'origin-2.json'))
+  let layers = readJSONSync(join(__dirname, 'origin.json'))
 
   //把断掉的关系添加起来;
   addParent(layers);
