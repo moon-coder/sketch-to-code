@@ -1,12 +1,13 @@
-import {INode} from '../../types';
-import {toJSON} from '../../util';
-import getNodes from '../../get-nodes';
-import layout from '../../layout';
+import {INode} from '../types';
+import {toJSON} from '../util';
+import getNodes from '../get-nodes';
+import layout from '../layout/index';
 import {join} from 'path';
-import {loadeOrigin} from "../util";
+import {loadeOrigin} from "./util";
 
 /**
  * @desc
+ * 直接跑测试使用.
  *
  * @使用场景
  *

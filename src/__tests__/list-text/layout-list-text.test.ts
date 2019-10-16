@@ -25,8 +25,7 @@ it('list-origin', function () {
 
   const result =toJSON(node);
 
-  // writeJSONSync(join(__dirname,"list-text-layout-result.json"),result,{spaces:2});
-  expect(result).toMatchSnapshot("list-text-layout");
+  expect(result).toMatchSnapshot("list-origin");
 });
 
 
@@ -38,7 +37,5 @@ it('list-origin-2', function () {
   const node: INode = layout(nodes);
 
   const result =toJSON(node);
-
-  // writeJSONSync(join(__dirname,"list-text-layout-result.json"),result,{spaces:2});
-  expect(result).toMatchSnapshot("list-text-layout");
+  expect(result).toMatchSnapshot("list-origin-2");
 });

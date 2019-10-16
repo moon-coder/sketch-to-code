@@ -1,41 +1,1849 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`list-text: list-text-layout 1`] = `
+exports[`list-origin: list-origin 1`] = `
 Object {
   "attrs": Object {
-    "className": "block0",
+    "className": "block1",
   },
-  "children": Array [],
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "className": "block2",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "block3",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 16,
+            "width": 2,
+            "x": 12,
+            "y": 288,
+          },
+          "id": "c3370c91-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 288,
+            },
+            Object {
+              "x": 14,
+              "y": 288,
+            },
+            Object {
+              "x": 14,
+              "y": 304,
+            },
+            Object {
+              "x": 12,
+              "y": 304,
+            },
+            Object {
+              "x": 13,
+              "y": 296,
+            },
+          ],
+          "style": Object {
+            "backgroundColor": "#ff6600ff",
+          },
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text0",
+            "text": "卡项权益",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 16,
+            "width": 64,
+            "x": 22,
+            "y": 288,
+          },
+          "id": "c3370c90-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 22,
+              "y": 288,
+            },
+            Object {
+              "x": 86,
+              "y": 288,
+            },
+            Object {
+              "x": 86,
+              "y": 304,
+            },
+            Object {
+              "x": 22,
+              "y": 304,
+            },
+            Object {
+              "x": 54,
+              "y": 296,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 16,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 16,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 16,
+        "width": 74,
+        "x": 12,
+        "y": 288,
+      },
+      "id": "c33733a0-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 304,
+        },
+        Object {
+          "x": 12,
+          "y": 304,
+        },
+        Object {
+          "x": 49,
+          "y": 296,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "text1",
+        "text": "美容服务",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 14,
+        "width": 56,
+        "x": 12,
+        "y": 320,
+      },
+      "id": "c3370c94-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 320,
+        },
+        Object {
+          "x": 68,
+          "y": 320,
+        },
+        Object {
+          "x": 68,
+          "y": 334,
+        },
+        Object {
+          "x": 12,
+          "y": 334,
+        },
+        Object {
+          "x": 40,
+          "y": 327,
+        },
+      ],
+      "style": Object {
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
+      },
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block4",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text2",
+            "text": "凶悍大叔洗澡",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 84,
+            "x": 12,
+            "y": 342,
+          },
+          "id": "c3370c92-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 342,
+            },
+            Object {
+              "x": 96,
+              "y": 342,
+            },
+            Object {
+              "x": 96,
+              "y": 356,
+            },
+            Object {
+              "x": 12,
+              "y": 356,
+            },
+            Object {
+              "x": 54,
+              "y": 349,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text3",
+            "text": "×10",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 23,
+            "x": 340,
+            "y": 342,
+          },
+          "id": "c3370c96-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 340,
+              "y": 342,
+            },
+            Object {
+              "x": 363,
+              "y": 342,
+            },
+            Object {
+              "x": 363,
+              "y": 356,
+            },
+            Object {
+              "x": 340,
+              "y": 356,
+            },
+            Object {
+              "x": 351.5,
+              "y": 349,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 342,
+      },
+      "id": "c33733a2-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 342,
+        },
+        Object {
+          "x": 363,
+          "y": 342,
+        },
+        Object {
+          "x": 363,
+          "y": 356,
+        },
+        Object {
+          "x": 12,
+          "y": 356,
+        },
+        Object {
+          "x": 187.5,
+          "y": 349,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block5",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text4",
+            "text": "温柔小姐姐做造型",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 112,
+            "x": 12,
+            "y": 364,
+          },
+          "id": "c3370c9a-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 364,
+            },
+            Object {
+              "x": 124,
+              "y": 364,
+            },
+            Object {
+              "x": 124,
+              "y": 378,
+            },
+            Object {
+              "x": 12,
+              "y": 378,
+            },
+            Object {
+              "x": 68,
+              "y": 371,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text5",
+            "text": "×8",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 17,
+            "x": 346,
+            "y": 364,
+          },
+          "id": "c3370c9c-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 346,
+              "y": 364,
+            },
+            Object {
+              "x": 363,
+              "y": 364,
+            },
+            Object {
+              "x": 363,
+              "y": 378,
+            },
+            Object {
+              "x": 346,
+              "y": 378,
+            },
+            Object {
+              "x": 354.5,
+              "y": 371,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 364,
+      },
+      "id": "c33733a4-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 364,
+        },
+        Object {
+          "x": 363,
+          "y": 364,
+        },
+        Object {
+          "x": 363,
+          "y": 378,
+        },
+        Object {
+          "x": 12,
+          "y": 378,
+        },
+        Object {
+          "x": 187.5,
+          "y": 371,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block6",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text6",
+            "text": "精油美毛",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 56,
+            "x": 12,
+            "y": 386,
+          },
+          "id": "c3370c98-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 386,
+            },
+            Object {
+              "x": 68,
+              "y": 386,
+            },
+            Object {
+              "x": 68,
+              "y": 400,
+            },
+            Object {
+              "x": 12,
+              "y": 400,
+            },
+            Object {
+              "x": 40,
+              "y": 393,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text7",
+            "text": "×12",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 23,
+            "x": 340,
+            "y": 386,
+          },
+          "id": "c3370c99-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 340,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 400,
+            },
+            Object {
+              "x": 340,
+              "y": 400,
+            },
+            Object {
+              "x": 351.5,
+              "y": 393,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 386,
+      },
+      "id": "c33733a6-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 386,
+        },
+        Object {
+          "x": 363,
+          "y": 386,
+        },
+        Object {
+          "x": 363,
+          "y": 400,
+        },
+        Object {
+          "x": 12,
+          "y": 400,
+        },
+        Object {
+          "x": 187.5,
+          "y": 393,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "text8",
+        "text": "清洁服务",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 14,
+        "width": 56,
+        "x": 12,
+        "y": 416,
+      },
+      "id": "c3370c95-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 416,
+        },
+        Object {
+          "x": 68,
+          "y": 416,
+        },
+        Object {
+          "x": 68,
+          "y": 430,
+        },
+        Object {
+          "x": 12,
+          "y": 430,
+        },
+        Object {
+          "x": 40,
+          "y": 423,
+        },
+      ],
+      "style": Object {
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
+      },
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block7",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text9",
+            "text": "凶悍大叔洗澡",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 84,
+            "x": 12,
+            "y": 438,
+          },
+          "id": "c3370c93-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 438,
+            },
+            Object {
+              "x": 96,
+              "y": 438,
+            },
+            Object {
+              "x": 96,
+              "y": 452,
+            },
+            Object {
+              "x": 12,
+              "y": 452,
+            },
+            Object {
+              "x": 54,
+              "y": 445,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text10",
+            "text": "×10",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 23,
+            "x": 340,
+            "y": 438,
+          },
+          "id": "c3370c97-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 340,
+              "y": 438,
+            },
+            Object {
+              "x": 363,
+              "y": 438,
+            },
+            Object {
+              "x": 363,
+              "y": 452,
+            },
+            Object {
+              "x": 340,
+              "y": 452,
+            },
+            Object {
+              "x": 351.5,
+              "y": 445,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 438,
+      },
+      "id": "c33733a8-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 438,
+        },
+        Object {
+          "x": 363,
+          "y": 438,
+        },
+        Object {
+          "x": 363,
+          "y": 452,
+        },
+        Object {
+          "x": 12,
+          "y": 452,
+        },
+        Object {
+          "x": 187.5,
+          "y": 445,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block8",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text11",
+            "text": "温柔小姐姐做造型",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 112,
+            "x": 12,
+            "y": 460,
+          },
+          "id": "c3370c9b-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 460,
+            },
+            Object {
+              "x": 124,
+              "y": 460,
+            },
+            Object {
+              "x": 124,
+              "y": 474,
+            },
+            Object {
+              "x": 12,
+              "y": 474,
+            },
+            Object {
+              "x": 68,
+              "y": 467,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text12",
+            "text": "×8",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 17,
+            "x": 346,
+            "y": 460,
+          },
+          "id": "c3370c9d-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 346,
+              "y": 460,
+            },
+            Object {
+              "x": 363,
+              "y": 460,
+            },
+            Object {
+              "x": 363,
+              "y": 474,
+            },
+            Object {
+              "x": 346,
+              "y": 474,
+            },
+            Object {
+              "x": 354.5,
+              "y": 467,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 460,
+      },
+      "id": "c33733aa-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 460,
+        },
+        Object {
+          "x": 363,
+          "y": 460,
+        },
+        Object {
+          "x": 363,
+          "y": 474,
+        },
+        Object {
+          "x": 12,
+          "y": 474,
+        },
+        Object {
+          "x": 187.5,
+          "y": 467,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+  ],
   "frame": Object {
-    "height": 218,
-    "width": 375,
-    "x": 0,
-    "y": 0,
+    "height": 186,
+    "width": 351,
+    "x": 12,
+    "y": 288,
   },
-  "id": "a05a498c-ef29-11e9-a912-7d4a86aa6ace",
+  "id": "c3375afc-efd8-11e9-9f3a-6bf1cca22955",
   "points": Array [
     Object {
-      "x": 0,
-      "y": 0,
+      "x": 12,
+      "y": 288,
     },
     Object {
-      "x": 375,
-      "y": 0,
+      "x": 363,
+      "y": 288,
     },
     Object {
-      "x": 375,
-      "y": 218,
+      "x": 363,
+      "y": 474,
     },
     Object {
-      "x": 0,
-      "y": 218,
+      "x": 12,
+      "y": 474,
     },
     Object {
       "x": 187.5,
-      "y": 109,
+      "y": 381,
     },
   ],
-  "style": Object {},
+  "style": Object {
+    "alignItems": "center",
+    "flexDirection": "column",
+    "justifyContent": "flex-start",
+    "paddingTop": 0,
+  },
+  "type": "Block",
+}
+`;
+
+exports[`list-origin-2: list-origin-2 1`] = `
+Object {
+  "attrs": Object {
+    "className": "block1",
+  },
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "className": "block2",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "block3",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 16,
+            "width": 2,
+            "x": 12,
+            "y": 288,
+          },
+          "id": "c3390862-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 288,
+            },
+            Object {
+              "x": 14,
+              "y": 288,
+            },
+            Object {
+              "x": 14,
+              "y": 304,
+            },
+            Object {
+              "x": 12,
+              "y": 304,
+            },
+            Object {
+              "x": 13,
+              "y": 296,
+            },
+          ],
+          "style": Object {
+            "backgroundColor": "#ff6600ff",
+          },
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text0",
+            "text": "卡项权益",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 16,
+            "width": 64,
+            "x": 22,
+            "y": 288,
+          },
+          "id": "c3390861-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 22,
+              "y": 288,
+            },
+            Object {
+              "x": 86,
+              "y": 288,
+            },
+            Object {
+              "x": 86,
+              "y": 304,
+            },
+            Object {
+              "x": 22,
+              "y": 304,
+            },
+            Object {
+              "x": 54,
+              "y": 296,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 16,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 16,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 16,
+        "width": 74,
+        "x": 12,
+        "y": 288,
+      },
+      "id": "c3390871-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 304,
+        },
+        Object {
+          "x": 12,
+          "y": 304,
+        },
+        Object {
+          "x": 49,
+          "y": 296,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "text1",
+        "text": "美容服务",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 14,
+        "width": 56,
+        "x": 12,
+        "y": 320,
+      },
+      "id": "c3390865-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 320,
+        },
+        Object {
+          "x": 68,
+          "y": 320,
+        },
+        Object {
+          "x": 68,
+          "y": 334,
+        },
+        Object {
+          "x": 12,
+          "y": 334,
+        },
+        Object {
+          "x": 40,
+          "y": 327,
+        },
+      ],
+      "style": Object {
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
+      },
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block4",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text2",
+            "text": "凶悍大叔洗澡",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 84,
+            "x": 12,
+            "y": 342,
+          },
+          "id": "c3390863-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 342,
+            },
+            Object {
+              "x": 96,
+              "y": 342,
+            },
+            Object {
+              "x": 96,
+              "y": 356,
+            },
+            Object {
+              "x": 12,
+              "y": 356,
+            },
+            Object {
+              "x": 54,
+              "y": 349,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text3",
+            "text": "×10",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 23,
+            "x": 340,
+            "y": 342,
+          },
+          "id": "c3390867-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 340,
+              "y": 342,
+            },
+            Object {
+              "x": 363,
+              "y": 342,
+            },
+            Object {
+              "x": 363,
+              "y": 356,
+            },
+            Object {
+              "x": 340,
+              "y": 356,
+            },
+            Object {
+              "x": 351.5,
+              "y": 349,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 342,
+      },
+      "id": "c3390873-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 342,
+        },
+        Object {
+          "x": 363,
+          "y": 342,
+        },
+        Object {
+          "x": 363,
+          "y": 356,
+        },
+        Object {
+          "x": 12,
+          "y": 356,
+        },
+        Object {
+          "x": 187.5,
+          "y": 349,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block5",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text4",
+            "text": "温柔小姐姐做造型",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 112,
+            "x": 12,
+            "y": 364,
+          },
+          "id": "c339086b-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 364,
+            },
+            Object {
+              "x": 124,
+              "y": 364,
+            },
+            Object {
+              "x": 124,
+              "y": 378,
+            },
+            Object {
+              "x": 12,
+              "y": 378,
+            },
+            Object {
+              "x": 68,
+              "y": 371,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text5",
+            "text": "×8",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 17,
+            "x": 346,
+            "y": 364,
+          },
+          "id": "c339086d-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 346,
+              "y": 364,
+            },
+            Object {
+              "x": 363,
+              "y": 364,
+            },
+            Object {
+              "x": 363,
+              "y": 378,
+            },
+            Object {
+              "x": 346,
+              "y": 378,
+            },
+            Object {
+              "x": 354.5,
+              "y": 371,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 364,
+      },
+      "id": "c3390875-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 364,
+        },
+        Object {
+          "x": 363,
+          "y": 364,
+        },
+        Object {
+          "x": 363,
+          "y": 378,
+        },
+        Object {
+          "x": 12,
+          "y": 378,
+        },
+        Object {
+          "x": 187.5,
+          "y": 371,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block6",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text6",
+            "text": "精油美毛",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 56,
+            "x": 12,
+            "y": 386,
+          },
+          "id": "c3390869-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 386,
+            },
+            Object {
+              "x": 68,
+              "y": 386,
+            },
+            Object {
+              "x": 68,
+              "y": 400,
+            },
+            Object {
+              "x": 12,
+              "y": 400,
+            },
+            Object {
+              "x": 40,
+              "y": 393,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text7",
+            "text": "×12",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 23,
+            "x": 340,
+            "y": 386,
+          },
+          "id": "c339086a-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 340,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 400,
+            },
+            Object {
+              "x": 340,
+              "y": 400,
+            },
+            Object {
+              "x": 351.5,
+              "y": 393,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 386,
+      },
+      "id": "c3390877-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 386,
+        },
+        Object {
+          "x": 363,
+          "y": 386,
+        },
+        Object {
+          "x": 363,
+          "y": 400,
+        },
+        Object {
+          "x": 12,
+          "y": 400,
+        },
+        Object {
+          "x": 187.5,
+          "y": 393,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "text8",
+        "text": "清洁服务",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 14,
+        "width": 56,
+        "x": 12,
+        "y": 416,
+      },
+      "id": "c3390866-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 416,
+        },
+        Object {
+          "x": 68,
+          "y": 416,
+        },
+        Object {
+          "x": 68,
+          "y": 430,
+        },
+        Object {
+          "x": 12,
+          "y": 430,
+        },
+        Object {
+          "x": 40,
+          "y": 423,
+        },
+      ],
+      "style": Object {
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
+      },
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block7",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text9",
+            "text": "凶悍大叔洗澡",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 84,
+            "x": 12,
+            "y": 438,
+          },
+          "id": "c3390864-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 438,
+            },
+            Object {
+              "x": 96,
+              "y": 438,
+            },
+            Object {
+              "x": 96,
+              "y": 452,
+            },
+            Object {
+              "x": 12,
+              "y": 452,
+            },
+            Object {
+              "x": 54,
+              "y": 445,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text10",
+            "text": "×10",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 23,
+            "x": 340,
+            "y": 438,
+          },
+          "id": "c3390868-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 340,
+              "y": 438,
+            },
+            Object {
+              "x": 363,
+              "y": 438,
+            },
+            Object {
+              "x": 363,
+              "y": 452,
+            },
+            Object {
+              "x": 340,
+              "y": 452,
+            },
+            Object {
+              "x": 351.5,
+              "y": 445,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 438,
+      },
+      "id": "c3390879-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 438,
+        },
+        Object {
+          "x": 363,
+          "y": 438,
+        },
+        Object {
+          "x": 363,
+          "y": 452,
+        },
+        Object {
+          "x": 12,
+          "y": 452,
+        },
+        Object {
+          "x": 187.5,
+          "y": 445,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "className": "block8",
+      },
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "className": "text11",
+            "text": "温柔小姐姐做造型",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 112,
+            "x": 12,
+            "y": 460,
+          },
+          "id": "c339086c-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 460,
+            },
+            Object {
+              "x": 124,
+              "y": 460,
+            },
+            Object {
+              "x": 124,
+              "y": 474,
+            },
+            Object {
+              "x": 12,
+              "y": 474,
+            },
+            Object {
+              "x": 68,
+              "y": 467,
+            },
+          ],
+          "style": Object {
+            "color": "#a3a3a3ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "className": "text12",
+            "text": "×8",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 14,
+            "width": 17,
+            "x": 346,
+            "y": 460,
+          },
+          "id": "c339086e-efd8-11e9-9f3a-6bf1cca22955",
+          "points": Array [
+            Object {
+              "x": 346,
+              "y": 460,
+            },
+            Object {
+              "x": 363,
+              "y": 460,
+            },
+            Object {
+              "x": 363,
+              "y": 474,
+            },
+            Object {
+              "x": 346,
+              "y": 474,
+            },
+            Object {
+              "x": 354.5,
+              "y": 467,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 14,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 14,
+        "width": 351,
+        "x": 12,
+        "y": 460,
+      },
+      "id": "c339087b-efd8-11e9-9f3a-6bf1cca22955",
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 460,
+        },
+        Object {
+          "x": 363,
+          "y": 460,
+        },
+        Object {
+          "x": 363,
+          "y": 474,
+        },
+        Object {
+          "x": 12,
+          "y": 474,
+        },
+        Object {
+          "x": 187.5,
+          "y": 467,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+      },
+      "type": "Block",
+    },
+  ],
+  "frame": Object {
+    "height": 186,
+    "width": 351,
+    "x": 12,
+    "y": 288,
+  },
+  "id": "c3392f96-efd8-11e9-9f3a-6bf1cca22955",
+  "points": Array [
+    Object {
+      "x": 12,
+      "y": 288,
+    },
+    Object {
+      "x": 363,
+      "y": 288,
+    },
+    Object {
+      "x": 363,
+      "y": 474,
+    },
+    Object {
+      "x": 12,
+      "y": 474,
+    },
+    Object {
+      "x": 187.5,
+      "y": 381,
+    },
+  ],
+  "style": Object {
+    "alignItems": "center",
+    "flexDirection": "column",
+    "justifyContent": "flex-start",
+    "paddingTop": 0,
+  },
   "type": "Block",
 }
 `;
