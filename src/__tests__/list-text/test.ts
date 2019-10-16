@@ -3,8 +3,7 @@ import {toJSON} from '../../util';
 import getNodes from '../../get-nodes';
 import layout from '../../layout';
 import {join} from 'path';
-import {readJSONSync} from 'fs-extra';
-import {Layer} from "../../types-sketch";
+import {loadeOrigin} from "../util";
 
 /**
  * @desc
@@ -15,8 +14,7 @@ import {Layer} from "../../types-sketch";
  * @Date    2019/10/15
  **/
 
-let layers =loadeOrigin();
-
+let layers =loadeOrigin(join(__dirname, 'origin.json'));
 
 const nodes: INode[] = getNodes(layers.layers[0]);
 
@@ -26,20 +24,3 @@ const node: INode = layout(nodes);
 
 debugger;
 const result = toJSON(node);
-
-function loadeOrigin() {
-  let layers = readJSONSync(join(__dirname, 'origin.json'))
-
-  //把断掉的关系添加起来;
-  addParent(layers);
-  return layers;
-}
-
-function addParent(rootLayer:any) {
-  if(rootLayer.layers && rootLayer.layers.length>0 ){
-    rootLayer.layers.forEach((layer:any)=>{
-      layer.parent = rootLayer;
-      return addParent(layer);
-    })
-  }
-}

@@ -4,6 +4,7 @@ import layout from "../../layout";
 import {readJSONSync,writeJSONSync} from  'fs-extra';
 import {join} from 'path';
 import {toJSON} from "../../util";
+import {loadeOrigin} from "../util";
 
 /**
  * @desc
@@ -15,8 +16,8 @@ import {toJSON} from "../../util";
  **/
 
 
-it('list-text', function () {
-  let layers = readJSONSync(join(__dirname,"origin.json"));
+it('list-origin', function () {
+  let layers = loadeOrigin(join(__dirname,"origin.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
 
   // 布局处理
@@ -24,6 +25,20 @@ it('list-text', function () {
 
   const result =toJSON(node);
 
-  writeJSONSync(join(__dirname,"list-text-layout-result.json"),result,{spaces:2});
+  // writeJSONSync(join(__dirname,"list-text-layout-result.json"),result,{spaces:2});
+  expect(result).toMatchSnapshot("list-text-layout");
+});
+
+
+it('list-origin-2', function () {
+  let layers = loadeOrigin(join(__dirname,"origin.json"));
+  const nodes: INode[] = getNodes(layers.layers[0]);
+
+  // 布局处理
+  const node: INode = layout(nodes);
+
+  const result =toJSON(node);
+
+  // writeJSONSync(join(__dirname,"list-text-layout-result.json"),result,{spaces:2});
   expect(result).toMatchSnapshot("list-text-layout");
 });

@@ -10,7 +10,6 @@ import * as uuid from "uuid";
 export default (layer: Layer): INode[] => {
   const layers: Layer[] = [];
   const walk = (layer: Layer,lv:number=0) => {
-    debugger;
 
     if(lv !=0 && layer.parent && layer.parent.__absFrame) {
       let {x:px,y:py} = layer.parent.__absFrame;

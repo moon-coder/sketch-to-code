@@ -18,6 +18,7 @@ export default function (nodes: INode[]):INode {
     //area
     const nodesByArea:INode[]= sortByArea(nodes);
 
+    //TODO 要检测不能合并的节点;
     let [minNode,...restNode] = nodesByArea;
     let {mergeable,unMergeable} = getMergeableNodes(minNode,restNode);
 
@@ -25,9 +26,9 @@ export default function (nodes: INode[]):INode {
 
       console.log('无合适节点进行合并,请检查对应结构');
     } else if(mergeable.length===1) {
-      let rootNode = calcBoundaryNode([minNode,mergeable[0]]);
-      rootNode.style.flexDirection=getRelPosition(minNode,mergeable[0]);
-      return rootNode;
+      let newNode = calcBoundaryNode([minNode,mergeable[0]]);
+      newNode.style.flexDirection=getRelPosition(minNode,mergeable[0]);
+      nodes = [newNode,...unMergeable];
     } else {
 
       let {adapterNode,others}   =  getMinAreaMergeNode(minNode,mergeable);
@@ -37,7 +38,7 @@ export default function (nodes: INode[]):INode {
 
       nodes = [newNode,...others,...unMergeable];
     }
-  } while(true);
+  } while(nodes.length >= 2);
 
   return nodes[0];
 }
@@ -171,6 +172,7 @@ function getMergeableNodes(targetNode:INode,restNodes: INode[]):{
   restNodes.forEach(node=>{
     if(isOverLapThird(targetNode,node,restNodes)){
       unMergeable.push(node);
+    } else {
       mergeable.push(node);
     }
   })
@@ -197,10 +199,10 @@ function isOverLapThird(first: INode, second: INode,restNodes:INode[]):boolean {
     }
 
     if(isOverlap(newNode,node)){
-       return false;
+       return true;
     }
   }
-  return true;
+  return false;
 }
 
 
