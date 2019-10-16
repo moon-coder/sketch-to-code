@@ -16,6 +16,7 @@ import {join} from 'path';
 
 it('简易列表代码生成', function () {
   console.log("hello");
+  //TODO 等图片的问题处理好.
 
   let layers = readJSONSync(join(__dirname,"origin.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
