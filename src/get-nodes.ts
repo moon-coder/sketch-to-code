@@ -125,6 +125,7 @@ const sliceImg = ((): Function => {
   let imgIdx = 0;
   return (slice: Slice): string => {
     const imgName = `img${imgIdx++}`;
+    slice.name = imgName;
     slice.exportFormats = [{
       fileFormat: 'png',
       prefix: imgName,
