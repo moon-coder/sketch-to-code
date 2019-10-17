@@ -118,6 +118,9 @@ const exportImg = (layer: Layer) => {
   }
 }
 
+/**
+ * 切片导出
+ */
 const sliceImg = ((): Function => {
   let imgIdx = 0;
   return (slice: Slice): string => {
