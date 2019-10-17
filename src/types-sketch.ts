@@ -71,7 +71,7 @@ export interface Artboard {
     includedInExport: boolean;
     color: string;
   }
-  exportFormats?: any;
+  exportFormats?: ExportFormat[];
 }
 
 /**
@@ -93,6 +93,8 @@ export interface Layer {
   frame: Rectangle;
   //绝对位置信息,相对于根节点
   __absFrame: Rectangle;
+  // 生成图片的路径
+  __imgSrc?: string;
   // If the layer is selected.
   selected: boolean;
   // The transformation applied to the Layer.
@@ -110,7 +112,8 @@ export interface Layer {
   // The index of this layer in its parent.
   index: number;
 
-  // 还有一些额外的方法
+  // Remove this layer from its parent.
+  remove: Function;
 
   /**
    * 以下属性先不考虑使用
@@ -118,7 +121,7 @@ export interface Layer {
   // The prototyping action associated with the layer.
   flow?: any;
   // The export formats of the Layer.
-  exportFormats?: any;
+  exportFormats?: ExportFormat[];
 }
 
 export interface Group extends Layer {
@@ -151,6 +154,21 @@ export interface Text extends Layer {
 export interface Image extends Layer {
   // The actual image of the layer
   image: any;
+}
+
+export interface Slice extends Layer {
+  exportFormats: ExportFormat[];
+}
+
+export interface ExportFormat {
+  // The file format of the export.
+  fileFormat: string;
+  // The prefix added to the file name.
+  prefix: string;
+  // The suffix added to the file name.
+  suffix: string;
+  // The size of the export. Valid values include 2x, 100w, 100width, 100px, 300h, 300height
+  size: string;
 }
 
 export interface SymbolInstance {
