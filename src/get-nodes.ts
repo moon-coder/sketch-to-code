@@ -37,6 +37,10 @@ export default (layer: Layer): INode[] => {
       nodeRepo = {},
     }: {lv: number; pPath: string; relPath:string; nodeRepo: NodeInfoRepo},
   ) => {
+    if (layer.hidden) {
+      return;
+    }
+
     let currentNodePath = `${pPath}${relPath}`;
 
     if (lv != 0 && layer.parent && nodeRepo[pPath]) {
@@ -52,10 +56,15 @@ export default (layer: Layer): INode[] => {
     }
 
     // 导出图片
-    exportImg(layer);
+    const layerImgSrc = exportImg(layer);
 
-    if (!['Artboard', 'Group'].includes(layer.type) || layer.__imgSrc) {
-      toNode(layer,nodeRepo[pPath]);
+    if (!['Artboard', 'Group'].includes(layer.type) || layerImgSrc) {
+      const node: INode = toNode(layer,nodeRepo[pPath]);
+      if (layerImgSrc) {
+        node.attrs.src = layerImgSrc;
+        node.type = 'Image';
+      }
+      resultNodes.push(node);
     } else {
       (layer as Container).layers.forEach((layer, layrerIndex) => {
         walk(layer, {
@@ -68,11 +77,7 @@ export default (layer: Layer): INode[] => {
     }
   };
 
-  const toNode = (layer: Layer, pNodeInfo?: NodeExtraInfo): void => {
-    if (layer.hidden) {
-      return;
-    }
-
+  const toNode = (layer: Layer, pNodeInfo?: NodeExtraInfo): INode => {
     let {x, y} = layer.frame;
     let __absFrame = layer.frame;
 
@@ -81,7 +86,7 @@ export default (layer: Layer): INode[] => {
       let {x: px, y: py} = pNodeInfo.__absFrame;
       __absFrame = Object.assign({}, layer.frame, {x: x + px, y: y + py});
     }
-    resultNodes.push(layerToNode(layer, __absFrame));
+    return layerToNode(layer, __absFrame);
   };
 
   walk(layer, {
@@ -135,7 +140,7 @@ const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
     return 'Text';
   }
   // Image
-  if (layer.__imgSrc) {
+  if ('Image' === layer.type) {
     return 'Image';
   }
   return 'Block';

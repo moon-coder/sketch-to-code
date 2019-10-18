@@ -4,7 +4,8 @@ import {Sketch,SketchDom} from './outer/sketch';
 /**
  * 导出图片
  */
-export const exportImg = (layer: Layer) => {
+export const exportImg = (layer: Layer): string => {
+  let imgSrc = '';
   let slice:Slice = new SketchDom.Slice({
     frame: {
       x: 0,
@@ -16,15 +17,13 @@ export const exportImg = (layer: Layer) => {
   // 1.图片的情况
   if (layer.type === 'Image') {
     slice.parent = layer.parent;
-    const imgSrc = sliceImg(slice);
-    layer.__imgSrc = imgSrc;
+    imgSrc = sliceImg(slice);
   }
   // 2."-合并"的情况
   if (layer.type === 'Group' && layer.name.endsWith('-合并')) {
     //@ts-ignore
     slice.parent = layer;
-    const imgSrc = sliceImg(slice);
-    layer.__imgSrc = imgSrc;
+    imgSrc = sliceImg(slice);
   }
   // 3.背景填充的情况
   if(layer.style && layer.style.fills && layer.style.fills[0]){
@@ -33,6 +32,9 @@ export const exportImg = (layer: Layer) => {
       // TODO
     }
   }
+
+
+  return imgSrc;
 
 
 };
@@ -55,7 +57,7 @@ const sliceImg = ((): Function => {
     ];
     Sketch.export(slice, {
       formats: 'png',
-      output: '/Users/shejijiang/Desktop/temp/img',
+      output: '/Users/dong/Falcon/sketch-to-code/temp/img',
     });
     slice.remove();
     return `./img/${imgName}.png`;
