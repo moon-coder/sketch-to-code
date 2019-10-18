@@ -1,8 +1,25 @@
-import {Border, Fill, IStyle, Layer, Text, Container, Slice, Group} from './types-sketch';
-import { INode } from './types';
-import * as uuid from "uuid";
+import {
+  Border,
+  Fill,
+  IStyle,
+  Layer,
+  Text,
+  Container,
+  Slice,
+  Group,
+} from './types-sketch';
+import {IFrame, INode} from './types';
+import * as uuid from 'uuid';
 const sketch = require('sketch');
 const Slice = require('sketch/dom').Slice;
+
+interface NodeExtraInfo {
+  __absFrame: {x: number; y: number};
+  [others: string]: any;
+}
+interface NodeInfoRepo {
+  [path: string]: NodeExtraInfo;
+}
 
 /**
  * 把节点打平, 全部以绝对定位处理
@@ -11,15 +28,27 @@ const Slice = require('sketch/dom').Slice;
  */
 export default (layer: Layer): INode[] => {
   const layers: Layer[] = [];
-  const walk = (layer: Layer,lv:number=0) => {
 
-    if(lv !=0 && layer.parent && layer.parent.__absFrame) {
-      let {x:px,y:py} = layer.parent.__absFrame;
-      let {x,y} = layer.frame;
-      layer.__absFrame=Object.assign({},layer.frame,{x:x+px,y:y+py})
-    }else if(lv===0) {
-      let {x,y} = layer.frame;
-      layer.__absFrame=Object.assign({},layer.frame,{x:x,y:y})
+  const resultNodes: INode[] = [];
+
+  const walk = (
+    layer: Layer,
+    {
+      lv = 0,
+      pPath = '#',
+      nodeRepo = {},
+    }: {lv: number; pPath: string; nodeRepo: NodeInfoRepo},
+  ) => {
+    if (lv != 0 && layer.parent && nodeRepo[pPath]) {
+      let {x: px, y: py} = layer.parent.__absFrame;
+      let {x, y} = layer.frame;
+      nodeRepo[pPath] = {
+        __absFrame: Object.assign({}, layer.frame, {x: x + px, y: y + py}),
+      };
+    } else if (lv === 0) {
+      nodeRepo[pPath] = {
+        __absFrame: Object.assign({}, layer.frame),
+      };
     }
 
     // 导出图片
@@ -27,45 +56,69 @@ export default (layer: Layer): INode[] => {
 
     if (!['Artboard', 'Group'].includes(layer.type) || layer.__imgSrc) {
       layers.push(layer);
+      toNode(layer);
     } else {
-      (layer as Container).layers.forEach(layer => {
-        walk(layer,lv+1);
+      (layer as Container).layers.forEach((layer, layrerIndex) => {
+        walk(layer, {
+          lv: lv + 1,
+          pPath: pPath + `.layers[${layrerIndex}]`,
+          nodeRepo,
+        });
       });
     }
-  }
+  };
 
-  walk(layer)
+  const toNode = (layer: Layer, pNodeInfo?: NodeExtraInfo): void => {
+    if (layer.hidden) {
+      return;
+    }
 
-  return layers.filter(layer => !layer.hidden).map(layer => layerToNode(layer));
-}
+    let {x, y} = layer.frame;
+    let __absFrame = layer.frame;
 
+    if (pNodeInfo) {
+      //如果存在父节点则. ;
+      let {x: px, y: py} = pNodeInfo.__absFrame;
+      __absFrame = Object.assign({}, layer.frame, {x: x + px, y: y + py});
+    }
+    resultNodes.push(layerToNode(layer, __absFrame));
+  };
+
+  walk(layer, {
+    lv: 0,
+    pPath: '#',
+    nodeRepo: {},
+  });
+
+  // return layers.filter(layer => !layer.hidden).map(layer => layerToNode(layer));
+  return resultNodes;
+};
 
 /**
  * 把sketch  layer节点转换为node节点;
  * @param {Layer} layer
  * @returns {INode}
  */
-const layerToNode = (layer: Layer):INode => {
+const layerToNode = (layer: Layer, absFrame: IFrame): INode => {
   const id = uuid.v1();
   let node: INode = {
     id,
-    __layer:layer,
+    __layer: layer,
     parent: undefined,
     type: 'Block',
-    frame: { x: 0, y: 0, width: 0, height: 0 },
+    frame: {x: 0, y: 0, width: 0, height: 0},
     style: {},
     children: [],
     points: [],
-    attrs: { className: id }
+    attrs: {className: id},
   };
   node.type = layerType(layer);
   layerStyle(layer, node);
-  node.frame = layer.__absFrame;
+  node.frame = absFrame;
   node.points = calcNodeCoords(node);
   node.children = [];
   return node;
-}
-
+};
 
 /**
  * 类型映射
@@ -74,7 +127,7 @@ const layerToNode = (layer: Layer):INode => {
  */
 const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
   // Block
-  if(['Artboard', 'Group'].includes(layer.type)) {
+  if (['Artboard', 'Group'].includes(layer.type)) {
     return 'Block';
   }
   // Text
@@ -86,7 +139,7 @@ const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
     return 'Image';
   }
   return 'Block';
-}
+};
 
 /**
  * 导出图片
@@ -94,10 +147,11 @@ const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
 const exportImg = (layer: Layer) => {
   let slice = new Slice({
     frame: {
-      x: 0, y: 0,
+      x: 0,
+      y: 0,
       width: layer.frame.width,
-      height: layer.frame.height
-    }
+      height: layer.frame.height,
+    },
   });
   // 1.图片的情况
   if (layer.type === 'Image') {
@@ -116,7 +170,7 @@ const exportImg = (layer: Layer) => {
   if (fill && fill.pattern && fill.pattern.image) {
     // TODO
   }
-}
+};
 
 /**
  * 切片导出
@@ -126,39 +180,43 @@ const sliceImg = ((): Function => {
   return (slice: Slice): string => {
     const imgName = `img${imgIdx++}`;
     slice.name = imgName;
-    slice.exportFormats = [{
-      fileFormat: 'png',
-      prefix: imgName,
-      suffix: 'png',
-      size: '2x'
-    }];
-    sketch.export(slice, {formats: 'png', output: '/Users/shejijiang/Desktop/temp/img' });
+    slice.exportFormats = [
+      {
+        fileFormat: 'png',
+        prefix: imgName,
+        suffix: 'png',
+        size: '2x',
+      },
+    ];
+    sketch.export(slice, {
+      formats: 'png',
+      output: '/Users/shejijiang/Desktop/temp/img',
+    });
     slice.remove();
     return `./img/${imgName}.png`;
-  }
+  };
 })();
-
 
 const layerStyle = (layer: Layer, node: INode) => {
   let style: IStyle = {};
   // 1.边框
   const border: Border = layer.style.borders[0];
-  if(border) {
+  if (border) {
     style.borderColor = border.color;
     style.borderWidth = border.thickness;
     // 位置
     switch (border.position.toLowerCase()) {
       case 'center':
-        node.frame.x = node.frame.x - (border.thickness / 2);
-        node.frame.y = node.frame.y - (border.thickness / 2);
+        node.frame.x = node.frame.x - border.thickness / 2;
+        node.frame.y = node.frame.y - border.thickness / 2;
         node.frame.width = node.frame.width + border.thickness;
         node.frame.height = node.frame.height + border.thickness;
         break;
       case 'outside':
         node.frame.x = node.frame.x - border.thickness;
         node.frame.y = node.frame.y - border.thickness;
-        node.frame.width = node.frame.width + (border.thickness * 2);
-        node.frame.height = node.frame.height + (border.thickness * 2);
+        node.frame.width = node.frame.width + border.thickness * 2;
+        node.frame.height = node.frame.height + border.thickness * 2;
         break;
       case 'inside':
         break;
@@ -199,30 +257,26 @@ const layerStyle = (layer: Layer, node: INode) => {
   }
 
   node.style = style;
+};
 
-}
-
-const layerAttrs = (layer: Layer) => {
-
-}
-
+const layerAttrs = (layer: Layer) => {};
 
 /**
  * 计算四个顶点和中点的坐标
  */
 export function calcNodeCoords(node: INode) {
   let coords = [];
-  const { x, y, width, height } = node.frame;
+  const {x, y, width, height} = node.frame;
   // 顶点坐标
-  coords.push({ x, y });
+  coords.push({x, y});
   // 右上点坐标
-  coords.push({ x: x + width, y });
+  coords.push({x: x + width, y});
   // 右下点坐标
-  coords.push({ x: x + width, y: y + height });
+  coords.push({x: x + width, y: y + height});
   // 左下点坐标
-  coords.push({ x, y: y + height });
+  coords.push({x, y: y + height});
   // 中点坐标
-  coords.push({ x: x + width / 2, y: y + height / 2 });
+  coords.push({x: x + width / 2, y: y + height / 2});
   return coords;
 }
 
