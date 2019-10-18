@@ -1,5 +1,6 @@
 import {INode} from '../types';
 import {calcBoundaryNode} from './utils';
+import {Range} from "istanbul-lib-coverage";
 
 /**
  * @desc
@@ -15,65 +16,25 @@ import {calcBoundaryNode} from './utils';
  **/
 export default function(nodes: INode[]): INode[] {
   //按y坐标 分组, 每一组中高度进行对比 如果一致则在结果中返回;
-  return getYRange(nodes).map(rangeItem=>{
-          let mergeNode = calcBoundaryNode(rangeItem.items);
-          mergeNode.style.flexDirection = 'row';
-          return mergeNode;
-  })
 
-  // nodes.map(node => node.frame.y);
-  //
-  // let rowIndexNodes: IndexNode = {};
-  //
-  // nodes.forEach(node => {
-  //   if (rowIndexNodes[node.frame.y]) {
-  //     rowIndexNodes[node.frame.y].push(node);
-  //   } else {
-  //     rowIndexNodes[node.frame.y] = [node];
-  //   }
-  // });
-  //
-  // let results: INode[] = [];
-  //
-  // for (let yIndex in rowIndexNodes) {
-  //   //找出一组中,相同的高度的节点;;
-  //   let rowNodes = rowIndexNodes[yIndex];
-  //   let heightIndex: IndexNode = {};
-  //
-  //   rowNodes.forEach(node => {
-  //     if (heightIndex[node.frame.height]) {
-  //       heightIndex[node.frame.height].push(node);
-  //     } else {
-  //       heightIndex[node.frame.height] = [node];
-  //     }
-  //   });
-  //
-  //   for (let height in heightIndex) {
-  //     let sameNodes = heightIndex[height];
-  //     if (sameNodes.length === 1) {
-  //       //没有相同节点直接合并;
-  //       results = results.concat(sameNodes);
-  //     } else {
-  //       //多个节点合并起来..
-  //       let mergeNode = calcBoundaryNode(sameNodes);
-  //       mergeNode.style.flexDirection = 'row';
-  //       results.push(mergeNode);
-  //     }
-  //   }
-  // }
-
-  // return results;
-}
-
-export interface IndexNode {
-  [key: number]: INode[];
+  let yrange = getYRange(nodes);
+  if (yrange.length > 1) {
+    return yrange.map(rangeItem => {
+      debugger;
+      let mergeNode = calcBoundaryNode(rangeItem.items);
+      mergeNode.style.flexDirection = 'row';
+      return mergeNode;
+    });
+  } else {
+    return nodes;
+  }
 }
 
 /**
  * 获取元素在某个轴线(x,y)上的分布情况;
  * 为接下来寻找空隙找到原因;
  */
-function getYRange(nodes: INode[]) :RangeItem[]{
+function getYRange(nodes: INode[]): RangeItem[] {
   let ranges: RangeItem[] = [];
 
   for (let i = 0, iLen = nodes.length; i < iLen; i++) {
@@ -82,14 +43,30 @@ function getYRange(nodes: INode[]) :RangeItem[]{
     let range = getMatchRange(node, ranges);
     if (range) {
       range.addNode(node);
+      ranges= mergeRange(ranges,range)
     } else {
       ranges.push(new RangeItem(node));
     }
-
-    // node.frame.y node.frame.height
-    // rangeResult
   }
-  return ranges  ;
+
+  return ranges;
+}
+
+function mergeRange(ranges: RangeItem[], rangeItem: RangeItem):RangeItem[] {
+
+  let result = [rangeItem];
+  for (let i = ranges.length-1; i >=0 ; i--) {
+    let rangeOne = ranges[i];
+    if(rangeItem===rangeOne){
+      continue;
+    }
+
+    if(RangeItem.isMergeable(rangeOne,rangeItem)){
+    } else {
+      result.push(rangeOne);
+    }
+  }
+  return result;
 }
 
 function getMatchRange(
@@ -103,7 +80,7 @@ function getMatchRange(
       lineMax = y + height;
     if (
       (lineMax >= rangesItem.min && lineMin <= rangesItem.max) ||
-      (lineMin <= rangesItem.max && lineMax >=rangesItem.min)
+      (lineMin <= rangesItem.max && lineMax >= rangesItem.min)
     ) {
       return rangesItem;
     }
@@ -121,6 +98,18 @@ export class RangeItem {
     this.items = [node];
   }
 
+  static isMergeable(item1:RangeItem,item2:RangeItem):boolean{
+
+    let lineMax= item1.max, lineMin=item1.min;
+    if (lineMax >= item2.min && lineMin <= item2.max) {
+      return true;
+    } else if (lineMin <= item2.max && lineMax >= item2.min) {
+      return true;
+    }
+    return false
+
+  }
+
   items: INode[];
   min: number;
   max: number;
@@ -130,5 +119,10 @@ export class RangeItem {
     this.min = this.min < y ? this.min : y;
     this.max = this.max > y + height ? this.max : y + height;
     this.items.push(node);
+  }
+
+  concat(rangeItem:RangeItem) {
+
+    this.items.concat(rangeItem.items)
   }
 }

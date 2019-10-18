@@ -19,7 +19,7 @@ jest.mock('../../outer/sketch');
 
 
 it('list-item ', function () {
-  let layers = loadeOrigin(join(__dirname,"origin.json"));
+  let layers = loadeOrigin(join(__dirname,"origin-0.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
 
   // 布局处理
