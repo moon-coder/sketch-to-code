@@ -90,7 +90,6 @@ export default (layer: Layer): INode[] => {
     nodeRepo: {},
   });
 
-  // return layers.filter(layer => !layer.hidden).map(layer => layerToNode(layer));
   return resultNodes;
 };
 
