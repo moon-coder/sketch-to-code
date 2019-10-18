@@ -4,6 +4,7 @@ import layout from "../../layout";
 import {readJSONSync,writeJSONSync} from  'fs-extra';
 import {join} from 'path';
 import {loadeOrigin} from "../util";
+import {toJSON} from "../../util";
 
 /**
  * @desc
@@ -18,7 +19,6 @@ jest.mock('../../outer/sketch');
 
 
 it('list-item ', function () {
-
   let layers = loadeOrigin(join(__dirname,"origin.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
 
@@ -29,13 +29,17 @@ it('list-item ', function () {
   expect(result).toMatchSnapshot("list-item");
 });
 
+//
+//
+// it('list-origin1 ', function () {
+//   let layers = loadeOrigin(join(__dirname,"origin-1.json"));
+//   const nodes: INode[] = getNodes(layers.layers[0]);
+//
+//   // 布局处理
+//   const node: INode = layout(nodes);
+//   debugger;
+//   const result =toJSON(node);
+//   expect(result).toMatchSnapshot("list-origin1");
+// });
 
-function toJSON(node: INode) {
 
-  return JSON.parse(JSON.stringify(node, (key, value)=>{
-    if(key === "parent") {
-      return  undefined;
-    }
-    return value;
-  },2))
-}
