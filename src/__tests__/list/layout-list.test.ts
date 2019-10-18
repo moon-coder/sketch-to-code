@@ -29,17 +29,15 @@ it('list-item ', function () {
   expect(result).toMatchSnapshot("list-item");
 });
 
-//
-//
-// it('list-origin1 ', function () {
-//   let layers = loadeOrigin(join(__dirname,"origin-1.json"));
-//   const nodes: INode[] = getNodes(layers.layers[0]);
-//
-//   // 布局处理
-//   const node: INode = layout(nodes);
-//   debugger;
-//   const result =toJSON(node);
-//   expect(result).toMatchSnapshot("list-origin1");
-// });
+it('list-origin1 ', function () {
+  let layers = loadeOrigin(join(__dirname,"origin-1.json"));
+  const nodes: INode[] = getNodes(layers.layers[0]);
+
+  // 布局处理
+  const node: INode = layout(nodes);
+  debugger;
+  const result =toJSON(node);
+  expect(result).toMatchSnapshot("list-origin1");
+});
 
 

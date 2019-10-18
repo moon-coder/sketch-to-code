@@ -23,9 +23,11 @@ export default function (nodes: INode[]):INode {
     let {mergeable,unMergeable} = getMergeableNodes(minNode,restNode);
 
     if(mergeable.length===0) {
-
+      debugger;
       console.log('无合适节点进行合并,请检查对应结构');
     } else if(mergeable.length===1) {
+
+      debugger;
       let newNode = calcBoundaryNode([minNode,mergeable[0]]);
       newNode.style.flexDirection=getRelPosition(minNode,mergeable[0]);
       nodes = [newNode,...unMergeable];
@@ -34,6 +36,7 @@ export default function (nodes: INode[]):INode {
       let {adapterNode,others}   =  getMinAreaMergeNode(minNode,mergeable);
       let newNode = calcBoundaryNode([minNode,adapterNode]);
 
+      debugger;
       newNode.style.flexDirection=getRelPosition(minNode,adapterNode);
 
       nodes = [newNode,...others,...unMergeable];

@@ -3,7 +3,7 @@
   "description": "",
   "version": "0.1.0",
   "scripts": {
-    "test": "jest -u",
+    "test": "jest",
     "build": "skpm-build",
     "watch": "skpm-build --watch",
     "start": "skpm-build --watch --run"
