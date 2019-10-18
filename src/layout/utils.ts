@@ -137,7 +137,8 @@ export function walk(rootNode:INode,callBack:IWalkHandle) {
   if(rootNode.children && rootNode.children.length>0) {
     rootNode.children.forEach((childrenNode)=>{
       callBack(childrenNode,rootNode);
-    })
+    });
+    callBack(rootNode);
   } else {
     callBack(rootNode)
   }

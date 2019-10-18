@@ -18,7 +18,7 @@ import blockMerge from  './block-merge';
  */
 const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
-  debugger
+
   const rootNode = preDeal(nodes);
   walk(rootNode,(node) => {
     if(node.children && node.children.length >0) {
@@ -197,7 +197,7 @@ const mergeOptional = (node: INode) => {
  */
 const mergeLineRow = (node: INode) => {
   const children = [...node.children];
-  debugger;
+
 
   //建立父子关系
   children.forEach(child => {

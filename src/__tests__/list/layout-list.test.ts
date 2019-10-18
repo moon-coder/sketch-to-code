@@ -3,6 +3,7 @@ import getNodes from "../../get-nodes";
 import layout from "../../layout";
 import {readJSONSync,writeJSONSync} from  'fs-extra';
 import {join} from 'path';
+import {loadeOrigin} from "../util";
 
 /**
  * @desc
@@ -13,21 +14,19 @@ import {join} from 'path';
  * @Date    2019/10/14
  **/
 
+jest.mock('../../outer/sketch');
 
-it('简易列表代码生成', function () {
-  console.log("hello");
-  //TODO 等图片的问题处理好.
 
-  // let layers = readJSONSync(join(__dirname,"origin.json"));
-  // const nodes: INode[] = getNodes(layers.layers[0]);
-  //
-  // // 布局处理
-  // const node: INode = layout(nodes);
-  //
-  // const result =toJSON(node);
-  //
-  // writeJSONSync(join(__dirname,"list-layout-result.json"),result);
-  // expect(result).toMatchSnapshot("list-layout");
+it('list-item ', function () {
+
+  let layers = loadeOrigin(join(__dirname,"origin.json"));
+  const nodes: INode[] = getNodes(layers.layers[0]);
+
+  // 布局处理
+  const node: INode = layout(nodes);
+  debugger;
+  const result =toJSON(node);
+  expect(result).toMatchSnapshot("list-item");
 });
 
 
