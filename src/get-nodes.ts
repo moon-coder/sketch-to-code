@@ -1,6 +1,8 @@
-import { Border, Fill, IStyle, Layer, Text, Container } from './types-sketch';
+import {Border, Fill, IStyle, Layer, Text, Container, Slice, Group} from './types-sketch';
 import { INode } from './types';
 import * as uuid from "uuid";
+const sketch = require('sketch');
+const Slice = require('sketch/dom').Slice;
 
 /**
  * 把节点打平, 全部以绝对定位处理
@@ -20,7 +22,10 @@ export default (layer: Layer): INode[] => {
       layer.__absFrame=Object.assign({},layer.frame,{x:x,y:y})
     }
 
-    if (!['Artboard', 'Group'].includes(layer.type)) {
+    // 导出图片
+    exportImg(layer);
+
+    if (!['Artboard', 'Group'].includes(layer.type) || layer.__imgSrc) {
       layers.push(layer);
     } else {
       (layer as Container).layers.forEach(layer => {
@@ -77,11 +82,62 @@ const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
     return 'Text';
   }
   // Image
-  if ('Image' === layer.type || ('Group' === layer.type && layer.name.endsWith('-合并'))) {
+  if (layer.__imgSrc) {
     return 'Image';
   }
   return 'Block';
 }
+
+/**
+ * 导出图片
+ */
+const exportImg = (layer: Layer) => {
+  let slice = new Slice({
+    frame: {
+      x: 0, y: 0,
+      width: layer.frame.width,
+      height: layer.frame.height
+    }
+  });
+  // 1.图片的情况
+  if (layer.type === 'Image') {
+    slice.parent = layer.parent;
+    const imgSrc = sliceImg(slice);
+    layer.__imgSrc = imgSrc;
+  }
+  // 2."-合并"的情况
+  if (layer.type === 'Group' && layer.name.endsWith('-合并')) {
+    slice.parent = layer;
+    const imgSrc = sliceImg(slice);
+    layer.__imgSrc = imgSrc;
+  }
+  // 3.背景填充的情况
+  const fill = layer.style.fills[0];
+  if (fill && fill.pattern && fill.pattern.image) {
+    // TODO
+  }
+}
+
+/**
+ * 切片导出
+ */
+const sliceImg = ((): Function => {
+  let imgIdx = 0;
+  return (slice: Slice): string => {
+    const imgName = `img${imgIdx++}`;
+    slice.name = imgName;
+    slice.exportFormats = [{
+      fileFormat: 'png',
+      prefix: imgName,
+      suffix: 'png',
+      size: '2x'
+    }];
+    sketch.export(slice, {formats: 'png', output: '/Users/shejijiang/Desktop/temp/img' });
+    slice.remove();
+    return `./img/${imgName}.png`;
+  }
+})();
+
 
 const layerStyle = (layer: Layer, node: INode) => {
   let style: IStyle = {};
