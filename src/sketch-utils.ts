@@ -5,7 +5,8 @@ const Slice = require('sketch/dom').Slice;
 /**
  * 导出图片
  */
-export const exportImg = (layer: Layer) => {
+export const exportImg = (layer: Layer): string => {
+  let imgSrc = '';
   let slice = new Slice({
     frame: {
       x: 0,
@@ -17,20 +18,19 @@ export const exportImg = (layer: Layer) => {
   // 1.图片的情况
   if (layer.type === 'Image') {
     slice.parent = layer.parent;
-    const imgSrc = sliceImg(slice);
-    layer.__imgSrc = imgSrc;
+    imgSrc = sliceImg(slice);
   }
   // 2."-合并"的情况
   if (layer.type === 'Group' && layer.name.endsWith('-合并')) {
     slice.parent = layer;
-    const imgSrc = sliceImg(slice);
-    layer.__imgSrc = imgSrc;
+    imgSrc = sliceImg(slice);
   }
   // 3.背景填充的情况
   const fill = layer.style.fills[0];
   if (fill && fill.pattern && fill.pattern.image) {
     // TODO
   }
+  return imgSrc;
 };
 
 /**
@@ -51,7 +51,7 @@ const sliceImg = ((): Function => {
     ];
     sketch.export(slice, {
       formats: 'png',
-      output: '/Users/shejijiang/Desktop/temp/img',
+      output: '/Users/dong/Falcon/sketch-to-code/temp/img',
     });
     slice.remove();
     return `./img/${imgName}.png`;
