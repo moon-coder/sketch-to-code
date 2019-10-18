@@ -14,6 +14,9 @@ import {loadeOrigin} from "../util";
  * @Date    2019/10/14
  **/
 
+jest.mock('../../outer/sketch');
+
+
 
 it('list-origin', function () {
   let layers = loadeOrigin(join(__dirname,"origin.json"));

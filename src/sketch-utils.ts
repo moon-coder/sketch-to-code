@@ -1,12 +1,11 @@
-import {Layer, Slice} from "./types-sketch";
-const sketch = require('sketch');
-const Slice = require('sketch/dom').Slice;
+import {Layer,Slice} from "./types-sketch";
+import {Sketch,SketchDom} from './outer/sketch';
 
 /**
  * 导出图片
  */
 export const exportImg = (layer: Layer) => {
-  let slice = new Slice({
+  let slice:Slice = new SketchDom.Slice({
     frame: {
       x: 0,
       y: 0,
@@ -22,15 +21,20 @@ export const exportImg = (layer: Layer) => {
   }
   // 2."-合并"的情况
   if (layer.type === 'Group' && layer.name.endsWith('-合并')) {
+    //@ts-ignore
     slice.parent = layer;
     const imgSrc = sliceImg(slice);
     layer.__imgSrc = imgSrc;
   }
   // 3.背景填充的情况
-  const fill = layer.style.fills[0];
-  if (fill && fill.pattern && fill.pattern.image) {
-    // TODO
+  if(layer.style && layer.style.fills && layer.style.fills[0]){
+    const fill = layer.style.fills[0];
+    if (fill && fill.pattern && fill.pattern.image) {
+      // TODO
+    }
   }
+
+
 };
 
 /**
@@ -49,7 +53,7 @@ const sliceImg = ((): Function => {
         size: '2x',
       },
     ];
-    sketch.export(slice, {
+    Sketch.export(slice, {
       formats: 'png',
       output: '/Users/shejijiang/Desktop/temp/img',
     });
