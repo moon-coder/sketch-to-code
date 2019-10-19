@@ -17,10 +17,15 @@ import {Range} from "istanbul-lib-coverage";
 export default function(nodes: INode[]): INode[] {
   //按y坐标 分组, 每一组中高度进行对比 如果一致则在结果中返回;
 
-  let yrange = getYRange(nodes);
-  if (yrange.length > 1) {
-    return yrange.map(rangeItem => {
-      debugger;
+  let yranges = getYRange(nodes);
+
+
+  yranges = mergeEquealSplitBlock(yranges)
+
+
+
+  if (yranges.length > 1) {
+    return yranges.map(rangeItem => {
       let mergeNode = calcBoundaryNode(rangeItem.items);
       mergeNode.style.flexDirection = 'row';
       return mergeNode;
@@ -28,6 +33,84 @@ export default function(nodes: INode[]): INode[] {
   } else {
     return nodes;
   }
+}
+
+/**
+ * 把间隔相等的节点合为一个大节点;
+ * 画图最好理解
+ * @param {RangeItem[]} yranges
+ * @returns {RangeItem[]}
+ */
+function mergeEquealSplitBlock(yranges:RangeItem[]):RangeItem[]{
+
+
+  let resultRangeItem:RangeItem[]= [];
+
+  //把间隔相等的节点合为一个大节点;
+  //从大到小排
+  yranges = yranges.sort((a,b)=>b.min - a.min);
+
+  //间距记录;
+  let indexDb:{[key:number]:number[]} = {};
+  for (let i = 0, iLen = yranges.length-1; i < iLen; i++) {
+    let yrange = yranges[i];
+    let yrangeNext = yranges[i];
+    let lenth=yrange.min - yrangeNext.max;
+    if(!indexDb[lenth]) {
+      indexDb[lenth]=[]
+    }
+    indexDb[lenth].push(i+1);
+  }
+
+  //两个间隔相等, 则添加起来.
+  for (let splitLen in indexDb) {
+    if(indexDb[splitLen].length>=2) {
+
+      let saveLenRangeSplit=[]; //连续三个则合并,非连续不合并
+
+      for (let i = 0, iLen = indexDb[splitLen].length-1; i < iLen; i++) {
+
+        let currentIndex = indexDb[splitLen][i];
+        if(saveLenRangeSplit.length ===0){
+          saveLenRangeSplit.push(currentIndex);
+          continue;
+        } else {
+          let lastIndex = indexDb[splitLen][i-1];
+          if((currentIndex-lastIndex)===1) {
+            saveLenRangeSplit.push(currentIndex);
+          } else {
+            if(saveLenRangeSplit.length >= 2) {
+              //合并区域
+              let firstNode = calcBoundaryNode(yranges[saveLenRangeSplit[0]-1].items);
+              firstNode.style.flexDirection='row';
+              let nodes =[firstNode];
+              for (let j = 0, jLen = saveLenRangeSplit.length; j < jLen; j++) {
+                let rangeIndex:number = saveLenRangeSplit[j];
+                let _node=calcBoundaryNode(yranges[rangeIndex].items);
+                _node.style.flexDirection='row';
+                nodes.push(_node);
+              }
+              let mergedNode= calcBoundaryNode(nodes);
+              mergedNode.style.flexDirection = 'column';
+              resultRangeItem.push(new RangeItem(mergedNode));
+            } else {
+              resultRangeItem.push(yranges[saveLenRangeSplit[0]-1]);
+              for (let j = 0, jLen = saveLenRangeSplit.length; j < jLen; j++) {
+                let rangeIndex:number = saveLenRangeSplit[j];
+                resultRangeItem.push(yranges[rangeIndex]);
+              }
+            }
+
+            saveLenRangeSplit=[]
+          }
+        }
+      }
+    } else {
+      resultRangeItem.push(yranges[indexDb[splitLen][0]]);
+    }
+  }
+
+  return resultRangeItem;
 }
 
 /**
