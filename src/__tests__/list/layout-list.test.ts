@@ -35,7 +35,6 @@ it('list-origin1 ', function () {
 
   // 布局处理
   const node: INode = layout(nodes);
-  debugger;
   const result =toJSON(node);
   expect(result).toMatchSnapshot("list-origin1");
 });

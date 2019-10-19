@@ -23,9 +23,14 @@ const phaseOne = (nodes: INode[]) => {
   walk(rootNode,(node) => {
     if(node.children && node.children.length >0) {
 
-      node.children = rowMerge(node.children);
-      //一个节点只有一个子节点, 则这个关系 可以去除
-      node.children = [blockMerge(node.children)];
+      if(node.children.length > 1) {
+        node.children = rowMerge(node.children);
+      }
+
+      if(node.children.length > 1) {
+        //一个节点只有一个子节点, 则这个关系 可以去除
+        node.children = [blockMerge(node.children)];
+      }
       return ;
     }
   })
