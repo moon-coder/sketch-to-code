@@ -25,7 +25,7 @@ export default function (nodes: INode[]):INode {
     //TODO 要检测不能合并的节点;
     let [minNode,...restNode] = nodesByArea;
     let {mergeable,unMergeable} = getMergeableNodes(minNode,restNode);
-    debugger;
+
 
     if(mergeable.length===0) {
       console.log('无合适节点进行合并,请检查对应结构');

@@ -18,6 +18,7 @@ export default function(nodes: INode[]): INode[] {
   //按y坐标 分组, 每一组中高度进行对比 如果一致则在结果中返回;
 
   let yranges = getYRange(nodes);
+  debugger;
   yranges = mergeEquealSplitBlock(yranges);
 
 
@@ -82,6 +83,7 @@ function mergeEquealSplitBlock(yranges:RangeItem[]):RangeItem[]{
       }
   }
 
+  debugger;
   return resultRangeItem;
 }
 
@@ -105,7 +107,7 @@ function mergeBySplitIndex(saveLenRangeSplit:number[],yranges:RangeItem[]) :Rang
     result.push(new RangeItem(mergedNode));
 
   } else {
-    result.push(yranges[saveLenRangeSplit[0]]);
+    result.push(yranges[saveLenRangeSplit[0]-1]);
   }
 
   return result;
@@ -160,8 +162,8 @@ function getMatchRange(
     let lineMin = y,
       lineMax = y + height;
     if (
-      (lineMax >= rangesItem.min && lineMin <= rangesItem.max) ||
-      (lineMin <= rangesItem.max && lineMax >= rangesItem.min)
+      (lineMax > rangesItem.min && lineMin < rangesItem.max) ||
+      (lineMin < rangesItem.max && lineMax > rangesItem.min)
     ) {
       return rangesItem;
     }
