@@ -5,6 +5,7 @@ import {readJSONSync} from  'fs-extra';
 
 import {join} from 'path';
 import h5Generrator from "../../code-generators/html5";
+import {toJSON} from "../../util";
 /**
  * @desc
  *
@@ -27,13 +28,7 @@ it('首页布局代码生成', function () {
   debugger;
   //先看生成的 布局代码是否OK
   //破坏了结构 不能还原了..
-  let excludeProperties= ['id','parent'];
-  expect(JSON.stringify(node, (key, value)=>{
-    if(excludeProperties.includes(key)) {
-      return  undefined;
-    }
 
-    return value;
-  })).toMatchSnapshot("index-layout");
-
+  const result =toJSON(node);
+  expect(result).toMatchSnapshot("index-layout");
 });

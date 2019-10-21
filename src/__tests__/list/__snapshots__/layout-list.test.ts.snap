@@ -2,10 +2,172 @@
 
 exports[`list-item : list-item 1`] = `
 Object {
-  "attrs": Object {
-    "className": "block0",
-  },
-  "children": Array [],
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "src": "./img/img0.png",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 80,
+        "width": 80,
+        "x": 12,
+        "y": 48,
+      },
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 48,
+        },
+        Object {
+          "x": 92,
+          "y": 48,
+        },
+        Object {
+          "x": 92,
+          "y": 128,
+        },
+        Object {
+          "x": 12,
+          "y": 128,
+        },
+        Object {
+          "x": 52,
+          "y": 88,
+        },
+      ],
+      "style": Object {
+        "marginRight": 104,
+      },
+      "type": "Image",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 36,
+            "width": 235,
+            "x": 104,
+            "y": 52,
+          },
+          "points": Array [
+            Object {
+              "x": 104,
+              "y": 52,
+            },
+            Object {
+              "x": 339,
+              "y": 52,
+            },
+            Object {
+              "x": 339,
+              "y": 88,
+            },
+            Object {
+              "x": 104,
+              "y": 88,
+            },
+            Object {
+              "x": 221.5,
+              "y": 70,
+            },
+          ],
+          "style": Object {
+            "color": "#333333ff",
+            "fontSize": 14,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 18,
+          },
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "¥20～¥160",
+          },
+          "children": Array [],
+          "frame": Object {
+            "height": 16,
+            "width": 81,
+            "x": 104,
+            "y": 108,
+          },
+          "points": Array [
+            Object {
+              "x": 104,
+              "y": 108,
+            },
+            Object {
+              "x": 185,
+              "y": 108,
+            },
+            Object {
+              "x": 185,
+              "y": 124,
+            },
+            Object {
+              "x": 104,
+              "y": 124,
+            },
+            Object {
+              "x": 144.5,
+              "y": 116,
+            },
+          ],
+          "style": Object {
+            "alignSelf": "flex-start",
+            "color": "#ff6600ff",
+            "fontSize": 16,
+            "fontWeight": 5,
+            "letterSpacing": 0,
+            "lineHeight": 16,
+          },
+          "type": "Text",
+        },
+      ],
+      "frame": Object {
+        "height": 72,
+        "width": 235,
+        "x": 104,
+        "y": 52,
+      },
+      "points": Array [
+        Object {
+          "x": 104,
+          "y": 52,
+        },
+        Object {
+          "x": 339,
+          "y": 52,
+        },
+        Object {
+          "x": 339,
+          "y": 124,
+        },
+        Object {
+          "x": 104,
+          "y": 124,
+        },
+        Object {
+          "x": 221.5,
+          "y": 88,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingTop": 0,
+      },
+      "type": "Block",
+    },
+  ],
   "frame": Object {
     "height": 80,
     "width": 327,
@@ -34,75 +196,29 @@ Object {
       "y": 88,
     },
   ],
-  "style": Object {},
+  "style": Object {
+    "alignItems": "center",
+    "flexDirection": "row",
+    "justifyContent": "flex-start",
+    "paddingLeft": 0,
+  },
   "type": "Block",
 }
 `;
 
 exports[`list-origin1 : list-origin1 1`] = `
 Object {
-  "attrs": Object {
-    "className": "block1",
-  },
+  "attrs": Object {},
   "children": Array [
     Object {
-      "attrs": Object {
-        "className": "text0",
-        "text": "为您推荐",
-      },
-      "children": Array [],
-      "frame": Object {
-        "height": 16,
-        "width": 64,
-        "x": 24,
-        "y": 420,
-      },
-      "points": Array [
-        Object {
-          "x": 24,
-          "y": 420,
-        },
-        Object {
-          "x": 88,
-          "y": 420,
-        },
-        Object {
-          "x": 88,
-          "y": 436,
-        },
-        Object {
-          "x": 24,
-          "y": 436,
-        },
-        Object {
-          "x": 56,
-          "y": 428,
-        },
-      ],
-      "style": Object {
-        "alignSelf": "flex-start",
-        "color": "#333333ff",
-        "fontSize": 16,
-        "fontWeight": 5,
-        "letterSpacing": 0,
-        "lineHeight": 16,
-      },
-      "type": "Text",
-    },
-    Object {
-      "attrs": Object {
-        "className": "block2",
-      },
+      "attrs": Object {},
       "children": Array [
         Object {
-          "attrs": Object {
-            "className": "block3",
-          },
+          "attrs": Object {},
           "children": Array [
             Object {
               "attrs": Object {
-                "className": "img0",
-                "src": "./img/img0.png",
+                "src": "./img/img1.png",
               },
               "children": Array [],
               "frame": Object {
@@ -133,59 +249,11 @@ Object {
                   "y": 492,
                 },
               ],
-              "style": Object {
-                "alignSelf": "center",
-                "marginRight": 116,
-              },
+              "style": Object {},
               "type": "Image",
             },
             Object {
               "attrs": Object {
-                "className": "text1",
-                "text": "¥20～¥160",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 81,
-                "x": 116,
-                "y": 512,
-              },
-              "points": Array [
-                Object {
-                  "x": 116,
-                  "y": 512,
-                },
-                Object {
-                  "x": 197,
-                  "y": 512,
-                },
-                Object {
-                  "x": 197,
-                  "y": 528,
-                },
-                Object {
-                  "x": 116,
-                  "y": 528,
-                },
-                Object {
-                  "x": 156.5,
-                  "y": 520,
-                },
-              ],
-              "style": Object {
-                "color": "#ff6600ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-                "marginRight": 116,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "className": "text2",
                 "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
               },
               "children": Array [],
@@ -226,6 +294,48 @@ Object {
               },
               "type": "Text",
             },
+            Object {
+              "attrs": Object {
+                "text": "¥20～¥160",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 81,
+                "x": 116,
+                "y": 512,
+              },
+              "points": Array [
+                Object {
+                  "x": 116,
+                  "y": 512,
+                },
+                Object {
+                  "x": 197,
+                  "y": 512,
+                },
+                Object {
+                  "x": 197,
+                  "y": 528,
+                },
+                Object {
+                  "x": 116,
+                  "y": 528,
+                },
+                Object {
+                  "x": 156.5,
+                  "y": 520,
+                },
+              ],
+              "style": Object {
+                "color": "#ff6600ff",
+                "fontSize": 16,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 16,
+              },
+              "type": "Text",
+            },
           ],
           "frame": Object {
             "height": 80,
@@ -255,23 +365,15 @@ Object {
               "y": 492,
             },
           ],
-          "style": Object {
-            "alignItems": "others",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
-            "paddingLeft": 0,
-          },
+          "style": Object {},
           "type": "Block",
         },
         Object {
-          "attrs": Object {
-            "className": "block4",
-          },
+          "attrs": Object {},
           "children": Array [
             Object {
               "attrs": Object {
-                "className": "img1",
-                "src": "./img/img2.png",
+                "src": "./img/img3.png",
               },
               "children": Array [],
               "frame": Object {
@@ -302,59 +404,11 @@ Object {
                   "y": 584,
                 },
               ],
-              "style": Object {
-                "alignSelf": "center",
-                "marginRight": 116,
-              },
+              "style": Object {},
               "type": "Image",
             },
             Object {
               "attrs": Object {
-                "className": "text3",
-                "text": "¥20～¥75",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 73,
-                "x": 116,
-                "y": 604,
-              },
-              "points": Array [
-                Object {
-                  "x": 116,
-                  "y": 604,
-                },
-                Object {
-                  "x": 189,
-                  "y": 604,
-                },
-                Object {
-                  "x": 189,
-                  "y": 620,
-                },
-                Object {
-                  "x": 116,
-                  "y": 620,
-                },
-                Object {
-                  "x": 152.5,
-                  "y": 612,
-                },
-              ],
-              "style": Object {
-                "color": "#ff6600ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-                "marginRight": 116,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "className": "text4",
                 "text": "大型犬野兽派洗剪吹A套餐",
               },
               "children": Array [],
@@ -395,6 +449,48 @@ Object {
               },
               "type": "Text",
             },
+            Object {
+              "attrs": Object {
+                "text": "¥20～¥75",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 73,
+                "x": 116,
+                "y": 604,
+              },
+              "points": Array [
+                Object {
+                  "x": 116,
+                  "y": 604,
+                },
+                Object {
+                  "x": 189,
+                  "y": 604,
+                },
+                Object {
+                  "x": 189,
+                  "y": 620,
+                },
+                Object {
+                  "x": 116,
+                  "y": 620,
+                },
+                Object {
+                  "x": 152.5,
+                  "y": 612,
+                },
+              ],
+              "style": Object {
+                "color": "#ff6600ff",
+                "fontSize": 16,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 16,
+              },
+              "type": "Text",
+            },
           ],
           "frame": Object {
             "height": 80,
@@ -424,23 +520,15 @@ Object {
               "y": 584,
             },
           ],
-          "style": Object {
-            "alignItems": "others",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
-            "paddingLeft": 0,
-          },
+          "style": Object {},
           "type": "Block",
         },
         Object {
-          "attrs": Object {
-            "className": "block5",
-          },
+          "attrs": Object {},
           "children": Array [
             Object {
               "attrs": Object {
-                "className": "img2",
-                "src": "./img/img1.png",
+                "src": "./img/img2.png",
               },
               "children": Array [],
               "frame": Object {
@@ -471,59 +559,11 @@ Object {
                   "y": 676,
                 },
               ],
-              "style": Object {
-                "alignSelf": "center",
-                "marginRight": 116,
-              },
+              "style": Object {},
               "type": "Image",
             },
             Object {
               "attrs": Object {
-                "className": "text5",
-                "text": "¥20～¥160",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 81,
-                "x": 116,
-                "y": 696,
-              },
-              "points": Array [
-                Object {
-                  "x": 116,
-                  "y": 696,
-                },
-                Object {
-                  "x": 197,
-                  "y": 696,
-                },
-                Object {
-                  "x": 197,
-                  "y": 712,
-                },
-                Object {
-                  "x": 116,
-                  "y": 712,
-                },
-                Object {
-                  "x": 156.5,
-                  "y": 704,
-                },
-              ],
-              "style": Object {
-                "color": "#ff6600ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-                "marginRight": 116,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "className": "text6",
                 "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
               },
               "children": Array [],
@@ -564,6 +604,48 @@ Object {
               },
               "type": "Text",
             },
+            Object {
+              "attrs": Object {
+                "text": "¥20～¥160",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 81,
+                "x": 116,
+                "y": 696,
+              },
+              "points": Array [
+                Object {
+                  "x": 116,
+                  "y": 696,
+                },
+                Object {
+                  "x": 197,
+                  "y": 696,
+                },
+                Object {
+                  "x": 197,
+                  "y": 712,
+                },
+                Object {
+                  "x": 116,
+                  "y": 712,
+                },
+                Object {
+                  "x": 156.5,
+                  "y": 704,
+                },
+              ],
+              "style": Object {
+                "color": "#ff6600ff",
+                "fontSize": 16,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 16,
+              },
+              "type": "Text",
+            },
           ],
           "frame": Object {
             "height": 80,
@@ -593,23 +675,15 @@ Object {
               "y": 676,
             },
           ],
-          "style": Object {
-            "alignItems": "others",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
-            "paddingLeft": 0,
-          },
+          "style": Object {},
           "type": "Block",
         },
         Object {
-          "attrs": Object {
-            "className": "block6",
-          },
+          "attrs": Object {},
           "children": Array [
             Object {
               "attrs": Object {
-                "className": "img3",
-                "src": "./img/img3.png",
+                "src": "./img/img4.png",
               },
               "children": Array [],
               "frame": Object {
@@ -640,59 +714,11 @@ Object {
                   "y": 768,
                 },
               ],
-              "style": Object {
-                "alignSelf": "center",
-                "marginRight": 116,
-              },
+              "style": Object {},
               "type": "Image",
             },
             Object {
               "attrs": Object {
-                "className": "text7",
-                "text": "¥20～¥75",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 73,
-                "x": 116,
-                "y": 788,
-              },
-              "points": Array [
-                Object {
-                  "x": 116,
-                  "y": 788,
-                },
-                Object {
-                  "x": 189,
-                  "y": 788,
-                },
-                Object {
-                  "x": 189,
-                  "y": 804,
-                },
-                Object {
-                  "x": 116,
-                  "y": 804,
-                },
-                Object {
-                  "x": 152.5,
-                  "y": 796,
-                },
-              ],
-              "style": Object {
-                "color": "#ff6600ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-                "marginRight": 116,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "className": "text8",
                 "text": "小型犬洗剪吹B套餐",
               },
               "children": Array [],
@@ -733,6 +759,48 @@ Object {
               },
               "type": "Text",
             },
+            Object {
+              "attrs": Object {
+                "text": "¥20～¥75",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 73,
+                "x": 116,
+                "y": 788,
+              },
+              "points": Array [
+                Object {
+                  "x": 116,
+                  "y": 788,
+                },
+                Object {
+                  "x": 189,
+                  "y": 788,
+                },
+                Object {
+                  "x": 189,
+                  "y": 804,
+                },
+                Object {
+                  "x": 116,
+                  "y": 804,
+                },
+                Object {
+                  "x": 152.5,
+                  "y": 796,
+                },
+              ],
+              "style": Object {
+                "color": "#ff6600ff",
+                "fontSize": 16,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 16,
+              },
+              "type": "Text",
+            },
           ],
           "frame": Object {
             "height": 80,
@@ -762,62 +830,12 @@ Object {
               "y": 768,
             },
           ],
-          "style": Object {
-            "alignItems": "others",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
-            "paddingLeft": 0,
-          },
+          "style": Object {},
           "type": "Block",
-        },
-        Object {
-          "attrs": Object {
-            "className": "text9",
-            "text": "更多服务/商品",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 91,
-            "x": 142.5,
-            "y": 831,
-          },
-          "points": Array [
-            Object {
-              "x": 142.5,
-              "y": 831,
-            },
-            Object {
-              "x": 233.5,
-              "y": 831,
-            },
-            Object {
-              "x": 233.5,
-              "y": 845,
-            },
-            Object {
-              "x": 142.5,
-              "y": 845,
-            },
-            Object {
-              "x": 188,
-              "y": 838,
-            },
-          ],
-          "style": Object {
-            "alignSelf": "flex-start",
-            "color": "#ff6600ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-            "marginLeft": 118.5,
-          },
-          "type": "Text",
         },
       ],
       "frame": Object {
-        "height": 404,
+        "height": 356,
         "width": 327,
         "x": 24,
         "y": 452,
@@ -833,15 +851,15 @@ Object {
         },
         Object {
           "x": 351,
-          "y": 856,
+          "y": 808,
         },
         Object {
           "x": 24,
-          "y": 856,
+          "y": 808,
         },
         Object {
           "x": 187.5,
-          "y": 654,
+          "y": 630,
         },
       ],
       "style": Object {
@@ -852,40 +870,84 @@ Object {
       },
       "type": "Block",
     },
+    Object {
+      "attrs": Object {
+        "text": "更多服务/商品",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 14,
+        "width": 91,
+        "x": 142.5,
+        "y": 831,
+      },
+      "points": Array [
+        Object {
+          "x": 142.5,
+          "y": 831,
+        },
+        Object {
+          "x": 233.5,
+          "y": 831,
+        },
+        Object {
+          "x": 233.5,
+          "y": 845,
+        },
+        Object {
+          "x": 142.5,
+          "y": 845,
+        },
+        Object {
+          "x": 188,
+          "y": 838,
+        },
+      ],
+      "style": Object {
+        "alignSelf": "flex-start",
+        "color": "#ff6600ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
+        "marginLeft": 118.5,
+      },
+      "type": "Text",
+    },
   ],
   "frame": Object {
-    "height": 452,
-    "width": 351,
-    "x": 12,
-    "y": 404,
+    "height": 404,
+    "width": 327,
+    "x": 24,
+    "y": 452,
   },
   "points": Array [
     Object {
-      "x": 12,
-      "y": 404,
+      "x": 24,
+      "y": 452,
     },
     Object {
-      "x": 363,
-      "y": 404,
+      "x": 351,
+      "y": 452,
     },
     Object {
-      "x": 363,
+      "x": 351,
       "y": 856,
     },
     Object {
-      "x": 12,
+      "x": 24,
       "y": 856,
     },
     Object {
       "x": 187.5,
-      "y": 630,
+      "y": 654,
     },
   ],
   "style": Object {
     "alignItems": "center",
     "flexDirection": "column",
     "justifyContent": "flex-start",
-    "paddingTop": 16,
+    "paddingTop": 0,
   },
   "type": "Block",
 }
