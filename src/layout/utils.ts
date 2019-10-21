@@ -135,7 +135,7 @@ export function mergeLog(source: INode, target: INode) {
 export function walk(rootNode:INode,callBack:IWalkHandle) {
 
   if(rootNode.children && rootNode.children.length>0) {
-    rootNode.children.forEach((childrenNode)=>{
+    rootNode.children.forEach((childrenNode,index)=>{
       callBack(childrenNode,rootNode);
     });
     callBack(rootNode);

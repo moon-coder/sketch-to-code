@@ -1,6 +1,6 @@
 import {INode} from '../types';
 import {calcBoundaryNode} from './utils';
-import {Range} from "istanbul-lib-coverage";
+import {Range} from 'istanbul-lib-coverage';
 
 /**
  * @desc
@@ -18,100 +18,104 @@ export default function(nodes: INode[]): INode[] {
   //按y坐标 分组, 每一组中高度进行对比 如果一致则在结果中返回;
 
   let yranges = getYRange(nodes);
-  debugger;
   yranges = mergeEquealSplitBlock(yranges);
 
 
-  return yranges.map(rangeItem => {
-    let mergeNode = calcBoundaryNode(rangeItem.items);
-    mergeNode.style.flexDirection = 'row';
-    return mergeNode;
-  });
+  //包装后还是一个节点就没必要包起来了.
+  if (yranges.length === 1) {
+    return nodes;
+  } else {
+    return yranges.map(rangeItem => {
+      let mergeNode = calcBoundaryNode(rangeItem.items);
+      mergeNode.style.flexDirection = 'row';
+      return mergeNode;
+    });
+  }
 }
 
+class SegmentFlag {
+  len: number;
+  constructor(len: number) {
+    this.len = len;
+  }
+}
 /**
  * 把间隔相等的节点合为一个大节点;
  * 画图最好理解
  * @param {RangeItem[]} yranges
  * @returns {RangeItem[]}
  */
-function mergeEquealSplitBlock(yranges:RangeItem[]):RangeItem[]{
-
-
-  let resultRangeItem:RangeItem[]= [];
+export function mergeEquealSplitBlock(yranges: RangeItem[]): RangeItem[] {
 
   //把间隔相等的节点合为一个大节点;
   //从大到小排
-  yranges = yranges.sort((a,b)=>a.min-b.min );
+  yranges = yranges.sort((a, b) => a.min - b.min);
+
+  if (yranges.length === 1 || yranges.length===2) {
+    return yranges;
+  }
 
   //间距记录;
-  let indexDb:{[key:number]:number[]} = {};
-  for (let i = 0, iLen = yranges.length-1; i < iLen; i++) {
-    let yrange = yranges[i];
-    let yrangeNext = yranges[i+1];
-    let lenth=yrangeNext.min -yrange.max;
-    if(!indexDb[lenth]) {
-      indexDb[lenth]=[]
+
+  let segmentQuene: any[]= [];
+
+  //反向分段; 间距做为对象插入, 相同的间距合并删除;
+  segmentQuene.unshift(new SegmentFlag(0));
+
+  for (let i = yranges.length-1; i > 0; i--) {
+    let yrangeMax = yranges[i];
+    let yrangeMin = yranges[i-1];
+
+    segmentQuene.unshift(yranges[i]);
+    segmentQuene.unshift(new SegmentFlag(yrangeMax.min - yrangeMin.max));
+  }
+  segmentQuene.unshift(yranges[0]);
+  segmentQuene.unshift(new SegmentFlag(0));
+
+  //删除重复的
+  let lastLen =0;
+  for (let i = segmentQuene.length-1; i >= 0; i--) {
+    let segmentItem =segmentQuene[i];
+    if(segmentItem instanceof SegmentFlag) {
+      if(segmentItem.len ===lastLen) {
+        segmentQuene.splice(i,1);//把多的len删除
+      } else {
+        lastLen= segmentItem.len;
+      }
     }
-    indexDb[lenth].push(i+1);
   }
 
-  //两个间隔相等, 则添加起来.
-  for (let splitLen in indexDb) {
-      let saveLenRangeSplit=[]; //连续三个则合并,非连续不合并
+  //TODO 这里可以再对比下边缘的情况, 有的间隔一样,但两个不是一样的东西. 对比两个区域相似性程度
 
-      for (let i = 0, iLen = indexDb[splitLen].length; i < iLen; i++) {
 
-        let currentIndex = indexDb[splitLen][i];
-        if(saveLenRangeSplit.length ===0){
-          saveLenRangeSplit.push(currentIndex);
+  let resultRangeItem: RangeItem[] = [];
 
-          continue;
-        } else {
-          let lastIndex = indexDb[splitLen][i-1];
-          if((currentIndex-lastIndex)===1) {
-            saveLenRangeSplit.push(currentIndex);
-          } else {
-            resultRangeItem=resultRangeItem.concat(mergeBySplitIndex(saveLenRangeSplit,yranges));
-            saveLenRangeSplit=[]
-          }
+
+  let endIndex= segmentQuene.length;
+
+  for (let i = segmentQuene.length-1; i >= 0; i--) {
+
+    let segmentItem =segmentQuene[i];
+    if(segmentItem instanceof SegmentFlag) {
+      let beginIndex= i;
+
+      let rangesArea  = segmentQuene.slice(beginIndex,endIndex)
+        .filter(item=>!(item instanceof SegmentFlag));
+
+        if(rangesArea.length>=2) {
+          let nodes  = rangesArea.map((item:RangeItem)=>calcBoundaryNode(item.items));
+          let newBlockNodes = calcBoundaryNode(nodes);
+          newBlockNodes.style.flexDirection = 'column';
+          resultRangeItem.unshift(new RangeItem(newBlockNodes));
+        }else if(rangesArea.length===1) {
+          resultRangeItem.unshift(rangesArea[0]);
         }
-      }
-
-      if(saveLenRangeSplit.length>0){
-        resultRangeItem=resultRangeItem.concat(mergeBySplitIndex(saveLenRangeSplit,yranges));
-      }
+      endIndex=i;
+    }
   }
-
-  debugger;
   return resultRangeItem;
 }
 
-
-function mergeBySplitIndex(saveLenRangeSplit:number[],yranges:RangeItem[]) :RangeItem[]{
-
-  let  result:RangeItem[]= [];
-  if(saveLenRangeSplit.length >= 2) {
-    //合并区域
-    let firstNode = calcBoundaryNode(yranges[saveLenRangeSplit[0]-1].items);
-    firstNode.style.flexDirection='row';
-    let nodes =[firstNode];
-    for (let j = 0, jLen = saveLenRangeSplit.length; j < jLen; j++) {
-      let rangeIndex:number = saveLenRangeSplit[j];
-      let _node=calcBoundaryNode(yranges[rangeIndex].items);
-      _node.style.flexDirection='row';
-      nodes.push(_node);
-    }
-    let mergedNode= calcBoundaryNode(nodes);
-    mergedNode.style.flexDirection = 'column';
-    result.push(new RangeItem(mergedNode));
-
-  } else {
-    result.push(yranges[saveLenRangeSplit[0]-1]);
-  }
-
-  return result;
-}
 
 /**
  * 获取元素在某个轴线(x,y)上的分布情况;
@@ -126,7 +130,7 @@ function getYRange(nodes: INode[]): RangeItem[] {
     let range = getMatchRange(node, ranges);
     if (range) {
       range.addNode(node);
-      ranges= mergeRange(ranges,range)
+      ranges = mergeRange(ranges, range);
     } else {
       ranges.push(new RangeItem(node));
     }
@@ -135,16 +139,15 @@ function getYRange(nodes: INode[]): RangeItem[] {
   return ranges;
 }
 
-function mergeRange(ranges: RangeItem[], rangeItem: RangeItem):RangeItem[] {
-
+function mergeRange(ranges: RangeItem[], rangeItem: RangeItem): RangeItem[] {
   let result = [rangeItem];
-  for (let i = ranges.length-1; i >=0 ; i--) {
+  for (let i = ranges.length - 1; i >= 0; i--) {
     let rangeOne = ranges[i];
-    if(rangeItem===rangeOne){
+    if (rangeItem === rangeOne) {
       continue;
     }
 
-    if(RangeItem.isMergeable(rangeOne,rangeItem)){
+    if (RangeItem.isMergeable(rangeOne, rangeItem)) {
     } else {
       result.push(rangeOne);
     }
@@ -181,16 +184,15 @@ export class RangeItem {
     this.items = [node];
   }
 
-  static isMergeable(item1:RangeItem,item2:RangeItem):boolean{
-
-    let lineMax= item1.max, lineMin=item1.min;
+  static isMergeable(item1: RangeItem, item2: RangeItem): boolean {
+    let lineMax = item1.max,
+      lineMin = item1.min;
     if (lineMax >= item2.min && lineMin <= item2.max) {
       return true;
     } else if (lineMin <= item2.max && lineMax >= item2.min) {
       return true;
     }
-    return false
-
+    return false;
   }
 
   items: INode[];
@@ -204,8 +206,7 @@ export class RangeItem {
     this.items.push(node);
   }
 
-  concat(rangeItem:RangeItem) {
-
-    this.items.concat(rangeItem.items)
+  concat(rangeItem: RangeItem) {
+    this.items.concat(rangeItem.items);
   }
 }

@@ -14,6 +14,7 @@ import h5Generrator from "../../code-generators/html5";
  * @Date    2019/10/14
  **/
 
+jest.mock('../../outer/sketch');
 
 it('首页布局代码生成', function () {
     console.log("hello");
@@ -23,9 +24,9 @@ it('首页布局代码生成', function () {
 
   // 布局处理
   const node: INode = layout(nodes);
+  debugger;
   //先看生成的 布局代码是否OK
   //破坏了结构 不能还原了..
-
   let excludeProperties= ['id','parent'];
   expect(JSON.stringify(node, (key, value)=>{
     if(excludeProperties.includes(key)) {

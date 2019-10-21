@@ -3,7 +3,7 @@
     {
       "type": "Artboard",
       "id": "6D791E6D-F609-4F77-879A-1FC153493916",
-      "frame": { "x": -474, "y": -4249, "width": 375, "height": 908 },
+      "frame": { "x": 0, "y": 0, "width": 375, "height": 908 },
       "name": "首页",
       "selected": true,
       "exportFormats": [],
@@ -12,7 +12,7 @@
         {
           "type": "Group",
           "id": "C4AF985B-5F90-4118-B6CE-241255CA727B",
-          "frame": { "x": 12, "y": 404, "width": 351, "height": 464 },
+          "frame": { "x": 11, "y": 404, "width": 351, "height": 464 },
           "name": "编组 5",
           "selected": false,
           "hidden": false,
@@ -1358,7 +1358,7 @@
             {
               "type": "Group",
               "id": "B700589E-479E-4FED-A5B1-A2E57ED9A238",
-              "frame": { "x": 12, "y": 324, "width": 327, "height": 80 },
+              "frame": { "x": 13, "y": 323, "width": 326, "height": 80 },
               "name": "编组 2备份 3",
               "selected": false,
               "hidden": false,
@@ -1592,7 +1592,7 @@
                 {
                   "type": "Text",
                   "id": "657201B7-ADA7-41E7-B22E-84B5C6B8912C",
-                  "frame": { "x": 92, "y": 4, "width": 235, "height": 18 },
+                  "frame": { "x": 91, "y": 4, "width": 235, "height": 18 },
                   "name": "小型犬洗剪吹B套餐",
                   "selected": false,
                   "hidden": false,
@@ -1646,7 +1646,7 @@
                 {
                   "type": "Text",
                   "id": "446D4FCF-2E20-4C69-9BD3-5B736E4EAEE9",
-                  "frame": { "x": 92, "y": 60, "width": 73, "height": 16 },
+                  "frame": { "x": 91, "y": 60, "width": 73, "height": 16 },
                   "name": "¥20～¥75",
                   "selected": false,
                   "hidden": false,
@@ -1702,7 +1702,7 @@
             {
               "type": "Group",
               "id": "0896C1A7-B8C3-48DD-ADC0-2491E6E44192",
-              "frame": { "x": 0, "y": 0, "width": 351, "height": 48 },
+              "frame": { "x": 0, "y": 2, "width": 351, "height": 48 },
               "name": "编组 5备份 4",
               "selected": false,
               "hidden": false,
@@ -1841,7 +1841,7 @@
                 {
                   "type": "Text",
                   "id": "4E830240-50A6-4C32-B0EC-384FBC88DC27",
-                  "frame": { "x": 12, "y": 16, "width": 64, "height": 16 },
+                  "frame": { "x": 11, "y": 15, "width": 64, "height": 16 },
                   "name": "为您推荐",
                   "selected": false,
                   "hidden": false,
@@ -1890,7 +1890,7 @@
                   "sharedStyleId": null,
                   "text": "为您推荐",
                   "lineSpacing": "constantBaseline",
-                  "fixedWidth": false
+                  "fixedWidth": true
                 }
               ]
             }
@@ -1899,7 +1899,7 @@
         {
           "type": "Group",
           "id": "A078078C-38DC-4681-9885-DDB48CCE41C6",
-          "frame": { "x": 12, "y": 236, "width": 351, "height": 156 },
+          "frame": { "x": 13, "y": 236, "width": 351, "height": 156 },
           "name": "编组 3",
           "selected": false,
           "hidden": false,
@@ -3076,7 +3076,7 @@
                 },
                 "style": {
                   "type": "Style",
-                  "id": "DEAB1532-3915-4750-B744-1685CCE68104",
+                  "id": "E4C24689-8C60-4016-A42E-F2BD8E6DCAAD",
                   "opacity": 0.299037,
                   "blendingMode": "Normal",
                   "borderOptions": {
@@ -3386,7 +3386,7 @@
                         },
                         "style": {
                           "type": "Style",
-                          "id": "FEE9E40B-AB56-4F96-BF45-3B1465145444",
+                          "id": "FDF2117B-4249-44F9-B0F2-65C7DEB9AF4A",
                           "opacity": 1,
                           "blendingMode": "Normal",
                           "borderOptions": {
@@ -3455,7 +3455,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "464E86B6-D83B-4DB7-8955-D57EA16029FC",
+                              "id": "91390787-54E8-46F7-B847-2E454568D53C",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -3579,7 +3579,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "B13C93BC-BC69-4A77-982D-04AB623050F4",
+                              "id": "84D7D79C-F909-4044-A72E-EDE1BC45B2C5",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -3741,7 +3741,7 @@
                         },
                         "style": {
                           "type": "Style",
-                          "id": "C305A8FC-4E14-4975-90F3-62234C825934",
+                          "id": "CC9E42E7-F662-4924-9571-97FFDB250E34",
                           "opacity": 1,
                           "blendingMode": "Normal",
                           "borderOptions": {
@@ -3968,7 +3968,7 @@
                         },
                         "style": {
                           "type": "Style",
-                          "id": "716C9A5C-967D-4A31-9C4D-2757E36610B4",
+                          "id": "3AF95A0C-BC06-4E0B-9675-556BAC080965",
                           "opacity": 1,
                           "blendingMode": "Normal",
                           "borderOptions": {
@@ -4279,7 +4279,7 @@
         {
           "type": "Group",
           "id": "0ADE6046-D827-4BAE-ABD6-7636FFACF7F0",
-          "frame": { "x": 12, "y": 120, "width": 351, "height": 104 },
+          "frame": { "x": 13, "y": 120, "width": 351, "height": 104 },
           "name": "编组 6备份",
           "selected": false,
           "hidden": false,
@@ -4418,7 +4418,7 @@
             {
               "type": "Group",
               "id": "C6B808FC-2CEA-4D31-8AF8-B0C2B4A4F4D0",
-              "frame": { "x": 22, "y": 20, "width": 312, "height": 64 },
+              "frame": { "x": 22, "y": 20, "width": 311, "height": 64 },
               "name": "编组 4",
               "selected": false,
               "hidden": false,
@@ -4542,7 +4542,7 @@
                         },
                         "style": {
                           "type": "Style",
-                          "id": "0D4FD73E-DCA5-4BD4-B7B7-E515351675ED",
+                          "id": "8B06184F-7298-463C-8F9A-E21A82C8556A",
                           "opacity": 1,
                           "blendingMode": "Normal",
                           "borderOptions": {
@@ -4608,7 +4608,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "F84E21B6-A802-4E39-B356-7D9B93BFDD92",
+                              "id": "F44CD69C-1F59-4911-B433-E725F69BC54E",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -4674,7 +4674,7 @@
                                 },
                                 "style": {
                                   "type": "Style",
-                                  "id": "E5787F8F-911F-4902-90BA-78945331403B",
+                                  "id": "11D80D98-56E4-4EF0-A17E-1197F413CF26",
                                   "opacity": 1,
                                   "blendingMode": "Normal",
                                   "borderOptions": {
@@ -4787,7 +4787,7 @@
                                 },
                                 "style": {
                                   "type": "Style",
-                                  "id": "4E2382DB-C4F3-4535-9342-9B37F138F78B",
+                                  "id": "4CB39E77-B5D0-4F0A-8ED1-47771D797B08",
                                   "opacity": 1,
                                   "blendingMode": "Normal",
                                   "borderOptions": {
@@ -4991,7 +4991,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "48B5A088-3779-4F07-9FCE-03EFE506D90D",
+                              "id": "93D12C26-1F96-4E46-9F81-1A3651DF44D2",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -5193,7 +5193,7 @@
                         },
                         "style": {
                           "type": "Style",
-                          "id": "6D64B63E-8F03-40D4-921C-19C09A72EE8A",
+                          "id": "D5AEAC84-5EFC-469F-B90D-692573B428EE",
                           "opacity": 1,
                           "blendingMode": "Normal",
                           "borderOptions": {
@@ -5259,7 +5259,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "2EFA716B-3BC4-46A7-82B3-72DF22B7E017",
+                              "id": "871C4443-0095-4814-84B4-6AFC82AE9A2A",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -5617,7 +5617,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "44D45623-E647-4D1F-9B2B-557372BEF301",
+                              "id": "BF0334FA-641F-4D16-91E5-413E5A5C8BB4",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -5929,7 +5929,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "527D1E0B-BE58-40F5-9D5C-C8F4849DAC79",
+                              "id": "A14AAC87-214E-4584-9010-718D32748CFE",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -6142,7 +6142,7 @@
                         },
                         "style": {
                           "type": "Style",
-                          "id": "6C1AD670-62B5-4CF1-8A84-A27EEDBABA48",
+                          "id": "ADD8A135-F8ED-4992-946D-6DCA2ED4D0B9",
                           "opacity": 1,
                           "blendingMode": "Normal",
                           "borderOptions": {
@@ -6208,7 +6208,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "30FE1314-9350-4243-9AD3-028295CF726D",
+                              "id": "196768F2-4B16-40CD-A003-73F983E56C18",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -6872,7 +6872,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "C47D51C1-3D13-47B2-A6D0-691BA38F205C",
+                              "id": "23937D71-66A0-41E7-B455-7A01299C1054",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -7156,7 +7156,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "6CD3128F-AB0B-42F1-A359-F5D511F88A81",
+                              "id": "0D799081-4FFD-4D53-AB30-71709AE04C54",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -7278,7 +7278,7 @@
                             },
                             "style": {
                               "type": "Style",
-                              "id": "F6706CD0-4969-4151-A184-870B587E94FA",
+                              "id": "3BBC371A-A286-41C1-8B8D-E0FE3EE73894",
                               "opacity": 1,
                               "blendingMode": "Normal",
                               "borderOptions": {
@@ -7344,7 +7344,7 @@
                                 },
                                 "style": {
                                   "type": "Style",
-                                  "id": "A784B7E9-5681-4198-87AE-8927F0701404",
+                                  "id": "788AA4CF-3576-4BA1-959F-47AEF5B77B39",
                                   "opacity": 1,
                                   "blendingMode": "Normal",
                                   "borderOptions": {
@@ -7563,7 +7563,7 @@
                                 },
                                 "style": {
                                   "type": "Style",
-                                  "id": "170F023F-236B-4BE8-8D00-950F3BD91C1F",
+                                  "id": "73AD47D0-4CA8-4632-8E51-64EF57560FF2",
                                   "opacity": 1,
                                   "blendingMode": "Normal",
                                   "borderOptions": {
@@ -7853,7 +7853,7 @@
                 {
                   "type": "Text",
                   "id": "61BED6B8-1D77-4998-8C2A-EEC003873223",
-                  "frame": { "x": 258, "y": 52, "width": 54, "height": 12 },
+                  "frame": { "x": 257, "y": 50, "width": 54, "height": 12 },
                   "name": "服务/商品",
                   "selected": false,
                   "hidden": false,

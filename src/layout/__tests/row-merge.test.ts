@@ -6,6 +6,7 @@
  * @coder.yang2010@gmail.com
  * @Date    2019/10/15
  **/
-it('should 行合并测试实例', function () {
+it('间隔合并测试', function () {
+
 
 }); 

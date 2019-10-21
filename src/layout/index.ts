@@ -20,13 +20,14 @@ const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
 
   const rootNode = preDeal(nodes);
+
   walk(rootNode,(node) => {
+
     if(node.children && node.children.length >0) {
 
       if(node.children.length > 1) {
         node.children = rowMerge(node.children);
       }
-
       if(node.children.length > 1) {
         //一个节点只有一个子节点, 则这个关系 可以去除
         node.children = [blockMerge(node.children)];
@@ -52,6 +53,8 @@ const phaseOne = (nodes: INode[]) => {
  * 预处理 image text 等叶子 节点倒推一步;
  */
 const preDeal = (nodes: INode[]): INode => {
+  nodes  =nodes.sort((a,b)=>a.frame.y-b.frame.y);
+
   const root = calcBoundaryNode(nodes);
 
   const children: INode[] = root.children;

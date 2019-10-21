@@ -28,6 +28,7 @@ interface NodeInfoRepo {
 export default (layer: Layer): INode[] => {
   const resultNodes: INode[] = [];
 
+
   const walk = (
     layer: Layer,
     {
@@ -43,7 +44,7 @@ export default (layer: Layer): INode[] => {
 
     let currentNodePath = `${pPath}${relPath}`;
 
-    if (lv != 0 && layer.parent && nodeRepo[pPath]) {
+    if (lv != 0 && nodeRepo[pPath]) {
       let {x: px, y: py} = nodeRepo[pPath].__absFrame;
       let {x, y} = layer.frame;
       nodeRepo[`${currentNodePath}`] = {
