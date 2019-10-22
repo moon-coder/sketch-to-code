@@ -167,7 +167,8 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
     }
   }
 
-  //如果面积误差在
+  //如果面积误差在 TODO 这里还要再完善.
+
 
   return false;
 }
