@@ -180,7 +180,7 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
  */
 export function sortNodesByLayout(nodes:INode[]):INode[]{
   return nodes.sort((a:INode,b)=>{
-      return (a.frame.y*100+a.frame.x)-(b.frame.y*100+b.frame.x)
+      return (a.frame.y*1000+a.frame.x)-(b.frame.y*1000+b.frame.x)
   })
 }
 
