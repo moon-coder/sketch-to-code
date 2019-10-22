@@ -24,28 +24,6 @@ Object {
                     "x": 12,
                     "y": 32,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 12,
-                      "y": 32,
-                    },
-                    Object {
-                      "x": 76,
-                      "y": 32,
-                    },
-                    Object {
-                      "x": 76,
-                      "y": 96,
-                    },
-                    Object {
-                      "x": 12,
-                      "y": 96,
-                    },
-                    Object {
-                      "x": 44,
-                      "y": 64,
-                    },
-                  ],
                   "style": Object {
                     "marginRight": 88,
                   },
@@ -65,28 +43,6 @@ Object {
                         "x": 88,
                         "y": 45,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 88,
-                          "y": 45,
-                        },
-                        Object {
-                          "x": 214,
-                          "y": 45,
-                        },
-                        Object {
-                          "x": 214,
-                          "y": 63,
-                        },
-                        Object {
-                          "x": 88,
-                          "y": 63,
-                        },
-                        Object {
-                          "x": 151,
-                          "y": 54,
-                        },
-                      ],
                       "style": Object {
                         "alignSelf": "flex-start",
                         "color": "#ffffffff",
@@ -108,28 +64,6 @@ Object {
                         "x": 88,
                         "y": 71,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 88,
-                          "y": 71,
-                        },
-                        Object {
-                          "x": 331,
-                          "y": 71,
-                        },
-                        Object {
-                          "x": 331,
-                          "y": 83,
-                        },
-                        Object {
-                          "x": 88,
-                          "y": 83,
-                        },
-                        Object {
-                          "x": 209.5,
-                          "y": 77,
-                        },
-                      ],
                       "style": Object {
                         "color": "#ffffffff",
                         "fontSize": 12,
@@ -146,28 +80,6 @@ Object {
                     "x": 88,
                     "y": 45,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 88,
-                      "y": 45,
-                    },
-                    Object {
-                      "x": 331,
-                      "y": 45,
-                    },
-                    Object {
-                      "x": 331,
-                      "y": 83,
-                    },
-                    Object {
-                      "x": 88,
-                      "y": 83,
-                    },
-                    Object {
-                      "x": 209.5,
-                      "y": 64,
-                    },
-                  ],
                   "style": Object {
                     "alignItems": "center",
                     "flexDirection": "column",
@@ -183,28 +95,6 @@ Object {
                 "x": 12,
                 "y": 32,
               },
-              "points": Array [
-                Object {
-                  "x": 12,
-                  "y": 32,
-                },
-                Object {
-                  "x": 331,
-                  "y": 32,
-                },
-                Object {
-                  "x": 331,
-                  "y": 96,
-                },
-                Object {
-                  "x": 12,
-                  "y": 96,
-                },
-                Object {
-                  "x": 171.5,
-                  "y": 64,
-                },
-              ],
               "style": Object {
                 "alignItems": "center",
                 "flexDirection": "row",
@@ -231,28 +121,6 @@ Object {
                             "x": 35,
                             "y": 140,
                           },
-                          "points": Array [
-                            Object {
-                              "x": 35,
-                              "y": 140,
-                            },
-                            Object {
-                              "x": 79,
-                              "y": 140,
-                            },
-                            Object {
-                              "x": 79,
-                              "y": 184,
-                            },
-                            Object {
-                              "x": 35,
-                              "y": 184,
-                            },
-                            Object {
-                              "x": 57,
-                              "y": 162,
-                            },
-                          ],
                           "style": Object {
                             "marginRight": 123,
                           },
@@ -267,28 +135,6 @@ Object {
                             "x": 123,
                             "y": 140,
                           },
-                          "points": Array [
-                            Object {
-                              "x": 123,
-                              "y": 140,
-                            },
-                            Object {
-                              "x": 167,
-                              "y": 140,
-                            },
-                            Object {
-                              "x": 167,
-                              "y": 184,
-                            },
-                            Object {
-                              "x": 123,
-                              "y": 184,
-                            },
-                            Object {
-                              "x": 145,
-                              "y": 162,
-                            },
-                          ],
                           "style": Object {
                             "marginRight": 210,
                           },
@@ -303,28 +149,6 @@ Object {
                             "x": 210,
                             "y": 140,
                           },
-                          "points": Array [
-                            Object {
-                              "x": 210,
-                              "y": 140,
-                            },
-                            Object {
-                              "x": 254,
-                              "y": 140,
-                            },
-                            Object {
-                              "x": 254,
-                              "y": 184,
-                            },
-                            Object {
-                              "x": 210,
-                              "y": 184,
-                            },
-                            Object {
-                              "x": 232,
-                              "y": 162,
-                            },
-                          ],
                           "style": Object {},
                           "type": "Block",
                         },
@@ -335,28 +159,6 @@ Object {
                         "x": 35,
                         "y": 140,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 35,
-                          "y": 140,
-                        },
-                        Object {
-                          "x": 254,
-                          "y": 140,
-                        },
-                        Object {
-                          "x": 254,
-                          "y": 184,
-                        },
-                        Object {
-                          "x": 35,
-                          "y": 184,
-                        },
-                        Object {
-                          "x": 144.5,
-                          "y": 162,
-                        },
-                      ],
                       "style": Object {
                         "flexDirection": "row",
                       },
@@ -371,28 +173,6 @@ Object {
                         "x": 298,
                         "y": 140,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 298,
-                          "y": 140,
-                        },
-                        Object {
-                          "x": 342,
-                          "y": 140,
-                        },
-                        Object {
-                          "x": 342,
-                          "y": 184,
-                        },
-                        Object {
-                          "x": 298,
-                          "y": 184,
-                        },
-                        Object {
-                          "x": 320,
-                          "y": 162,
-                        },
-                      ],
                       "style": Object {},
                       "type": "Block",
                     },
@@ -403,28 +183,6 @@ Object {
                     "x": 35,
                     "y": 140,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 35,
-                      "y": 140,
-                    },
-                    Object {
-                      "x": 342,
-                      "y": 140,
-                    },
-                    Object {
-                      "x": 342,
-                      "y": 184,
-                    },
-                    Object {
-                      "x": 35,
-                      "y": 184,
-                    },
-                    Object {
-                      "x": 188.5,
-                      "y": 162,
-                    },
-                  ],
                   "style": Object {
                     "alignItems": "center",
                     "flexDirection": "row",
@@ -451,28 +209,6 @@ Object {
                             "x": 39,
                             "y": 192,
                           },
-                          "points": Array [
-                            Object {
-                              "x": 39,
-                              "y": 192,
-                            },
-                            Object {
-                              "x": 75,
-                              "y": 192,
-                            },
-                            Object {
-                              "x": 75,
-                              "y": 204,
-                            },
-                            Object {
-                              "x": 39,
-                              "y": 204,
-                            },
-                            Object {
-                              "x": 57,
-                              "y": 198,
-                            },
-                          ],
                           "style": Object {
                             "color": "#333333ff",
                             "fontSize": 12,
@@ -494,28 +230,6 @@ Object {
                             "x": 127,
                             "y": 192,
                           },
-                          "points": Array [
-                            Object {
-                              "x": 127,
-                              "y": 192,
-                            },
-                            Object {
-                              "x": 163,
-                              "y": 192,
-                            },
-                            Object {
-                              "x": 163,
-                              "y": 204,
-                            },
-                            Object {
-                              "x": 127,
-                              "y": 204,
-                            },
-                            Object {
-                              "x": 145,
-                              "y": 198,
-                            },
-                          ],
                           "style": Object {
                             "color": "#333333ff",
                             "fontSize": 12,
@@ -537,28 +251,6 @@ Object {
                             "x": 214,
                             "y": 192,
                           },
-                          "points": Array [
-                            Object {
-                              "x": 214,
-                              "y": 192,
-                            },
-                            Object {
-                              "x": 250,
-                              "y": 192,
-                            },
-                            Object {
-                              "x": 250,
-                              "y": 204,
-                            },
-                            Object {
-                              "x": 214,
-                              "y": 204,
-                            },
-                            Object {
-                              "x": 232,
-                              "y": 198,
-                            },
-                          ],
                           "style": Object {
                             "color": "#333333ff",
                             "fontSize": 12,
@@ -575,28 +267,6 @@ Object {
                         "x": 39,
                         "y": 192,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 39,
-                          "y": 192,
-                        },
-                        Object {
-                          "x": 250,
-                          "y": 192,
-                        },
-                        Object {
-                          "x": 250,
-                          "y": 204,
-                        },
-                        Object {
-                          "x": 39,
-                          "y": 204,
-                        },
-                        Object {
-                          "x": 144.5,
-                          "y": 198,
-                        },
-                      ],
                       "style": Object {
                         "flexDirection": "row",
                       },
@@ -613,28 +283,6 @@ Object {
                         "x": 292,
                         "y": 190,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 292,
-                          "y": 190,
-                        },
-                        Object {
-                          "x": 346,
-                          "y": 190,
-                        },
-                        Object {
-                          "x": 346,
-                          "y": 202,
-                        },
-                        Object {
-                          "x": 292,
-                          "y": 202,
-                        },
-                        Object {
-                          "x": 319,
-                          "y": 196,
-                        },
-                      ],
                       "style": Object {
                         "alignSelf": "flex-start",
                         "color": "#333333ff",
@@ -652,28 +300,6 @@ Object {
                     "x": 39,
                     "y": 190,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 39,
-                      "y": 190,
-                    },
-                    Object {
-                      "x": 346,
-                      "y": 190,
-                    },
-                    Object {
-                      "x": 346,
-                      "y": 204,
-                    },
-                    Object {
-                      "x": 39,
-                      "y": 204,
-                    },
-                    Object {
-                      "x": 192.5,
-                      "y": 197,
-                    },
-                  ],
                   "style": Object {
                     "alignItems": "flex-end",
                     "alignSelf": "flex-end",
@@ -692,28 +318,6 @@ Object {
                 "x": 35,
                 "y": 140,
               },
-              "points": Array [
-                Object {
-                  "x": 35,
-                  "y": 140,
-                },
-                Object {
-                  "x": 346,
-                  "y": 140,
-                },
-                Object {
-                  "x": 346,
-                  "y": 204,
-                },
-                Object {
-                  "x": 35,
-                  "y": 204,
-                },
-                Object {
-                  "x": 190.5,
-                  "y": 172,
-                },
-              ],
               "style": Object {
                 "alignItems": "flex-start",
                 "flexDirection": "column",
@@ -730,28 +334,6 @@ Object {
             "x": 0,
             "y": 0,
           },
-          "points": Array [
-            Object {
-              "x": 0,
-              "y": 0,
-            },
-            Object {
-              "x": 375,
-              "y": 0,
-            },
-            Object {
-              "x": 375,
-              "y": 224,
-            },
-            Object {
-              "x": 0,
-              "y": 224,
-            },
-            Object {
-              "x": 187.5,
-              "y": 112,
-            },
-          ],
           "style": Object {},
           "type": "Block",
         },
@@ -772,28 +354,6 @@ Object {
                     "x": 25,
                     "y": 252,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 25,
-                      "y": 252,
-                    },
-                    Object {
-                      "x": 73,
-                      "y": 252,
-                    },
-                    Object {
-                      "x": 73,
-                      "y": 268,
-                    },
-                    Object {
-                      "x": 25,
-                      "y": 268,
-                    },
-                    Object {
-                      "x": 49,
-                      "y": 260,
-                    },
-                  ],
                   "style": Object {
                     "color": "#333333ff",
                     "fontSize": 16,
@@ -804,112 +364,66 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "更多充值卡",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 10,
+                        "width": 4,
+                        "x": 348,
+                        "y": 255,
+                      },
+                      "style": Object {},
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "更多充值卡",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 60,
+                        "x": 282,
+                        "y": 254,
+                      },
+                      "style": Object {
+                        "color": "#b3b3b3ff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                        "marginLeft": 282,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
                     "height": 12,
-                    "width": 60,
+                    "width": 70,
                     "x": 282,
                     "y": 254,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 282,
-                      "y": 254,
-                    },
-                    Object {
-                      "x": 342,
-                      "y": 254,
-                    },
-                    Object {
-                      "x": 342,
-                      "y": 266,
-                    },
-                    Object {
-                      "x": 282,
-                      "y": 266,
-                    },
-                    Object {
-                      "x": 312,
-                      "y": 260,
-                    },
-                  ],
                   "style": Object {
-                    "color": "#b3b3b3ff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "flexDirection": "row",
                   },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {},
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 10,
-                    "width": 4,
-                    "x": 348,
-                    "y": 255,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 348,
-                      "y": 255,
-                    },
-                    Object {
-                      "x": 352,
-                      "y": 255,
-                    },
-                    Object {
-                      "x": 352,
-                      "y": 265,
-                    },
-                    Object {
-                      "x": 348,
-                      "y": 265,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 260,
-                    },
-                  ],
-                  "style": Object {},
                   "type": "Block",
                 },
               ],
               "frame": Object {
-                "height": 48,
-                "width": 351,
-                "x": 13,
-                "y": 236,
+                "height": 16,
+                "width": 327,
+                "x": 25,
+                "y": 252,
               },
-              "points": Array [
-                Object {
-                  "x": 13,
-                  "y": 236,
-                },
-                Object {
-                  "x": 364,
-                  "y": 236,
-                },
-                Object {
-                  "x": 364,
-                  "y": 284,
-                },
-                Object {
-                  "x": 13,
-                  "y": 284,
-                },
-                Object {
-                  "x": 188.5,
-                  "y": 260,
-                },
-              ],
               "style": Object {
-                "backgroundColor": "#ffffffff",
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "paddingLeft": 0,
+                "paddingRight": 0,
               },
               "type": "Block",
             },
@@ -930,28 +444,6 @@ Object {
                         "x": 37,
                         "y": 300,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 37,
-                          "y": 300,
-                        },
-                        Object {
-                          "x": 183,
-                          "y": 300,
-                        },
-                        Object {
-                          "x": 183,
-                          "y": 314,
-                        },
-                        Object {
-                          "x": 37,
-                          "y": 314,
-                        },
-                        Object {
-                          "x": 110,
-                          "y": 307,
-                        },
-                      ],
                       "style": Object {
                         "color": "#ffffffff",
                         "fontSize": 14,
@@ -962,142 +454,77 @@ Object {
                       "type": "Text",
                     },
                     Object {
-                      "attrs": Object {
-                        "text": "¥8848",
-                      },
-                      "children": Array [],
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "¥8848",
+                          },
+                          "children": Array [],
+                          "frame": Object {
+                            "height": 16,
+                            "width": 48,
+                            "x": 37,
+                            "y": 322,
+                          },
+                          "style": Object {
+                            "color": "#fff684ff",
+                            "fontSize": 16,
+                            "fontWeight": 5,
+                            "letterSpacing": 0,
+                            "lineHeight": 16,
+                          },
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {
+                            "text": "永久有效",
+                          },
+                          "children": Array [],
+                          "frame": Object {
+                            "height": 12,
+                            "width": 48,
+                            "x": 37,
+                            "y": 356,
+                          },
+                          "style": Object {
+                            "color": "#ffffffff",
+                            "fontSize": 12,
+                            "fontWeight": 5,
+                            "letterSpacing": 0,
+                            "lineHeight": 12,
+                          },
+                          "type": "Text",
+                        },
+                      ],
                       "frame": Object {
-                        "height": 16,
+                        "height": 46,
                         "width": 48,
                         "x": 37,
                         "y": 322,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 37,
-                          "y": 322,
-                        },
-                        Object {
-                          "x": 85,
-                          "y": 322,
-                        },
-                        Object {
-                          "x": 85,
-                          "y": 338,
-                        },
-                        Object {
-                          "x": 37,
-                          "y": 338,
-                        },
-                        Object {
-                          "x": 61,
-                          "y": 330,
-                        },
-                      ],
                       "style": Object {
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
+                        "alignItems": "center",
+                        "alignSelf": "flex-start",
+                        "flexDirection": "column",
+                        "justifyContent": "flex-start",
+                        "paddingTop": 0,
                       },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "永久有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 48,
-                        "x": 37,
-                        "y": 356,
-                      },
-                      "points": Array [
-                        Object {
-                          "x": 37,
-                          "y": 356,
-                        },
-                        Object {
-                          "x": 85,
-                          "y": 356,
-                        },
-                        Object {
-                          "x": 85,
-                          "y": 368,
-                        },
-                        Object {
-                          "x": 37,
-                          "y": 368,
-                        },
-                        Object {
-                          "x": 61,
-                          "y": 362,
-                        },
-                      ],
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
+                      "type": "Block",
                     },
                   ],
                   "frame": Object {
-                    "height": 96,
-                    "width": 160,
-                    "x": 25,
-                    "y": 284,
+                    "height": 68,
+                    "width": 146,
+                    "x": 37,
+                    "y": 300,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 25,
-                      "y": 284,
-                    },
-                    Object {
-                      "x": 185,
-                      "y": 284,
-                    },
-                    Object {
-                      "x": 185,
-                      "y": 380,
-                    },
-                    Object {
-                      "x": 25,
-                      "y": 380,
-                    },
-                    Object {
-                      "x": 105,
-                      "y": 332,
-                    },
-                  ],
                   "style": Object {
-                    "gradient": Object {
-                      "aspectRatio": 0,
-                      "from": Object {
-                        "x": 0.9999999999999998,
-                        "y": 0.49999999999999983,
-                      },
-                      "gradientType": "Linear",
-                      "stops": Array [
-                        Object {
-                          "color": "#5bacfcff",
-                          "position": 0,
-                        },
-                        Object {
-                          "color": "#3c75faff",
-                          "position": 1,
-                        },
-                      ],
-                      "to": Object {
-                        "x": -2.220446049250313e-16,
-                        "y": 0.5000000000000002,
-                      },
-                    },
-                    "marginRight": 192,
+                    "alignItems": "center",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "marginRight": 204,
+                    "paddingTop": 0,
                   },
                   "type": "Block",
                 },
@@ -1115,28 +542,6 @@ Object {
                         "x": 204,
                         "y": 300,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 204,
-                          "y": 300,
-                        },
-                        Object {
-                          "x": 350,
-                          "y": 300,
-                        },
-                        Object {
-                          "x": 350,
-                          "y": 314,
-                        },
-                        Object {
-                          "x": 204,
-                          "y": 314,
-                        },
-                        Object {
-                          "x": 277,
-                          "y": 307,
-                        },
-                      ],
                       "style": Object {
                         "color": "#ffffffff",
                         "fontSize": 14,
@@ -1147,141 +552,77 @@ Object {
                       "type": "Text",
                     },
                     Object {
-                      "attrs": Object {
-                        "text": "¥800",
-                      },
-                      "children": Array [],
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "¥800",
+                          },
+                          "children": Array [],
+                          "frame": Object {
+                            "height": 16,
+                            "width": 39,
+                            "x": 204,
+                            "y": 322,
+                          },
+                          "style": Object {
+                            "alignSelf": "flex-start",
+                            "color": "#fff684ff",
+                            "fontSize": 16,
+                            "fontWeight": 5,
+                            "letterSpacing": 0,
+                            "lineHeight": 16,
+                          },
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {
+                            "text": "365天内有效",
+                          },
+                          "children": Array [],
+                          "frame": Object {
+                            "height": 12,
+                            "width": 70,
+                            "x": 204,
+                            "y": 356,
+                          },
+                          "style": Object {
+                            "color": "#ffffffff",
+                            "fontSize": 12,
+                            "fontWeight": 5,
+                            "letterSpacing": 0,
+                            "lineHeight": 12,
+                          },
+                          "type": "Text",
+                        },
+                      ],
                       "frame": Object {
-                        "height": 16,
-                        "width": 39,
+                        "height": 46,
+                        "width": 70,
                         "x": 204,
                         "y": 322,
                       },
-                      "points": Array [
-                        Object {
-                          "x": 204,
-                          "y": 322,
-                        },
-                        Object {
-                          "x": 243,
-                          "y": 322,
-                        },
-                        Object {
-                          "x": 243,
-                          "y": 338,
-                        },
-                        Object {
-                          "x": 204,
-                          "y": 338,
-                        },
-                        Object {
-                          "x": 223.5,
-                          "y": 330,
-                        },
-                      ],
                       "style": Object {
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
+                        "alignItems": "center",
+                        "alignSelf": "flex-start",
+                        "flexDirection": "column",
+                        "justifyContent": "flex-start",
+                        "paddingTop": 0,
                       },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "365天内有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 70,
-                        "x": 204,
-                        "y": 356,
-                      },
-                      "points": Array [
-                        Object {
-                          "x": 204,
-                          "y": 356,
-                        },
-                        Object {
-                          "x": 274,
-                          "y": 356,
-                        },
-                        Object {
-                          "x": 274,
-                          "y": 368,
-                        },
-                        Object {
-                          "x": 204,
-                          "y": 368,
-                        },
-                        Object {
-                          "x": 239,
-                          "y": 362,
-                        },
-                      ],
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
+                      "type": "Block",
                     },
                   ],
                   "frame": Object {
-                    "height": 96,
-                    "width": 160,
-                    "x": 192,
-                    "y": 284,
+                    "height": 68,
+                    "width": 146,
+                    "x": 204,
+                    "y": 300,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 192,
-                      "y": 284,
-                    },
-                    Object {
-                      "x": 352,
-                      "y": 284,
-                    },
-                    Object {
-                      "x": 352,
-                      "y": 380,
-                    },
-                    Object {
-                      "x": 192,
-                      "y": 380,
-                    },
-                    Object {
-                      "x": 272,
-                      "y": 332,
-                    },
-                  ],
                   "style": Object {
-                    "gradient": Object {
-                      "aspectRatio": 0,
-                      "from": Object {
-                        "x": 0.9999999999999998,
-                        "y": 0.49999999999999983,
-                      },
-                      "gradientType": "Linear",
-                      "stops": Array [
-                        Object {
-                          "color": "#5bacfcff",
-                          "position": 0,
-                        },
-                        Object {
-                          "color": "#3c75faff",
-                          "position": 1,
-                        },
-                      ],
-                      "to": Object {
-                        "x": -2.220446049250313e-16,
-                        "y": 0.5000000000000002,
-                      },
-                    },
+                    "alignItems": "center",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
                   "type": "Block",
                 },
@@ -1292,33 +633,13 @@ Object {
                 "x": 25,
                 "y": 284,
               },
-              "points": Array [
-                Object {
-                  "x": 25,
-                  "y": 284,
-                },
-                Object {
-                  "x": 352,
-                  "y": 284,
-                },
-                Object {
-                  "x": 352,
-                  "y": 380,
-                },
-                Object {
-                  "x": 25,
-                  "y": 380,
-                },
-                Object {
-                  "x": 188.5,
-                  "y": 332,
-                },
-              ],
               "style": Object {
-                "alignItems": "center",
+                "alignItems": "stretch",
                 "flexDirection": "row",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
+                "paddingBottom": 12,
+                "paddingLeft": 12,
+                "paddingTop": 16,
               },
               "type": "Block",
             },
@@ -1329,35 +650,13 @@ Object {
             "x": 13,
             "y": 236,
           },
-          "points": Array [
-            Object {
-              "x": 13,
-              "y": 236,
-            },
-            Object {
-              "x": 364,
-              "y": 236,
-            },
-            Object {
-              "x": 364,
-              "y": 380,
-            },
-            Object {
-              "x": 13,
-              "y": 380,
-            },
-            Object {
-              "x": 188.5,
-              "y": 308,
-            },
-          ],
           "style": Object {
             "alignItems": "center",
             "alignSelf": "flex-start",
             "flexDirection": "column",
             "justifyContent": "flex-start",
             "marginLeft": 13,
-            "paddingTop": 0,
+            "paddingTop": 16,
           },
           "type": "Block",
         },
@@ -1368,28 +667,6 @@ Object {
         "x": 0,
         "y": 0,
       },
-      "points": Array [
-        Object {
-          "x": 0,
-          "y": 0,
-        },
-        Object {
-          "x": 375,
-          "y": 0,
-        },
-        Object {
-          "x": 375,
-          "y": 392,
-        },
-        Object {
-          "x": 0,
-          "y": 392,
-        },
-        Object {
-          "x": 187.5,
-          "y": 196,
-        },
-      ],
       "style": Object {
         "alignItems": "center",
         "flexDirection": "column",
@@ -1412,28 +689,6 @@ Object {
             "x": 22,
             "y": 421,
           },
-          "points": Array [
-            Object {
-              "x": 22,
-              "y": 421,
-            },
-            Object {
-              "x": 86,
-              "y": 421,
-            },
-            Object {
-              "x": 86,
-              "y": 437,
-            },
-            Object {
-              "x": 22,
-              "y": 437,
-            },
-            Object {
-              "x": 54,
-              "y": 429,
-            },
-          ],
           "style": Object {
             "alignSelf": "flex-start",
             "color": "#333333ff",
@@ -1461,28 +716,6 @@ Object {
                     "x": 23,
                     "y": 452,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 23,
-                      "y": 452,
-                    },
-                    Object {
-                      "x": 103,
-                      "y": 452,
-                    },
-                    Object {
-                      "x": 103,
-                      "y": 532,
-                    },
-                    Object {
-                      "x": 23,
-                      "y": 532,
-                    },
-                    Object {
-                      "x": 63,
-                      "y": 492,
-                    },
-                  ],
                   "style": Object {},
                   "type": "Image",
                 },
@@ -1497,28 +730,6 @@ Object {
                     "x": 115,
                     "y": 456,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 456,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 456,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 492,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 492,
-                    },
-                    Object {
-                      "x": 232.5,
-                      "y": 474,
-                    },
-                  ],
                   "style": Object {
                     "color": "#333333ff",
                     "fontSize": 14,
@@ -1539,28 +750,6 @@ Object {
                     "x": 115,
                     "y": 512,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 512,
-                    },
-                    Object {
-                      "x": 196,
-                      "y": 512,
-                    },
-                    Object {
-                      "x": 196,
-                      "y": 528,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 528,
-                    },
-                    Object {
-                      "x": 155.5,
-                      "y": 520,
-                    },
-                  ],
                   "style": Object {
                     "color": "#ff6600ff",
                     "fontSize": 16,
@@ -1577,28 +766,6 @@ Object {
                 "x": 23,
                 "y": 452,
               },
-              "points": Array [
-                Object {
-                  "x": 23,
-                  "y": 452,
-                },
-                Object {
-                  "x": 350,
-                  "y": 452,
-                },
-                Object {
-                  "x": 350,
-                  "y": 532,
-                },
-                Object {
-                  "x": 23,
-                  "y": 532,
-                },
-                Object {
-                  "x": 186.5,
-                  "y": 492,
-                },
-              ],
               "style": Object {},
               "type": "Block",
             },
@@ -1616,28 +783,6 @@ Object {
                     "x": 23,
                     "y": 544,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 23,
-                      "y": 544,
-                    },
-                    Object {
-                      "x": 103,
-                      "y": 544,
-                    },
-                    Object {
-                      "x": 103,
-                      "y": 624,
-                    },
-                    Object {
-                      "x": 23,
-                      "y": 624,
-                    },
-                    Object {
-                      "x": 63,
-                      "y": 584,
-                    },
-                  ],
                   "style": Object {},
                   "type": "Image",
                 },
@@ -1652,28 +797,6 @@ Object {
                     "x": 115,
                     "y": 548,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 548,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 548,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 566,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 566,
-                    },
-                    Object {
-                      "x": 232.5,
-                      "y": 557,
-                    },
-                  ],
                   "style": Object {
                     "color": "#333333ff",
                     "fontSize": 14,
@@ -1694,28 +817,6 @@ Object {
                     "x": 115,
                     "y": 604,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 604,
-                    },
-                    Object {
-                      "x": 188,
-                      "y": 604,
-                    },
-                    Object {
-                      "x": 188,
-                      "y": 620,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 620,
-                    },
-                    Object {
-                      "x": 151.5,
-                      "y": 612,
-                    },
-                  ],
                   "style": Object {
                     "color": "#ff6600ff",
                     "fontSize": 16,
@@ -1732,28 +833,6 @@ Object {
                 "x": 23,
                 "y": 544,
               },
-              "points": Array [
-                Object {
-                  "x": 23,
-                  "y": 544,
-                },
-                Object {
-                  "x": 350,
-                  "y": 544,
-                },
-                Object {
-                  "x": 350,
-                  "y": 624,
-                },
-                Object {
-                  "x": 23,
-                  "y": 624,
-                },
-                Object {
-                  "x": 186.5,
-                  "y": 584,
-                },
-              ],
               "style": Object {},
               "type": "Block",
             },
@@ -1771,28 +850,6 @@ Object {
                     "x": 23,
                     "y": 636,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 23,
-                      "y": 636,
-                    },
-                    Object {
-                      "x": 103,
-                      "y": 636,
-                    },
-                    Object {
-                      "x": 103,
-                      "y": 716,
-                    },
-                    Object {
-                      "x": 23,
-                      "y": 716,
-                    },
-                    Object {
-                      "x": 63,
-                      "y": 676,
-                    },
-                  ],
                   "style": Object {},
                   "type": "Image",
                 },
@@ -1807,28 +864,6 @@ Object {
                     "x": 115,
                     "y": 640,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 640,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 640,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 676,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 676,
-                    },
-                    Object {
-                      "x": 232.5,
-                      "y": 658,
-                    },
-                  ],
                   "style": Object {
                     "color": "#333333ff",
                     "fontSize": 14,
@@ -1849,28 +884,6 @@ Object {
                     "x": 115,
                     "y": 696,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 696,
-                    },
-                    Object {
-                      "x": 196,
-                      "y": 696,
-                    },
-                    Object {
-                      "x": 196,
-                      "y": 712,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 712,
-                    },
-                    Object {
-                      "x": 155.5,
-                      "y": 704,
-                    },
-                  ],
                   "style": Object {
                     "color": "#ff6600ff",
                     "fontSize": 16,
@@ -1887,28 +900,6 @@ Object {
                 "x": 23,
                 "y": 636,
               },
-              "points": Array [
-                Object {
-                  "x": 23,
-                  "y": 636,
-                },
-                Object {
-                  "x": 350,
-                  "y": 636,
-                },
-                Object {
-                  "x": 350,
-                  "y": 716,
-                },
-                Object {
-                  "x": 23,
-                  "y": 716,
-                },
-                Object {
-                  "x": 186.5,
-                  "y": 676,
-                },
-              ],
               "style": Object {},
               "type": "Block",
             },
@@ -1926,28 +917,6 @@ Object {
                     "x": 24,
                     "y": 727,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 24,
-                      "y": 727,
-                    },
-                    Object {
-                      "x": 104,
-                      "y": 727,
-                    },
-                    Object {
-                      "x": 104,
-                      "y": 807,
-                    },
-                    Object {
-                      "x": 24,
-                      "y": 807,
-                    },
-                    Object {
-                      "x": 64,
-                      "y": 767,
-                    },
-                  ],
                   "style": Object {},
                   "type": "Image",
                 },
@@ -1962,28 +931,6 @@ Object {
                     "x": 115,
                     "y": 731,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 731,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 731,
-                    },
-                    Object {
-                      "x": 350,
-                      "y": 749,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 749,
-                    },
-                    Object {
-                      "x": 232.5,
-                      "y": 740,
-                    },
-                  ],
                   "style": Object {
                     "color": "#333333ff",
                     "fontSize": 14,
@@ -2004,28 +951,6 @@ Object {
                     "x": 115,
                     "y": 787,
                   },
-                  "points": Array [
-                    Object {
-                      "x": 115,
-                      "y": 787,
-                    },
-                    Object {
-                      "x": 188,
-                      "y": 787,
-                    },
-                    Object {
-                      "x": 188,
-                      "y": 803,
-                    },
-                    Object {
-                      "x": 115,
-                      "y": 803,
-                    },
-                    Object {
-                      "x": 151.5,
-                      "y": 795,
-                    },
-                  ],
                   "style": Object {
                     "color": "#ff6600ff",
                     "fontSize": 16,
@@ -2042,28 +967,6 @@ Object {
                 "x": 24,
                 "y": 727,
               },
-              "points": Array [
-                Object {
-                  "x": 24,
-                  "y": 727,
-                },
-                Object {
-                  "x": 350,
-                  "y": 727,
-                },
-                Object {
-                  "x": 350,
-                  "y": 807,
-                },
-                Object {
-                  "x": 24,
-                  "y": 807,
-                },
-                Object {
-                  "x": 187,
-                  "y": 767,
-                },
-              ],
               "style": Object {
                 "alignSelf": "flex-end",
               },
@@ -2076,28 +979,6 @@ Object {
             "x": 23,
             "y": 452,
           },
-          "points": Array [
-            Object {
-              "x": 23,
-              "y": 452,
-            },
-            Object {
-              "x": 350,
-              "y": 452,
-            },
-            Object {
-              "x": 350,
-              "y": 807,
-            },
-            Object {
-              "x": 23,
-              "y": 807,
-            },
-            Object {
-              "x": 186.5,
-              "y": 629.5,
-            },
-          ],
           "style": Object {
             "alignItems": "center",
             "flexDirection": "column",
@@ -2117,28 +998,6 @@ Object {
             "x": 141.5,
             "y": 831,
           },
-          "points": Array [
-            Object {
-              "x": 141.5,
-              "y": 831,
-            },
-            Object {
-              "x": 232.5,
-              "y": 831,
-            },
-            Object {
-              "x": 232.5,
-              "y": 845,
-            },
-            Object {
-              "x": 141.5,
-              "y": 845,
-            },
-            Object {
-              "x": 187,
-              "y": 838,
-            },
-          ],
           "style": Object {
             "alignSelf": "flex-start",
             "color": "#ff6600ff",
@@ -2157,28 +1016,6 @@ Object {
         "x": 11,
         "y": 406,
       },
-      "points": Array [
-        Object {
-          "x": 11,
-          "y": 406,
-        },
-        Object {
-          "x": 362,
-          "y": 406,
-        },
-        Object {
-          "x": 362,
-          "y": 856,
-        },
-        Object {
-          "x": 11,
-          "y": 856,
-        },
-        Object {
-          "x": 186.5,
-          "y": 631,
-        },
-      ],
       "style": Object {
         "alignItems": "center",
         "alignSelf": "flex-start",
@@ -2200,28 +1037,6 @@ Object {
         "x": 87,
         "y": 880,
       },
-      "points": Array [
-        Object {
-          "x": 87,
-          "y": 880,
-        },
-        Object {
-          "x": 288,
-          "y": 880,
-        },
-        Object {
-          "x": 288,
-          "y": 892,
-        },
-        Object {
-          "x": 87,
-          "y": 892,
-        },
-        Object {
-          "x": 187.5,
-          "y": 886,
-        },
-      ],
       "style": Object {
         "color": "#b3b3b3ff",
         "fontSize": 12,
@@ -2238,28 +1053,6 @@ Object {
     "x": 0,
     "y": 0,
   },
-  "points": Array [
-    Object {
-      "x": 0,
-      "y": 0,
-    },
-    Object {
-      "x": 375,
-      "y": 0,
-    },
-    Object {
-      "x": 375,
-      "y": 892,
-    },
-    Object {
-      "x": 0,
-      "y": 892,
-    },
-    Object {
-      "x": 187.5,
-      "y": 446,
-    },
-  ],
   "style": Object {
     "alignItems": "center",
     "flexDirection": "column",
