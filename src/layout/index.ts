@@ -260,7 +260,7 @@ const renameClassName = (node: INode) => {
 export default (nodes: INode[]): INode => {
 
   let rootNode =phaseOne(nodes);
-  debugger;
+
   calcRowLayout(rootNode);
   calcColLayout(rootNode);
   return rootNode;
