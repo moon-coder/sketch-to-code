@@ -292,9 +292,7 @@ const calcRowLayout = (node: INode) => {
   }
 
   const { width: nodeWidth } = node.frame;
-  const connSpace = nodeWidth / 10;
-  // fixme 要用到breakSpace
-  const breakSpace = nodeWidth / 5;
+  const connSpace = nodeWidth / 5;
   const children = node.children;
   const boundaryBox = calcBoundaryBox(node.children);
 
