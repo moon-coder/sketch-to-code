@@ -157,7 +157,7 @@ export function getRangeItemUtil(type: 'x' | 'y' = 'y') {
      */
     mergeSameBlock: (yranges: RangeItem[]): RangeItem[] => {
       //把间隔相等的节点合为一个大节点;
-      //从大到小排
+      //按轴顺序从大到小排
       yranges = yranges.sort((a, b) => a.min - b.min);
 
       if (yranges.length === 1 || yranges.length === 2) {

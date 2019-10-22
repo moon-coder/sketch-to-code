@@ -20,10 +20,10 @@ const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
 
   const rootNode = preDeal(nodes);
-  debugger;
+
 
   walk(rootNode,(node) => {
-    debugger;
+
     if(node.children && node.children.length >0) {
       if(node.children.length > 1) {
         node.children = rowMerge(node.children);

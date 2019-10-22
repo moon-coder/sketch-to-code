@@ -23,12 +23,15 @@ export default function(nodes: INode[]): INode[] {
   //TODO Y坐标(行投影)也X坐标(列投影)要策略的选择那个;
   let yranges = yUtil.getRanges(nodes);
   let xranges = xUtil.getRanges(nodes);
-
+  let flexDirection="y";
+  //
   let resultRanges;
   if (xranges.length > yranges.length) {
+    flexDirection = "x";
     resultRanges = xUtil.mergeSameBlock(xranges);
     resultRanges = xUtil.mergeSplitEqualBlock(resultRanges);
   } else {
+  debugger;
     resultRanges = yUtil.mergeSameBlock(yranges);
     resultRanges = yUtil.mergeSplitEqualBlock(resultRanges);
   }
@@ -39,7 +42,7 @@ export default function(nodes: INode[]): INode[] {
   } else {
     return resultRanges.map(rangeItem => {
       let mergeNode = calcBoundaryNode(rangeItem.items);
-      mergeNode.style.flexDirection = 'row';
+      mergeNode.style.flexDirection = flexDirection==='y'?'row':'column';
       return mergeNode;
     });
   }

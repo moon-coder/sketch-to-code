@@ -192,7 +192,7 @@ export function sortNodesByLayout(nodes:INode[]):INode[]{
  */
 export function isEquealNum(a:number,b:number,rate:number=0.95):boolean {
 
-  return Math.abs(a-b)<=(a+b)/2*rate;
+  return Math.abs(a-b)<=(a+b)/2*(1-rate);
 }
 
 /**
