@@ -9,284 +9,24 @@ Object {
       "children": Array [
         Object {
           "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "卡项权益",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 64,
-                "x": 22,
-                "y": 288,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 2,
-                "x": 12,
-                "y": 288,
-              },
-              "style": Object {
-                "backgroundColor": "#ff6600ff",
-              },
-              "type": "Block",
-            },
-          ],
-          "frame": Object {
-            "height": 16,
-            "width": 74,
-            "x": 12,
-            "y": 288,
-          },
-          "style": Object {},
+          "children": Array [],
           "type": "Block",
         },
         Object {
           "attrs": Object {
-            "text": "美容服务",
+            "text": "卡项权益",
           },
           "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 56,
-            "x": 12,
-            "y": 320,
-          },
-          "style": Object {
-            "alignSelf": "flex-start",
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
           "type": "Text",
         },
       ],
-      "frame": Object {
-        "height": 46,
-        "width": 74,
-        "x": 12,
-        "y": 288,
-      },
-      "style": Object {
-        "alignItems": "center",
-        "alignSelf": "flex-start",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "凶悍大叔洗澡",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 84,
-                "x": 12,
-                "y": 342,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "×10",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 23,
-                "x": 340,
-                "y": 342,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-          ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 342,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "温柔小姐姐做造型",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 112,
-                "x": 12,
-                "y": 364,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "×8",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 17,
-                "x": 346,
-                "y": 364,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-          ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 364,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "精油美毛",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 56,
-                "x": 12,
-                "y": 386,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "×12",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 23,
-                "x": 340,
-                "y": 386,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-          ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 386,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-      ],
-      "frame": Object {
-        "height": 58,
-        "width": 351,
-        "x": 12,
-        "y": 342,
-      },
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
       "type": "Block",
     },
     Object {
       "attrs": Object {
-        "text": "清洁服务",
+        "text": "美容服务",
       },
       "children": Array [],
-      "frame": Object {
-        "height": 14,
-        "width": 56,
-        "x": 12,
-        "y": 416,
-      },
-      "style": Object {
-        "alignSelf": "flex-start",
-        "color": "#333333ff",
-        "fontSize": 14,
-        "fontWeight": 5,
-        "letterSpacing": 0,
-        "lineHeight": 14,
-      },
       "type": "Text",
     },
     Object {
@@ -300,19 +40,6 @@ Object {
                 "text": "凶悍大叔洗澡",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 84,
-                "x": 12,
-                "y": 438,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
             Object {
@@ -320,29 +47,9 @@ Object {
                 "text": "×10",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 23,
-                "x": 340,
-                "y": 438,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
           ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 438,
-          },
-          "style": Object {},
           "type": "Block",
         },
         Object {
@@ -353,19 +60,6 @@ Object {
                 "text": "温柔小姐姐做造型",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 112,
-                "x": 12,
-                "y": 460,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
             Object {
@@ -373,59 +67,94 @@ Object {
                 "text": "×8",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 17,
-                "x": 346,
-                "y": 460,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
           ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 460,
-          },
-          "style": Object {},
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "精油美毛",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×12",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
           "type": "Block",
         },
       ],
-      "frame": Object {
-        "height": 36,
-        "width": 351,
-        "x": 12,
-        "y": 438,
+      "extraInfo": Object {
+        "sameNode": true,
       },
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "text": "清洁服务",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "凶悍大叔洗澡",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×10",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "温柔小姐姐做造型",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×8",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "sameNode": true,
       },
       "type": "Block",
     },
   ],
-  "frame": Object {
-    "height": 186,
-    "width": 351,
-    "x": 12,
-    "y": 288,
-  },
-  "style": Object {
-    "alignItems": "center",
-    "flexDirection": "column",
-    "justifyContent": "flex-start",
-    "paddingTop": 0,
-  },
   "type": "Block",
 }
 `;
@@ -439,284 +168,24 @@ Object {
       "children": Array [
         Object {
           "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "卡项权益",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 64,
-                "x": 22,
-                "y": 288,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [],
-              "frame": Object {
-                "height": 16,
-                "width": 2,
-                "x": 12,
-                "y": 288,
-              },
-              "style": Object {
-                "backgroundColor": "#ff6600ff",
-              },
-              "type": "Block",
-            },
-          ],
-          "frame": Object {
-            "height": 16,
-            "width": 74,
-            "x": 12,
-            "y": 288,
-          },
-          "style": Object {},
+          "children": Array [],
           "type": "Block",
         },
         Object {
           "attrs": Object {
-            "text": "美容服务",
+            "text": "卡项权益",
           },
           "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 56,
-            "x": 12,
-            "y": 320,
-          },
-          "style": Object {
-            "alignSelf": "flex-start",
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
           "type": "Text",
         },
       ],
-      "frame": Object {
-        "height": 46,
-        "width": 74,
-        "x": 12,
-        "y": 288,
-      },
-      "style": Object {
-        "alignItems": "center",
-        "alignSelf": "flex-start",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "凶悍大叔洗澡",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 84,
-                "x": 12,
-                "y": 342,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "×10",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 23,
-                "x": 340,
-                "y": 342,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-          ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 342,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "温柔小姐姐做造型",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 112,
-                "x": 12,
-                "y": 364,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "×8",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 17,
-                "x": 346,
-                "y": 364,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-          ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 364,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "精油美毛",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 56,
-                "x": 12,
-                "y": 386,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "×12",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 23,
-                "x": 340,
-                "y": 386,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-          ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 386,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-      ],
-      "frame": Object {
-        "height": 58,
-        "width": 351,
-        "x": 12,
-        "y": 342,
-      },
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
       "type": "Block",
     },
     Object {
       "attrs": Object {
-        "text": "清洁服务",
+        "text": "美容服务",
       },
       "children": Array [],
-      "frame": Object {
-        "height": 14,
-        "width": 56,
-        "x": 12,
-        "y": 416,
-      },
-      "style": Object {
-        "alignSelf": "flex-start",
-        "color": "#333333ff",
-        "fontSize": 14,
-        "fontWeight": 5,
-        "letterSpacing": 0,
-        "lineHeight": 14,
-      },
       "type": "Text",
     },
     Object {
@@ -730,19 +199,6 @@ Object {
                 "text": "凶悍大叔洗澡",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 84,
-                "x": 12,
-                "y": 438,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
             Object {
@@ -750,29 +206,9 @@ Object {
                 "text": "×10",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 23,
-                "x": 340,
-                "y": 438,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
           ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 438,
-          },
-          "style": Object {},
           "type": "Block",
         },
         Object {
@@ -783,19 +219,6 @@ Object {
                 "text": "温柔小姐姐做造型",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 112,
-                "x": 12,
-                "y": 460,
-              },
-              "style": Object {
-                "color": "#a3a3a3ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
             Object {
@@ -803,59 +226,94 @@ Object {
                 "text": "×8",
               },
               "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 17,
-                "x": 346,
-                "y": 460,
-              },
-              "style": Object {
-                "color": "#333333ff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
               "type": "Text",
             },
           ],
-          "frame": Object {
-            "height": 14,
-            "width": 351,
-            "x": 12,
-            "y": 460,
-          },
-          "style": Object {},
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "精油美毛",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×12",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
           "type": "Block",
         },
       ],
-      "frame": Object {
-        "height": 36,
-        "width": 351,
-        "x": 12,
-        "y": 438,
+      "extraInfo": Object {
+        "sameNode": true,
       },
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "text": "清洁服务",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "凶悍大叔洗澡",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×10",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "温柔小姐姐做造型",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×8",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "sameNode": true,
       },
       "type": "Block",
     },
   ],
-  "frame": Object {
-    "height": 186,
-    "width": 351,
-    "x": 12,
-    "y": 288,
-  },
-  "style": Object {
-    "alignItems": "center",
-    "flexDirection": "column",
-    "justifyContent": "flex-start",
-    "paddingTop": 0,
-  },
   "type": "Block",
 }
 `;
@@ -878,93 +336,23 @@ Object {
                     "text": "黑金VIP黄金卡",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 14,
-                    "width": 146,
-                    "x": 24,
-                    "y": 116,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 14,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 14,
-                  },
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥8848",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 16,
-                        "width": 48,
-                        "x": 24,
-                        "y": 138,
-                      },
-                      "style": Object {
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
-                      },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "永久有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 48,
-                        "x": 24,
-                        "y": 172,
-                      },
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
-                    },
-                  ],
-                  "frame": Object {
-                    "height": 46,
-                    "width": 48,
-                    "x": 24,
-                    "y": 138,
+                  "attrs": Object {
+                    "text": "¥8848",
                   },
-                  "style": Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "flexDirection": "column",
-                    "justifyContent": "flex-start",
-                    "paddingTop": 0,
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "永久有效",
                   },
-                  "type": "Block",
+                  "children": Array [],
+                  "type": "Text",
                 },
               ],
-              "frame": Object {
-                "height": 68,
-                "width": 146,
-                "x": 24,
-                "y": 116,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
               "type": "Block",
             },
             Object {
@@ -975,104 +363,26 @@ Object {
                     "text": "粉丝珍爱卡",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 14,
-                    "width": 146,
-                    "x": 205,
-                    "y": 116,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 14,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 14,
-                  },
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥800",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 16,
-                        "width": 39,
-                        "x": 205,
-                        "y": 138,
-                      },
-                      "style": Object {
-                        "alignSelf": "flex-start",
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
-                      },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "365天内有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 70,
-                        "x": 205,
-                        "y": 172,
-                      },
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
-                    },
-                  ],
-                  "frame": Object {
-                    "height": 46,
-                    "width": 70,
-                    "x": 205,
-                    "y": 138,
+                  "attrs": Object {
+                    "text": "¥800",
                   },
-                  "style": Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "flexDirection": "column",
-                    "justifyContent": "flex-start",
-                    "paddingTop": 0,
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "365天内有效",
                   },
-                  "type": "Block",
+                  "children": Array [],
+                  "type": "Text",
                 },
               ],
-              "frame": Object {
-                "height": 68,
-                "width": 146,
-                "x": 205,
-                "y": 116,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
               "type": "Block",
             },
           ],
-          "frame": Object {
-            "height": 96,
-            "width": 351,
-            "x": 12,
-            "y": 100,
-          },
-          "style": Object {},
           "type": "Block",
         },
         Object {
@@ -1086,93 +396,23 @@ Object {
                     "text": "黑金VIP黄金卡",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 14,
-                    "width": 146,
-                    "x": 24,
-                    "y": 224,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 14,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 14,
-                  },
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥8848",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 16,
-                        "width": 48,
-                        "x": 24,
-                        "y": 246,
-                      },
-                      "style": Object {
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
-                      },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "永久有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 48,
-                        "x": 24,
-                        "y": 280,
-                      },
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
-                    },
-                  ],
-                  "frame": Object {
-                    "height": 46,
-                    "width": 48,
-                    "x": 24,
-                    "y": 246,
+                  "attrs": Object {
+                    "text": "¥8848",
                   },
-                  "style": Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "flexDirection": "column",
-                    "justifyContent": "flex-start",
-                    "paddingTop": 0,
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "永久有效",
                   },
-                  "type": "Block",
+                  "children": Array [],
+                  "type": "Text",
                 },
               ],
-              "frame": Object {
-                "height": 68,
-                "width": 146,
-                "x": 24,
-                "y": 224,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
               "type": "Block",
             },
             Object {
@@ -1183,103 +423,26 @@ Object {
                     "text": "粉丝珍爱卡",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 14,
-                    "width": 146,
-                    "x": 205,
-                    "y": 224,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 14,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 14,
-                  },
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥3200",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 16,
-                        "width": 48,
-                        "x": 205,
-                        "y": 246,
-                      },
-                      "style": Object {
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
-                      },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "永久有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 48,
-                        "x": 205,
-                        "y": 280,
-                      },
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
-                    },
-                  ],
-                  "frame": Object {
-                    "height": 46,
-                    "width": 48,
-                    "x": 205,
-                    "y": 246,
+                  "attrs": Object {
+                    "text": "¥3200",
                   },
-                  "style": Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "flexDirection": "column",
-                    "justifyContent": "flex-start",
-                    "paddingTop": 0,
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "永久有效",
                   },
-                  "type": "Block",
+                  "children": Array [],
+                  "type": "Text",
                 },
               ],
-              "frame": Object {
-                "height": 68,
-                "width": 146,
-                "x": 205,
-                "y": 224,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
               "type": "Block",
             },
           ],
-          "frame": Object {
-            "height": 96,
-            "width": 351,
-            "x": 12,
-            "y": 208,
-          },
-          "style": Object {},
           "type": "Block",
         },
         Object {
@@ -1293,94 +456,23 @@ Object {
                     "text": "至尊黄金卡",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 14,
-                    "width": 146,
-                    "x": 24,
-                    "y": 332,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 14,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 14,
-                  },
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥50",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 16,
-                        "width": 29,
-                        "x": 24,
-                        "y": 354,
-                      },
-                      "style": Object {
-                        "alignSelf": "flex-start",
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
-                      },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "永久有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 48,
-                        "x": 24,
-                        "y": 388,
-                      },
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
-                    },
-                  ],
-                  "frame": Object {
-                    "height": 46,
-                    "width": 48,
-                    "x": 24,
-                    "y": 354,
+                  "attrs": Object {
+                    "text": "¥50",
                   },
-                  "style": Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "flexDirection": "column",
-                    "justifyContent": "flex-start",
-                    "paddingTop": 0,
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "永久有效",
                   },
-                  "type": "Block",
+                  "children": Array [],
+                  "type": "Text",
                 },
               ],
-              "frame": Object {
-                "height": 68,
-                "width": 146,
-                "x": 24,
-                "y": 332,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
               "type": "Block",
             },
             Object {
@@ -1391,150 +483,13 @@ Object {
                     "text": "粉丝珍爱卡",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 14,
-                    "width": 146,
-                    "x": 205,
-                    "y": 332,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 14,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 14,
-                  },
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥3200",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 16,
-                        "width": 48,
-                        "x": 205,
-                        "y": 354,
-                      },
-                      "style": Object {
-                        "color": "#fff684ff",
-                        "fontSize": 16,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 16,
-                      },
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "永久有效",
-                      },
-                      "children": Array [],
-                      "frame": Object {
-                        "height": 12,
-                        "width": 48,
-                        "x": 205,
-                        "y": 388,
-                      },
-                      "style": Object {
-                        "color": "#ffffffff",
-                        "fontSize": 12,
-                        "fontWeight": 5,
-                        "letterSpacing": 0,
-                        "lineHeight": 12,
-                      },
-                      "type": "Text",
-                    },
-                  ],
-                  "frame": Object {
-                    "height": 46,
-                    "width": 48,
-                    "x": 205,
-                    "y": 354,
-                  },
-                  "style": Object {
-                    "alignItems": "center",
-                    "alignSelf": "flex-start",
-                    "flexDirection": "column",
-                    "justifyContent": "flex-start",
-                    "paddingTop": 0,
-                  },
-                  "type": "Block",
-                },
-              ],
-              "frame": Object {
-                "height": 68,
-                "width": 146,
-                "x": 205,
-                "y": 332,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
-              "type": "Block",
-            },
-          ],
-          "frame": Object {
-            "height": 96,
-            "width": 351,
-            "x": 12,
-            "y": 316,
-          },
-          "style": Object {},
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "text": "至尊黄金卡",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 14,
-                "width": 146,
-                "x": 24,
-                "y": 440,
-              },
-              "style": Object {
-                "color": "#ffffffff",
-                "fontSize": 14,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 14,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
                   "attrs": Object {
-                    "text": "¥50",
+                    "text": "¥3200",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 16,
-                    "width": 29,
-                    "x": 24,
-                    "y": 462,
-                  },
-                  "style": Object {
-                    "alignSelf": "flex-start",
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
                   "type": "Text",
                 },
                 Object {
@@ -1542,67 +497,45 @@ Object {
                     "text": "永久有效",
                   },
                   "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 48,
-                    "x": 24,
-                    "y": 496,
-                  },
-                  "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
-                  },
                   "type": "Text",
                 },
               ],
-              "frame": Object {
-                "height": 46,
-                "width": 48,
-                "x": 24,
-                "y": 462,
-              },
-              "style": Object {
-                "alignItems": "center",
-                "alignSelf": "flex-start",
-                "flexDirection": "column",
-                "justifyContent": "flex-start",
-                "paddingTop": 0,
-              },
               "type": "Block",
             },
           ],
-          "frame": Object {
-            "height": 68,
-            "width": 146,
-            "x": 24,
-            "y": 440,
-          },
-          "style": Object {
-            "alignItems": "center",
-            "alignSelf": "flex-start",
-            "flexDirection": "column",
-            "justifyContent": "flex-start",
-            "marginLeft": 12,
-            "paddingTop": 0,
-          },
           "type": "Block",
         },
       ],
-      "frame": Object {
-        "height": 420,
-        "width": 351,
-        "x": 12,
-        "y": 100,
+      "extraInfo": Object {
+        "sameNode": true,
       },
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "至尊黄金卡",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "¥50",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "永久有效",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
       "type": "Block",
     },
     Object {
@@ -1610,34 +543,9 @@ Object {
         "text": "————＞ω＜我是有底线的————",
       },
       "children": Array [],
-      "frame": Object {
-        "height": 12,
-        "width": 201,
-        "x": 87,
-        "y": 532,
-      },
-      "style": Object {
-        "color": "#b3b3b3ff",
-        "fontSize": 12,
-        "fontWeight": 5,
-        "letterSpacing": 0,
-        "lineHeight": 12,
-      },
       "type": "Text",
     },
   ],
-  "frame": Object {
-    "height": 444,
-    "width": 351,
-    "x": 12,
-    "y": 100,
-  },
-  "style": Object {
-    "alignItems": "center",
-    "flexDirection": "column",
-    "justifyContent": "flex-start",
-    "paddingTop": 0,
-  },
   "type": "Block",
 }
 `;
