@@ -1,6 +1,5 @@
 import {INode} from '../types';
-import {calcBoundaryNode, isSameSchema} from './utils';
-import {Range} from 'istanbul-lib-coverage';
+import {calcBoundaryNode, isEquealNum, isSameSchema} from './utils';
 
 /**
  * @desc
@@ -79,11 +78,10 @@ export function mergeSplitEqualBlock(yranges: RangeItem[]): RangeItem[] {
   for (let i = segmentQuene.length-1; i >= 0; i--) {
     let segmentItem =segmentQuene[i];
     if(segmentItem instanceof SegmentFlag) {
-      if(segmentItem.len ===lastLen) {
-        segmentQuene.splice(i,1);//把多的len删除
+      if(isEquealNum(segmentItem.len||0,lastLen)) {
         recordIndex.push(i);
       } else {
-        if(recordIndex.length>2){
+        if(recordIndex.length>2) {
           recordIndex.map(_index=>segmentQuene.splice(_index,1));
         }
 

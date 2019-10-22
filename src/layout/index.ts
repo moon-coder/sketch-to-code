@@ -8,7 +8,7 @@ import {
   calcBoundaryBox,
   calcHSpacing,
   mergeLog,
-  canMergeLog, walk
+  canMergeLog, walk, sortNodesByLayout
 } from "./utils";
 import rowMerge from  './row-merge';
 import blockMerge from  './block-merge';
@@ -34,6 +34,7 @@ const phaseOne = (nodes: INode[]) => {
         //一个节点只有一个子节点, 则这个关系 可以去除
         node.children = [blockMerge(node.children)];
       }
+      node.children =  sortNodesByLayout(node.children);
       return ;
     }
   })

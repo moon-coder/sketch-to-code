@@ -174,12 +174,23 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
 }
 
 /**
+ * 先上后下,先左后右.
+ * @param {INode[]} nodes
+ * @returns {INode[]}
+ */
+export function sortNodesByLayout(nodes:INode[]):INode[]{
+  return nodes.sort((a:INode,b)=>{
+      return (a.frame.y*100+a.frame.x)-(b.frame.y*100+b.frame.x)
+  })
+}
+
+/**
  * 在是否相同 波动范围内
  * @param a
  * @param b
  * @param rate
  */
-function isEquealNum(a:number,b:number,rate:number):boolean {
+export function isEquealNum(a:number,b:number,rate:number=0.95):boolean {
 
   return Math.abs(a-b)<=(a+b)/2*rate;
 }
