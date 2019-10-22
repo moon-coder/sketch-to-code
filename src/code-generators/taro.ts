@@ -4,15 +4,16 @@ const helper = require("@imgcook/dsl-helper");
 
 export default (data: INode): ICompData => {
 
+
   const { printer, utils } = helper;
   const line = (content: any, level:any) => utils.line(content, { indent: { space: level * 2 } });
 
   const typeMap: {[key: string] : string} = {
-    'Text': 'span',
-    'Image': 'img',
-    'Block': 'div',
-    'Repeat': 'div',
-    'Shape': 'div'
+    'Text': 'Text',
+    'Image': 'Image',
+    'Block': 'View',
+    'Repeat': 'View',
+    'Shape': 'View'
   };
 
 
@@ -27,13 +28,12 @@ export default (data: INode): ICompData => {
       });
     }
     let attrStr = '';
-    attrStr += node.attrs.src ? ` src='${node.attrs.src}'` : '';
-    attrStr += node.attrs.className ? ` class="c${node.attrs.className}"` : '';
+    attrStr += node.attrs.src ? ` src={${node.attrs.src}}` : '';
+    attrStr += node.attrs.className ? ` className="${node.attrs.className}"` : '';
 
     if (node.attrs.text) {
-      console.log('NODE: ' + JSON.stringify(node.attrs));
       lines.push(line(`<${nodeType}${attrStr}>${node.attrs.text}</${nodeType}>`, level));
-    } else if (nodeType === 'img') {
+    } else if (nodeType === 'Image') {
       lines.push(line(`<${nodeType}${attrStr}/>`, level));
     } else {
       lines.push(line(`<${nodeType}${attrStr}>`, level));
@@ -52,28 +52,22 @@ export default (data: INode): ICompData => {
   const transKey = (str: string) => {
     return str.replace(/\B([A-Z])/g, '-$1').toLowerCase()
   }
-  // const transVal = val => {
-  //   val = val ? val : 0;
-  //   if (typeof(val) === 'number') val = val * 2 + 'px';
-  //   return val;
-  // }
   const transVal = (key: string, val: any) => {
     val = val ? val : 0;
     if (typeof(val) === 'number'
       && !(key === 'lineHeight' && val < 5)) {
-      val = val / 50 + 'rem';
+      val = val * 2 + 'px';
     }
     return val;
   }
-
   styleArr.forEach(item => delete item.style.lines);
-  lines.push(line(`.c${styleArr[0].className} {`, 0));
+  lines.push(line(`.${styleArr[0].className} {`, 0));
   Object.keys(styleArr[0].style).forEach(key => {
     lines.push(line(`${transKey(key)}: ${transVal(key, styleArr[0].style[key])};`, 1));
   });
   styleArr.forEach((item, idx) => {
     if (idx > 0) {
-      lines.push(line(`.c${item.className} {`, 1));
+      lines.push(line(`.${item.className} {`, 1));
       Object.keys(item.style).forEach(key => {
         lines.push(line(`${transKey(key)}: ${transVal(key, item.style[key])};`, 2));
       });
