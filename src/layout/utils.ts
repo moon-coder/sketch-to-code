@@ -158,7 +158,7 @@ export function walk(rootNode: INode, callBack: IWalkHandle,{lv=1}:any={}) {
  */
 export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
 
-  //长度都想同.
+  //长度都接近的.
   if(isEquealNum(a.frame.width,b.frame.width,rate) && isEquealNum(a.frame.height,b.frame.height,rate)) {
     //形状是一样的. 就可以判断两者一致的.
     //不同类型的元素数量;

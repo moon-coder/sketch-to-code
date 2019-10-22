@@ -215,6 +215,7 @@ export function getRangeItemUtil(type: 'x' | 'y') {
             );
             let newBlockNodes = calcBoundaryNode(nodes);
             newBlockNodes.style.flexDirection = type === 'y' ? 'column' : 'row';
+            newBlockNodes.extraInfo={sameNode:true};
             resultRangeItem.unshift(new RangeItem(newBlockNodes,type));
           } else if (rangesArea.length === 1) {
             resultRangeItem.unshift(rangesArea[0]);
