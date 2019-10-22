@@ -26,15 +26,15 @@ export default function(nodes: INode[]): INode[] {
   let flexDirection="y";
   //
   let resultRanges;
-  if (xranges.length > yranges.length) {
-    flexDirection = "x";
-    resultRanges = xUtil.mergeSameBlock(xranges);
-    resultRanges = xUtil.mergeSplitEqualBlock(resultRanges);
-  } else {
-  debugger;
+  // if (xranges.length > yranges.length) {
+  //   flexDirection = "x";
+  //   resultRanges = xUtil.mergeSameBlock(xranges);
+  //   resultRanges = xUtil.mergeSplitEqualBlock(resultRanges);
+  // } else {
+
     resultRanges = yUtil.mergeSameBlock(yranges);
     resultRanges = yUtil.mergeSplitEqualBlock(resultRanges);
-  }
+  // }
 
   //包装后还是一个节点就没必要包起来了.
   if (resultRanges.length === 1) {

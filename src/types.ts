@@ -67,7 +67,11 @@ export interface INode {
   points: Coords[];
   style: IStyle;
   attrs: IAttrs;
-  children: INode[],
+  children: INode[];
+  extraInfo?:{
+    sameNode:boolean;
+  }
+
 }
 
 

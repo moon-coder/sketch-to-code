@@ -9,7 +9,7 @@ import {INode} from "./types";
  * @Date    2019/10/15
  **/
 
-const IgnoreKey = ['__layer','parent','id','className','props','semantic','points'];
+const IgnoreKey = ['__layer','parent','id','className','props','semantic','points','style','frame'];
 
 export function toJSON(node: INode) {
 

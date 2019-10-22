@@ -23,7 +23,6 @@ const phaseOne = (nodes: INode[]) => {
 
 
   walk(rootNode,(node) => {
-
     if(node.children && node.children.length >0) {
       if(node.children.length > 1) {
         node.children = rowMerge(node.children);
@@ -38,15 +37,12 @@ const phaseOne = (nodes: INode[]) => {
   // 3.去掉同行同列
   mergeLineRow(rootNode);
 
-  debugger
   // 4.重新排列
   reSort(rootNode);
 
-  debugger
   // 5.重命名样式
   renameClassName(rootNode);
 
-  debugger
   if (rootNode.children.length == 1) return rootNode.children[0];
 
   return rootNode;

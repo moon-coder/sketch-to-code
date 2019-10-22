@@ -145,9 +145,6 @@ export function walk(rootNode: INode, callBack: IWalkHandle,{lv=1}:any={}) {
     rootNode.children.forEach((childrenNode, index) => {
       walk(childrenNode,callBack,{lv:lv+1});
     });
-    if(lv===1){
-      debugger
-    }
 
     callBack(rootNode);
   } else {
@@ -169,6 +166,8 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
       return true;
     }
   }
+
+  //如果面积误差在
 
   return false;
 }

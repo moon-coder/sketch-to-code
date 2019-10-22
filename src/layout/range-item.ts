@@ -14,9 +14,10 @@ import {calcBoundaryNode, isEquealNum, isSameSchema} from './utils';
  */
 export class RangeItem {
   rate: number = 1;
-  type: 'x' | 'y' = 'y';
-  constructor(node: INode, type: 'x' | 'y' = 'y', rate: number = 1) {
+  type: 'x' | 'y';
+  constructor(node: INode, type: 'x' | 'y', rate: number = 0.95) {
     this.rate = rate;
+    this.type =type;
     let {x, y, height, width} = node.frame;
     if (type === 'y') {
       this.min = y;
@@ -43,6 +44,7 @@ export class RangeItem {
       }
 
       if (RangeItem.isMergeable(rangeOne, rangeItem)) {
+        rangeItem.merge(rangeOne);
       } else {
         result.push(rangeOne);
       }
@@ -61,6 +63,12 @@ export class RangeItem {
     return false;
   }
 
+  merge(rangeItem:RangeItem) {
+    this.min =  this.min < rangeItem.min?this.min:rangeItem.min;
+    this.max =  this.max > rangeItem.max?this.max:rangeItem.max;
+    this.items=this.items.concat(rangeItem.items);
+  }
+
   items: INode[];
   min: number;
   max: number;
@@ -70,10 +78,10 @@ export class RangeItem {
 
     if(this.type==='y') {
       this.min = this.min < y ? this.min : y;
-      this.max = this.max >( y + height * rate) ? this.max : y + height * rate;
+      this.max = this.max >( y + height * rate) ? this.max : (y + height * rate);
     }else{
       this.min = this.min < x ? this.min : x;
-      this.max = this.max >( x + width * rate) ? this.max : x + width * rate;
+      this.max = this.max >( x + width * rate) ? this.max : (x + width * rate);
     }
     this.items.push(node);
   }
@@ -92,7 +100,7 @@ class SegmentFlag {
 
 const rate = 0.95;
 
-export function getRangeItemUtil(type: 'x' | 'y' = 'y') {
+export function getRangeItemUtil(type: 'x' | 'y') {
   const util = {
     getRanges: (nodes: INode[]): RangeItem[] => {
       let ranges: RangeItem[] = [];
@@ -111,7 +119,7 @@ export function getRangeItemUtil(type: 'x' | 'y' = 'y') {
           range.addNode(node);
           ranges = RangeItem.mergeRange(ranges, range);
         } else {
-          ranges.push(new RangeItem(node));
+          ranges.push(new RangeItem(node,type));
         }
       }
 
@@ -207,7 +215,7 @@ export function getRangeItemUtil(type: 'x' | 'y' = 'y') {
             );
             let newBlockNodes = calcBoundaryNode(nodes);
             newBlockNodes.style.flexDirection = type === 'y' ? 'column' : 'row';
-            resultRangeItem.unshift(new RangeItem(newBlockNodes));
+            resultRangeItem.unshift(new RangeItem(newBlockNodes,type));
           } else if (rangesArea.length === 1) {
             resultRangeItem.unshift(rangesArea[0]);
           }
@@ -289,7 +297,7 @@ export function getRangeItemUtil(type: 'x' | 'y' = 'y') {
             newBlockNodes.style.flexDirection = type === 'y' ? 'column' : 'row';
             //TODO 要把间隔的长度记录下来吗?
 
-            resultRangeItem.unshift(new RangeItem(newBlockNodes));
+            resultRangeItem.unshift(new RangeItem(newBlockNodes,type));
           } else if (rangesArea.length === 1) {
             resultRangeItem.unshift(rangesArea[0]);
           }
