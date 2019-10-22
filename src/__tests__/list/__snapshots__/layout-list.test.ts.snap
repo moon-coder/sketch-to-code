@@ -211,6 +211,49 @@ Object {
   "attrs": Object {},
   "children": Array [
     Object {
+      "attrs": Object {
+        "text": "为您推荐",
+      },
+      "children": Array [],
+      "frame": Object {
+        "height": 16,
+        "width": 64,
+        "x": 24,
+        "y": 420,
+      },
+      "points": Array [
+        Object {
+          "x": 24,
+          "y": 420,
+        },
+        Object {
+          "x": 88,
+          "y": 420,
+        },
+        Object {
+          "x": 88,
+          "y": 436,
+        },
+        Object {
+          "x": 24,
+          "y": 436,
+        },
+        Object {
+          "x": 56,
+          "y": 428,
+        },
+      ],
+      "style": Object {
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 16,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 16,
+      },
+      "type": "Text",
+    },
+    Object {
       "attrs": Object {},
       "children": Array [
         Object {
@@ -910,44 +953,44 @@ Object {
         "fontWeight": 5,
         "letterSpacing": 0,
         "lineHeight": 14,
-        "marginLeft": 118.5,
+        "marginLeft": 130.5,
       },
       "type": "Text",
     },
   ],
   "frame": Object {
-    "height": 404,
-    "width": 327,
-    "x": 24,
-    "y": 452,
+    "height": 452,
+    "width": 351,
+    "x": 12,
+    "y": 404,
   },
   "points": Array [
     Object {
-      "x": 24,
-      "y": 452,
+      "x": 12,
+      "y": 404,
     },
     Object {
-      "x": 351,
-      "y": 452,
+      "x": 363,
+      "y": 404,
     },
     Object {
-      "x": 351,
+      "x": 363,
       "y": 856,
     },
     Object {
-      "x": 24,
+      "x": 12,
       "y": 856,
     },
     Object {
       "x": 187.5,
-      "y": 654,
+      "y": 630,
     },
   ],
   "style": Object {
     "alignItems": "center",
     "flexDirection": "column",
     "justifyContent": "flex-start",
-    "paddingTop": 0,
+    "paddingTop": 16,
   },
   "type": "Block",
 }

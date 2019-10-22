@@ -1,5 +1,5 @@
 import {INode} from '../types';
-import {calcBoundaryNode} from './utils';
+import {calcBoundaryNode, isSameSchema} from './utils';
 import {Range} from 'istanbul-lib-coverage';
 
 /**
@@ -34,8 +34,8 @@ export default function(nodes: INode[]): INode[] {
 }
 
 class SegmentFlag {
-  len: number;
-  constructor(len: number) {
+  len?: number;
+  constructor(len?: number) {
     this.len = len;
   }
 }
@@ -55,37 +55,21 @@ export function mergeEquealSplitBlock(yranges: RangeItem[]): RangeItem[] {
     return yranges;
   }
 
-  //间距记录;
+  let segmentQuene: any[]= [yranges[yranges.length-1],new SegmentFlag()];
 
-  let segmentQuene: any[]= [];
+  //对比两个区域相似性程度,目前相似性可以使用高度来做处理
+  for (let i = yranges.length-2; i >= 0; i--) {
+    let yrangeDown = yranges[i];
+    let yrangeUp = yranges[i+1];
 
-  //反向分段; 间距做为对象插入, 相同的间距合并删除;
-  segmentQuene.unshift(new SegmentFlag(0));
-
-  for (let i = yranges.length-1; i > 0; i--) {
-    let yrangeMax = yranges[i];
-    let yrangeMin = yranges[i-1];
-
-    segmentQuene.unshift(yranges[i]);
-    segmentQuene.unshift(new SegmentFlag(yrangeMax.min - yrangeMin.max));
-  }
-  segmentQuene.unshift(yranges[0]);
-  segmentQuene.unshift(new SegmentFlag(0));
-
-  //删除重复的
-  let lastLen =0;
-  for (let i = segmentQuene.length-1; i >= 0; i--) {
-    let segmentItem =segmentQuene[i];
-    if(segmentItem instanceof SegmentFlag) {
-      if(segmentItem.len ===lastLen) {
-        segmentQuene.splice(i,1);//把多的len删除
-      } else {
-        lastLen= segmentItem.len;
-      }
+    if( isSameSchema(calcBoundaryNode(yrangeUp.items),calcBoundaryNode(yrangeDown.items)) ){
+      segmentQuene.unshift(yranges[i])
+    } else {
+      segmentQuene.unshift(new SegmentFlag());
+      segmentQuene.unshift(yranges[i]);
     }
   }
-
-  //TODO 这里可以再对比下边缘的情况, 有的间隔一样,但两个不是一样的东西. 对比两个区域相似性程度
+  segmentQuene.unshift(new SegmentFlag());
 
 
   let resultRangeItem: RangeItem[] = [];
@@ -124,6 +108,9 @@ export function mergeEquealSplitBlock(yranges: RangeItem[]): RangeItem[] {
 function getYRange(nodes: INode[]): RangeItem[] {
   let ranges: RangeItem[] = [];
 
+  //先大后小
+  nodes =nodes.sort((a,b)=>b.frame.height -a.frame.height);
+
   for (let i = 0, iLen = nodes.length; i < iLen; i++) {
     let node = nodes[i];
 
@@ -155,6 +142,9 @@ function mergeRange(ranges: RangeItem[], rangeItem: RangeItem): RangeItem[] {
   return result;
 }
 
+
+const rate=0.95;
+
 function getMatchRange(
   node: INode,
   rangesItems: RangeItem[],
@@ -163,7 +153,7 @@ function getMatchRange(
     let rangesItem = rangesItems[i];
     let {x, y, height, width} = node.frame;
     let lineMin = y,
-      lineMax = y + height;
+      lineMax = y + height*rate;
     if (
       (lineMax > rangesItem.min && lineMin < rangesItem.max) ||
       (lineMin < rangesItem.max && lineMax > rangesItem.min)
@@ -180,7 +170,7 @@ export class RangeItem {
   constructor(node: INode) {
     let {y, height} = node.frame;
     this.min = y;
-    this.max = y + height;
+    this.max = y + height*rate;//腐蚀算法. 让边界更清晰
     this.items = [node];
   }
 

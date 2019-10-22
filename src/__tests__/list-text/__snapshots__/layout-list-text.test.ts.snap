@@ -9,10 +9,89 @@ Object {
       "children": Array [
         Object {
           "attrs": Object {},
-          "children": Array [],
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "卡项权益",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 64,
+                "x": 22,
+                "y": 288,
+              },
+              "points": Array [
+                Object {
+                  "x": 22,
+                  "y": 288,
+                },
+                Object {
+                  "x": 86,
+                  "y": 288,
+                },
+                Object {
+                  "x": 86,
+                  "y": 304,
+                },
+                Object {
+                  "x": 22,
+                  "y": 304,
+                },
+                Object {
+                  "x": 54,
+                  "y": 296,
+                },
+              ],
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 16,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 16,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 2,
+                "x": 12,
+                "y": 288,
+              },
+              "points": Array [
+                Object {
+                  "x": 12,
+                  "y": 288,
+                },
+                Object {
+                  "x": 14,
+                  "y": 288,
+                },
+                Object {
+                  "x": 14,
+                  "y": 304,
+                },
+                Object {
+                  "x": 12,
+                  "y": 304,
+                },
+                Object {
+                  "x": 13,
+                  "y": 296,
+                },
+              ],
+              "style": Object {
+                "backgroundColor": "#ff6600ff",
+              },
+              "type": "Block",
+            },
+          ],
           "frame": Object {
             "height": 16,
-            "width": 2,
+            "width": 74,
             "x": 12,
             "y": 288,
           },
@@ -22,11 +101,11 @@ Object {
               "y": 288,
             },
             Object {
-              "x": 14,
+              "x": 86,
               "y": 288,
             },
             Object {
-              "x": 14,
+              "x": 86,
               "y": 304,
             },
             Object {
@@ -34,99 +113,13 @@ Object {
               "y": 304,
             },
             Object {
-              "x": 13,
+              "x": 49,
               "y": 296,
             },
           ],
-          "style": Object {
-            "backgroundColor": "#ff6600ff",
-          },
+          "style": Object {},
           "type": "Block",
         },
-        Object {
-          "attrs": Object {
-            "text": "卡项权益",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 16,
-            "width": 64,
-            "x": 22,
-            "y": 288,
-          },
-          "points": Array [
-            Object {
-              "x": 22,
-              "y": 288,
-            },
-            Object {
-              "x": 86,
-              "y": 288,
-            },
-            Object {
-              "x": 86,
-              "y": 304,
-            },
-            Object {
-              "x": 22,
-              "y": 304,
-            },
-            Object {
-              "x": 54,
-              "y": 296,
-            },
-          ],
-          "style": Object {
-            "color": "#333333ff",
-            "fontSize": 16,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 16,
-          },
-          "type": "Text",
-        },
-      ],
-      "frame": Object {
-        "height": 16,
-        "width": 74,
-        "x": 12,
-        "y": 288,
-      },
-      "points": Array [
-        Object {
-          "x": 12,
-          "y": 288,
-        },
-        Object {
-          "x": 86,
-          "y": 288,
-        },
-        Object {
-          "x": 86,
-          "y": 304,
-        },
-        Object {
-          "x": 12,
-          "y": 304,
-        },
-        Object {
-          "x": 49,
-          "y": 296,
-        },
-      ],
-      "style": Object {
-        "alignItems": "center",
-        "alignSelf": "flex-start",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingLeft": 0,
-        "paddingRight": 0,
-      },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
         Object {
           "attrs": Object {
             "text": "美容服务",
@@ -170,6 +163,47 @@ Object {
           },
           "type": "Text",
         },
+      ],
+      "frame": Object {
+        "height": 46,
+        "width": 74,
+        "x": 12,
+        "y": 288,
+      },
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 334,
+        },
+        Object {
+          "x": 12,
+          "y": 334,
+        },
+        Object {
+          "x": 49,
+          "y": 311,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingTop": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
         Object {
           "attrs": Object {},
           "children": Array [
@@ -408,33 +442,152 @@ Object {
           "style": Object {},
           "type": "Block",
         },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "精油美毛",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 56,
+                "x": 12,
+                "y": 386,
+              },
+              "points": Array [
+                Object {
+                  "x": 12,
+                  "y": 386,
+                },
+                Object {
+                  "x": 68,
+                  "y": 386,
+                },
+                Object {
+                  "x": 68,
+                  "y": 400,
+                },
+                Object {
+                  "x": 12,
+                  "y": 400,
+                },
+                Object {
+                  "x": 40,
+                  "y": 393,
+                },
+              ],
+              "style": Object {
+                "color": "#a3a3a3ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×12",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 23,
+                "x": 340,
+                "y": 386,
+              },
+              "points": Array [
+                Object {
+                  "x": 340,
+                  "y": 386,
+                },
+                Object {
+                  "x": 363,
+                  "y": 386,
+                },
+                Object {
+                  "x": 363,
+                  "y": 400,
+                },
+                Object {
+                  "x": 340,
+                  "y": 400,
+                },
+                Object {
+                  "x": 351.5,
+                  "y": 393,
+                },
+              ],
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+          ],
+          "frame": Object {
+            "height": 14,
+            "width": 351,
+            "x": 12,
+            "y": 386,
+          },
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 400,
+            },
+            Object {
+              "x": 12,
+              "y": 400,
+            },
+            Object {
+              "x": 187.5,
+              "y": 393,
+            },
+          ],
+          "style": Object {},
+          "type": "Block",
+        },
       ],
       "frame": Object {
         "height": 58,
         "width": 351,
         "x": 12,
-        "y": 320,
+        "y": 342,
       },
       "points": Array [
         Object {
           "x": 12,
-          "y": 320,
+          "y": 342,
         },
         Object {
           "x": 363,
-          "y": 320,
+          "y": 342,
         },
         Object {
           "x": 363,
-          "y": 378,
+          "y": 400,
         },
         Object {
           "x": 12,
-          "y": 378,
+          "y": 400,
         },
         Object {
           "x": 187.5,
-          "y": 349,
+          "y": 371,
         },
       ],
       "style": Object {
@@ -446,176 +599,51 @@ Object {
       "type": "Block",
     },
     Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "精油美毛",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 56,
-            "x": 12,
-            "y": 386,
-          },
-          "points": Array [
-            Object {
-              "x": 12,
-              "y": 386,
-            },
-            Object {
-              "x": 68,
-              "y": 386,
-            },
-            Object {
-              "x": 68,
-              "y": 400,
-            },
-            Object {
-              "x": 12,
-              "y": 400,
-            },
-            Object {
-              "x": 40,
-              "y": 393,
-            },
-          ],
-          "style": Object {
-            "color": "#a3a3a3ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "×12",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 23,
-            "x": 340,
-            "y": 386,
-          },
-          "points": Array [
-            Object {
-              "x": 340,
-              "y": 386,
-            },
-            Object {
-              "x": 363,
-              "y": 386,
-            },
-            Object {
-              "x": 363,
-              "y": 400,
-            },
-            Object {
-              "x": 340,
-              "y": 400,
-            },
-            Object {
-              "x": 351.5,
-              "y": 393,
-            },
-          ],
-          "style": Object {
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
-      ],
+      "attrs": Object {
+        "text": "清洁服务",
+      },
+      "children": Array [],
       "frame": Object {
         "height": 14,
-        "width": 351,
+        "width": 56,
         "x": 12,
-        "y": 386,
+        "y": 416,
       },
       "points": Array [
         Object {
           "x": 12,
-          "y": 386,
+          "y": 416,
         },
         Object {
-          "x": 363,
-          "y": 386,
+          "x": 68,
+          "y": 416,
         },
         Object {
-          "x": 363,
-          "y": 400,
+          "x": 68,
+          "y": 430,
         },
         Object {
           "x": 12,
-          "y": 400,
+          "y": 430,
         },
         Object {
-          "x": 187.5,
-          "y": 393,
+          "x": 40,
+          "y": 423,
         },
       ],
       "style": Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingLeft": 0,
-        "paddingRight": 0,
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
       },
-      "type": "Block",
+      "type": "Text",
     },
     Object {
       "attrs": Object {},
       "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "清洁服务",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 56,
-            "x": 12,
-            "y": 416,
-          },
-          "points": Array [
-            Object {
-              "x": 12,
-              "y": 416,
-            },
-            Object {
-              "x": 68,
-              "y": 416,
-            },
-            Object {
-              "x": 68,
-              "y": 430,
-            },
-            Object {
-              "x": 12,
-              "y": 430,
-            },
-            Object {
-              "x": 40,
-              "y": 423,
-            },
-          ],
-          "style": Object {
-            "alignSelf": "flex-start",
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
         Object {
           "attrs": Object {},
           "children": Array [
@@ -735,54 +763,97 @@ Object {
           "style": Object {},
           "type": "Block",
         },
-      ],
-      "frame": Object {
-        "height": 36,
-        "width": 351,
-        "x": 12,
-        "y": 416,
-      },
-      "points": Array [
         Object {
-          "x": 12,
-          "y": 416,
-        },
-        Object {
-          "x": 363,
-          "y": 416,
-        },
-        Object {
-          "x": 363,
-          "y": 452,
-        },
-        Object {
-          "x": 12,
-          "y": 452,
-        },
-        Object {
-          "x": 187.5,
-          "y": 434,
-        },
-      ],
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "温柔小姐姐做造型",
-          },
-          "children": Array [],
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "温柔小姐姐做造型",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 112,
+                "x": 12,
+                "y": 460,
+              },
+              "points": Array [
+                Object {
+                  "x": 12,
+                  "y": 460,
+                },
+                Object {
+                  "x": 124,
+                  "y": 460,
+                },
+                Object {
+                  "x": 124,
+                  "y": 474,
+                },
+                Object {
+                  "x": 12,
+                  "y": 474,
+                },
+                Object {
+                  "x": 68,
+                  "y": 467,
+                },
+              ],
+              "style": Object {
+                "color": "#a3a3a3ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×8",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 17,
+                "x": 346,
+                "y": 460,
+              },
+              "points": Array [
+                Object {
+                  "x": 346,
+                  "y": 460,
+                },
+                Object {
+                  "x": 363,
+                  "y": 460,
+                },
+                Object {
+                  "x": 363,
+                  "y": 474,
+                },
+                Object {
+                  "x": 346,
+                  "y": 474,
+                },
+                Object {
+                  "x": 354.5,
+                  "y": 467,
+                },
+              ],
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+          ],
           "frame": Object {
             "height": 14,
-            "width": 112,
+            "width": 351,
             "x": 12,
             "y": 460,
           },
@@ -792,11 +863,11 @@ Object {
               "y": 460,
             },
             Object {
-              "x": 124,
+              "x": 363,
               "y": 460,
             },
             Object {
-              "x": 124,
+              "x": 363,
               "y": 474,
             },
             Object {
@@ -804,76 +875,28 @@ Object {
               "y": 474,
             },
             Object {
-              "x": 68,
+              "x": 187.5,
               "y": 467,
             },
           ],
-          "style": Object {
-            "color": "#a3a3a3ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "×8",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 17,
-            "x": 346,
-            "y": 460,
-          },
-          "points": Array [
-            Object {
-              "x": 346,
-              "y": 460,
-            },
-            Object {
-              "x": 363,
-              "y": 460,
-            },
-            Object {
-              "x": 363,
-              "y": 474,
-            },
-            Object {
-              "x": 346,
-              "y": 474,
-            },
-            Object {
-              "x": 354.5,
-              "y": 467,
-            },
-          ],
-          "style": Object {
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
+          "style": Object {},
+          "type": "Block",
         },
       ],
       "frame": Object {
-        "height": 14,
+        "height": 36,
         "width": 351,
         "x": 12,
-        "y": 460,
+        "y": 438,
       },
       "points": Array [
         Object {
           "x": 12,
-          "y": 460,
+          "y": 438,
         },
         Object {
           "x": 363,
-          "y": 460,
+          "y": 438,
         },
         Object {
           "x": 363,
@@ -885,15 +908,14 @@ Object {
         },
         Object {
           "x": 187.5,
-          "y": 467,
+          "y": 456,
         },
       ],
       "style": Object {
         "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingLeft": 0,
-        "paddingRight": 0,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingTop": 0,
       },
       "type": "Block",
     },
@@ -945,10 +967,89 @@ Object {
       "children": Array [
         Object {
           "attrs": Object {},
-          "children": Array [],
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "卡项权益",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 64,
+                "x": 22,
+                "y": 288,
+              },
+              "points": Array [
+                Object {
+                  "x": 22,
+                  "y": 288,
+                },
+                Object {
+                  "x": 86,
+                  "y": 288,
+                },
+                Object {
+                  "x": 86,
+                  "y": 304,
+                },
+                Object {
+                  "x": 22,
+                  "y": 304,
+                },
+                Object {
+                  "x": 54,
+                  "y": 296,
+                },
+              ],
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 16,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 16,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [],
+              "frame": Object {
+                "height": 16,
+                "width": 2,
+                "x": 12,
+                "y": 288,
+              },
+              "points": Array [
+                Object {
+                  "x": 12,
+                  "y": 288,
+                },
+                Object {
+                  "x": 14,
+                  "y": 288,
+                },
+                Object {
+                  "x": 14,
+                  "y": 304,
+                },
+                Object {
+                  "x": 12,
+                  "y": 304,
+                },
+                Object {
+                  "x": 13,
+                  "y": 296,
+                },
+              ],
+              "style": Object {
+                "backgroundColor": "#ff6600ff",
+              },
+              "type": "Block",
+            },
+          ],
           "frame": Object {
             "height": 16,
-            "width": 2,
+            "width": 74,
             "x": 12,
             "y": 288,
           },
@@ -958,11 +1059,11 @@ Object {
               "y": 288,
             },
             Object {
-              "x": 14,
+              "x": 86,
               "y": 288,
             },
             Object {
-              "x": 14,
+              "x": 86,
               "y": 304,
             },
             Object {
@@ -970,99 +1071,13 @@ Object {
               "y": 304,
             },
             Object {
-              "x": 13,
+              "x": 49,
               "y": 296,
             },
           ],
-          "style": Object {
-            "backgroundColor": "#ff6600ff",
-          },
+          "style": Object {},
           "type": "Block",
         },
-        Object {
-          "attrs": Object {
-            "text": "卡项权益",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 16,
-            "width": 64,
-            "x": 22,
-            "y": 288,
-          },
-          "points": Array [
-            Object {
-              "x": 22,
-              "y": 288,
-            },
-            Object {
-              "x": 86,
-              "y": 288,
-            },
-            Object {
-              "x": 86,
-              "y": 304,
-            },
-            Object {
-              "x": 22,
-              "y": 304,
-            },
-            Object {
-              "x": 54,
-              "y": 296,
-            },
-          ],
-          "style": Object {
-            "color": "#333333ff",
-            "fontSize": 16,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 16,
-          },
-          "type": "Text",
-        },
-      ],
-      "frame": Object {
-        "height": 16,
-        "width": 74,
-        "x": 12,
-        "y": 288,
-      },
-      "points": Array [
-        Object {
-          "x": 12,
-          "y": 288,
-        },
-        Object {
-          "x": 86,
-          "y": 288,
-        },
-        Object {
-          "x": 86,
-          "y": 304,
-        },
-        Object {
-          "x": 12,
-          "y": 304,
-        },
-        Object {
-          "x": 49,
-          "y": 296,
-        },
-      ],
-      "style": Object {
-        "alignItems": "center",
-        "alignSelf": "flex-start",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingLeft": 0,
-        "paddingRight": 0,
-      },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
         Object {
           "attrs": Object {
             "text": "美容服务",
@@ -1106,6 +1121,47 @@ Object {
           },
           "type": "Text",
         },
+      ],
+      "frame": Object {
+        "height": 46,
+        "width": 74,
+        "x": 12,
+        "y": 288,
+      },
+      "points": Array [
+        Object {
+          "x": 12,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 288,
+        },
+        Object {
+          "x": 86,
+          "y": 334,
+        },
+        Object {
+          "x": 12,
+          "y": 334,
+        },
+        Object {
+          "x": 49,
+          "y": 311,
+        },
+      ],
+      "style": Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingTop": 0,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
         Object {
           "attrs": Object {},
           "children": Array [
@@ -1344,33 +1400,152 @@ Object {
           "style": Object {},
           "type": "Block",
         },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "精油美毛",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 56,
+                "x": 12,
+                "y": 386,
+              },
+              "points": Array [
+                Object {
+                  "x": 12,
+                  "y": 386,
+                },
+                Object {
+                  "x": 68,
+                  "y": 386,
+                },
+                Object {
+                  "x": 68,
+                  "y": 400,
+                },
+                Object {
+                  "x": 12,
+                  "y": 400,
+                },
+                Object {
+                  "x": 40,
+                  "y": 393,
+                },
+              ],
+              "style": Object {
+                "color": "#a3a3a3ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×12",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 23,
+                "x": 340,
+                "y": 386,
+              },
+              "points": Array [
+                Object {
+                  "x": 340,
+                  "y": 386,
+                },
+                Object {
+                  "x": 363,
+                  "y": 386,
+                },
+                Object {
+                  "x": 363,
+                  "y": 400,
+                },
+                Object {
+                  "x": 340,
+                  "y": 400,
+                },
+                Object {
+                  "x": 351.5,
+                  "y": 393,
+                },
+              ],
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+          ],
+          "frame": Object {
+            "height": 14,
+            "width": 351,
+            "x": 12,
+            "y": 386,
+          },
+          "points": Array [
+            Object {
+              "x": 12,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 386,
+            },
+            Object {
+              "x": 363,
+              "y": 400,
+            },
+            Object {
+              "x": 12,
+              "y": 400,
+            },
+            Object {
+              "x": 187.5,
+              "y": 393,
+            },
+          ],
+          "style": Object {},
+          "type": "Block",
+        },
       ],
       "frame": Object {
         "height": 58,
         "width": 351,
         "x": 12,
-        "y": 320,
+        "y": 342,
       },
       "points": Array [
         Object {
           "x": 12,
-          "y": 320,
+          "y": 342,
         },
         Object {
           "x": 363,
-          "y": 320,
+          "y": 342,
         },
         Object {
           "x": 363,
-          "y": 378,
+          "y": 400,
         },
         Object {
           "x": 12,
-          "y": 378,
+          "y": 400,
         },
         Object {
           "x": 187.5,
-          "y": 349,
+          "y": 371,
         },
       ],
       "style": Object {
@@ -1382,176 +1557,51 @@ Object {
       "type": "Block",
     },
     Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "精油美毛",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 56,
-            "x": 12,
-            "y": 386,
-          },
-          "points": Array [
-            Object {
-              "x": 12,
-              "y": 386,
-            },
-            Object {
-              "x": 68,
-              "y": 386,
-            },
-            Object {
-              "x": 68,
-              "y": 400,
-            },
-            Object {
-              "x": 12,
-              "y": 400,
-            },
-            Object {
-              "x": 40,
-              "y": 393,
-            },
-          ],
-          "style": Object {
-            "color": "#a3a3a3ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "×12",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 23,
-            "x": 340,
-            "y": 386,
-          },
-          "points": Array [
-            Object {
-              "x": 340,
-              "y": 386,
-            },
-            Object {
-              "x": 363,
-              "y": 386,
-            },
-            Object {
-              "x": 363,
-              "y": 400,
-            },
-            Object {
-              "x": 340,
-              "y": 400,
-            },
-            Object {
-              "x": 351.5,
-              "y": 393,
-            },
-          ],
-          "style": Object {
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
-      ],
+      "attrs": Object {
+        "text": "清洁服务",
+      },
+      "children": Array [],
       "frame": Object {
         "height": 14,
-        "width": 351,
+        "width": 56,
         "x": 12,
-        "y": 386,
+        "y": 416,
       },
       "points": Array [
         Object {
           "x": 12,
-          "y": 386,
+          "y": 416,
         },
         Object {
-          "x": 363,
-          "y": 386,
+          "x": 68,
+          "y": 416,
         },
         Object {
-          "x": 363,
-          "y": 400,
+          "x": 68,
+          "y": 430,
         },
         Object {
           "x": 12,
-          "y": 400,
+          "y": 430,
         },
         Object {
-          "x": 187.5,
-          "y": 393,
+          "x": 40,
+          "y": 423,
         },
       ],
       "style": Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingLeft": 0,
-        "paddingRight": 0,
+        "alignSelf": "flex-start",
+        "color": "#333333ff",
+        "fontSize": 14,
+        "fontWeight": 5,
+        "letterSpacing": 0,
+        "lineHeight": 14,
       },
-      "type": "Block",
+      "type": "Text",
     },
     Object {
       "attrs": Object {},
       "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "清洁服务",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 56,
-            "x": 12,
-            "y": 416,
-          },
-          "points": Array [
-            Object {
-              "x": 12,
-              "y": 416,
-            },
-            Object {
-              "x": 68,
-              "y": 416,
-            },
-            Object {
-              "x": 68,
-              "y": 430,
-            },
-            Object {
-              "x": 12,
-              "y": 430,
-            },
-            Object {
-              "x": 40,
-              "y": 423,
-            },
-          ],
-          "style": Object {
-            "alignSelf": "flex-start",
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
         Object {
           "attrs": Object {},
           "children": Array [
@@ -1671,54 +1721,97 @@ Object {
           "style": Object {},
           "type": "Block",
         },
-      ],
-      "frame": Object {
-        "height": 36,
-        "width": 351,
-        "x": 12,
-        "y": 416,
-      },
-      "points": Array [
         Object {
-          "x": 12,
-          "y": 416,
-        },
-        Object {
-          "x": 363,
-          "y": 416,
-        },
-        Object {
-          "x": 363,
-          "y": 452,
-        },
-        Object {
-          "x": 12,
-          "y": 452,
-        },
-        Object {
-          "x": 187.5,
-          "y": 434,
-        },
-      ],
-      "style": Object {
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-      },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "温柔小姐姐做造型",
-          },
-          "children": Array [],
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "温柔小姐姐做造型",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 112,
+                "x": 12,
+                "y": 460,
+              },
+              "points": Array [
+                Object {
+                  "x": 12,
+                  "y": 460,
+                },
+                Object {
+                  "x": 124,
+                  "y": 460,
+                },
+                Object {
+                  "x": 124,
+                  "y": 474,
+                },
+                Object {
+                  "x": 12,
+                  "y": 474,
+                },
+                Object {
+                  "x": 68,
+                  "y": 467,
+                },
+              ],
+              "style": Object {
+                "color": "#a3a3a3ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×8",
+              },
+              "children": Array [],
+              "frame": Object {
+                "height": 14,
+                "width": 17,
+                "x": 346,
+                "y": 460,
+              },
+              "points": Array [
+                Object {
+                  "x": 346,
+                  "y": 460,
+                },
+                Object {
+                  "x": 363,
+                  "y": 460,
+                },
+                Object {
+                  "x": 363,
+                  "y": 474,
+                },
+                Object {
+                  "x": 346,
+                  "y": 474,
+                },
+                Object {
+                  "x": 354.5,
+                  "y": 467,
+                },
+              ],
+              "style": Object {
+                "color": "#333333ff",
+                "fontSize": 14,
+                "fontWeight": 5,
+                "letterSpacing": 0,
+                "lineHeight": 14,
+              },
+              "type": "Text",
+            },
+          ],
           "frame": Object {
             "height": 14,
-            "width": 112,
+            "width": 351,
             "x": 12,
             "y": 460,
           },
@@ -1728,11 +1821,11 @@ Object {
               "y": 460,
             },
             Object {
-              "x": 124,
+              "x": 363,
               "y": 460,
             },
             Object {
-              "x": 124,
+              "x": 363,
               "y": 474,
             },
             Object {
@@ -1740,76 +1833,28 @@ Object {
               "y": 474,
             },
             Object {
-              "x": 68,
+              "x": 187.5,
               "y": 467,
             },
           ],
-          "style": Object {
-            "color": "#a3a3a3ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "×8",
-          },
-          "children": Array [],
-          "frame": Object {
-            "height": 14,
-            "width": 17,
-            "x": 346,
-            "y": 460,
-          },
-          "points": Array [
-            Object {
-              "x": 346,
-              "y": 460,
-            },
-            Object {
-              "x": 363,
-              "y": 460,
-            },
-            Object {
-              "x": 363,
-              "y": 474,
-            },
-            Object {
-              "x": 346,
-              "y": 474,
-            },
-            Object {
-              "x": 354.5,
-              "y": 467,
-            },
-          ],
-          "style": Object {
-            "color": "#333333ff",
-            "fontSize": 14,
-            "fontWeight": 5,
-            "letterSpacing": 0,
-            "lineHeight": 14,
-          },
-          "type": "Text",
+          "style": Object {},
+          "type": "Block",
         },
       ],
       "frame": Object {
-        "height": 14,
+        "height": 36,
         "width": 351,
         "x": 12,
-        "y": 460,
+        "y": 438,
       },
       "points": Array [
         Object {
           "x": 12,
-          "y": 460,
+          "y": 438,
         },
         Object {
           "x": 363,
-          "y": 460,
+          "y": 438,
         },
         Object {
           "x": 363,
@@ -1821,15 +1866,14 @@ Object {
         },
         Object {
           "x": 187.5,
-          "y": 467,
+          "y": 456,
         },
       ],
       "style": Object {
         "alignItems": "center",
-        "flexDirection": "row",
-        "justifyContent": "space-between",
-        "paddingLeft": 0,
-        "paddingRight": 0,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingTop": 0,
       },
       "type": "Block",
     },
@@ -1919,7 +1963,6 @@ Object {
                     },
                   ],
                   "style": Object {
-                    "alignSelf": "center",
                     "color": "#ffffffff",
                     "fontSize": 14,
                     "fontWeight": 5,
@@ -1929,12 +1972,95 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "¥8848",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "¥8848",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 16,
+                        "width": 48,
+                        "x": 24,
+                        "y": 138,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 24,
+                          "y": 138,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 138,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 154,
+                        },
+                        Object {
+                          "x": 24,
+                          "y": 154,
+                        },
+                        Object {
+                          "x": 48,
+                          "y": 146,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#fff684ff",
+                        "fontSize": 16,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 16,
+                      },
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 48,
+                        "x": 24,
+                        "y": 172,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 24,
+                          "y": 172,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 172,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 184,
+                        },
+                        Object {
+                          "x": 24,
+                          "y": 184,
+                        },
+                        Object {
+                          "x": 48,
+                          "y": 178,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#ffffffff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
-                    "height": 16,
+                    "height": 46,
                     "width": 48,
                     "x": 24,
                     "y": 138,
@@ -1950,48 +2076,6 @@ Object {
                     },
                     Object {
                       "x": 72,
-                      "y": 154,
-                    },
-                    Object {
-                      "x": 24,
-                      "y": 154,
-                    },
-                    Object {
-                      "x": 48,
-                      "y": 146,
-                    },
-                  ],
-                  "style": Object {
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 48,
-                    "x": 24,
-                    "y": 172,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 24,
-                      "y": 172,
-                    },
-                    Object {
-                      "x": 72,
-                      "y": 172,
-                    },
-                    Object {
-                      "x": 72,
                       "y": 184,
                     },
                     Object {
@@ -2000,17 +2084,17 @@ Object {
                     },
                     Object {
                       "x": 48,
-                      "y": 178,
+                      "y": 161,
                     },
                   ],
                   "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "frame": Object {
@@ -2042,10 +2126,9 @@ Object {
                 },
               ],
               "style": Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "flexDirection": "column",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
                 "paddingTop": 0,
               },
               "type": "Block",
@@ -2087,7 +2170,6 @@ Object {
                     },
                   ],
                   "style": Object {
-                    "alignSelf": "center",
                     "color": "#ffffffff",
                     "fontSize": 14,
                     "fontWeight": 5,
@@ -2097,13 +2179,97 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "¥800",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "¥800",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 16,
+                        "width": 39,
+                        "x": 205,
+                        "y": 138,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 205,
+                          "y": 138,
+                        },
+                        Object {
+                          "x": 244,
+                          "y": 138,
+                        },
+                        Object {
+                          "x": 244,
+                          "y": 154,
+                        },
+                        Object {
+                          "x": 205,
+                          "y": 154,
+                        },
+                        Object {
+                          "x": 224.5,
+                          "y": 146,
+                        },
+                      ],
+                      "style": Object {
+                        "alignSelf": "flex-start",
+                        "color": "#fff684ff",
+                        "fontSize": 16,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 16,
+                      },
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "365天内有效",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 70,
+                        "x": 205,
+                        "y": 172,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 205,
+                          "y": 172,
+                        },
+                        Object {
+                          "x": 275,
+                          "y": 172,
+                        },
+                        Object {
+                          "x": 275,
+                          "y": 184,
+                        },
+                        Object {
+                          "x": 205,
+                          "y": 184,
+                        },
+                        Object {
+                          "x": 240,
+                          "y": 178,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#ffffffff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
-                    "height": 16,
-                    "width": 39,
+                    "height": 46,
+                    "width": 70,
                     "x": 205,
                     "y": 138,
                   },
@@ -2113,50 +2279,8 @@ Object {
                       "y": 138,
                     },
                     Object {
-                      "x": 244,
-                      "y": 138,
-                    },
-                    Object {
-                      "x": 244,
-                      "y": 154,
-                    },
-                    Object {
-                      "x": 205,
-                      "y": 154,
-                    },
-                    Object {
-                      "x": 224.5,
-                      "y": 146,
-                    },
-                  ],
-                  "style": Object {
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "365天内有效",
-                  },
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 70,
-                    "x": 205,
-                    "y": 172,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 205,
-                      "y": 172,
-                    },
-                    Object {
                       "x": 275,
-                      "y": 172,
+                      "y": 138,
                     },
                     Object {
                       "x": 275,
@@ -2168,17 +2292,17 @@ Object {
                     },
                     Object {
                       "x": 240,
-                      "y": 178,
+                      "y": 161,
                     },
                   ],
                   "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "frame": Object {
@@ -2210,10 +2334,9 @@ Object {
                 },
               ],
               "style": Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "flexDirection": "column",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
                 "paddingTop": 0,
               },
               "type": "Block",
@@ -2290,7 +2413,6 @@ Object {
                     },
                   ],
                   "style": Object {
-                    "alignSelf": "center",
                     "color": "#ffffffff",
                     "fontSize": 14,
                     "fontWeight": 5,
@@ -2300,12 +2422,95 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "¥8848",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "¥8848",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 16,
+                        "width": 48,
+                        "x": 24,
+                        "y": 246,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 24,
+                          "y": 246,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 246,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 262,
+                        },
+                        Object {
+                          "x": 24,
+                          "y": 262,
+                        },
+                        Object {
+                          "x": 48,
+                          "y": 254,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#fff684ff",
+                        "fontSize": 16,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 16,
+                      },
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 48,
+                        "x": 24,
+                        "y": 280,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 24,
+                          "y": 280,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 280,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 292,
+                        },
+                        Object {
+                          "x": 24,
+                          "y": 292,
+                        },
+                        Object {
+                          "x": 48,
+                          "y": 286,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#ffffffff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
-                    "height": 16,
+                    "height": 46,
                     "width": 48,
                     "x": 24,
                     "y": 246,
@@ -2321,48 +2526,6 @@ Object {
                     },
                     Object {
                       "x": 72,
-                      "y": 262,
-                    },
-                    Object {
-                      "x": 24,
-                      "y": 262,
-                    },
-                    Object {
-                      "x": 48,
-                      "y": 254,
-                    },
-                  ],
-                  "style": Object {
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 48,
-                    "x": 24,
-                    "y": 280,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 24,
-                      "y": 280,
-                    },
-                    Object {
-                      "x": 72,
-                      "y": 280,
-                    },
-                    Object {
-                      "x": 72,
                       "y": 292,
                     },
                     Object {
@@ -2371,17 +2534,17 @@ Object {
                     },
                     Object {
                       "x": 48,
-                      "y": 286,
+                      "y": 269,
                     },
                   ],
                   "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "frame": Object {
@@ -2413,10 +2576,9 @@ Object {
                 },
               ],
               "style": Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "flexDirection": "column",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
                 "paddingTop": 0,
               },
               "type": "Block",
@@ -2458,7 +2620,6 @@ Object {
                     },
                   ],
                   "style": Object {
-                    "alignSelf": "center",
                     "color": "#ffffffff",
                     "fontSize": 14,
                     "fontWeight": 5,
@@ -2468,12 +2629,95 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "¥3200",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "¥3200",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 16,
+                        "width": 48,
+                        "x": 205,
+                        "y": 246,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 205,
+                          "y": 246,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 246,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 262,
+                        },
+                        Object {
+                          "x": 205,
+                          "y": 262,
+                        },
+                        Object {
+                          "x": 229,
+                          "y": 254,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#fff684ff",
+                        "fontSize": 16,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 16,
+                      },
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 48,
+                        "x": 205,
+                        "y": 280,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 205,
+                          "y": 280,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 280,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 292,
+                        },
+                        Object {
+                          "x": 205,
+                          "y": 292,
+                        },
+                        Object {
+                          "x": 229,
+                          "y": 286,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#ffffffff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
-                    "height": 16,
+                    "height": 46,
                     "width": 48,
                     "x": 205,
                     "y": 246,
@@ -2489,48 +2733,6 @@ Object {
                     },
                     Object {
                       "x": 253,
-                      "y": 262,
-                    },
-                    Object {
-                      "x": 205,
-                      "y": 262,
-                    },
-                    Object {
-                      "x": 229,
-                      "y": 254,
-                    },
-                  ],
-                  "style": Object {
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 48,
-                    "x": 205,
-                    "y": 280,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 205,
-                      "y": 280,
-                    },
-                    Object {
-                      "x": 253,
-                      "y": 280,
-                    },
-                    Object {
-                      "x": 253,
                       "y": 292,
                     },
                     Object {
@@ -2539,17 +2741,17 @@ Object {
                     },
                     Object {
                       "x": 229,
-                      "y": 286,
+                      "y": 269,
                     },
                   ],
                   "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "frame": Object {
@@ -2581,10 +2783,9 @@ Object {
                 },
               ],
               "style": Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "flexDirection": "column",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
                 "paddingTop": 0,
               },
               "type": "Block",
@@ -2661,7 +2862,6 @@ Object {
                     },
                   ],
                   "style": Object {
-                    "alignSelf": "center",
                     "color": "#ffffffff",
                     "fontSize": 14,
                     "fontWeight": 5,
@@ -2671,13 +2871,97 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "¥50",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "¥50",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 16,
+                        "width": 29,
+                        "x": 24,
+                        "y": 354,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 24,
+                          "y": 354,
+                        },
+                        Object {
+                          "x": 53,
+                          "y": 354,
+                        },
+                        Object {
+                          "x": 53,
+                          "y": 370,
+                        },
+                        Object {
+                          "x": 24,
+                          "y": 370,
+                        },
+                        Object {
+                          "x": 38.5,
+                          "y": 362,
+                        },
+                      ],
+                      "style": Object {
+                        "alignSelf": "flex-start",
+                        "color": "#fff684ff",
+                        "fontSize": 16,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 16,
+                      },
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 48,
+                        "x": 24,
+                        "y": 388,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 24,
+                          "y": 388,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 388,
+                        },
+                        Object {
+                          "x": 72,
+                          "y": 400,
+                        },
+                        Object {
+                          "x": 24,
+                          "y": 400,
+                        },
+                        Object {
+                          "x": 48,
+                          "y": 394,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#ffffffff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
-                    "height": 16,
-                    "width": 29,
+                    "height": 46,
+                    "width": 48,
                     "x": 24,
                     "y": 354,
                   },
@@ -2687,50 +2971,8 @@ Object {
                       "y": 354,
                     },
                     Object {
-                      "x": 53,
-                      "y": 354,
-                    },
-                    Object {
-                      "x": 53,
-                      "y": 370,
-                    },
-                    Object {
-                      "x": 24,
-                      "y": 370,
-                    },
-                    Object {
-                      "x": 38.5,
-                      "y": 362,
-                    },
-                  ],
-                  "style": Object {
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 48,
-                    "x": 24,
-                    "y": 388,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 24,
-                      "y": 388,
-                    },
-                    Object {
                       "x": 72,
-                      "y": 388,
+                      "y": 354,
                     },
                     Object {
                       "x": 72,
@@ -2742,17 +2984,17 @@ Object {
                     },
                     Object {
                       "x": 48,
-                      "y": 394,
+                      "y": 377,
                     },
                   ],
                   "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "frame": Object {
@@ -2784,10 +3026,9 @@ Object {
                 },
               ],
               "style": Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "flexDirection": "column",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
                 "paddingTop": 0,
               },
               "type": "Block",
@@ -2829,7 +3070,6 @@ Object {
                     },
                   ],
                   "style": Object {
-                    "alignSelf": "center",
                     "color": "#ffffffff",
                     "fontSize": 14,
                     "fontWeight": 5,
@@ -2839,12 +3079,95 @@ Object {
                   "type": "Text",
                 },
                 Object {
-                  "attrs": Object {
-                    "text": "¥3200",
-                  },
-                  "children": Array [],
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "¥3200",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 16,
+                        "width": 48,
+                        "x": 205,
+                        "y": 354,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 205,
+                          "y": 354,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 354,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 370,
+                        },
+                        Object {
+                          "x": 205,
+                          "y": 370,
+                        },
+                        Object {
+                          "x": 229,
+                          "y": 362,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#fff684ff",
+                        "fontSize": 16,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 16,
+                      },
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "frame": Object {
+                        "height": 12,
+                        "width": 48,
+                        "x": 205,
+                        "y": 388,
+                      },
+                      "points": Array [
+                        Object {
+                          "x": 205,
+                          "y": 388,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 388,
+                        },
+                        Object {
+                          "x": 253,
+                          "y": 400,
+                        },
+                        Object {
+                          "x": 205,
+                          "y": 400,
+                        },
+                        Object {
+                          "x": 229,
+                          "y": 394,
+                        },
+                      ],
+                      "style": Object {
+                        "color": "#ffffffff",
+                        "fontSize": 12,
+                        "fontWeight": 5,
+                        "letterSpacing": 0,
+                        "lineHeight": 12,
+                      },
+                      "type": "Text",
+                    },
+                  ],
                   "frame": Object {
-                    "height": 16,
+                    "height": 46,
                     "width": 48,
                     "x": 205,
                     "y": 354,
@@ -2860,48 +3183,6 @@ Object {
                     },
                     Object {
                       "x": 253,
-                      "y": 370,
-                    },
-                    Object {
-                      "x": 205,
-                      "y": 370,
-                    },
-                    Object {
-                      "x": 229,
-                      "y": 362,
-                    },
-                  ],
-                  "style": Object {
-                    "color": "#fff684ff",
-                    "fontSize": 16,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 16,
-                  },
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "frame": Object {
-                    "height": 12,
-                    "width": 48,
-                    "x": 205,
-                    "y": 388,
-                  },
-                  "points": Array [
-                    Object {
-                      "x": 205,
-                      "y": 388,
-                    },
-                    Object {
-                      "x": 253,
-                      "y": 388,
-                    },
-                    Object {
-                      "x": 253,
                       "y": 400,
                     },
                     Object {
@@ -2910,17 +3191,17 @@ Object {
                     },
                     Object {
                       "x": 229,
-                      "y": 394,
+                      "y": 377,
                     },
                   ],
                   "style": Object {
-                    "color": "#ffffffff",
-                    "fontSize": 12,
-                    "fontWeight": 5,
-                    "letterSpacing": 0,
-                    "lineHeight": 12,
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "column",
+                    "justifyContent": "flex-start",
+                    "paddingTop": 0,
                   },
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "frame": Object {
@@ -2952,10 +3233,9 @@ Object {
                 },
               ],
               "style": Object {
-                "alignItems": "flex-start",
+                "alignItems": "center",
                 "flexDirection": "column",
                 "justifyContent": "flex-start",
-                "paddingLeft": 0,
                 "paddingTop": 0,
               },
               "type": "Block",
@@ -3029,7 +3309,6 @@ Object {
                 },
               ],
               "style": Object {
-                "alignSelf": "center",
                 "color": "#ffffffff",
                 "fontSize": 14,
                 "fontWeight": 5,
@@ -3039,13 +3318,97 @@ Object {
               "type": "Text",
             },
             Object {
-              "attrs": Object {
-                "text": "¥50",
-              },
-              "children": Array [],
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "¥50",
+                  },
+                  "children": Array [],
+                  "frame": Object {
+                    "height": 16,
+                    "width": 29,
+                    "x": 24,
+                    "y": 462,
+                  },
+                  "points": Array [
+                    Object {
+                      "x": 24,
+                      "y": 462,
+                    },
+                    Object {
+                      "x": 53,
+                      "y": 462,
+                    },
+                    Object {
+                      "x": 53,
+                      "y": 478,
+                    },
+                    Object {
+                      "x": 24,
+                      "y": 478,
+                    },
+                    Object {
+                      "x": 38.5,
+                      "y": 470,
+                    },
+                  ],
+                  "style": Object {
+                    "alignSelf": "flex-start",
+                    "color": "#fff684ff",
+                    "fontSize": 16,
+                    "fontWeight": 5,
+                    "letterSpacing": 0,
+                    "lineHeight": 16,
+                  },
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "永久有效",
+                  },
+                  "children": Array [],
+                  "frame": Object {
+                    "height": 12,
+                    "width": 48,
+                    "x": 24,
+                    "y": 496,
+                  },
+                  "points": Array [
+                    Object {
+                      "x": 24,
+                      "y": 496,
+                    },
+                    Object {
+                      "x": 72,
+                      "y": 496,
+                    },
+                    Object {
+                      "x": 72,
+                      "y": 508,
+                    },
+                    Object {
+                      "x": 24,
+                      "y": 508,
+                    },
+                    Object {
+                      "x": 48,
+                      "y": 502,
+                    },
+                  ],
+                  "style": Object {
+                    "color": "#ffffffff",
+                    "fontSize": 12,
+                    "fontWeight": 5,
+                    "letterSpacing": 0,
+                    "lineHeight": 12,
+                  },
+                  "type": "Text",
+                },
+              ],
               "frame": Object {
-                "height": 16,
-                "width": 29,
+                "height": 46,
+                "width": 48,
                 "x": 24,
                 "y": 462,
               },
@@ -3055,50 +3418,8 @@ Object {
                   "y": 462,
                 },
                 Object {
-                  "x": 53,
-                  "y": 462,
-                },
-                Object {
-                  "x": 53,
-                  "y": 478,
-                },
-                Object {
-                  "x": 24,
-                  "y": 478,
-                },
-                Object {
-                  "x": 38.5,
-                  "y": 470,
-                },
-              ],
-              "style": Object {
-                "color": "#fff684ff",
-                "fontSize": 16,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 16,
-              },
-              "type": "Text",
-            },
-            Object {
-              "attrs": Object {
-                "text": "永久有效",
-              },
-              "children": Array [],
-              "frame": Object {
-                "height": 12,
-                "width": 48,
-                "x": 24,
-                "y": 496,
-              },
-              "points": Array [
-                Object {
-                  "x": 24,
-                  "y": 496,
-                },
-                Object {
                   "x": 72,
-                  "y": 496,
+                  "y": 462,
                 },
                 Object {
                   "x": 72,
@@ -3110,17 +3431,17 @@ Object {
                 },
                 Object {
                   "x": 48,
-                  "y": 502,
+                  "y": 485,
                 },
               ],
               "style": Object {
-                "color": "#ffffffff",
-                "fontSize": 12,
-                "fontWeight": 5,
-                "letterSpacing": 0,
-                "lineHeight": 12,
+                "alignItems": "center",
+                "alignSelf": "flex-start",
+                "flexDirection": "column",
+                "justifyContent": "flex-start",
+                "paddingTop": 0,
               },
-              "type": "Text",
+              "type": "Block",
             },
           ],
           "frame": Object {
@@ -3152,12 +3473,11 @@ Object {
             },
           ],
           "style": Object {
-            "alignItems": "flex-start",
+            "alignItems": "center",
             "alignSelf": "flex-start",
             "flexDirection": "column",
             "justifyContent": "flex-start",
             "marginLeft": 12,
-            "paddingLeft": 0,
             "paddingTop": 0,
           },
           "type": "Block",

@@ -20,8 +20,10 @@ const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
 
   const rootNode = preDeal(nodes);
+  debugger;
 
   walk(rootNode,(node) => {
+
 
     if(node.children && node.children.length >0) {
 
@@ -38,12 +40,15 @@ const phaseOne = (nodes: INode[]) => {
   // 3.去掉同行同列
   mergeLineRow(rootNode);
 
+  debugger
   // 4.重新排列
   reSort(rootNode);
 
+  debugger
   // 5.重命名样式
   renameClassName(rootNode);
 
+  debugger
   if (rootNode.children.length == 1) return rootNode.children[0];
 
   return rootNode;
@@ -261,7 +266,7 @@ const renameClassName = (node: INode) => {
 export default (nodes: INode[]): INode => {
 
   let rootNode =phaseOne(nodes);
-
+  debugger;
   calcRowLayout(rootNode);
   calcColLayout(rootNode);
   return rootNode;

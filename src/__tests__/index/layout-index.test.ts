@@ -18,7 +18,7 @@ import {toJSON} from "../../util";
 jest.mock('../../outer/sketch');
 
 it('首页布局代码生成', function () {
-    console.log("hello");
+  console.log("hello");
 
   let layers = readJSONSync(join(__dirname,"origin.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
