@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list-origin: list-origin 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "text": "有效期",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "text": "购买后365天内有效",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+  ],
+  "type": "Block",
+}
+`;
