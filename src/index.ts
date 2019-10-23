@@ -15,6 +15,8 @@ export default () => {
     sketch.UI.message('No layers are selected.')
     return;
   }
+  fs.writeFileSync("/Users/dong/Falcon/sketch-to-code/src/__tests__/list-text/origin.json", JSON.stringify(layers));
+
   const layer = layers.layers[0];
 
   // 整体截图
