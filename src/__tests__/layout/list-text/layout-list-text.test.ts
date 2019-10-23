@@ -14,7 +14,7 @@ import {loadeOrigin} from "../../util";
  * @Date    2019/10/14
  **/
 
-jest.mock('../../outer/sketch');
+jest.mock('../../../outer/sketch');
 
 
 

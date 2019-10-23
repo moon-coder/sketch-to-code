@@ -15,7 +15,7 @@ import {toJSON} from "../../../util";
  * @Date    2019/10/14
  **/
 
-jest.mock('../../outer/sketch');
+jest.mock('../../../outer/sketch');
 
 
 it('list-item ', function () {

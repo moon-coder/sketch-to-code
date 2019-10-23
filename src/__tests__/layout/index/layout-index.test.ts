@@ -14,7 +14,7 @@ import {toJSON} from "../../../util";
  * @Date    2019/10/14
  **/
 
-jest.mock('../../outer/sketch');
+jest.mock('../../../outer/sketch');
 
 it('首页布局代码生成', function () {
   console.log("hello");

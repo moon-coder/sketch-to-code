@@ -8,37 +8,25 @@ Object {
       "attrs": Object {},
       "children": Array [
         Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img4.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "提莫的蘑菇摊儿",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "南京市玄武区龙蟠路618号毛孩子广场F1-1001",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
-          "type": "Block",
+          "attrs": Object {
+            "src": "./img/img6.png",
+          },
+          "children": Array [],
+          "type": "Image",
+        },
+        Object {
+          "attrs": Object {
+            "text": "提莫的蘑菇摊儿",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "src": "./img/img5.png",
+          },
+          "children": Array [],
+          "type": "Image",
         },
         Object {
           "attrs": Object {},
@@ -50,16 +38,38 @@ Object {
                   "attrs": Object {},
                   "children": Array [
                     Object {
+                      "attrs": Object {
+                        "src": "./img/img7.png",
+                      },
+                      "children": Array [],
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "优惠券",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
                       "attrs": Object {},
                       "children": Array [
                         Object {
-                          "attrs": Object {},
+                          "attrs": Object {
+                            "src": "./img/img9.png",
+                          },
                           "children": Array [],
-                          "type": "Block",
+                          "type": "Image",
                         },
                         Object {
                           "attrs": Object {
-                            "text": "优惠券",
+                            "text": "充值卡",
                           },
                           "children": Array [],
                           "type": "Text",
@@ -71,9 +81,11 @@ Object {
                       "attrs": Object {},
                       "children": Array [
                         Object {
-                          "attrs": Object {},
+                          "attrs": Object {
+                            "src": "./img/img8.png",
+                          },
                           "children": Array [],
-                          "type": "Block",
+                          "type": "Image",
                         },
                         Object {
                           "attrs": Object {
@@ -88,24 +100,6 @@ Object {
                   ],
                   "type": "Block",
                 },
-                Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {},
-                      "children": Array [],
-                      "type": "Block",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "充值卡",
-                      },
-                      "children": Array [],
-                      "type": "Text",
-                    },
-                  ],
-                  "type": "Block",
-                },
               ],
               "extraInfo": Object {
                 "sameNode": true,
@@ -116,9 +110,11 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {},
+                  "attrs": Object {
+                    "src": "./img/img10.png",
+                  },
                   "children": Array [],
-                  "type": "Block",
+                  "type": "Image",
                 },
                 Object {
                   "attrs": Object {
@@ -132,6 +128,13 @@ Object {
             },
           ],
           "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "text": "南京市玄武区龙蟠路618号毛孩子广场F1-1001",
+          },
+          "children": Array [],
+          "type": "Text",
         },
       ],
       "type": "Block",
@@ -153,9 +156,11 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {},
+                  "attrs": Object {
+                    "src": "./img/img4.png",
+                  },
                   "children": Array [],
-                  "type": "Block",
+                  "type": "Image",
                 },
                 Object {
                   "attrs": Object {
