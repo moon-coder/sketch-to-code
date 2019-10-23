@@ -18,7 +18,7 @@ jest.mock('../../../outer/sketch');
  **/
 
 it('list-origin', function () {
-  let layers = readJSONSync(join(__dirname, "origin.json"));
+  let layers = readJSONSync(join(__dirname, "origin-0.json"));
   const nodes: INode[] = getNodes(layers.layers[0]);
 
   // 布局处理
