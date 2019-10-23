@@ -5,7 +5,6 @@ import {
   Layer,
   Text,
   Container,
-  Slice,
   Group,
 } from './types-sketch';
 import {IFrame, INode} from './types';
@@ -27,7 +26,6 @@ interface NodeInfoRepo {
  */
 export default (layer: Layer): INode[] => {
   const resultNodes: INode[] = [];
-
 
   const walk = (
     layer: Layer,
@@ -57,7 +55,13 @@ export default (layer: Layer): INode[] => {
     }
 
     // 导出图片
-    const layerImgSrc = exportImg(layer);
+    let layerImgSrc = '';
+    if (layer.type === 'Image'
+        || layer.type === 'Group' && layer.name.endsWith('-合并')
+        || layer.type === 'SymbolInstance'
+    ) {
+      layerImgSrc = exportImg(layer);
+    }
 
     if (!['Artboard', 'Group'].includes(layer.type) || layerImgSrc) {
       const node: INode = toNode(layer,nodeRepo[pPath]);

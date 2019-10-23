@@ -4,6 +4,7 @@ import layout from './layout/index';
 import h5Generrator from './code-generators/html5';
 let sketch = require('sketch');
 const fs = require('@skpm/fs');
+import { exportImg } from './sketch-utils';
 
 // 校验(sketch-validators)、视觉元素提取(get-nodes)、布局处理(layout)、代码生成(code-generators)
 export default () => {
@@ -14,10 +15,12 @@ export default () => {
     sketch.UI.message('No layers are selected.')
     return;
   }
+  const layer = layers.layers[0];
 
-  fs.writeFileSync("/Users/dong/Falcon/sketch-to-code/src/__tests__/list-text/origin.json", JSON.stringify(layers));
+  // 整体截图
+  exportImg(layer);
 
-  const nodes: INode[] = getNodes(layers.layers[0]);
+  const nodes: INode[] = getNodes(layer);
 
   // 布局处理
   const node: INode = layout(nodes);
