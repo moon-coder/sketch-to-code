@@ -2,6 +2,27 @@ import { ICompData, IStyle } from "../types";
 import {INode} from "../types";
 const helper = require("@imgcook/dsl-helper");
 
+
+const domWapper = (dom: string) => {
+  return `
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width,viewport-fit=cover">
+  <link rel="stylesheet/less" type="text/css" href="demo.less" />
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+</head>
+<body>
+${dom}
+</body>
+
+</html>
+  `;
+}
+
+
 export default (data: INode): ICompData => {
 
   const { printer, utils } = helper;
@@ -84,7 +105,7 @@ export default (data: INode): ICompData => {
 
   return {
     imports: '',
-    vdom,
+    vdom: domWapper(vdom),
     style: printer(lines)
   };
 }

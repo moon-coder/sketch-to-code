@@ -31,7 +31,7 @@ export default () => {
   const code: ICompData = h5Generrator(node);
 
   fs.writeFileSync("/Users/dong/Falcon/sketch-to-code/temp/demo.html", code.vdom);
-  fs.writeFileSync("/Users/dong/Falcon/sketch-to-code/temp/demo.css", code.style);
+  fs.writeFileSync("/Users/dong/Falcon/sketch-to-code/temp/demo.less", code.style);
 }
 
 const rmParent = (node: INode) => {
