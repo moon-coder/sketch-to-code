@@ -52,7 +52,7 @@ const phaseOne = (nodes: INode[]) => {
  * 预处理 image text 等叶子 节点倒推一步;
  */
 const preDeal = (nodes: INode[]): INode => {
-  nodes  =nodes.sort((a,b)=>a.frame.y-b.frame.y);
+  nodes = nodes.sort((a,b)=>a.frame.y-b.frame.y);
 
   const root = calcBoundaryNode(nodes);
 
@@ -60,18 +60,23 @@ const preDeal = (nodes: INode[]): INode => {
   children.forEach(node => node.points = calcNodeCoordsNew(node));
 
 
-  root.children = [];
-
-  // 将结点加入最近的外框结点
-  const addToOuter = (node: INode, nodes: INode[]) => {
+  /**
+   * 将结点加入最近的外框结点
+   * @param node
+   * @param nodes
+   * @return 是否加入了新的外框结点
+   */
+  const addToOuter = (node: INode, nodes: INode[]): boolean => {
     const outers = nodes.filter(item => item.type === 'Block' && item != node && isContainer(node, item));
     outers.sort((a, b) =>  isContainer(a, b) ? -1 : 1);
-    outers[0].children.push(node);
+    if (outers.length > 0) {
+      outers[0].children.push(node);
+      return true;
+    }
+    return false;
   }
   // 遍历所有节点，将其加入最近外框
-  children.forEach(child => {
-    addToOuter(child, [root, ...children])
-  });
+  root.children = children.filter(child => !addToOuter(child, children));
   return root;
 }
 
