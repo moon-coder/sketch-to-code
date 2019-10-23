@@ -1,9 +1,9 @@
-import {INode} from "../../types";
-import getNodes from "../../get-nodes";
-import layout from "../../layout";
+import {INode} from "../../../types";
+import getNodes from "../../../get-nodes";
+import layout from "../../../layout";
 import {join} from 'path';
-import {toJSON} from "../../util";
-import {loadeOrigin} from "../util";
+import {toJSON} from "../../../util";
+import {loadeOrigin} from "../../util";
 
 /**
  * @desc

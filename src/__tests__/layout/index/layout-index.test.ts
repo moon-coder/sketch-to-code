@@ -1,11 +1,10 @@
-import {ICompData, INode} from "../../types";
-import getNodes from "../../get-nodes";
-import layout from "../../layout";
+import {ICompData, INode} from "../../../types";
+import getNodes from "../../../get-nodes";
+import layout from "../../../layout";
 import {readJSONSync} from  'fs-extra';
 
 import {join} from 'path';
-import h5Generrator from "../../code-generators/html5";
-import {toJSON} from "../../util";
+import {toJSON} from "../../../util";
 /**
  * @desc
  *
