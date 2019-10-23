@@ -1,10 +1,10 @@
-import {INode} from "../../types";
-import getNodes from "../../get-nodes";
-import layout from "../../layout";
+import {INode} from "../../../types";
+import getNodes from "../../../get-nodes";
+import layout from "../../../layout";
 import {readJSONSync,writeJSONSync} from  'fs-extra';
 import {join} from 'path';
-import {loadeOrigin} from "../util";
-import {toJSON} from "../../util";
+import {loadeOrigin} from "../../util";
+import {toJSON} from "../../../util";
 
 /**
  * @desc
@@ -15,7 +15,7 @@ import {toJSON} from "../../util";
  * @Date    2019/10/14
  **/
 
-jest.mock('../../outer/sketch');
+jest.mock('../../../outer/sketch');
 
 
 it('list-item ', function () {

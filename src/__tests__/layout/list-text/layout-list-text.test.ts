@@ -1,9 +1,9 @@
-import {INode} from "../../types";
-import getNodes from "../../get-nodes";
-import layout from "../../layout";
+import {INode} from "../../../types";
+import getNodes from "../../../get-nodes";
+import layout from "../../../layout";
 import {join} from 'path';
-import {toJSON} from "../../util";
-import {loadeOrigin} from "../util";
+import {toJSON} from "../../../util";
+import {loadeOrigin} from "../../util";
 
 /**
  * @desc
@@ -14,7 +14,7 @@ import {loadeOrigin} from "../util";
  * @Date    2019/10/14
  **/
 
-jest.mock('../../outer/sketch');
+jest.mock('../../../outer/sketch');
 
 
 
