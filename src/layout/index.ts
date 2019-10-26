@@ -52,13 +52,9 @@ const phaseOne = (nodes: INode[]) => {
  * 预处理 image text 等叶子 节点倒推一步;
  */
 const preDeal = (nodes: INode[]): INode => {
+
   nodes = nodes.sort((a,b)=>a.frame.y-b.frame.y);
-
-  const root = calcBoundaryNode(nodes);
-
-  const children: INode[] = root.children;
-  children.forEach(node => node.points = calcNodeCoordsNew(node));
-
+  nodes.forEach(node => node.points = calcNodeCoordsNew(node));
 
   /**
    * 将结点加入最近的外框结点
@@ -75,9 +71,15 @@ const preDeal = (nodes: INode[]): INode => {
     }
     return false;
   }
+
   // 遍历所有节点，将其加入最近外框
-  root.children = children.filter(child => !addToOuter(child, children));
-  return root;
+  nodes = nodes.filter(child => !addToOuter(child, nodes));
+  if (nodes.length > 1) {
+    return calcBoundaryNode(nodes);
+  } else {
+    return nodes[0];
+  }
+
 }
 
 /**
@@ -211,13 +213,10 @@ const mergeOptional = (node: INode) => {
 const mergeLineRow = (node: INode) => {
   const children = [...node.children];
 
-
-  //建立父子关系
   children.forEach(child => {
     child.parent = node;
     mergeLineRow(child);
   });
-
 
   if (node.parent
       && ( (node.parent.style.flexDirection && node.parent.style.flexDirection == node.style.flexDirection )|| node.children.length == 1)) {
