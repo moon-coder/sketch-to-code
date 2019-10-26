@@ -200,20 +200,18 @@ const layerStyle = (layer: Layer, node: INode) => {
   if (layer.type === 'Text') {
     // 文本 fontSize/fontWeight/lineHeight/letterSpacing/color/textShadow
     style.fontSize = layer.style.fontSize;
-    style.fontWeight = layer.style.fontWeight;
     style.lineHeight = layer.style.lineHeight ? layer.style.lineHeight : 0;
-    style.letterSpacing = layer.style.kerning ? layer.style.kerning : 0;
     style.color = layer.style.textColor;
-    if (layer.style.shadows[0]) style.textShadow = layer.style.shadows[0];
     node.attrs.text = (layer as Text).text;
+    // style.fontWeight = layer.style.fontWeight;
+    // style.letterSpacing = layer.style.kerning ? layer.style.kerning : 0;
+    // if (layer.style.shadows[0]) style.textShadow = layer.style.shadows[0];
   } else {
     // 非文本 boxShadow(shadows/innerShadows)
   }
 
   node.style = style;
 };
-
-const layerAttrs = (layer: Layer) => {};
 
 /**
  * 计算四个顶点和中点的坐标
@@ -234,50 +232,3 @@ export function calcNodeCoords(node: INode) {
   return coords;
 }
 
-// export default {
-//
-//   // 形状样式提取
-//
-//   // 组样式提取
-//
-//   // 文字样式提取
-//
-//   // 图片样式提取
-//
-//   opacity: () => {},
-//   fills: () => {},
-//   borders: () => {},
-//   borderOptions: () => {},
-//   shadows: () => {},
-//   innerShadows: () => {},
-//   // 对齐方式
-//   alignment: () => {},
-//   // 垂直对齐方式
-//   verticalAlignment: () => {},
-//   // 字距
-//   kerning: () => {},
-//   // 行高
-//   lineHeight: () => {},
-//   // 段落间距
-//   paragraphSpacing: () => {},
-//   // 文字颜色
-//   textColor: () => {},
-//   // 字体
-//   fontSize: () => {},
-//   // 字变换(大写、小写) --
-//   textTransform: () => {},
-//   // 字体
-//   fontFamily: () => {},
-//   // 字体粗细
-//   fontWeight: () => {},
-//   // italic??
-//   fontStyle: () => {},
-//   // ~~~小型的大写字母 --
-//   fontVariant: () => {},
-//   // ~~~对当前的 font-family 进行伸缩变形
-//   fontStretch: () => {},
-//   // 下划线
-//   textUnderline: () => {},
-//   // 中划线
-//   textStrikethrough: () => {}
-// }
