@@ -13,6 +13,16 @@ const domWapper = (dom: string) => {
   <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width,viewport-fit=cover">
   <link rel="stylesheet/less" type="text/css" href="demo.less" />
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+  <style type="text/css">
+    html {
+      font-size: 13.333333vw!important;
+      box-sizing: border-box;
+    }
+    html, body {
+      padding: 0;
+      margin: 0
+    }
+  </style>
 </head>
 <body>
 ${dom}
