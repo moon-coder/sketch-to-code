@@ -1,5 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`flex/list-text-1: list-origin-1 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "text": "卡项权益",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "美容服务",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "×10",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {
+            "text": "凶悍大叔洗澡",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "温柔小姐姐做造型",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "精油美毛",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "清洁服务",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "×10",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "text": "凶悍大叔洗澡",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "text": "温柔小姐姐做造型",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+  ],
+  "type": "Block",
+}
+`;
+
 exports[`list-origin: list-origin 1`] = `
 Object {
   "attrs": Object {},
