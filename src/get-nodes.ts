@@ -176,8 +176,6 @@ const layerStyle = (layer: Layer, node: INode) => {
         break;
     }
   }
-  // 颜色、宽度
-  // 虚线(先不考虑)
   // 2.填充处理
   const fill: Fill = layer.style.fills[0];
   if (fill) {

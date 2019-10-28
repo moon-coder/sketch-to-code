@@ -96,8 +96,14 @@ export function calcBoundaryNode(nodes: INode[]): INode {
  * 计算两结点的水平间距
  */
 export function calcHSpacing(source: INode, target: INode) {
-  return target.points[0].x;
-  -source.points[1].x;
+  return target.points[0].x - source.points[1].x;
+}
+
+/**
+ * 计算两结点的垂直间距
+ */
+export function calcVSpacing(source: INode, target: INode) {
+  return target.points[0].y - source.points[3].y;
 }
 
 /**
@@ -225,4 +231,16 @@ export function getNodeStr(node: INode): string {
     result = node.attrs.text ? node.attrs.text : '';
   }
   return result;
+}
+
+const blockVisualKeys = ['backgroundColor', 'backgroundImg', 'border', 'boxShadow'];
+/**
+ * 结点是否为可视化盒子(无子结点，但有可视化样式)
+ */
+export function isVisualBox(node: INode) {
+  const hasVisualKey = Object.keys(node.style).some(key => blockVisualKeys.includes(key));
+  if (node.children.length == 0 && hasVisualKey) {
+    return true;
+  }
+  return false;
 }

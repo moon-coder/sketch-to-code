@@ -7,8 +7,9 @@ import {
   calcInnerSpacings,
   calcBoundaryBox,
   calcHSpacing,
+  calcVSpacing,
   mergeLog,
-  canMergeLog, walk, sortNodesByLayout
+  canMergeLog, walk, isVisualBox
 } from "./utils";
 import rowMerge from  './row-merge';
 import blockMerge from  './block-merge';
@@ -19,7 +20,7 @@ import blockMerge from  './block-merge';
 const phaseOne = (nodes: INode[]) => {
   // 1.预处理  包含关系的划分;
 
-  const rootNode = preDeal(nodes);
+  let rootNode = preDeal(nodes);
 
 
   walk(rootNode,(node) => {
@@ -36,14 +37,18 @@ const phaseOne = (nodes: INode[]) => {
   })
   // 3.去掉同行同列
   mergeLineRow(rootNode);
+  // fixme 这边逻辑摆放位置还要考虑
+  if (rootNode.children.length == 1) {
+    rootNode.style.flexDirection = rootNode.children[0].style.flexDirection;
+    rootNode.children = rootNode.children[0].children;
+    rootNode.children.forEach(child => child.parent = rootNode);
+  }
 
   // 4.重新排列
   reSort(rootNode);
 
   // 5.重命名样式
   renameClassName(rootNode);
-
-  if (rootNode.children.length == 1) return rootNode.children[0];
 
   return rootNode;
 }
@@ -267,6 +272,16 @@ export default (nodes: INode[]): INode => {
 
   calcRowLayout(rootNode);
   calcColLayout(rootNode);
+
+  // 计算宽高
+  // fixme 这边逻辑摆放位置还要考虑
+  walk(rootNode, (node) => {
+    if (node.type === 'Image' || (node.type === 'Block' && isVisualBox(node))) {
+      node.style.width = node.frame.width;
+      node.style.height = node.frame.height;
+    }
+  })
+
   return rootNode;
 }
 
@@ -281,6 +296,8 @@ const calcRowLayout = (node: INode) => {
   node.children.forEach(child => calcRowLayout(child));
 
   if (node.style.flexDirection !== 'row') return;
+
+  node.style.display = 'flex';
 
   // 子结点是否为等分分布
   const isNDivide = (node: INode) => {
@@ -333,8 +350,9 @@ const calcRowLayout = (node: INode) => {
     } else {
       // 计算marginRight
       children.forEach((child, idx) => {
-        if (idx == 0) return;
-        children[idx - 1].style.marginRight = calcHSpacing(children[idx - 1], child);
+        if (idx == children.length - 1) return;
+        const marginRight = calcHSpacing(child, children[idx + 1]);
+        child.style.marginRight = marginRight;
       });
     }
   } else if(leftBoxes.length == 0) {
@@ -416,6 +434,8 @@ const calcRowLayout = (node: INode) => {
     node.style.paddingTop = calcInnerSpacings(node, boundaryBox)[0];
   } else if(key === 'flex-end') {
     node.style.paddingBottom = calcInnerSpacings(node, boundaryBox)[2];
+  } else if (key === 'center') {
+    node.style.height = node.frame.height;
   }
   alignItemsArr.forEach((item: any, idx) => {
     if (idx == 0) return;
@@ -440,6 +460,8 @@ const calcColLayout = (node: INode) => {
 
   if (node.style.flexDirection !== 'column') return;
 
+  node.style.display = 'flex';
+
   const children = node.children;
   const boundaryBox = calcBoundaryBox(node.children);
 
@@ -451,6 +473,10 @@ const calcColLayout = (node: INode) => {
     // 1.2.其它情况，flex-start
     node.style.justifyContent = 'flex-start';
     node.style.paddingTop = calcInnerSpacings(node, boundaryBox)[0];
+    node.children.forEach((child, idx) => {
+      if (idx == node.children.length -1) return;
+      child.style.marginBottom = calcVSpacing(child, node.children[idx + 1]);
+    });
   }
 
   // 2.alignItems计算
@@ -463,13 +489,13 @@ const calcColLayout = (node: INode) => {
   } as any;
   // 根据坐标位置，计算每个节点的布局位置
   children.forEach(child => {
-    if (child.points[4].x == node.points[4].x) {
-      // 2.1.外框中点，center
-      alignItemsMap['center'].push(child);
-    } else if (child.points[0].x == boundaryBox[0].x && child.points[1].x == boundaryBox[1].x) {
-      // 2.2.包围框左右边，stretch
+    if (child.points[0].x == boundaryBox[0].x && child.points[1].x == boundaryBox[1].x) {
+      // 2.1.包围框左右边，stretch
       alignItemsMap['stretch'].push(child);
-    } else if(child.points[0].x == boundaryBox[0].x) {
+    } else if (child.points[4].x == node.points[4].x) {
+      // 2.2.外框中点，center
+      alignItemsMap['center'].push(child);
+    }else if(child.points[0].x == boundaryBox[0].x) {
       // 2.3.包围框左边，flex-start
       alignItemsMap['flex-start'].push(child);
     } else if(child.points[1].x == boundaryBox[1].x) {
@@ -484,7 +510,7 @@ const calcColLayout = (node: INode) => {
   const alignItemsArr = Object.entries(alignItemsMap).sort((a: any[], b: any[]) => b[1].length - a[1].length);
   const key = alignItemsArr[0][0];
   // 设置padding
-  if(key === 'stretch') {
+  if(alignItemsMap['stretch'].length > 0) {
     node.style.paddingLeft = calcInnerSpacings(node, boundaryBox)[3];
     node.style.paddingRight = calcInnerSpacings(node, boundaryBox)[1];
   } else if(key === 'flex-start') {

@@ -18,6 +18,9 @@ const domWapper = (dom: string) => {
       font-size: 13.333333vw!important;
       box-sizing: border-box;
     }
+    *,*::before,*::after {
+      box-sizing: inherit;
+    }
     html, body {
       padding: 0;
       margin: 0
