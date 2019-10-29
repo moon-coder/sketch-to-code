@@ -291,9 +291,12 @@ export function getRangeItemUtil(type: 'x' | 'y') {
             .filter(item => !(item instanceof SegmentFlag));
 
           if (rangesArea.length >= 2) {
-            let nodes = rangesArea.map((item: RangeItem) =>
-              calcBoundaryNode(item.items),
-            );
+            let nodes = rangesArea.map((item: RangeItem) => {
+              const newNode = calcBoundaryNode(item.items);
+              // TODO 这边只是临时写法
+              newNode.style.flexDirection = item.type === 'y' ? 'row' : 'column';
+              return newNode;
+            });
             let newBlockNodes = calcBoundaryNode(nodes);
             newBlockNodes.style.flexDirection = type === 'y' ? 'column' : 'row';
             //TODO 要把间隔的长度记录下来吗?

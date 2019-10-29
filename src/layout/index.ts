@@ -1,6 +1,5 @@
 import { INode } from "../types";
 import {
-  isOverlap,
   calcBoundaryNode,
   isContainer,
   calcNodeCoordsNew,
@@ -8,8 +7,10 @@ import {
   calcBoundaryBox,
   calcHSpacing,
   calcVSpacing,
-  mergeLog,
-  canMergeLog, walk, isVisualBox
+  walk,
+  isVisualBox,
+  hasVisualKey,
+  rateEqual, val,
 } from "./utils";
 import rowMerge from  './row-merge';
 import blockMerge from  './block-merge';
@@ -28,10 +29,13 @@ const phaseOne = (nodes: INode[]) => {
       if(node.children.length > 1) {
         node.children = rowMerge(node.children);
       }
-      if(node.children.length > 1) {
-        //一个节点只有一个子节点, 则这个关系 可以去除
-        node.children = [blockMerge(node.children)];
-      }
+      // TODO 这边只是临时写法
+      walk(node, (node) => {
+        if(node.children.length > 1) {
+          //一个节点只有一个子节点, 则这个关系 可以去除
+          node.children = [blockMerge(node.children)];
+        }
+      });
       return ;
     }
   })
@@ -88,127 +92,6 @@ const preDeal = (nodes: INode[]): INode => {
 }
 
 /**
- * 合并所有确定结点
- */
-const mergeSure = (node: INode) => {
-
-  // 1.walk整棵布局树
-  const walkNode = (node: INode): boolean => {
-    if (node.type === 'Block' && !node.style.flexDirection) {
-      const childrenFlag = node.children.every(child => walkNode(child));
-      // 2.针对Block结点进行确定合并
-      const nodeFlag = mergeNode(node);
-      // 利用返回参数 fixme
-      return childrenFlag && nodeFlag;
-    }
-    return true;
-  }
-  return walkNode(node);
-}
-
-/**
- * 2.对Block 下children 结点逐个进行合并测试
- *  两个节点
- *
- * @param {INode} node
- * @returns {boolean}
- */
-function mergeNode(node: INode):boolean {
-
-
-  if (node.children.length == 0) return true;
-  let k = 0;
-  // 2.1.不断循环遍历node的子结点
-  while (true) {
-    k++; if(k > 20) throw new Error('超出循环上线2');
-    for (let i = 0; i < node.children.length; i++) {
-
-      //选中对比节点
-      const child = node.children[i];
-      const others = node.children.filter(item => item != child);
-
-      const canMerges =  others.filter(otherNode => {
-        //otherNode =>即将合并测试节点
-
-        //extras 其他节点
-        const extras = others.filter(item => item != otherNode);
-
-        return extras.every(extra => !isOverlap(calcBoundaryNode([child, otherNode]), extra));
-      });
-      canMergeLog(child, canMerges);
-      if (canMerges.length == 1) {
-        // 2.2.当发现可以进行一次确定的合并时，合并并重新遍历；
-        console.log('进行了一次确定合并：' + mergeLog(child, canMerges[0]));
-        // 判断方向
-        const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
-        if (child.points[1].x <= canMerges[0].points[0].x
-          || child.points[0].x >= canMerges[0].points[1].x) {
-          boundaryNode.style.flexDirection = 'row';
-        } else {
-          boundaryNode.style.flexDirection = 'column';
-        }
-        // 合并结点
-        node.children = node.children
-          .filter(item => !(item == child || item == canMerges[0]))
-          .concat(boundaryNode);
-        break;
-      }
-
-      if (i == (node.children.length - 1)) {
-        // 2.3.node子结点遍历完成后返回
-        // fixme 能不能这么判断
-        return node.children.length == 1 || node.children.length == 0;
-      }
-    }
-  }
-
-
-}
-
-/**
- * 合并一次可选结点
- */
-const mergeOptional = (node: INode) => {
-  const mergeNode = (node: INode) => {
-    for (let i = 0; i < node.children.length; i++) {
-      const child = node.children[i];
-      const others = node.children.filter(item => item != child);
-      const canMerges =  others.filter(other => {
-        const extras = others.filter(item => item != other);
-        return extras.every(extra => !isOverlap(calcBoundaryNode([child, other]), extra));
-      });
-      canMergeLog(child, canMerges);
-      console.log(`${node.children.length}  ${canMerges.length}`);
-      if (canMerges.length > 0) { // fixme 这边判断条件还要改
-        console.log('进行了一次选择合并：' + mergeLog(child, canMerges[0]));
-        const boundaryNode = calcBoundaryNode([child, canMerges[0]]);
-        if (child.points[1].x <= canMerges[0].points[0].x
-            || child.points[0].x >= canMerges[0].points[1].x) {
-          boundaryNode.style.flexDirection = 'row';
-        } else {
-          boundaryNode.style.flexDirection = 'column';
-        }
-        // 合并结点
-        node.children = node.children
-            .filter(item => !(item == child || item == canMerges[0]))
-            .concat(boundaryNode);
-        return;
-      }
-    }
-  }
-
-  // 1.walk整棵布局树
-  const walkNode = (node: INode) => {
-    if (node.type === 'Block' && !node.style.flexDirection) {
-      node.children.every(child => walkNode(child));
-      // 2.针对Block结点进行确定合并
-      mergeNode(node);
-    }
-  }
-  walkNode(node);
-}
-
-/**
  *
  * 如果节点的父与此节点flexDirection 一致, 且此节点只有一个节点, 那么除去此中间节点;
  * TODO 要考虑下这个中间节点 什么时候产生的;
@@ -224,7 +107,10 @@ const mergeLineRow = (node: INode) => {
   });
 
   if (node.parent
-      && ( (node.parent.style.flexDirection && node.parent.style.flexDirection == node.style.flexDirection )|| node.children.length == 1)) {
+      && (
+          (node.parent.style.flexDirection && node.parent.style.flexDirection == node.style.flexDirection )
+          || (node.children.length == 1 && !hasVisualKey(node)))
+    ) {
     node.parent.children.splice(node.parent.children.indexOf(node), 1, ...node.children);
     node.children.forEach(child => child.parent = node.parent);
   }
@@ -270,17 +156,24 @@ export default (nodes: INode[]): INode => {
 
   let rootNode =phaseOne(nodes);
 
-  calcRowLayout(rootNode);
-  calcColLayout(rootNode);
-
   // 计算宽高
   // fixme 这边逻辑摆放位置还要考虑
   walk(rootNode, (node) => {
+    // TODO 这边只是临时写法
+    if (node.type === 'Block' && !node.style.flexDirection) {
+      node.style.flexDirection = 'row';
+    }
     if (node.type === 'Image' || (node.type === 'Block' && isVisualBox(node))) {
       node.style.width = node.frame.width;
       node.style.height = node.frame.height;
     }
   })
+
+  calcRowLayout(rootNode);
+  calcColLayout(rootNode);
+
+  // 重复元素处理
+  dealSameNodes(rootNode);
 
   return rootNode;
 }
@@ -318,82 +211,84 @@ const calcRowLayout = (node: INode) => {
   const boundaryBox = calcBoundaryBox(node.children);
 
   // 1.计算justifyContent
-  if (children.length == 1 && children[0].points[4].x == node.points[4].x) {
+  if (children.length == 1 && rateEqual(children[0].points[4].x, node.points[4].x, node.frame.width)) {
     // 1.1.单节点、外框中点，center
     node.style.justifyContent = 'center';
-  }
+  } else {
 
-  // 计算leftBoxes和rightBoxes
-  let leftBoxes: INode[], rightBoxes: INode[] = [];
-  children.sort((a, b) => a.points[4].x - b.points[4].x)
-  let rightBoundary = node.points[1].x;
-  let rightFlag = false;
-  for (let i = children.length - 1; i >= 0; i--) {
-    if (rightBoundary - children[i].points[1].x < connSpace) {
-      rightBoxes.push(children[i]);
-      rightBoundary = children[i].points[0].x;
-    } else if(rightBoxes.length > 0) {
-      rightFlag = true;
-    } else {
-      break;
+    // 计算leftBoxes和rightBoxes
+    let leftBoxes: INode[], rightBoxes: INode[] = [];
+    children.sort((a, b) => a.points[4].x - b.points[4].x)
+    let rightBoundary = node.points[1].x;
+    let rightFlag = false;
+    for (let i = children.length - 1; i >= 0; i--) {
+      if (rightBoundary - children[i].points[1].x < connSpace) {
+        rightBoxes.push(children[i]);
+        rightBoundary = children[i].points[0].x;
+      } else if(rightBoxes.length > 0) {
+        rightFlag = true;
+      } else {
+        break;
+      }
     }
-  }
-  if (!rightFlag) rightBoxes = [];
-  leftBoxes = children.filter(child => !rightBoxes.includes(child));
+    if (!rightFlag) rightBoxes = [];
+    leftBoxes = children.filter(child => !rightBoxes.includes(child));
 
-  if (rightBoxes.length == 0) {
-    // 1.2.全部为左结点，flex-start
-    node.style.justifyContent = 'flex-start';
-    node.style.paddingLeft = calcInnerSpacings(node, boundaryBox)[3];
-    if(isNDivide(node)) {
-      // 平均分布
-    } else {
-      // 计算marginRight
+    if (rightBoxes.length == 0) {
+      // 1.2.全部为左结点，flex-start
+      node.style.justifyContent = 'flex-start';
+      node.style.paddingLeft = calcInnerSpacings(node, boundaryBox)[3];
+      if(isNDivide(node)) {
+        // 平均分布
+      } else {
+        // 计算marginRight
+        children.forEach((child, idx) => {
+          if (idx == children.length - 1) return;
+          const marginRight = calcHSpacing(child, children[idx + 1]);
+          child.style.marginRight = marginRight;
+        });
+      }
+    } else if(leftBoxes.length == 0) {
+      // 1.3.全部为右结点，flex-end
+      node.style.justifyContent = 'flex-end';
+      node.style.paddingRight = calcInnerSpacings(node, boundaryBox)[1];
+      // 计算marginLeft
       children.forEach((child, idx) => {
         if (idx == children.length - 1) return;
-        const marginRight = calcHSpacing(child, children[idx + 1]);
-        child.style.marginRight = marginRight;
-      });
-    }
-  } else if(leftBoxes.length == 0) {
-    // 1.3.全部为右结点，flex-end
-    node.style.justifyContent = 'flex-end';
-    node.style.paddingRight = calcInnerSpacings(node, boundaryBox)[1];
-    // 计算marginLeft
-    children.forEach((child, idx) => {
-      if (idx == children.length - 1) return;
-      children[idx + 1].style.marginLeft = calcHSpacing(child, children[idx + 1]);
-    });
-  } else {
-    // 1.4.既有左结点又有右结点，space-between
-    node.style.justifyContent = 'space-between';
-    node.style.paddingLeft = calcInnerSpacings(node, boundaryBox)[3];
-    node.style.paddingRight = calcInnerSpacings(node, boundaryBox)[1];
-    node.children = [];
-    if (leftBoxes.length > 1) {
-      const leftBox = calcBoundaryNode(leftBoxes);
-      leftBox.style.flexDirection = 'row';
-      node.children.push(leftBox);
-      // 计算marginRight
-      leftBoxes.forEach((box, idx) => {
-        if (idx == 0) return;
-        leftBoxes[idx - 1].style.marginRight = calcHSpacing(leftBoxes[idx - 1], box);
+        children[idx + 1].style.marginLeft = calcHSpacing(child, children[idx + 1]);
       });
     } else {
-      node.children.push(...leftBoxes);
+      // 1.4.既有左结点又有右结点，space-between
+      node.style.justifyContent = 'space-between';
+      node.style.paddingLeft = calcInnerSpacings(node, boundaryBox)[3];
+      node.style.paddingRight = calcInnerSpacings(node, boundaryBox)[1];
+      node.children = [];
+      if (leftBoxes.length > 1) {
+        const leftBox = calcBoundaryNode(leftBoxes);
+        leftBox.style.flexDirection = 'row';
+        node.children.push(leftBox);
+        // 计算marginRight
+        leftBoxes.forEach((box, idx) => {
+          if (idx == 0) return;
+          leftBoxes[idx - 1].style.marginRight = calcHSpacing(leftBoxes[idx - 1], box);
+        });
+      } else {
+        node.children.push(...leftBoxes);
+      }
+      if (rightBoxes.length > 1) {
+        // 计算marginLeft
+        const rightBox = calcBoundaryNode(rightBoxes);
+        rightBox.style.flexDirection = 'row';
+        node.children.push(rightBox);
+        rightBoxes.forEach((box, idx) => {
+          if (idx == rightBoxes.length - 1) return;
+          rightBoxes[idx + 1].style.marginLeft = calcHSpacing(box, rightBoxes[idx + 1]);
+        });
+      } else {
+        node.children.push(...rightBoxes);
+      }
     }
-    if (rightBoxes.length > 1) {
-      // 计算marginLeft
-      const rightBox = calcBoundaryNode(rightBoxes);
-      rightBox.style.flexDirection = 'row';
-      node.children.push(rightBox);
-      rightBoxes.forEach((box, idx) => {
-        if (idx == rightBoxes.length - 1) return;
-        rightBoxes[idx + 1].style.marginLeft = calcHSpacing(box, rightBoxes[idx + 1]);
-      });
-    } else {
-      node.children.push(...rightBoxes);
-    }
+
   }
 
   // 2.计算alignItems
@@ -469,8 +364,14 @@ const calcColLayout = (node: INode) => {
   if (children.length == 1 && children[0].points[4].y == node.points[4].y) {
     // 1.1.单节点外框中点，center
     node.style.justifyContent = 'center';
+  } if(children.length == 2
+      && children[0].points[0].y == node.points[0].y
+      && children[1].points[3].y == node.points[3].y) {
+    // 1.2.双结点space-between的情况
+    node.style.justifyContent = 'space-between';
+    node.style.height = node.frame.height;
   } else {
-    // 1.2.其它情况，flex-start
+    // 1.3.其它情况，flex-start
     node.style.justifyContent = 'flex-start';
     node.style.paddingTop = calcInnerSpacings(node, boundaryBox)[0];
     node.children.forEach((child, idx) => {
@@ -534,3 +435,35 @@ const calcColLayout = (node: INode) => {
 
 }
 
+/**
+ * 处理重复结点
+ * @param rootNode
+ */
+const dealSameNodes = (rootNode: INode) => {
+  walk(rootNode, (node: INode) => {
+    const flexDirection = node.style.flexDirection;
+    if (flexDirection === 'column') {
+      const sameNode = node.extraInfo && node.extraInfo.sameNode;
+      const sameMarginBottom = node.children.every((child, idx) => {
+        if (idx == node.children.length - 1) return true;
+        if (child.style.marginBottom
+            && child.style.marginBottom == node.children[0].style.marginBottom) {
+          return true;
+        }
+        return false;
+      });
+      if (sameNode && node.children.length > 1 && sameMarginBottom) {
+        const lastNode = node.children[node.children.length - 1];
+        const sameMb = val(node.children[0].style.marginBottom);
+        const lastMb = val(lastNode.style.marginBottom);
+        if (node.style.paddingBottom) {
+          node.style.paddingBottom = node.style.paddingBottom - (sameMb - lastMb);
+          lastNode.style.marginBottom = sameMb;
+        } else if(node.style.marginBottom) {
+          node.style.marginBottom = node.style.marginBottom - (sameMb - lastMb);
+          lastNode.style.marginBottom = sameMb;
+        }
+      }
+    }
+  });
+}

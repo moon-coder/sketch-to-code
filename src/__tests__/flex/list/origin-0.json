@@ -4,8 +4,8 @@
       "type": "Group",
       "id": "C4AF985B-5F90-4118-B6CE-241255CA727B",
       "frame": {
-        "x": 12,
-        "y": 404,
+        "x": 11,
+        "y": 403,
         "width": 351,
         "height": 464
       },
@@ -391,7 +391,7 @@
           "type": "Text",
           "id": "948B2B5B-3866-40D9-B220-B22D2DDF690E",
           "frame": {
-            "x": 130.5,
+            "x": 130,
             "y": 427,
             "width": 91,
             "height": 14
@@ -2279,40 +2279,7 @@
                   "enabled": false,
                   "blurType": "Gaussian"
                 },
-                "fills": [
-                  {
-                    "fillType": "Color",
-                    "color": "#ffffffff",
-                    "gradient": {
-                      "gradientType": "Linear",
-                      "from": {
-                        "x": 0.5,
-                        "y": 0
-                      },
-                      "to": {
-                        "x": 0.5,
-                        "y": 1
-                      },
-                      "aspectRatio": 0,
-                      "stops": [
-                        {
-                          "position": 0,
-                          "color": "#ffffffff"
-                        },
-                        {
-                          "position": 1,
-                          "color": "#000000ff"
-                        }
-                      ]
-                    },
-                    "pattern": {
-                      "patternType": "Fill",
-                      "image": null,
-                      "tileScale": 1
-                    },
-                    "enabled": false
-                  }
-                ],
+                "fills": [],
                 "borders": [],
                 "shadows": [],
                 "innerShadows": [],

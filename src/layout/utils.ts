@@ -238,9 +238,40 @@ const blockVisualKeys = ['backgroundColor', 'backgroundImg', 'border', 'boxShado
  * 结点是否为可视化盒子(无子结点，但有可视化样式)
  */
 export function isVisualBox(node: INode) {
-  const hasVisualKey = Object.keys(node.style).some(key => blockVisualKeys.includes(key));
-  if (node.children.length == 0 && hasVisualKey) {
+  if (node.children.length == 0 && hasVisualKey(node)) {
     return true;
   }
   return false;
+}
+
+/**
+ * 盒子结点是否有可视化样式
+ */
+export function hasVisualKey(node: INode) {
+  return Object.keys(node.style).some(key => blockVisualKeys.includes(key));
+}
+
+
+/**
+ * 考虑误差后的相等判断
+ * @param source 第一个比较数
+ * @param target 第二个比较数
+ * @param baseVal 参考值
+ * @param rate 误差比例
+ */
+export const rateEqual = (
+    source: number,
+    target: number,
+    baseVal: number,
+    rate: number = 0.05): boolean => {
+  const rateVal = baseVal * rate;
+  return Math.abs(target - source) <= rateVal;
+};
+
+/**
+ * 取值
+ * @param value
+ */
+export function val(value: number | undefined): number {
+  return value ? value : 0;
 }

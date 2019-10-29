@@ -1,6 +1,7 @@
 import { ICompData, IStyle } from "../types";
 import {INode} from "../types";
 const helper = require("@imgcook/dsl-helper");
+import renameClassname from './rename-classname';
 
 
 const domWapper = (dom: string) => {
@@ -37,6 +38,8 @@ ${dom}
 
 
 export default (data: INode): ICompData => {
+
+  renameClassname(data);
 
   const { printer, utils } = helper;
   const line = (content: any, level:any) => utils.line(content, { indent: { space: level * 2 } });

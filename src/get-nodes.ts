@@ -198,7 +198,7 @@ const layerStyle = (layer: Layer, node: INode) => {
   if (layer.type === 'Text') {
     // 文本 fontSize/fontWeight/lineHeight/letterSpacing/color/textShadow
     style.fontSize = layer.style.fontSize;
-    style.lineHeight = layer.style.lineHeight ? layer.style.lineHeight : 0;
+    // style.lineHeight = layer.style.lineHeight ? layer.style.lineHeight : 0;
     style.color = layer.style.textColor;
     node.attrs.text = (layer as Text).text;
     // style.fontWeight = layer.style.fontWeight;
