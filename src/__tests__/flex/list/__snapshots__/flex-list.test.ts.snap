@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list-origin-0: list-origin0 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "text": "为您推荐",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "src": "./img/img0.png",
+              },
+              "children": Array [],
+              "type": "Image",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "¥20～¥160",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "src": "./img/img2.png",
+              },
+              "children": Array [],
+              "type": "Image",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "大型犬野兽派洗剪吹A套餐",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "¥20～¥75",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "src": "./img/img1.png",
+              },
+              "children": Array [],
+              "type": "Image",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "¥20～¥160",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "src": "./img/img3.png",
+              },
+              "children": Array [],
+              "type": "Image",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "小型犬洗剪吹B套餐",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "¥20～¥75",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+          ],
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "sameNode": true,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "更多服务/商品",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "type": "Block",
+    },
+  ],
+  "type": "Block",
+}
+`;
