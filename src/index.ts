@@ -6,7 +6,7 @@ let sketch = require('sketch');
 const fs = require('@skpm/fs');
 import { exportImg } from './sketch-utils';
 
-// 校验(sketch-validators)、视觉元素提取(get-nodes)、布局处理(layout)、代码生成(code-generators)
+// 视觉元素提取(get-nodes)、布局处理(layout)、代码生成(code-generators)
 export default () => {
 
   // 视觉元素提取

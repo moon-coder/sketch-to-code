@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest -u",
     "build": "skpm-build ",
-    "watch": "skpm-build --watch",
+    "watch": "skpm-build --watch & tsc --watch",
     "start": "skpm-build --watch --run"
   },
   "engines": {
