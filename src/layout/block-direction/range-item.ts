@@ -6,8 +6,8 @@
  * @coder.yang2010@gmail.com
  * @Date    2019/10/22
  **/
-import {INode} from '../types';
-import {calcBoundaryNode, isEquealNum, isSameSchema} from './utils';
+import {INode} from '../../types';
+import {calcBoundaryNode, isEquealNum, isSameSchema} from '../utils';
 
 /**
  * Y或x轴影射相交在一起的元素

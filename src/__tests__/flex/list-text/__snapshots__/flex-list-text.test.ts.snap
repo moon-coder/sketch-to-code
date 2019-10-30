@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`flex/list-text-0: list-origin 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "text": "有效期",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "text": "购买后365天内有效",
+      },
+      "children": Array [],
+      "type": "Text",
+    },
+  ],
+  "type": "Block",
+}
+`;
+
 exports[`flex/list-text-1: list-origin-1 1`] = `
 Object {
   "attrs": Object {},
@@ -99,29 +122,6 @@ Object {
     Object {
       "attrs": Object {
         "text": "温柔小姐姐做造型",
-      },
-      "children": Array [],
-      "type": "Text",
-    },
-  ],
-  "type": "Block",
-}
-`;
-
-exports[`list-origin: list-origin 1`] = `
-Object {
-  "attrs": Object {},
-  "children": Array [
-    Object {
-      "attrs": Object {
-        "text": "有效期",
-      },
-      "children": Array [],
-      "type": "Text",
-    },
-    Object {
-      "attrs": Object {
-        "text": "购买后365天内有效",
       },
       "children": Array [],
       "type": "Text",

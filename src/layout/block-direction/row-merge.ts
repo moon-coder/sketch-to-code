@@ -1,5 +1,5 @@
-import {INode} from '../types';
-import {calcBoundaryNode} from './utils';
+import {INode} from '../../types';
+import {calcBoundaryNode} from '../utils';
 import {getRangeItemUtil} from './range-item';
 
 let yUtil = getRangeItemUtil('y');

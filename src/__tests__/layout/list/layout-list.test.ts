@@ -1,5 +1,5 @@
 import {INode} from "../../../types";
-import getNodes from "../../../get-nodes";
+import getNodes from "../../../sketch/get-nodes";
 import layout from "../../../layout";
 import {readJSONSync,writeJSONSync} from  'fs-extra';
 import {join} from 'path';

@@ -20,3 +20,6 @@ export function toJSON(node: INode) {
     return value;
   },2))
 }
+
+// fixme 这边还要优化
+export const OutPutPath = '/Users/shejijiang/Learning/design-to-code/sketch-to-code';

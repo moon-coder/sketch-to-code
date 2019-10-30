@@ -1,4 +1,4 @@
-import {Layer} from "./types-sketch";
+import {Layer} from "./sketch/types-sketch";
 
 export interface ICompData {
   imports: string;
@@ -74,10 +74,15 @@ export interface INode {
 
 }
 
-
 export interface IFrame {
   x: number,
   y: number,
   width: number,
   height: number
+}
+
+export interface IProcessor {
+  test: (node: INode) => boolean;
+  enter: (node: INode) => void;
+  exit: (node: INode) => void;
 }

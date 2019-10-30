@@ -1,5 +1,6 @@
 import {Layer,Slice} from "./types-sketch";
-import {Sketch,SketchDom} from './outer/sketch';
+import {Sketch,SketchDom} from '../outer/sketch';
+import { OutPutPath } from '../util';
 
 /**
  * 导出图片
@@ -30,7 +31,7 @@ const sliceImg = ((): Function => {
     ];
     Sketch.export(slice, {
       formats: 'png',
-      output: '/Users/dong/Falcon/sketch-to-code/temp/img',
+      output: `${OutPutPath}/temp/img`,
     });
     slice.remove();
     return `./img/${imgName}.png`;

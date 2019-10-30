@@ -1,5 +1,5 @@
-import {INode} from '../types';
-import {calcBoundaryNode, isOverlap} from './utils';
+import {INode} from '../../types';
+import {calcBoundaryNode, isOverlap} from '../utils';
 
 /**
  * @desc

@@ -19,7 +19,7 @@ Object {
           "children": Array [
             Object {
               "attrs": Object {
-                "src": "./img/img0.png",
+                "src": "./img/img1.png",
               },
               "children": Array [],
               "type": "Image",
@@ -52,7 +52,7 @@ Object {
           "children": Array [
             Object {
               "attrs": Object {
-                "src": "./img/img2.png",
+                "src": "./img/img3.png",
               },
               "children": Array [],
               "type": "Image",
@@ -85,7 +85,7 @@ Object {
           "children": Array [
             Object {
               "attrs": Object {
-                "src": "./img/img1.png",
+                "src": "./img/img2.png",
               },
               "children": Array [],
               "type": "Image",
@@ -118,7 +118,7 @@ Object {
           "children": Array [
             Object {
               "attrs": Object {
-                "src": "./img/img3.png",
+                "src": "./img/img4.png",
               },
               "children": Array [],
               "type": "Image",

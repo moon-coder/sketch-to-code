@@ -7,9 +7,12 @@ import {
   Container,
   Group,
 } from './types-sketch';
-import {IFrame, INode} from './types';
+import {IFrame, INode} from '../types';
 import * as uuid from 'uuid';
-import { exportImg } from './sketch-utils';
+import { exportImg } from './util';
+import { OutPutPath } from '../util';
+let sketch = require('sketch');
+const fs = require('@skpm/fs');
 
 interface NodeExtraInfo {
   __absFrame: {x: number; y: number};
@@ -25,6 +28,22 @@ interface NodeInfoRepo {
  * @returns {INode[]}
  */
 export default (layer: Layer): INode[] => {
+
+  if (!layer) {
+    // 视觉元素提取
+    const layers = sketch.getSelectedDocument().selectedLayers;
+    if (layers.length == 0) {
+      const msg = 'No layers are selected.';
+      sketch.UI.message(msg);
+      throw new Error(msg);
+    }
+    fs.writeFileSync(`${OutPutPath}/src/__tests__/flex/list/origin-0.json`, JSON.stringify(layers));
+    layer = layers.layers[0];
+  }
+
+  // 整体截图
+  exportImg(layer);
+
   const resultNodes: INode[] = [];
 
   const walk = (
