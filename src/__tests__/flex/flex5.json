@@ -1,0 +1,357 @@
+[
+  {
+    "id": "b21b10b0-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Block",
+    "frame": {
+      "x": 12,
+      "y": 120,
+      "width": 351,
+      "height": 104
+    },
+    "style": {
+      "backgroundColor": "#ffffffff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 120
+      },
+      {
+        "x": 363,
+        "y": 120
+      },
+      {
+        "x": 363,
+        "y": 224
+      },
+      {
+        "x": 12,
+        "y": 224
+      },
+      {
+        "x": 187.5,
+        "y": 172
+      }
+    ],
+    "attrs": {
+      "className": "b21b10b0-fba3-11e9-a4ea-bdb8ec40adb1"
+    }
+  },
+  {
+    "id": "b21d5aa0-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Image",
+    "frame": {
+      "x": 34,
+      "y": 140,
+      "width": 44,
+      "height": 44
+    },
+    "style": {},
+    "children": [],
+    "points": [
+      {
+        "x": 34,
+        "y": 140
+      },
+      {
+        "x": 78,
+        "y": 140
+      },
+      {
+        "x": 78,
+        "y": 184
+      },
+      {
+        "x": 34,
+        "y": 184
+      },
+      {
+        "x": 56,
+        "y": 162
+      }
+    ],
+    "attrs": {
+      "className": "b21d5aa0-fba3-11e9-a4ea-bdb8ec40adb1",
+      "src": "./img/img1.png"
+    }
+  },
+  {
+    "id": "b21e9320-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Image",
+    "frame": {
+      "x": 122,
+      "y": 140,
+      "width": 44,
+      "height": 44
+    },
+    "style": {},
+    "children": [],
+    "points": [
+      {
+        "x": 122,
+        "y": 140
+      },
+      {
+        "x": 166,
+        "y": 140
+      },
+      {
+        "x": 166,
+        "y": 184
+      },
+      {
+        "x": 122,
+        "y": 184
+      },
+      {
+        "x": 144,
+        "y": 162
+      }
+    ],
+    "attrs": {
+      "className": "b21e9320-fba3-11e9-a4ea-bdb8ec40adb1",
+      "src": "./img/img2.png"
+    }
+  },
+  {
+    "id": "b21ff2b0-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Image",
+    "frame": {
+      "x": 209,
+      "y": 140,
+      "width": 44,
+      "height": 44
+    },
+    "style": {},
+    "children": [],
+    "points": [
+      {
+        "x": 209,
+        "y": 140
+      },
+      {
+        "x": 253,
+        "y": 140
+      },
+      {
+        "x": 253,
+        "y": 184
+      },
+      {
+        "x": 209,
+        "y": 184
+      },
+      {
+        "x": 231,
+        "y": 162
+      }
+    ],
+    "attrs": {
+      "className": "b21ff2b0-fba3-11e9-a4ea-bdb8ec40adb1",
+      "src": "./img/img3.png"
+    }
+  },
+  {
+    "id": "b2215240-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Image",
+    "frame": {
+      "x": 297,
+      "y": 140,
+      "width": 44,
+      "height": 44
+    },
+    "style": {},
+    "children": [],
+    "points": [
+      {
+        "x": 297,
+        "y": 140
+      },
+      {
+        "x": 341,
+        "y": 140
+      },
+      {
+        "x": 341,
+        "y": 184
+      },
+      {
+        "x": 297,
+        "y": 184
+      },
+      {
+        "x": 319,
+        "y": 162
+      }
+    ],
+    "attrs": {
+      "className": "b2215240-fba3-11e9-a4ea-bdb8ec40adb1",
+      "src": "./img/img4.png"
+    }
+  },
+  {
+    "id": "b221a060-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Text",
+    "frame": {
+      "x": 38,
+      "y": 192,
+      "width": 36,
+      "height": 12
+    },
+    "style": {
+      "fontSize": 12,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 38,
+        "y": 192
+      },
+      {
+        "x": 74,
+        "y": 192
+      },
+      {
+        "x": 74,
+        "y": 204
+      },
+      {
+        "x": 38,
+        "y": 204
+      },
+      {
+        "x": 56,
+        "y": 198
+      }
+    ],
+    "attrs": {
+      "className": "b221a060-fba3-11e9-a4ea-bdb8ec40adb1",
+      "text": "优惠券"
+    }
+  },
+  {
+    "id": "b2221590-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Text",
+    "frame": {
+      "x": 126,
+      "y": 192,
+      "width": 36,
+      "height": 12
+    },
+    "style": {
+      "fontSize": 12,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 126,
+        "y": 192
+      },
+      {
+        "x": 162,
+        "y": 192
+      },
+      {
+        "x": 162,
+        "y": 204
+      },
+      {
+        "x": 126,
+        "y": 204
+      },
+      {
+        "x": 144,
+        "y": 198
+      }
+    ],
+    "attrs": {
+      "className": "b2221590-fba3-11e9-a4ea-bdb8ec40adb1",
+      "text": "计次卡"
+    }
+  },
+  {
+    "id": "b22263b0-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Text",
+    "frame": {
+      "x": 213,
+      "y": 192,
+      "width": 36,
+      "height": 12
+    },
+    "style": {
+      "fontSize": 12,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 213,
+        "y": 192
+      },
+      {
+        "x": 249,
+        "y": 192
+      },
+      {
+        "x": 249,
+        "y": 204
+      },
+      {
+        "x": 213,
+        "y": 204
+      },
+      {
+        "x": 231,
+        "y": 198
+      }
+    ],
+    "attrs": {
+      "className": "b22263b0-fba3-11e9-a4ea-bdb8ec40adb1",
+      "text": "充值卡"
+    }
+  },
+  {
+    "id": "b222d8e0-fba3-11e9-a4ea-bdb8ec40adb1",
+    "type": "Text",
+    "frame": {
+      "x": 292,
+      "y": 192,
+      "width": 54,
+      "height": 12
+    },
+    "style": {
+      "fontSize": 12,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 292,
+        "y": 192
+      },
+      {
+        "x": 346,
+        "y": 192
+      },
+      {
+        "x": 346,
+        "y": 204
+      },
+      {
+        "x": 292,
+        "y": 204
+      },
+      {
+        "x": 319,
+        "y": 198
+      }
+    ],
+    "attrs": {
+      "className": "b222d8e0-fba3-11e9-a4ea-bdb8ec40adb1",
+      "text": "服务/商品"
+    }
+  }
+]
