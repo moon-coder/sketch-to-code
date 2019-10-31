@@ -1,0 +1,490 @@
+[
+  {
+    "id": "bcbda520-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Block",
+    "frame": {
+      "x": 0,
+      "y": 332,
+      "width": 375,
+      "height": 218
+    },
+    "style": {
+      "backgroundColor": "#ffffffff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 0,
+        "y": 332
+      },
+      {
+        "x": 375,
+        "y": 332
+      },
+      {
+        "x": 375,
+        "y": 550
+      },
+      {
+        "x": 0,
+        "y": 550
+      },
+      {
+        "x": 187.5,
+        "y": 441
+      }
+    ],
+    "attrs": {
+      "className": "bcbda520-fb88-11e9-a02e-1bc41ce0dec3"
+    }
+  },
+  {
+    "id": "bcbe6870-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 22,
+      "y": 348,
+      "width": 64,
+      "height": 16
+    },
+    "style": {
+      "fontSize": 16,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 22,
+        "y": 348
+      },
+      {
+        "x": 86,
+        "y": 348
+      },
+      {
+        "x": 86,
+        "y": 364
+      },
+      {
+        "x": 22,
+        "y": 364
+      },
+      {
+        "x": 54,
+        "y": 356
+      }
+    ],
+    "attrs": {
+      "className": "bcbe6870-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "卡项权益"
+    }
+  },
+  {
+    "id": "bcbedda0-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Block",
+    "frame": {
+      "x": 12,
+      "y": 348,
+      "width": 2,
+      "height": 16
+    },
+    "style": {
+      "backgroundColor": "#ff6600ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 348
+      },
+      {
+        "x": 14,
+        "y": 348
+      },
+      {
+        "x": 14,
+        "y": 364
+      },
+      {
+        "x": 12,
+        "y": 364
+      },
+      {
+        "x": 13,
+        "y": 356
+      }
+    ],
+    "attrs": {
+      "className": "bcbedda0-fb88-11e9-a02e-1bc41ce0dec3"
+    }
+  },
+  {
+    "id": "bcbf2bc0-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 402,
+      "width": 84,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 402
+      },
+      {
+        "x": 96,
+        "y": 402
+      },
+      {
+        "x": 96,
+        "y": 416
+      },
+      {
+        "x": 12,
+        "y": 416
+      },
+      {
+        "x": 54,
+        "y": 409
+      }
+    ],
+    "attrs": {
+      "className": "bcbf2bc0-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "凶悍大叔洗澡"
+    }
+  },
+  {
+    "id": "bcbf79e0-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 498,
+      "width": 84,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 498
+      },
+      {
+        "x": 96,
+        "y": 498
+      },
+      {
+        "x": 96,
+        "y": 512
+      },
+      {
+        "x": 12,
+        "y": 512
+      },
+      {
+        "x": 54,
+        "y": 505
+      }
+    ],
+    "attrs": {
+      "className": "bcbf79e0-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "凶悍大叔洗澡"
+    }
+  },
+  {
+    "id": "bcbfef10-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 380,
+      "width": 56,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 380
+      },
+      {
+        "x": 68,
+        "y": 380
+      },
+      {
+        "x": 68,
+        "y": 394
+      },
+      {
+        "x": 12,
+        "y": 394
+      },
+      {
+        "x": 40,
+        "y": 387
+      }
+    ],
+    "attrs": {
+      "className": "bcbfef10-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "美容服务"
+    }
+  },
+  {
+    "id": "bcc03d30-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 476,
+      "width": 56,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 476
+      },
+      {
+        "x": 68,
+        "y": 476
+      },
+      {
+        "x": 68,
+        "y": 490
+      },
+      {
+        "x": 12,
+        "y": 490
+      },
+      {
+        "x": 40,
+        "y": 483
+      }
+    ],
+    "attrs": {
+      "className": "bcc03d30-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "清洁服务"
+    }
+  },
+  {
+    "id": "bcc0b260-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 340,
+      "y": 380,
+      "width": 23,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 340,
+        "y": 380
+      },
+      {
+        "x": 363,
+        "y": 380
+      },
+      {
+        "x": 363,
+        "y": 394
+      },
+      {
+        "x": 340,
+        "y": 394
+      },
+      {
+        "x": 351.5,
+        "y": 387
+      }
+    ],
+    "attrs": {
+      "className": "bcc0b260-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "×10"
+    }
+  },
+  {
+    "id": "bcc10080-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 340,
+      "y": 476,
+      "width": 23,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 340,
+        "y": 476
+      },
+      {
+        "x": 363,
+        "y": 476
+      },
+      {
+        "x": 363,
+        "y": 490
+      },
+      {
+        "x": 340,
+        "y": 490
+      },
+      {
+        "x": 351.5,
+        "y": 483
+      }
+    ],
+    "attrs": {
+      "className": "bcc10080-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "×10"
+    }
+  },
+  {
+    "id": "bcc175b0-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 446,
+      "width": 56,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 446
+      },
+      {
+        "x": 68,
+        "y": 446
+      },
+      {
+        "x": 68,
+        "y": 460
+      },
+      {
+        "x": 12,
+        "y": 460
+      },
+      {
+        "x": 40,
+        "y": 453
+      }
+    ],
+    "attrs": {
+      "className": "bcc175b0-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "精油美毛"
+    }
+  },
+  {
+    "id": "bcc1c3d0-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 424,
+      "width": 112,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 424
+      },
+      {
+        "x": 124,
+        "y": 424
+      },
+      {
+        "x": 124,
+        "y": 438
+      },
+      {
+        "x": 12,
+        "y": 438
+      },
+      {
+        "x": 68,
+        "y": 431
+      }
+    ],
+    "attrs": {
+      "className": "bcc1c3d0-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "温柔小姐姐做造型"
+    }
+  },
+  {
+    "id": "bcc211f0-fb88-11e9-a02e-1bc41ce0dec3",
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 520,
+      "width": 112,
+      "height": 14
+    },
+    "style": {
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "children": [],
+    "points": [
+      {
+        "x": 12,
+        "y": 520
+      },
+      {
+        "x": 124,
+        "y": 520
+      },
+      {
+        "x": 124,
+        "y": 534
+      },
+      {
+        "x": 12,
+        "y": 534
+      },
+      {
+        "x": 68,
+        "y": 527
+      }
+    ],
+    "attrs": {
+      "className": "bcc211f0-fb88-11e9-a02e-1bc41ce0dec3",
+      "text": "温柔小姐姐做造型"
+    }
+  }
+]
