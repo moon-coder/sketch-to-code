@@ -6,12 +6,11 @@ import {readJSONSync} from  'fs-extra';
 import {join} from 'path';
 import {toJSON} from "../../util";
 
-jest.mock('../../../outer/sketch');
+jest.mock('../../outer/sketch');
 
 
 const test = (caseName: string) => {
-  let layers = readJSONSync(join(__dirname, caseName + "origin.json"));
-  const nodes: INode[] = getNodes(layers.layers[0]);
+  const nodes: INode[] = readJSONSync(join(__dirname, caseName + ".json"));
   const node: INode = layout(nodes);
   const result = toJSON(node);
   expect(result).toMatchSnapshot(caseName);
