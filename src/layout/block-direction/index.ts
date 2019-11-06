@@ -105,25 +105,31 @@ const renameClassName = (node: INode) => {
  * @returns {INode}
  */
 export default (nodes: INode[]): INode => {
-
+  debugger;
   let rootNode = preDeal(nodes);
 
   walk(rootNode,(node) => {
     if(node.children && node.children.length >0) {
       if(node.children.length > 1) {
-        node.children = rowMerge(node.children);
+        if(node && node.__layer && node.__layer.name.endsWith("M#List")) {
+            //带命令说明 下边都是一致的.
+          node.extraInfo = Object.assign({},node.extraInfo,{sameNode:true});
+        }
+
+        node.children = rowMerge(node.children,node);
       }
       // TODO 这边只是临时写法
       walk(node, (node) => {
         if(node.children.length > 1) {
           //一个节点只有一个子节点, 则这个关系 可以去除
-          node.children = [blockMerge(node.children)];
+          node.children = [ blockMerge(node.children) ];
         }
       });
       return ;
     }
   })
   // 3.去掉同行同列
+  debugger;
   mergeLineRow(rootNode);
   // fixme 这边逻辑摆放位置还要考虑
   if (rootNode.children.length == 1) {

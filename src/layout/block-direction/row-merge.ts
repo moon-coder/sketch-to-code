@@ -17,19 +17,31 @@ let xUtil = getRangeItemUtil('x');
  * @coder.yang2010@gmail.com
  * @Date    2019/10/15
  **/
-export default function(nodes: INode[]): INode[] {
+export default function(nodes: INode[], pNode: INode): INode[] {
   //按y坐标 分组, 每一组中高度进行对比 如果一致则在结果中返回;
 
   let yranges = yUtil.getRanges(nodes);
   let xranges = xUtil.getRanges(nodes);
-  let flexDirection="y";
+  let flexDirection = 'y';
+
+
+  if (pNode.extraInfo && pNode.extraInfo.sameNode===true) {
+    //指令的方式直接生成
+    return (xranges.length > yranges.length?xranges:yranges).map(rangeItem => {
+      let mergeNode = calcBoundaryNode(rangeItem.items);
+      mergeNode.style.flexDirection = flexDirection === 'y' ? 'row' : 'column';
+      return mergeNode;
+    });
+  }
+
   let resultRanges;
   if (xranges.length > yranges.length) {
-    flexDirection = "x";
+    flexDirection = 'x';
+
     resultRanges = xUtil.mergeSameBlock(xranges);
     resultRanges = xUtil.mergeSplitEqualBlock(resultRanges);
-  } else {
 
+  } else {
     resultRanges = yUtil.mergeSameBlock(yranges);
     resultRanges = yUtil.mergeSplitEqualBlock(resultRanges);
   }
@@ -40,7 +52,7 @@ export default function(nodes: INode[]): INode[] {
   } else {
     return resultRanges.map(rangeItem => {
       let mergeNode = calcBoundaryNode(rangeItem.items);
-      mergeNode.style.flexDirection = flexDirection==='y'?'row':'column';
+      mergeNode.style.flexDirection = flexDirection === 'y' ? 'row' : 'column';
       return mergeNode;
     });
   }

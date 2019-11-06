@@ -22,4 +22,4 @@ export function toJSON(node: INode) {
 }
 
 // fixme 这边还要优化
-export const OutPutPath = '/Users/shejijiang/Learning/design-to-code/sketch-to-code';
+export const OutPutPath = '/Users/dong/Falcon/sketch-to-code';

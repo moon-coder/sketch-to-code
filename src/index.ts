@@ -3,7 +3,6 @@ import {ICompData, INode} from "./types";
 import layout from './layout/index';
 import h5Generrator from './generators/html5';
 const fs = require('@skpm/fs');
-// @ts-ignore
 import { getNodes } from './sketch';
 
 import { OutPutPath } from './util';

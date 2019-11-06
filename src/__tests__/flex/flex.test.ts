@@ -6,6 +6,8 @@ import {join} from 'path';
 import {toJSON} from "../../util";
 import h5Generrator from "../../generators/html5";
 import * as fs from "fs";
+import {loadeOrigin} from "../util";
+import getNodes from "../../sketch/get-nodes";
 
 jest.mock('../../outer/sketch');
 
@@ -16,8 +18,26 @@ const test = (caseName: string) => {
   const node: INode = layout(nodes);
   // 代码生成
   const code: ICompData = h5Generrator(node);
-  // fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
-  // fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
+  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
+  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
+  // debugger;
+  const result = toJSON(node);
+  expect(result).toMatchSnapshot(caseName);
+}
+
+
+const testOrigin = (caseName: string) => {
+  let layers = loadeOrigin(join(__dirname,caseName+".json"));
+  const nodes: INode[] = getNodes(layers.layers[0]);
+
+  //
+  // const nodes: INode[] = readJSONSync(join(__dirname, caseName + ".json"));
+
+  const node: INode = layout(nodes);
+  // 代码生成
+  const code: ICompData = h5Generrator(node);
+  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
+  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
   // debugger;
   const result = toJSON(node);
   expect(result).toMatchSnapshot(caseName);
@@ -40,11 +60,16 @@ it('单行图文混排', function () {
   test('flex3');
 });
 
-
 it('多行重复文字', function () {
-  //TODO 这个生成的有点问题.. 两边靠近边界 或边界距离相等 应该 是space between
   test('flex4');
 });
+
+
+it('列图标生成', function () {
+  //TODO 这个是失败的. 前三个是一组的为什么会拆分出去; 而且生成的页面不是一个
+  testOrigin('flex5');
+});
+
 
 let getCompSrc=(dom:string)=>`
 import * as React from 'react';

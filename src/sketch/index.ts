@@ -1,5 +1,6 @@
 import getNodes from './get-nodes';
 
-export default {
+
+export {
   getNodes
 }

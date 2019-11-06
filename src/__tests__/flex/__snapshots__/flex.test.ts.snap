@@ -1,5 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`列图标生成: flex5 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "src": "./img/img1.png",
+              },
+              "children": Array [],
+              "type": "Image",
+            },
+            Object {
+              "attrs": Object {
+                "text": "优惠券",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "src": "./img/img3.png",
+                  },
+                  "children": Array [],
+                  "type": "Image",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "充值卡",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "src": "./img/img2.png",
+                  },
+                  "children": Array [],
+                  "type": "Image",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "计次卡",
+                  },
+                  "children": Array [],
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+          ],
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "sameNode": true,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "src": "./img/img4.png",
+          },
+          "children": Array [],
+          "type": "Image",
+        },
+        Object {
+          "attrs": Object {
+            "text": "服务/商品",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "type": "Block",
+    },
+  ],
+  "type": "Block",
+}
+`;
+
 exports[`单行图文混排: flex3 1`] = `
 Object {
   "attrs": Object {},

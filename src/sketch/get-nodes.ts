@@ -27,8 +27,7 @@ interface NodeInfoRepo {
  * @param {Layer} layer
  * @returns {INode[]}
  */
-export default (layer: Layer): INode[] => {
-
+export default (layer?: Layer): INode[] => {
   if (!layer) {
     // 视觉元素提取
     const layers = sketch.getSelectedDocument().selectedLayers;
@@ -37,12 +36,14 @@ export default (layer: Layer): INode[] => {
       sketch.UI.message(msg);
       throw new Error(msg);
     }
-    fs.writeFileSync(`${OutPutPath}/src/__tests__/flex/list/origin-0.json`, JSON.stringify(layers));
+    fs.writeFileSync(`${OutPutPath}/src/__tests__/temp/origin.json`, JSON.stringify(layers));
     layer = layers.layers[0];
   }
 
   // 整体截图
-  exportImg(layer);
+  if(layer ){
+    exportImg(layer);
+  }
 
   const resultNodes: INode[] = [];
 
@@ -113,12 +114,14 @@ export default (layer: Layer): INode[] => {
     return layerToNode(layer, __absFrame);
   };
 
-  walk(layer, {
-    lv: 0,
-    pPath: '',
-    relPath:"#",
-    nodeRepo: {},
-  });
+  if(layer){
+    walk(layer, {
+      lv: 0,
+      pPath: '',
+      relPath:"#",
+      nodeRepo: {},
+    });
+  }
 
   return resultNodes;
 };
