@@ -7,7 +7,7 @@ import processors from './processors';
 export default (nodes: INode[]): INode => {
 
   const rootNode: INode = blockDirection(nodes);
-
+  debugger
   blockStyle(rootNode);
 
   const processNode = (node: INode) => {

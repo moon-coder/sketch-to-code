@@ -26,8 +26,8 @@ export interface IStyle {
   marginBottom?: number;
   marginRight?: number;
   marginLeft?: number;
-  width?: number;
-  height?: number;
+  width?: number|string;
+  height?: number|string;
   lineHeight?: number;
   fontSize?: number;
   fontWeight?: number;
@@ -64,6 +64,7 @@ export interface INode {
   type: 'Text' | 'Image' | 'Block' | 'Link';
   //绝对定位的位置 信息, 相对于根节点而言的.
   frame: IFrame;
+  //左上   右上 右下 左下 中间点
   points: Coords[];
   style: IStyle;
   attrs: IAttrs;

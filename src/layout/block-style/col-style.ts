@@ -14,6 +14,10 @@ export default function calcColLayout(node: INode) {
 
   if (node.style.flexDirection !== 'column') return;
 
+  const { width: nodeWidth, height } = node.frame;
+  node.style.width = (nodeWidth/50)+"rem";
+  // node.style.height = (height/50)+"rem";
+
   node.style.display = 'flex';
 
   const children = node.children;

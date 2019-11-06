@@ -31,17 +31,19 @@ export default function calcRowLayout(node: INode) {
     return true;
   }
 
-  const { width: nodeWidth } = node.frame;
+  const { width: nodeWidth, height } = node.frame;
   const connSpace = nodeWidth / 5;
   const children = node.children;
   const boundaryBox = calcBoundaryBox(node.children);
+
+  node.style.width = (nodeWidth/50)+"rem";
+  // node.style.height = (height/50)+"rem";
 
   // 1.计算justifyContent
   if (children.length == 1 && rateEqual(children[0].points[4].x, node.points[4].x, node.frame.width)) {
     // 1.1.单节点、外框中点，center
     node.style.justifyContent = 'center';
   } else {
-
     // 计算leftBoxes和rightBoxes
     let leftBoxes: INode[], rightBoxes: INode[] = [];
     children.sort((a, b) => a.points[4].x - b.points[4].x)

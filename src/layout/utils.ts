@@ -233,7 +233,14 @@ export function getNodeStr(node: INode): string {
   return result;
 }
 
-const blockVisualKeys = ['backgroundColor', 'backgroundImg', 'border', 'boxShadow'];
+const blockVisualKeys = [
+  'backgroundColor',
+  'backgroundImg',
+  'border',
+  // 'color',
+  'gradient',
+  'boxShadow'
+];
 /**
  * 结点是否为可视化盒子(无子结点，但有可视化样式)
  */

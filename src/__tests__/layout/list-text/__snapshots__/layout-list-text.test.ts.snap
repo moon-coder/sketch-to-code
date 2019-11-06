@@ -332,85 +332,31 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "黑金VIP黄金卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥8848",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "粉丝珍爱卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥800",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "365天内有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "黑金VIP黄金卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥8848",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "黑金VIP黄金卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "¥8848",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
                 },
               ],
               "type": "Block",
@@ -419,25 +365,31 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "粉丝珍爱卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥3200",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "粉丝珍爱卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "¥800",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "365天内有效",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
                 },
               ],
               "type": "Block",
@@ -452,25 +404,31 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "至尊黄金卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥50",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "黑金VIP黄金卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "¥8848",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
                 },
               ],
               "type": "Block",
@@ -479,25 +437,103 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "粉丝珍爱卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "粉丝珍爱卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "¥3200",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
                 },
+              ],
+              "type": "Block",
+            },
+          ],
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "¥3200",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "至尊黄金卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "¥50",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
                 },
+              ],
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "粉丝珍爱卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "¥3200",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "永久有效",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
                 },
               ],
               "type": "Block",
@@ -515,25 +551,31 @@ Object {
       "attrs": Object {},
       "children": Array [
         Object {
-          "attrs": Object {
-            "text": "至尊黄金卡",
-          },
-          "children": Array [],
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "¥50",
-          },
-          "children": Array [],
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "永久有效",
-          },
-          "children": Array [],
-          "type": "Text",
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "至尊黄金卡",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "¥50",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "永久有效",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
         },
       ],
       "type": "Block",
