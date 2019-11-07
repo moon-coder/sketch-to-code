@@ -38,6 +38,7 @@ ${dom}
 export default (data: INode): ICompData => {
   renameClassname(data);
 
+  debugger;
   const {printer, utils} = helper;
   const line = (content: any, level: any) =>
     utils.line(content, {indent: {space: level * 2}});
@@ -84,7 +85,7 @@ export default (data: INode): ICompData => {
   const vdom = printer(parseVdom(data, 0));
 
   // 生成style
-  const lines = [];
+  let lines: string[] = [];
 
   styleArr.forEach(item => delete item.style.lines);
   lines.push(line(`.c${styleArr[0].className} {`, 0));
@@ -97,9 +98,16 @@ export default (data: INode): ICompData => {
     if (idx > 0) {
       lines.push(line(`.c${item.className} {`, 1));
       Object.keys(item.style).forEach(key => {
-        lines.push(
-          line(`${transKey(key)}: ${transVal(key, item.style[key])};`, 2),
-        );
+        if (key === 'gradient') {
+          debugger;
+          transGradient(item.style[key]).forEach(item =>
+            lines.push(line(item, 2)),
+          );
+        } else {
+          lines.push(
+            line(`${transKey(key)}: ${transVal(key, item.style[key])};`, 2),
+          );
+        }
       });
       lines.push(line(`}`, 1));
     }
@@ -114,9 +122,6 @@ export default (data: INode): ICompData => {
 };
 
 const transKey = (str: string) => {
-  if (str === 'gradient') {
-    return 'background-image';
-  }
   return str.replace(/\B([A-Z])/g, '-$1').toLowerCase();
 };
 
@@ -126,12 +131,34 @@ const transVal = (key: string, val: any) => {
     val = val / 50 + 'rem';
   }
 
-  if (key === 'gradient') {
-    let colors = val.stops
-      .map((item: {position: number; color: string}) => item.color)
-      .join(',');
-    return `linear-gradient(to left, ${colors});`;
-  }
-
   return val;
 };
+
+function transGradient(gradient: IGradient): string[] {
+  let lines: string[] = [];
+
+  let colors = gradient.stops
+    .map((item: {position: number; color: string}) => item.color)
+    .join(',');
+
+  lines.push(`background-image:linear-gradient(to left, ${colors});`);
+  return lines;
+}
+
+interface IGradient {
+  gradientType: string;
+  from: From;
+  to: From;
+  aspectRatio: number;
+  stops: Stop[];
+}
+
+interface Stop {
+  position: number;
+  color: string;
+}
+
+interface From {
+  x: number;
+  y: number;
+}

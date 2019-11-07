@@ -1,1 +1,3122 @@
-{"layers":[{"type":"Artboard","id":"271AD5CB-BADD-473D-A1EE-62A1B545B42E","frame":{"x":1,"y":-4337,"width":375,"height":812},"name":"查看使用","selected":true,"exportFormats":[{"type":"ExportFormat","fileFormat":"png","suffix":"@2x","size":"2x"}],"sharedStyleId":null,"layers":[{"type":"SymbolInstance","id":"D03E5B4A-FCB5-4D10-B488-C32C4554AA32","frame":{"x":0,"y":0,"width":375,"height":88},"name":"头部","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B9D100FA-DD8B-4142-9333-1E22DB53B45E","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"CF7BD6AA-5617-4D36-865C-AD4C247EEECE","overrides":[{"type":"Override","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36_symbolID","path":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36","property":"symbolID","affectedLayer":{"type":"SymbolInstance","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36","frame":{"x":0,"y":44,"width":375,"height":44},"name":"标题栏","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"AFD2DEC4-B6A4-421B-AEB1-9447EF766DC9","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"10C89966-D80A-4A1A-9CF5-B8761CF6BE3C"},"symbolOverride":true,"value":"10C89966-D80A-4A1A-9CF5-B8761CF6BE3C","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16_symbolID","path":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16","property":"symbolID","affectedLayer":{"type":"SymbolInstance","id":"DD168F62-E964-4F4B-9069-649C977DCA16","frame":{"x":277,"y":6,"width":88,"height":32},"name":"全剧操作","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"C58E0B54-E35D-4C29-AA75-C122AC3E66F3","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"70FDCE5C-A64C-43B6-8043-08A7A767C7ED"},"symbolOverride":true,"value":"70FDCE5C-A64C-43B6-8043-08A7A767C7ED","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16/96160554-19E3-45BB-8A86-139EB2E1E61F_layerStyle","path":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16/96160554-19E3-45BB-8A86-139EB2E1E61F","property":"layerStyle","affectedLayer":{"type":"ShapePath","id":"96160554-19E3-45BB-8A86-139EB2E1E61F","frame":{"x":0,"y":0,"width":88,"height":32},"name":"Rectangle 11 Copy","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"43F3C3D1-F5F1-45F4-8FA0-D42A0B413F79","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#ffffffff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[{"fillType":"Color","position":"Inside","color":"#ebebebff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"thickness":0.5,"enabled":true}],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":"9E04523D-2315-4051-B5C6-355F830E3BAD","shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":32,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":32,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":32,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":32,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},"symbolOverride":false,"value":"9E04523D-2315-4051-B5C6-355F830E3BAD","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/14CCEACE-752C-4C3A-BF45-B0F749F7C6BB_stringValue","path":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/14CCEACE-752C-4C3A-BF45-B0F749F7C6BB","property":"stringValue","affectedLayer":{"type":"Text","id":"14CCEACE-752C-4C3A-BF45-B0F749F7C6BB","frame":{"x":125,"y":13,"width":126,"height":18},"name":"提莫的蘑菇摊儿","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"4A324CD5-3491-4F5E-BDB2-5BC542E43032","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"center","verticalAlignment":"top","kerning":null,"lineHeight":18,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":18,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":6},"sharedStyleId":null,"text":"提莫的蘑菇摊儿","lineSpacing":"constantBaseline","fixedWidth":false},"symbolOverride":false,"value":"查看使用","isDefault":false,"editable":true,"selected":false},{"type":"Override","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/A58E6059-8E3E-454F-8405-1AF306E9C79E_symbolID","path":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/A58E6059-8E3E-454F-8405-1AF306E9C79E","property":"symbolID","affectedLayer":{"type":"SymbolInstance","id":"A58E6059-8E3E-454F-8405-1AF306E9C79E","frame":{"x":10,"y":13,"width":10,"height":18},"name":"Path 2","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B8A030F3-4D87-4370-A03C-B7DC177E34DA","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"7CC53188-47AD-4775-9A0E-F2B74DB72F92"},"symbolOverride":true,"value":"7CC53188-47AD-4775-9A0E-F2B74DB72F92","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/1B6FBFCA-7190-4F0E-8C6D-F89F5097B2B3_layerStyle","path":"F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/1B6FBFCA-7190-4F0E-8C6D-F89F5097B2B3","property":"layerStyle","affectedLayer":{"type":"ShapePath","id":"1B6FBFCA-7190-4F0E-8C6D-F89F5097B2B3","frame":{"x":0,"y":0,"width":375,"height":44},"name":"Rectangle Copy","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"CF25A56C-5918-4690-B8F9-8CBED128C270","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#ffffffff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":"F026611F-667E-4AB7-A472-D3E8637197A7","shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},"symbolOverride":false,"value":"F026611F-667E-4AB7-A472-D3E8637197A7","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"23814761-116F-46C3-9CC5-1897544629C1_symbolID","path":"23814761-116F-46C3-9CC5-1897544629C1","property":"symbolID","affectedLayer":{"type":"SymbolInstance","id":"23814761-116F-46C3-9CC5-1897544629C1","frame":{"x":0,"y":0,"width":375,"height":44},"name":"状态栏","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"BB0D81FA-5A95-44FB-9924-F0EBDE33EC68","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"9B30F3F3-F451-4217-9E5B-4339083C5AE4"},"symbolOverride":true,"value":"9B30F3F3-F451-4217-9E5B-4339083C5AE4","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"23814761-116F-46C3-9CC5-1897544629C1/3ACCBA56-964F-4CF9-B9A2-9A3E8AFD2496_stringValue","path":"23814761-116F-46C3-9CC5-1897544629C1/3ACCBA56-964F-4CF9-B9A2-9A3E8AFD2496","property":"stringValue","affectedLayer":{"type":"Text","id":"3ACCBA56-964F-4CF9-B9A2-9A3E8AFD2496","frame":{"x":19,"y":14,"width":43,"height":15},"name":"Time","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"8126702D-85CD-4CF4-94D2-8DED07BB080D","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":15,"paragraphSpacing":0,"textColor":"#000000ff","fontSize":15,"textTransform":"none","fontFamily":"Helvetica","fontWeight":5},"sharedStyleId":null,"text":"09:41","lineSpacing":"constantBaseline","fixedWidth":false},"symbolOverride":false,"value":"09:41","isDefault":true,"editable":true,"selected":false},{"type":"Override","id":"23814761-116F-46C3-9CC5-1897544629C1/7F03307E-8AD7-4672-99C3-31156D451B5A_symbolID","path":"23814761-116F-46C3-9CC5-1897544629C1/7F03307E-8AD7-4672-99C3-31156D451B5A","property":"symbolID","affectedLayer":{"type":"SymbolInstance","id":"7F03307E-8AD7-4672-99C3-31156D451B5A","frame":{"x":294,"y":16,"width":67,"height":12},"name":"Battery","hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"402A98D4-AF9A-4D9F-A252-F20737E87E30","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"C277C907-07C2-44CA-A737-235C8B752A69"},"symbolOverride":true,"value":"C277C907-07C2-44CA-A737-235C8B752A69","isDefault":true,"editable":true,"selected":false}]},{"type":"Text","id":"1164FA6E-4AEE-457D-B477-ACC27706604B","frame":{"x":12,"y":112,"width":56,"height":14},"name":"当前位置","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"8F3FA547-E0A2-498B-A977-118E28BFD22D","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":14,"paragraphSpacing":0,"textColor":"#ffffffff","fontSize":14,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"当前位置","lineSpacing":"constantBaseline","fixedWidth":false},{"type":"SymbolInstance","id":"F0AC892E-0AB2-4468-B085-59B23B7C6124","frame":{"x":0,"y":778,"width":375,"height":34},"name":"底部操作","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"D55EA659-3665-4870-9215-280A4F7F1A41","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"symbolId":"2D5754E0-3BCF-4D88-8B3D-303B012C955C","overrides":[]},{"type":"Group","id":"4DF10939-C79B-4D7F-BE10-D78E32DB4D49","frame":{"x":12,"y":272,"width":351,"height":80},"name":"编组 2","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"F592B737-1291-48D5-BF95-65D2CA109042","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"Group","id":"8D683733-2739-4078-8B8C-3F944095BE98","frame":{"x":0,"y":0,"width":80,"height":80},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"C04B142C-2276-4CB7-91D5-DD72E2E43AC1","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"ShapePath","id":"400A1445-80F0-4CB4-98E9-570CD0C133BD","frame":{"x":0,"y":0,"width":80,"height":80},"name":"蒙版","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"E99C1835-3D2B-4C32-A1DF-14A9CF508B18","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#d8d8d8ff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"Image","id":"138BE801-C06D-4B5C-A4CC-4FAE8FF02CAF","frame":{"x":-26,"y":-3,"width":125,"height":83.3984375},"name":"位图","selected":false,"hidden":true,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"830C8AC5-1364-4904-BA9D-C906CE62741C","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"image":{"type":"ImageData","id":"210849186","nsimage":{},"nsdata":{}}},{"type":"Image","id":"14E3CBEB-776B-4C93-9251-9079469E42FF","frame":{"x":-76,"y":-45.00000000000007,"width":208,"height":138.6666666666667},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"40ECACC9-55CA-40FB-A093-85E21AF29443","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"image":{"type":"ImageData","id":"23237234","nsimage":{},"nsdata":{}}}]},{"type":"Text","id":"939F3332-FCE8-4BCC-81E5-EF2336A71265","frame":{"x":92,"y":2,"width":259,"height":40},"name":"大型犬只野兽派洗剪吹，凶悍大叔专业洗狗1","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"986B7232-29D2-4A30-816F-72CD15875E62","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":20,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗…","lineSpacing":"constantBaseline","fixedWidth":true},{"type":"Text","id":"C078B660-4D62-4295-AA4C-A39952FD5EEF","frame":{"x":92,"y":60,"width":81,"height":16},"name":"¥20～¥160","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"A69F130A-81A4-45DF-97AA-814517A1AF6D","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":16,"paragraphSpacing":0,"textColor":"#ff6600ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"¥20～¥160","lineSpacing":"constantBaseline","fixedWidth":false}]},{"type":"Group","id":"6FE72BEC-640D-4448-AA25-2B6AE20B0B02","frame":{"x":12,"y":456,"width":351,"height":80},"name":"编组 2备份 2","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"9A4EDEDE-60B3-473E-BE7D-66066A970F76","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"Group","id":"76AF8633-38D3-40E5-824A-FCE321B88F37","frame":{"x":0,"y":0,"width":80,"height":80},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"C0BB8B75-34FB-4276-BA77-D384DEF1B6F5","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"ShapePath","id":"1A0D547E-1AF8-47AC-9D4B-AB60FC304DF7","frame":{"x":0,"y":0,"width":80,"height":80},"name":"蒙版","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"11E64DAA-DD8D-4048-8442-14FDAC2E806A","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#d8d8d8ff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"Image","id":"5CCD86CB-6CFC-49C5-AB97-8A986BEBB118","frame":{"x":-36,"y":-1.06581410364015e-13,"width":133,"height":88.24242424242424},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"6A69BDD9-DDD9-4F5C-857F-4199FBD13B83","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"image":{"type":"ImageData","id":"224945774","nsimage":{},"nsdata":{}}}]},{"type":"Text","id":"01585305-3946-420E-B9E9-A4C3F8E036D3","frame":{"x":92,"y":2,"width":259,"height":40},"name":"大型犬只野兽派洗剪吹，凶悍大叔专业洗狗1","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B31D4FA8-EBE7-4733-8BFE-560ACC6D68A8","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":20,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗","lineSpacing":"constantBaseline","fixedWidth":true},{"type":"Text","id":"C92A7C7B-EA2B-4339-913C-58131CFED43B","frame":{"x":92,"y":60,"width":81,"height":16},"name":"¥20～¥160","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"6489CB44-91EB-4173-A04C-011812F60DB7","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":16,"paragraphSpacing":0,"textColor":"#ff6600ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"¥20～¥160","lineSpacing":"constantBaseline","fixedWidth":false}]},{"type":"Group","id":"921988E0-8A1B-4FDA-84EC-F41F315E852E","frame":{"x":12,"y":364,"width":351,"height":80},"name":"编组 2备份","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"100682CA-CC70-4C27-8328-BD9A054B5A0D","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"Group","id":"6BF64A91-E4D1-4AA4-9CDF-905E3DBEB5BE","frame":{"x":0,"y":0,"width":80,"height":80},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"5071B8A3-2981-4119-8D13-25BE56C0439C","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"ShapePath","id":"5E459AFC-A747-4957-B456-7954BBCBC64F","frame":{"x":0,"y":0,"width":80,"height":80},"name":"蒙版","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B026E438-ECCD-42E2-BA4E-323ED71C8501","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#d8d8d8ff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"Image","id":"C9CEAEE3-B66B-413F-8153-923C13B0A869","frame":{"x":-26,"y":-3,"width":125,"height":83.3984375},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"BD1F52B4-454B-49E5-B511-5C9F2C1E7D7C","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"image":{"type":"ImageData","id":"210849186","nsimage":{},"nsdata":{}}}]},{"type":"Text","id":"4D1E97BD-5FCF-42F7-AB51-F2123D30E8A4","frame":{"x":92,"y":2,"width":259,"height":20},"name":"大型犬野兽派洗剪吹A套餐","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"DBF75374-0BB3-40FB-B3D6-ECBC5E4FE623","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":20,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"大型犬野兽派洗剪吹A套餐","lineSpacing":"constantBaseline","fixedWidth":true},{"type":"Text","id":"1019E19F-85A8-4471-AFFB-99231CDD6F56","frame":{"x":92,"y":60,"width":73,"height":16},"name":"¥20～¥75","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"D968AEF2-1799-48FC-8CF2-20316E2D259D","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":16,"paragraphSpacing":0,"textColor":"#ff6600ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"¥20～¥75","lineSpacing":"constantBaseline","fixedWidth":false}]},{"type":"Group","id":"014B3585-EB0A-42F4-BAA7-1E8A860E7EC5","frame":{"x":14,"y":553,"width":347,"height":80},"name":"编组 2备份 3","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"20393DBE-6ABC-449C-8146-966204D581D0","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"Group","id":"75D89319-2F38-4FD6-8C6D-85828F3336EC","frame":{"x":0,"y":0,"width":80,"height":80},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"7BA88966-EB07-4125-A014-8F5639B3DB3B","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"ShapePath","id":"78C75C91-8053-4937-BE3C-AEA9E988D96A","frame":{"x":0,"y":0,"width":80,"height":80},"name":"蒙版","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B3CAC458-5693-421B-9A89-65AD78BC1B53","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#d8d8d8ff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"Image","id":"EB3DE1BE-3A4A-44B7-BF81-CE9BB927666C","frame":{"x":-56,"y":-9.000000000000085,"width":231,"height":140.0744680851064},"name":"位图","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B5DF2B09-0492-4785-B371-3B9F4A98B360","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"image":{"type":"ImageData","id":"13115113","nsimage":{},"nsdata":{}}}]},{"type":"Text","id":"5485D0F1-802B-4459-B80B-E2BF820DFC5F","frame":{"x":88,"y":4,"width":259,"height":20},"name":"小型犬洗剪吹B套餐","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"72DE8DC3-2A11-4ACB-AB3F-E87D7248596E","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":20,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"小型犬洗剪吹B套餐","lineSpacing":"constantBaseline","fixedWidth":true},{"type":"Text","id":"FAB24927-8E2B-4E66-BCBE-55A125554B82","frame":{"x":91,"y":59,"width":73,"height":16},"name":"¥20～¥75","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"C856AE2B-7950-4F72-8DAE-03E147D01C05","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":16,"paragraphSpacing":0,"textColor":"#ff6600ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"¥20～¥75","lineSpacing":"constantBaseline","fixedWidth":false}]},{"type":"Group","id":"3F4DEA51-DDA4-46AA-8207-C524F71ECD9F","frame":{"x":0,"y":88,"width":375,"height":184},"name":"编组","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"5427D6CD-A0B7-4EC0-BE5A-42DAD8161A16","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"ShapePath","id":"3C15E91F-C98D-47C0-B21E-D8E6D37C2B12","frame":{"x":0,"y":0,"width":375,"height":164},"name":"Rectangle Copy 3","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"FA6C72A3-6027-4A8B-9347-6F3512422A91","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#ffffffff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":"F026611F-667E-4AB7-A472-D3E8637197A7","shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"ShapePath","id":"728D735D-2A19-4DC2-829C-498E80F6F9BD","frame":{"x":0,"y":164,"width":375,"height":20},"name":"Rectangle Copy 3","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"5417A8D2-EE44-406C-B712-9CF86EB00499","opacity":0.043251,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Gradient","color":"#ffffffff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":1},"to":{"x":0.4999999999999999,"y":3.0616169978683836e-17},"aspectRatio":0,"stops":[{"position":0,"color":"#00000000"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"Text","id":"D698FCE9-EA7A-4C9F-B6F0-41EE5357EABE","frame":{"x":12,"y":110,"width":351,"height":40},"name":"2019.11.01至2019.11.0","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"5FABAFC5-688B-439B-8D01-6A1B8611005F","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":20,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"2019.11.01至2019.11.02，以下商品可使用该优惠券","lineSpacing":"constantBaseline","fixedWidth":true},{"type":"Group","id":"FE62AE0D-FBB1-4D3A-9104-BFDAE988CA0D","frame":{"x":12,"y":16,"width":351,"height":80},"name":"编组 16","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"B51C1C18-DAAA-45E1-9781-0261AD06FF21","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"ShapePath","id":"3E0A0919-AAC3-476B-8C92-677CCF04B327","frame":{"x":0,"y":0,"width":351,"height":80},"name":"矩形","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"8CE53FCD-EF96-46D5-ACC6-116377360A18","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#fff4ebff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":6,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":6,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":6,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":6,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"ShapePath","id":"14A831E4-B6C8-4322-A604-5D3D3FB80213","frame":{"x":0,"y":0,"width":2,"height":80},"name":"矩形","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"5C60BF9C-A85F-4C59-B246-1084A35392D2","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[{"fillType":"Color","color":"#ff6600ff","gradient":{"gradientType":"Linear","from":{"x":0.5,"y":0},"to":{"x":0.5,"y":1},"aspectRatio":0,"stops":[{"position":0,"color":"#ffffffff"},{"position":1,"color":"#000000ff"}]},"pattern":{"patternType":"Fill","image":null,"tileScale":1},"enabled":true}],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"shapeType":"Rectangle","points":[{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":0},"curveTo":{"x":0,"y":0},"point":{"x":0,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":0},"curveTo":{"x":1,"y":0},"point":{"x":1,"y":0},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":1,"y":1},"curveTo":{"x":1,"y":1},"point":{"x":1,"y":1},"pointType":"Straight"},{"type":"CurvePoint","cornerRadius":0,"curveFrom":{"x":0,"y":1},"curveTo":{"x":0,"y":1},"point":{"x":0,"y":1},"pointType":"Straight"}],"closed":true},{"type":"Group","id":"405CD6DC-B137-4D9D-8954-65BBFA7F72CE","frame":{"x":16,"y":18,"width":56,"height":44},"name":"编组 8","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"088BB2D1-F3A7-454A-9072-A5DE3FE1DEE9","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"Group","id":"8A678EA9-F73A-49EC-A68B-96F1656D6BED","frame":{"x":7,"y":0,"width":41,"height":24},"name":"编组 3","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"35135BB4-722F-4484-8128-C9633AC7F991","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Layer"},"sharedStyleId":null,"layers":[{"type":"Text","id":"0E65CF76-BB55-4D72-8E49-298EBD3D9EAF","frame":{"x":0,"y":7,"width":10,"height":16},"name":"¥","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"032747CB-143B-44D4-ACA4-C59440A27AC8","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":16,"paragraphSpacing":0,"textColor":"#ff6600ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"¥","lineSpacing":"constantBaseline","fixedWidth":false},{"type":"Text","id":"C5BC6403-46D2-4986-87B5-1EE73164F385","frame":{"x":12,"y":0,"width":29,"height":24},"name":"30","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"F266E3AC-DA60-496A-97D9-30618A89F7E9","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":24,"paragraphSpacing":0,"textColor":"#ff6600ff","fontSize":24,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"30","lineSpacing":"constantBaseline","fixedWidth":false}]},{"type":"Text","id":"03A8E16A-812F-4D09-8109-8369862E3C12","frame":{"x":0,"y":32,"width":56,"height":12},"name":"满150可用","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"E83D6608-86F8-4394-B92F-66C0B1B7F32D","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"center","verticalAlignment":"top","kerning":0,"lineHeight":12,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":12,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"满150可用","lineSpacing":"constantBaseline","fixedWidth":false}]},{"type":"Text","id":"DAAB0C4B-3565-4631-84E6-7A2E5D4127AA","frame":{"x":88,"y":20,"width":247,"height":40},"name":"提莫家宠粉节宠物外出用品超级抵用券","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"D7BE2580-6C23-4701-938D-A19256A1DB75","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"left","verticalAlignment":"top","kerning":0,"lineHeight":20,"paragraphSpacing":0,"textColor":"#333333ff","fontSize":16,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"提莫家宠粉节宠物外出用品超级抵用券","lineSpacing":"constantBaseline","fixedWidth":true}]}]},{"type":"Text","id":"C8D4D81B-DF2F-439F-BA72-BBBFCB818C77","frame":{"x":87,"y":640,"width":201,"height":12},"name":"————＞ω＜我是有底线的————","selected":false,"hidden":false,"locked":false,"exportFormats":[],"transform":{"rotation":0,"flippedHorizontally":false,"flippedVertically":false},"style":{"type":"Style","id":"A1E29FE7-25DB-4962-852D-D361376F7F30","opacity":1,"blendingMode":"Normal","borderOptions":{"startArrowhead":"None","endArrowhead":"None","dashPattern":[],"lineEnd":"Butt","lineJoin":"Miter"},"blur":{"center":{"x":0.5,"y":0.5},"motionAngle":0,"radius":10,"enabled":false,"blurType":"Gaussian"},"fills":[],"borders":[],"shadows":[],"innerShadows":[],"styleType":"Text","alignment":"center","verticalAlignment":"top","kerning":0,"lineHeight":12,"paragraphSpacing":0,"textColor":"#a3a3a3ff","fontSize":12,"textTransform":"none","fontFamily":"PingFang SC","fontWeight":5},"sharedStyleId":null,"text":"————＞ω＜我是有底线的————","lineSpacing":"constantBaseline","fixedWidth":false}],"flowStartPoint":false,"background":{"enabled":true,"includedInExport":true,"color":"#ffffffff"}}],"length":1,"isEmpty":false}
+{
+  "layers": [
+    {
+      "type": "Artboard",
+      "id": "271AD5CB-BADD-473D-A1EE-62A1B545B42E",
+      "frame": { "x": 1, "y": -4337, "width": 375, "height": 812 },
+      "name": "查看使用",
+      "selected": true,
+      "exportFormats": [
+        {
+          "type": "ExportFormat",
+          "fileFormat": "png",
+          "suffix": "@2x",
+          "size": "2x"
+        }
+      ],
+      "sharedStyleId": null,
+      "layers": [
+        {
+          "type": "SymbolInstance",
+          "id": "D03E5B4A-FCB5-4D10-B488-C32C4554AA32",
+          "frame": { "x": 0, "y": 0, "width": 375, "height": 88 },
+          "name": "头部",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "B9D100FA-DD8B-4142-9333-1E22DB53B45E",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "symbolId": "CF7BD6AA-5617-4D36-865C-AD4C247EEECE",
+          "overrides": [
+            {
+              "type": "Override",
+              "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36_symbolID",
+              "path": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36",
+              "property": "symbolID",
+              "affectedLayer": {
+                "type": "SymbolInstance",
+                "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36",
+                "frame": { "x": 0, "y": 44, "width": 375, "height": 44 },
+                "name": "标题栏",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "AFD2DEC4-B6A4-421B-AEB1-9447EF766DC9",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": null,
+                "symbolId": "10C89966-D80A-4A1A-9CF5-B8761CF6BE3C"
+              },
+              "symbolOverride": true,
+              "value": "10C89966-D80A-4A1A-9CF5-B8761CF6BE3C",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16_symbolID",
+              "path": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16",
+              "property": "symbolID",
+              "affectedLayer": {
+                "type": "SymbolInstance",
+                "id": "DD168F62-E964-4F4B-9069-649C977DCA16",
+                "frame": { "x": 277, "y": 6, "width": 88, "height": 32 },
+                "name": "全剧操作",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "C58E0B54-E35D-4C29-AA75-C122AC3E66F3",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": null,
+                "symbolId": "70FDCE5C-A64C-43B6-8043-08A7A767C7ED"
+              },
+              "symbolOverride": true,
+              "value": "70FDCE5C-A64C-43B6-8043-08A7A767C7ED",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16/96160554-19E3-45BB-8A86-139EB2E1E61F_layerStyle",
+              "path": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/DD168F62-E964-4F4B-9069-649C977DCA16/96160554-19E3-45BB-8A86-139EB2E1E61F",
+              "property": "layerStyle",
+              "affectedLayer": {
+                "type": "ShapePath",
+                "id": "96160554-19E3-45BB-8A86-139EB2E1E61F",
+                "frame": { "x": 0, "y": 0, "width": 88, "height": 32 },
+                "name": "Rectangle 11 Copy",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "43F3C3D1-F5F1-45F4-8FA0-D42A0B413F79",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [
+                    {
+                      "fillType": "Color",
+                      "color": "#ffffffff",
+                      "gradient": {
+                        "gradientType": "Linear",
+                        "from": { "x": 0.5, "y": 0 },
+                        "to": { "x": 0.5, "y": 1 },
+                        "aspectRatio": 0,
+                        "stops": [
+                          { "position": 0, "color": "#ffffffff" },
+                          { "position": 1, "color": "#000000ff" }
+                        ]
+                      },
+                      "pattern": {
+                        "patternType": "Fill",
+                        "image": null,
+                        "tileScale": 1
+                      },
+                      "enabled": true
+                    }
+                  ],
+                  "borders": [
+                    {
+                      "fillType": "Color",
+                      "position": "Inside",
+                      "color": "#ebebebff",
+                      "gradient": {
+                        "gradientType": "Linear",
+                        "from": { "x": 0.5, "y": 0 },
+                        "to": { "x": 0.5, "y": 1 },
+                        "aspectRatio": 0,
+                        "stops": [
+                          { "position": 0, "color": "#ffffffff" },
+                          { "position": 1, "color": "#000000ff" }
+                        ]
+                      },
+                      "thickness": 0.5,
+                      "enabled": true
+                    }
+                  ],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": "9E04523D-2315-4051-B5C6-355F830E3BAD",
+                "shapeType": "Rectangle",
+                "points": [
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 32,
+                    "curveFrom": { "x": 0, "y": 0 },
+                    "curveTo": { "x": 0, "y": 0 },
+                    "point": { "x": 0, "y": 0 },
+                    "pointType": "Straight"
+                  },
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 32,
+                    "curveFrom": { "x": 1, "y": 0 },
+                    "curveTo": { "x": 1, "y": 0 },
+                    "point": { "x": 1, "y": 0 },
+                    "pointType": "Straight"
+                  },
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 32,
+                    "curveFrom": { "x": 1, "y": 1 },
+                    "curveTo": { "x": 1, "y": 1 },
+                    "point": { "x": 1, "y": 1 },
+                    "pointType": "Straight"
+                  },
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 32,
+                    "curveFrom": { "x": 0, "y": 1 },
+                    "curveTo": { "x": 0, "y": 1 },
+                    "point": { "x": 0, "y": 1 },
+                    "pointType": "Straight"
+                  }
+                ],
+                "closed": true
+              },
+              "symbolOverride": false,
+              "value": "9E04523D-2315-4051-B5C6-355F830E3BAD",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/14CCEACE-752C-4C3A-BF45-B0F749F7C6BB_stringValue",
+              "path": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/14CCEACE-752C-4C3A-BF45-B0F749F7C6BB",
+              "property": "stringValue",
+              "affectedLayer": {
+                "type": "Text",
+                "id": "14CCEACE-752C-4C3A-BF45-B0F749F7C6BB",
+                "frame": { "x": 125, "y": 13, "width": 126, "height": 18 },
+                "name": "提莫的蘑菇摊儿",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "4A324CD5-3491-4F5E-BDB2-5BC542E43032",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Text",
+                  "alignment": "center",
+                  "verticalAlignment": "top",
+                  "kerning": null,
+                  "lineHeight": 18,
+                  "paragraphSpacing": 0,
+                  "textColor": "#333333ff",
+                  "fontSize": 18,
+                  "textTransform": "none",
+                  "fontFamily": "PingFang SC",
+                  "fontWeight": 6
+                },
+                "sharedStyleId": null,
+                "text": "提莫的蘑菇摊儿",
+                "lineSpacing": "constantBaseline",
+                "fixedWidth": false
+              },
+              "symbolOverride": false,
+              "value": "查看使用",
+              "isDefault": false,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/A58E6059-8E3E-454F-8405-1AF306E9C79E_symbolID",
+              "path": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/A58E6059-8E3E-454F-8405-1AF306E9C79E",
+              "property": "symbolID",
+              "affectedLayer": {
+                "type": "SymbolInstance",
+                "id": "A58E6059-8E3E-454F-8405-1AF306E9C79E",
+                "frame": { "x": 10, "y": 13, "width": 10, "height": 18 },
+                "name": "Path 2",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "B8A030F3-4D87-4370-A03C-B7DC177E34DA",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": null,
+                "symbolId": "7CC53188-47AD-4775-9A0E-F2B74DB72F92"
+              },
+              "symbolOverride": true,
+              "value": "7CC53188-47AD-4775-9A0E-F2B74DB72F92",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/1B6FBFCA-7190-4F0E-8C6D-F89F5097B2B3_layerStyle",
+              "path": "F602FD4B-9E4E-43B8-A3CE-9F494BC76D36/1B6FBFCA-7190-4F0E-8C6D-F89F5097B2B3",
+              "property": "layerStyle",
+              "affectedLayer": {
+                "type": "ShapePath",
+                "id": "1B6FBFCA-7190-4F0E-8C6D-F89F5097B2B3",
+                "frame": { "x": 0, "y": 0, "width": 375, "height": 44 },
+                "name": "Rectangle Copy",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "CF25A56C-5918-4690-B8F9-8CBED128C270",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [
+                    {
+                      "fillType": "Color",
+                      "color": "#ffffffff",
+                      "gradient": {
+                        "gradientType": "Linear",
+                        "from": { "x": 0.5, "y": 0 },
+                        "to": { "x": 0.5, "y": 1 },
+                        "aspectRatio": 0,
+                        "stops": [
+                          { "position": 0, "color": "#ffffffff" },
+                          { "position": 1, "color": "#000000ff" }
+                        ]
+                      },
+                      "pattern": {
+                        "patternType": "Fill",
+                        "image": null,
+                        "tileScale": 1
+                      },
+                      "enabled": true
+                    }
+                  ],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": "F026611F-667E-4AB7-A472-D3E8637197A7",
+                "shapeType": "Rectangle",
+                "points": [
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 0,
+                    "curveFrom": { "x": 0, "y": 0 },
+                    "curveTo": { "x": 0, "y": 0 },
+                    "point": { "x": 0, "y": 0 },
+                    "pointType": "Straight"
+                  },
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 0,
+                    "curveFrom": { "x": 1, "y": 0 },
+                    "curveTo": { "x": 1, "y": 0 },
+                    "point": { "x": 1, "y": 0 },
+                    "pointType": "Straight"
+                  },
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 0,
+                    "curveFrom": { "x": 1, "y": 1 },
+                    "curveTo": { "x": 1, "y": 1 },
+                    "point": { "x": 1, "y": 1 },
+                    "pointType": "Straight"
+                  },
+                  {
+                    "type": "CurvePoint",
+                    "cornerRadius": 0,
+                    "curveFrom": { "x": 0, "y": 1 },
+                    "curveTo": { "x": 0, "y": 1 },
+                    "point": { "x": 0, "y": 1 },
+                    "pointType": "Straight"
+                  }
+                ],
+                "closed": true
+              },
+              "symbolOverride": false,
+              "value": "F026611F-667E-4AB7-A472-D3E8637197A7",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "23814761-116F-46C3-9CC5-1897544629C1_symbolID",
+              "path": "23814761-116F-46C3-9CC5-1897544629C1",
+              "property": "symbolID",
+              "affectedLayer": {
+                "type": "SymbolInstance",
+                "id": "23814761-116F-46C3-9CC5-1897544629C1",
+                "frame": { "x": 0, "y": 0, "width": 375, "height": 44 },
+                "name": "状态栏",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "BB0D81FA-5A95-44FB-9924-F0EBDE33EC68",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": null,
+                "symbolId": "9B30F3F3-F451-4217-9E5B-4339083C5AE4"
+              },
+              "symbolOverride": true,
+              "value": "9B30F3F3-F451-4217-9E5B-4339083C5AE4",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "23814761-116F-46C3-9CC5-1897544629C1/3ACCBA56-964F-4CF9-B9A2-9A3E8AFD2496_stringValue",
+              "path": "23814761-116F-46C3-9CC5-1897544629C1/3ACCBA56-964F-4CF9-B9A2-9A3E8AFD2496",
+              "property": "stringValue",
+              "affectedLayer": {
+                "type": "Text",
+                "id": "3ACCBA56-964F-4CF9-B9A2-9A3E8AFD2496",
+                "frame": { "x": 19, "y": 14, "width": 43, "height": 15 },
+                "name": "Time",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "8126702D-85CD-4CF4-94D2-8DED07BB080D",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Text",
+                  "alignment": "left",
+                  "verticalAlignment": "top",
+                  "kerning": 0,
+                  "lineHeight": 15,
+                  "paragraphSpacing": 0,
+                  "textColor": "#000000ff",
+                  "fontSize": 15,
+                  "textTransform": "none",
+                  "fontFamily": "Helvetica",
+                  "fontWeight": 5
+                },
+                "sharedStyleId": null,
+                "text": "09:41",
+                "lineSpacing": "constantBaseline",
+                "fixedWidth": false
+              },
+              "symbolOverride": false,
+              "value": "09:41",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            },
+            {
+              "type": "Override",
+              "id": "23814761-116F-46C3-9CC5-1897544629C1/7F03307E-8AD7-4672-99C3-31156D451B5A_symbolID",
+              "path": "23814761-116F-46C3-9CC5-1897544629C1/7F03307E-8AD7-4672-99C3-31156D451B5A",
+              "property": "symbolID",
+              "affectedLayer": {
+                "type": "SymbolInstance",
+                "id": "7F03307E-8AD7-4672-99C3-31156D451B5A",
+                "frame": { "x": 294, "y": 16, "width": 67, "height": 12 },
+                "name": "Battery",
+                "hidden": false,
+                "locked": false,
+                "exportFormats": [],
+                "transform": {
+                  "rotation": 0,
+                  "flippedHorizontally": false,
+                  "flippedVertically": false
+                },
+                "style": {
+                  "type": "Style",
+                  "id": "402A98D4-AF9A-4D9F-A252-F20737E87E30",
+                  "opacity": 1,
+                  "blendingMode": "Normal",
+                  "borderOptions": {
+                    "startArrowhead": "None",
+                    "endArrowhead": "None",
+                    "dashPattern": [],
+                    "lineEnd": "Butt",
+                    "lineJoin": "Miter"
+                  },
+                  "blur": {
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "motionAngle": 0,
+                    "radius": 10,
+                    "enabled": false,
+                    "blurType": "Gaussian"
+                  },
+                  "fills": [],
+                  "borders": [],
+                  "shadows": [],
+                  "innerShadows": [],
+                  "styleType": "Layer"
+                },
+                "sharedStyleId": null,
+                "symbolId": "C277C907-07C2-44CA-A737-235C8B752A69"
+              },
+              "symbolOverride": true,
+              "value": "C277C907-07C2-44CA-A737-235C8B752A69",
+              "isDefault": true,
+              "editable": true,
+              "selected": false
+            }
+          ]
+        },
+        {
+          "type": "Text",
+          "id": "1164FA6E-4AEE-457D-B477-ACC27706604B",
+          "frame": { "x": 12, "y": 112, "width": 56, "height": 14 },
+          "name": "当前位置",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "8F3FA547-E0A2-498B-A977-118E28BFD22D",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 14,
+            "paragraphSpacing": 0,
+            "textColor": "#ffffffff",
+            "fontSize": 14,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "当前位置",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        },
+        {
+          "type": "SymbolInstance",
+          "id": "F0AC892E-0AB2-4468-B085-59B23B7C6124",
+          "frame": { "x": 0, "y": 778, "width": 375, "height": 34 },
+          "name": "底部操作",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "D55EA659-3665-4870-9215-280A4F7F1A41",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "symbolId": "2D5754E0-3BCF-4D88-8B3D-303B012C955C",
+          "overrides": []
+        },
+        {
+          "type": "Group",
+          "id": "4DF10939-C79B-4D7F-BE10-D78E32DB4D49",
+          "frame": { "x": 12, "y": 272, "width": 351, "height": 80 },
+          "name": "编组 2",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "F592B737-1291-48D5-BF95-65D2CA109042",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "layers": [
+            {
+              "type": "Group",
+              "id": "8D683733-2739-4078-8B8C-3F944095BE98",
+              "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+              "name": "位图",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "C04B142C-2276-4CB7-91D5-DD72E2E43AC1",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "layers": [
+                {
+                  "type": "ShapePath",
+                  "id": "400A1445-80F0-4CB4-98E9-570CD0C133BD",
+                  "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+                  "name": "蒙版",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "E99C1835-3D2B-4C32-A1DF-14A9CF508B18",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [
+                      {
+                        "fillType": "Color",
+                        "color": "#d8d8d8ff",
+                        "gradient": {
+                          "gradientType": "Linear",
+                          "from": { "x": 0.5, "y": 0 },
+                          "to": { "x": 0.5, "y": 1 },
+                          "aspectRatio": 0,
+                          "stops": [
+                            { "position": 0, "color": "#ffffffff" },
+                            { "position": 1, "color": "#000000ff" }
+                          ]
+                        },
+                        "pattern": {
+                          "patternType": "Fill",
+                          "image": null,
+                          "tileScale": 1
+                        },
+                        "enabled": true
+                      }
+                    ],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "shapeType": "Rectangle",
+                  "points": [
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 0 },
+                      "curveTo": { "x": 0, "y": 0 },
+                      "point": { "x": 0, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 0 },
+                      "curveTo": { "x": 1, "y": 0 },
+                      "point": { "x": 1, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 1 },
+                      "curveTo": { "x": 1, "y": 1 },
+                      "point": { "x": 1, "y": 1 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 1 },
+                      "curveTo": { "x": 0, "y": 1 },
+                      "point": { "x": 0, "y": 1 },
+                      "pointType": "Straight"
+                    }
+                  ],
+                  "closed": true
+                },
+                {
+                  "type": "Image",
+                  "id": "138BE801-C06D-4B5C-A4CC-4FAE8FF02CAF",
+                  "frame": {
+                    "x": -26,
+                    "y": -3,
+                    "width": 125,
+                    "height": 83.3984375
+                  },
+                  "name": "位图",
+                  "selected": false,
+                  "hidden": true,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "830C8AC5-1364-4904-BA9D-C906CE62741C",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "image": {
+                    "type": "ImageData",
+                    "id": "210849186",
+                    "nsimage": {},
+                    "nsdata": {}
+                  }
+                },
+                {
+                  "type": "Image",
+                  "id": "14E3CBEB-776B-4C93-9251-9079469E42FF",
+                  "frame": {
+                    "x": -76,
+                    "y": -45.00000000000007,
+                    "width": 208,
+                    "height": 138.6666666666667
+                  },
+                  "name": "位图",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "40ECACC9-55CA-40FB-A093-85E21AF29443",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "image": {
+                    "type": "ImageData",
+                    "id": "23237234",
+                    "nsimage": {},
+                    "nsdata": {}
+                  }
+                }
+              ]
+            },
+            {
+              "type": "Text",
+              "id": "939F3332-FCE8-4BCC-81E5-EF2336A71265",
+              "frame": { "x": 92, "y": 2, "width": 259, "height": 40 },
+              "name": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗1",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "986B7232-29D2-4A30-816F-72CD15875E62",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 20,
+                "paragraphSpacing": 0,
+                "textColor": "#333333ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗…",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": true
+            },
+            {
+              "type": "Text",
+              "id": "C078B660-4D62-4295-AA4C-A39952FD5EEF",
+              "frame": { "x": 92, "y": 60, "width": 81, "height": 16 },
+              "name": "¥20～¥160",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "A69F130A-81A4-45DF-97AA-814517A1AF6D",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 16,
+                "paragraphSpacing": 0,
+                "textColor": "#ff6600ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "¥20～¥160",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": false
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "id": "6FE72BEC-640D-4448-AA25-2B6AE20B0B02",
+          "frame": { "x": 12, "y": 456, "width": 351, "height": 80 },
+          "name": "编组 2备份 2",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "9A4EDEDE-60B3-473E-BE7D-66066A970F76",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "layers": [
+            {
+              "type": "Group",
+              "id": "76AF8633-38D3-40E5-824A-FCE321B88F37",
+              "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+              "name": "位图",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "C0BB8B75-34FB-4276-BA77-D384DEF1B6F5",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "layers": [
+                {
+                  "type": "ShapePath",
+                  "id": "1A0D547E-1AF8-47AC-9D4B-AB60FC304DF7",
+                  "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+                  "name": "蒙版",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "11E64DAA-DD8D-4048-8442-14FDAC2E806A",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [
+                      {
+                        "fillType": "Color",
+                        "color": "#d8d8d8ff",
+                        "gradient": {
+                          "gradientType": "Linear",
+                          "from": { "x": 0.5, "y": 0 },
+                          "to": { "x": 0.5, "y": 1 },
+                          "aspectRatio": 0,
+                          "stops": [
+                            { "position": 0, "color": "#ffffffff" },
+                            { "position": 1, "color": "#000000ff" }
+                          ]
+                        },
+                        "pattern": {
+                          "patternType": "Fill",
+                          "image": null,
+                          "tileScale": 1
+                        },
+                        "enabled": true
+                      }
+                    ],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "shapeType": "Rectangle",
+                  "points": [
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 0 },
+                      "curveTo": { "x": 0, "y": 0 },
+                      "point": { "x": 0, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 0 },
+                      "curveTo": { "x": 1, "y": 0 },
+                      "point": { "x": 1, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 1 },
+                      "curveTo": { "x": 1, "y": 1 },
+                      "point": { "x": 1, "y": 1 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 1 },
+                      "curveTo": { "x": 0, "y": 1 },
+                      "point": { "x": 0, "y": 1 },
+                      "pointType": "Straight"
+                    }
+                  ],
+                  "closed": true
+                },
+                {
+                  "type": "Image",
+                  "id": "5CCD86CB-6CFC-49C5-AB97-8A986BEBB118",
+                  "frame": {
+                    "x": -36,
+                    "y": -1.06581410364015e-13,
+                    "width": 133,
+                    "height": 88.24242424242424
+                  },
+                  "name": "位图",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "6A69BDD9-DDD9-4F5C-857F-4199FBD13B83",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "image": {
+                    "type": "ImageData",
+                    "id": "224945774",
+                    "nsimage": {},
+                    "nsdata": {}
+                  }
+                }
+              ]
+            },
+            {
+              "type": "Text",
+              "id": "01585305-3946-420E-B9E9-A4C3F8E036D3",
+              "frame": { "x": 92, "y": 2, "width": 259, "height": 40 },
+              "name": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗1",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "B31D4FA8-EBE7-4733-8BFE-560ACC6D68A8",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 20,
+                "paragraphSpacing": 0,
+                "textColor": "#333333ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": true
+            },
+            {
+              "type": "Text",
+              "id": "C92A7C7B-EA2B-4339-913C-58131CFED43B",
+              "frame": { "x": 92, "y": 60, "width": 81, "height": 16 },
+              "name": "¥20～¥160",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "6489CB44-91EB-4173-A04C-011812F60DB7",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 16,
+                "paragraphSpacing": 0,
+                "textColor": "#ff6600ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "¥20～¥160",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": false
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "id": "921988E0-8A1B-4FDA-84EC-F41F315E852E",
+          "frame": { "x": 12, "y": 364, "width": 351, "height": 80 },
+          "name": "编组 2备份",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "100682CA-CC70-4C27-8328-BD9A054B5A0D",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "layers": [
+            {
+              "type": "Group",
+              "id": "6BF64A91-E4D1-4AA4-9CDF-905E3DBEB5BE",
+              "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+              "name": "位图",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "5071B8A3-2981-4119-8D13-25BE56C0439C",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "layers": [
+                {
+                  "type": "ShapePath",
+                  "id": "5E459AFC-A747-4957-B456-7954BBCBC64F",
+                  "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+                  "name": "蒙版",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "B026E438-ECCD-42E2-BA4E-323ED71C8501",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [
+                      {
+                        "fillType": "Color",
+                        "color": "#d8d8d8ff",
+                        "gradient": {
+                          "gradientType": "Linear",
+                          "from": { "x": 0.5, "y": 0 },
+                          "to": { "x": 0.5, "y": 1 },
+                          "aspectRatio": 0,
+                          "stops": [
+                            { "position": 0, "color": "#ffffffff" },
+                            { "position": 1, "color": "#000000ff" }
+                          ]
+                        },
+                        "pattern": {
+                          "patternType": "Fill",
+                          "image": null,
+                          "tileScale": 1
+                        },
+                        "enabled": true
+                      }
+                    ],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "shapeType": "Rectangle",
+                  "points": [
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 0 },
+                      "curveTo": { "x": 0, "y": 0 },
+                      "point": { "x": 0, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 0 },
+                      "curveTo": { "x": 1, "y": 0 },
+                      "point": { "x": 1, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 1 },
+                      "curveTo": { "x": 1, "y": 1 },
+                      "point": { "x": 1, "y": 1 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 1 },
+                      "curveTo": { "x": 0, "y": 1 },
+                      "point": { "x": 0, "y": 1 },
+                      "pointType": "Straight"
+                    }
+                  ],
+                  "closed": true
+                },
+                {
+                  "type": "Image",
+                  "id": "C9CEAEE3-B66B-413F-8153-923C13B0A869",
+                  "frame": {
+                    "x": -26,
+                    "y": -3,
+                    "width": 125,
+                    "height": 83.3984375
+                  },
+                  "name": "位图",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "BD1F52B4-454B-49E5-B511-5C9F2C1E7D7C",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "image": {
+                    "type": "ImageData",
+                    "id": "210849186",
+                    "nsimage": {},
+                    "nsdata": {}
+                  }
+                }
+              ]
+            },
+            {
+              "type": "Text",
+              "id": "4D1E97BD-5FCF-42F7-AB51-F2123D30E8A4",
+              "frame": { "x": 92, "y": 2, "width": 259, "height": 20 },
+              "name": "大型犬野兽派洗剪吹A套餐",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "DBF75374-0BB3-40FB-B3D6-ECBC5E4FE623",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 20,
+                "paragraphSpacing": 0,
+                "textColor": "#333333ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "大型犬野兽派洗剪吹A套餐",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": true
+            },
+            {
+              "type": "Text",
+              "id": "1019E19F-85A8-4471-AFFB-99231CDD6F56",
+              "frame": { "x": 92, "y": 60, "width": 73, "height": 16 },
+              "name": "¥20～¥75",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "D968AEF2-1799-48FC-8CF2-20316E2D259D",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 16,
+                "paragraphSpacing": 0,
+                "textColor": "#ff6600ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "¥20～¥75",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": false
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "id": "014B3585-EB0A-42F4-BAA7-1E8A860E7EC5",
+          "frame": { "x": 14, "y": 553, "width": 347, "height": 80 },
+          "name": "编组 2备份 3",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "20393DBE-6ABC-449C-8146-966204D581D0",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "layers": [
+            {
+              "type": "Group",
+              "id": "75D89319-2F38-4FD6-8C6D-85828F3336EC",
+              "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+              "name": "位图",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "7BA88966-EB07-4125-A014-8F5639B3DB3B",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "layers": [
+                {
+                  "type": "ShapePath",
+                  "id": "78C75C91-8053-4937-BE3C-AEA9E988D96A",
+                  "frame": { "x": 0, "y": 0, "width": 80, "height": 80 },
+                  "name": "蒙版",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "B3CAC458-5693-421B-9A89-65AD78BC1B53",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [
+                      {
+                        "fillType": "Color",
+                        "color": "#d8d8d8ff",
+                        "gradient": {
+                          "gradientType": "Linear",
+                          "from": { "x": 0.5, "y": 0 },
+                          "to": { "x": 0.5, "y": 1 },
+                          "aspectRatio": 0,
+                          "stops": [
+                            { "position": 0, "color": "#ffffffff" },
+                            { "position": 1, "color": "#000000ff" }
+                          ]
+                        },
+                        "pattern": {
+                          "patternType": "Fill",
+                          "image": null,
+                          "tileScale": 1
+                        },
+                        "enabled": true
+                      }
+                    ],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "shapeType": "Rectangle",
+                  "points": [
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 0 },
+                      "curveTo": { "x": 0, "y": 0 },
+                      "point": { "x": 0, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 0 },
+                      "curveTo": { "x": 1, "y": 0 },
+                      "point": { "x": 1, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 1 },
+                      "curveTo": { "x": 1, "y": 1 },
+                      "point": { "x": 1, "y": 1 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 1 },
+                      "curveTo": { "x": 0, "y": 1 },
+                      "point": { "x": 0, "y": 1 },
+                      "pointType": "Straight"
+                    }
+                  ],
+                  "closed": true
+                },
+                {
+                  "type": "Image",
+                  "id": "EB3DE1BE-3A4A-44B7-BF81-CE9BB927666C",
+                  "frame": {
+                    "x": -56,
+                    "y": -9.000000000000085,
+                    "width": 231,
+                    "height": 140.0744680851064
+                  },
+                  "name": "位图",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "B5DF2B09-0492-4785-B371-3B9F4A98B360",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "image": {
+                    "type": "ImageData",
+                    "id": "13115113",
+                    "nsimage": {},
+                    "nsdata": {}
+                  }
+                }
+              ]
+            },
+            {
+              "type": "Text",
+              "id": "5485D0F1-802B-4459-B80B-E2BF820DFC5F",
+              "frame": { "x": 88, "y": 4, "width": 259, "height": 20 },
+              "name": "小型犬洗剪吹B套餐",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "72DE8DC3-2A11-4ACB-AB3F-E87D7248596E",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 20,
+                "paragraphSpacing": 0,
+                "textColor": "#333333ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "小型犬洗剪吹B套餐",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": true
+            },
+            {
+              "type": "Text",
+              "id": "FAB24927-8E2B-4E66-BCBE-55A125554B82",
+              "frame": { "x": 91, "y": 59, "width": 73, "height": 16 },
+              "name": "¥20～¥75",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "C856AE2B-7950-4F72-8DAE-03E147D01C05",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 16,
+                "paragraphSpacing": 0,
+                "textColor": "#ff6600ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "¥20～¥75",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": false
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "id": "3F4DEA51-DDA4-46AA-8207-C524F71ECD9F",
+          "frame": { "x": 0, "y": 88, "width": 375, "height": 184 },
+          "name": "编组",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "5427D6CD-A0B7-4EC0-BE5A-42DAD8161A16",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "layers": [
+            {
+              "type": "ShapePath",
+              "id": "3C15E91F-C98D-47C0-B21E-D8E6D37C2B12",
+              "frame": { "x": 0, "y": 0, "width": 375, "height": 164 },
+              "name": "Rectangle Copy 3",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "FA6C72A3-6027-4A8B-9347-6F3512422A91",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [
+                  {
+                    "fillType": "Color",
+                    "color": "#ffffffff",
+                    "gradient": {
+                      "gradientType": "Linear",
+                      "from": { "x": 0.5, "y": 0 },
+                      "to": { "x": 0.5, "y": 1 },
+                      "aspectRatio": 0,
+                      "stops": [
+                        { "position": 0, "color": "#ffffffff" },
+                        { "position": 1, "color": "#000000ff" }
+                      ]
+                    },
+                    "pattern": {
+                      "patternType": "Fill",
+                      "image": null,
+                      "tileScale": 1
+                    },
+                    "enabled": true
+                  }
+                ],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": "F026611F-667E-4AB7-A472-D3E8637197A7",
+              "shapeType": "Rectangle",
+              "points": [
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 0, "y": 0 },
+                  "curveTo": { "x": 0, "y": 0 },
+                  "point": { "x": 0, "y": 0 },
+                  "pointType": "Straight"
+                },
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 1, "y": 0 },
+                  "curveTo": { "x": 1, "y": 0 },
+                  "point": { "x": 1, "y": 0 },
+                  "pointType": "Straight"
+                },
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 1, "y": 1 },
+                  "curveTo": { "x": 1, "y": 1 },
+                  "point": { "x": 1, "y": 1 },
+                  "pointType": "Straight"
+                },
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 0, "y": 1 },
+                  "curveTo": { "x": 0, "y": 1 },
+                  "point": { "x": 0, "y": 1 },
+                  "pointType": "Straight"
+                }
+              ],
+              "closed": true
+            },
+            {
+              "type": "ShapePath",
+              "id": "728D735D-2A19-4DC2-829C-498E80F6F9BD",
+              "frame": { "x": 0, "y": 164, "width": 375, "height": 20 },
+              "name": "Rectangle Copy 3",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "5417A8D2-EE44-406C-B712-9CF86EB00499",
+                "opacity": 0.043251,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [
+                  {
+                    "fillType": "Gradient",
+                    "color": "#ffffffff",
+                    "gradient": {
+                      "gradientType": "Linear",
+                      "from": { "x": 0.5, "y": 1 },
+                      "to": {
+                        "x": 0.4999999999999999,
+                        "y": 3.0616169978683836e-17
+                      },
+                      "aspectRatio": 0,
+                      "stops": [
+                        { "position": 0, "color": "#00000000" },
+                        { "position": 1, "color": "#000000ff" }
+                      ]
+                    },
+                    "pattern": {
+                      "patternType": "Fill",
+                      "image": null,
+                      "tileScale": 1
+                    },
+                    "enabled": true
+                  }
+                ],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "shapeType": "Rectangle",
+              "points": [
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 0, "y": 0 },
+                  "curveTo": { "x": 0, "y": 0 },
+                  "point": { "x": 0, "y": 0 },
+                  "pointType": "Straight"
+                },
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 1, "y": 0 },
+                  "curveTo": { "x": 1, "y": 0 },
+                  "point": { "x": 1, "y": 0 },
+                  "pointType": "Straight"
+                },
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 1, "y": 1 },
+                  "curveTo": { "x": 1, "y": 1 },
+                  "point": { "x": 1, "y": 1 },
+                  "pointType": "Straight"
+                },
+                {
+                  "type": "CurvePoint",
+                  "cornerRadius": 0,
+                  "curveFrom": { "x": 0, "y": 1 },
+                  "curveTo": { "x": 0, "y": 1 },
+                  "point": { "x": 0, "y": 1 },
+                  "pointType": "Straight"
+                }
+              ],
+              "closed": true
+            },
+            {
+              "type": "Text",
+              "id": "D698FCE9-EA7A-4C9F-B6F0-41EE5357EABE",
+              "frame": { "x": 12, "y": 110, "width": 351, "height": 40 },
+              "name": "2019.11.01至2019.11.0",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "5FABAFC5-688B-439B-8D01-6A1B8611005F",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "kerning": 0,
+                "lineHeight": 20,
+                "paragraphSpacing": 0,
+                "textColor": "#333333ff",
+                "fontSize": 16,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "2019.11.01至2019.11.02，以下商品可使用该优惠券",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": true
+            },
+            {
+              "type": "Group",
+              "id": "FE62AE0D-FBB1-4D3A-9104-BFDAE988CA0D",
+              "frame": { "x": 12, "y": 16, "width": 351, "height": 80 },
+              "name": "编组 16",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "B51C1C18-DAAA-45E1-9781-0261AD06FF21",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": { "x": 0.5, "y": 0.5 },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "layers": [
+                {
+                  "type": "ShapePath",
+                  "id": "3E0A0919-AAC3-476B-8C92-677CCF04B327",
+                  "frame": { "x": 0, "y": 0, "width": 351, "height": 80 },
+                  "name": "矩形",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "8CE53FCD-EF96-46D5-ACC6-116377360A18",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [
+                      {
+                        "fillType": "Color",
+                        "color": "#fff4ebff",
+                        "gradient": {
+                          "gradientType": "Linear",
+                          "from": { "x": 0.5, "y": 0 },
+                          "to": { "x": 0.5, "y": 1 },
+                          "aspectRatio": 0,
+                          "stops": [
+                            { "position": 0, "color": "#ffffffff" },
+                            { "position": 1, "color": "#000000ff" }
+                          ]
+                        },
+                        "pattern": {
+                          "patternType": "Fill",
+                          "image": null,
+                          "tileScale": 1
+                        },
+                        "enabled": true
+                      }
+                    ],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "shapeType": "Rectangle",
+                  "points": [
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 6,
+                      "curveFrom": { "x": 0, "y": 0 },
+                      "curveTo": { "x": 0, "y": 0 },
+                      "point": { "x": 0, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 6,
+                      "curveFrom": { "x": 1, "y": 0 },
+                      "curveTo": { "x": 1, "y": 0 },
+                      "point": { "x": 1, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 6,
+                      "curveFrom": { "x": 1, "y": 1 },
+                      "curveTo": { "x": 1, "y": 1 },
+                      "point": { "x": 1, "y": 1 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 6,
+                      "curveFrom": { "x": 0, "y": 1 },
+                      "curveTo": { "x": 0, "y": 1 },
+                      "point": { "x": 0, "y": 1 },
+                      "pointType": "Straight"
+                    }
+                  ],
+                  "closed": true
+                },
+                {
+                  "type": "ShapePath",
+                  "id": "14A831E4-B6C8-4322-A604-5D3D3FB80213",
+                  "frame": { "x": 0, "y": 0, "width": 2, "height": 80 },
+                  "name": "矩形",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "5C60BF9C-A85F-4C59-B246-1084A35392D2",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [
+                      {
+                        "fillType": "Color",
+                        "color": "#ff6600ff",
+                        "gradient": {
+                          "gradientType": "Linear",
+                          "from": { "x": 0.5, "y": 0 },
+                          "to": { "x": 0.5, "y": 1 },
+                          "aspectRatio": 0,
+                          "stops": [
+                            { "position": 0, "color": "#ffffffff" },
+                            { "position": 1, "color": "#000000ff" }
+                          ]
+                        },
+                        "pattern": {
+                          "patternType": "Fill",
+                          "image": null,
+                          "tileScale": 1
+                        },
+                        "enabled": true
+                      }
+                    ],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "shapeType": "Rectangle",
+                  "points": [
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 0 },
+                      "curveTo": { "x": 0, "y": 0 },
+                      "point": { "x": 0, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 0 },
+                      "curveTo": { "x": 1, "y": 0 },
+                      "point": { "x": 1, "y": 0 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 1, "y": 1 },
+                      "curveTo": { "x": 1, "y": 1 },
+                      "point": { "x": 1, "y": 1 },
+                      "pointType": "Straight"
+                    },
+                    {
+                      "type": "CurvePoint",
+                      "cornerRadius": 0,
+                      "curveFrom": { "x": 0, "y": 1 },
+                      "curveTo": { "x": 0, "y": 1 },
+                      "point": { "x": 0, "y": 1 },
+                      "pointType": "Straight"
+                    }
+                  ],
+                  "closed": true
+                },
+                {
+                  "type": "Group",
+                  "id": "405CD6DC-B137-4D9D-8954-65BBFA7F72CE",
+                  "frame": { "x": 16, "y": 18, "width": 56, "height": 44 },
+                  "name": "编组 8",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "088BB2D1-F3A7-454A-9072-A5DE3FE1DEE9",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Layer"
+                  },
+                  "sharedStyleId": null,
+                  "layers": [
+                    {
+                      "type": "Group",
+                      "id": "8A678EA9-F73A-49EC-A68B-96F1656D6BED",
+                      "frame": { "x": 7, "y": 0, "width": 41, "height": 24 },
+                      "name": "编组 3",
+                      "selected": false,
+                      "hidden": false,
+                      "locked": false,
+                      "exportFormats": [],
+                      "transform": {
+                        "rotation": 0,
+                        "flippedHorizontally": false,
+                        "flippedVertically": false
+                      },
+                      "style": {
+                        "type": "Style",
+                        "id": "35135BB4-722F-4484-8128-C9633AC7F991",
+                        "opacity": 1,
+                        "blendingMode": "Normal",
+                        "borderOptions": {
+                          "startArrowhead": "None",
+                          "endArrowhead": "None",
+                          "dashPattern": [],
+                          "lineEnd": "Butt",
+                          "lineJoin": "Miter"
+                        },
+                        "blur": {
+                          "center": { "x": 0.5, "y": 0.5 },
+                          "motionAngle": 0,
+                          "radius": 10,
+                          "enabled": false,
+                          "blurType": "Gaussian"
+                        },
+                        "fills": [],
+                        "borders": [],
+                        "shadows": [],
+                        "innerShadows": [],
+                        "styleType": "Layer"
+                      },
+                      "sharedStyleId": null,
+                      "layers": [
+                        {
+                          "type": "Text",
+                          "id": "0E65CF76-BB55-4D72-8E49-298EBD3D9EAF",
+                          "frame": {
+                            "x": 0,
+                            "y": 7,
+                            "width": 10,
+                            "height": 16
+                          },
+                          "name": "¥",
+                          "selected": false,
+                          "hidden": false,
+                          "locked": false,
+                          "exportFormats": [],
+                          "transform": {
+                            "rotation": 0,
+                            "flippedHorizontally": false,
+                            "flippedVertically": false
+                          },
+                          "style": {
+                            "type": "Style",
+                            "id": "032747CB-143B-44D4-ACA4-C59440A27AC8",
+                            "opacity": 1,
+                            "blendingMode": "Normal",
+                            "borderOptions": {
+                              "startArrowhead": "None",
+                              "endArrowhead": "None",
+                              "dashPattern": [],
+                              "lineEnd": "Butt",
+                              "lineJoin": "Miter"
+                            },
+                            "blur": {
+                              "center": { "x": 0.5, "y": 0.5 },
+                              "motionAngle": 0,
+                              "radius": 10,
+                              "enabled": false,
+                              "blurType": "Gaussian"
+                            },
+                            "fills": [],
+                            "borders": [],
+                            "shadows": [],
+                            "innerShadows": [],
+                            "styleType": "Text",
+                            "alignment": "left",
+                            "verticalAlignment": "top",
+                            "kerning": 0,
+                            "lineHeight": 16,
+                            "paragraphSpacing": 0,
+                            "textColor": "#ff6600ff",
+                            "fontSize": 16,
+                            "textTransform": "none",
+                            "fontFamily": "PingFang SC",
+                            "fontWeight": 5
+                          },
+                          "sharedStyleId": null,
+                          "text": "¥",
+                          "lineSpacing": "constantBaseline",
+                          "fixedWidth": false
+                        },
+                        {
+                          "type": "Text",
+                          "id": "C5BC6403-46D2-4986-87B5-1EE73164F385",
+                          "frame": {
+                            "x": 12,
+                            "y": 0,
+                            "width": 29,
+                            "height": 24
+                          },
+                          "name": "30",
+                          "selected": false,
+                          "hidden": false,
+                          "locked": false,
+                          "exportFormats": [],
+                          "transform": {
+                            "rotation": 0,
+                            "flippedHorizontally": false,
+                            "flippedVertically": false
+                          },
+                          "style": {
+                            "type": "Style",
+                            "id": "F266E3AC-DA60-496A-97D9-30618A89F7E9",
+                            "opacity": 1,
+                            "blendingMode": "Normal",
+                            "borderOptions": {
+                              "startArrowhead": "None",
+                              "endArrowhead": "None",
+                              "dashPattern": [],
+                              "lineEnd": "Butt",
+                              "lineJoin": "Miter"
+                            },
+                            "blur": {
+                              "center": { "x": 0.5, "y": 0.5 },
+                              "motionAngle": 0,
+                              "radius": 10,
+                              "enabled": false,
+                              "blurType": "Gaussian"
+                            },
+                            "fills": [],
+                            "borders": [],
+                            "shadows": [],
+                            "innerShadows": [],
+                            "styleType": "Text",
+                            "alignment": "left",
+                            "verticalAlignment": "top",
+                            "kerning": 0,
+                            "lineHeight": 24,
+                            "paragraphSpacing": 0,
+                            "textColor": "#ff6600ff",
+                            "fontSize": 24,
+                            "textTransform": "none",
+                            "fontFamily": "PingFang SC",
+                            "fontWeight": 5
+                          },
+                          "sharedStyleId": null,
+                          "text": "30",
+                          "lineSpacing": "constantBaseline",
+                          "fixedWidth": false
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Text",
+                      "id": "03A8E16A-812F-4D09-8109-8369862E3C12",
+                      "frame": { "x": 0, "y": 32, "width": 56, "height": 12 },
+                      "name": "满150可用",
+                      "selected": false,
+                      "hidden": false,
+                      "locked": false,
+                      "exportFormats": [],
+                      "transform": {
+                        "rotation": 0,
+                        "flippedHorizontally": false,
+                        "flippedVertically": false
+                      },
+                      "style": {
+                        "type": "Style",
+                        "id": "E83D6608-86F8-4394-B92F-66C0B1B7F32D",
+                        "opacity": 1,
+                        "blendingMode": "Normal",
+                        "borderOptions": {
+                          "startArrowhead": "None",
+                          "endArrowhead": "None",
+                          "dashPattern": [],
+                          "lineEnd": "Butt",
+                          "lineJoin": "Miter"
+                        },
+                        "blur": {
+                          "center": { "x": 0.5, "y": 0.5 },
+                          "motionAngle": 0,
+                          "radius": 10,
+                          "enabled": false,
+                          "blurType": "Gaussian"
+                        },
+                        "fills": [],
+                        "borders": [],
+                        "shadows": [],
+                        "innerShadows": [],
+                        "styleType": "Text",
+                        "alignment": "center",
+                        "verticalAlignment": "top",
+                        "kerning": 0,
+                        "lineHeight": 12,
+                        "paragraphSpacing": 0,
+                        "textColor": "#333333ff",
+                        "fontSize": 12,
+                        "textTransform": "none",
+                        "fontFamily": "PingFang SC",
+                        "fontWeight": 5
+                      },
+                      "sharedStyleId": null,
+                      "text": "满150可用",
+                      "lineSpacing": "constantBaseline",
+                      "fixedWidth": false
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "id": "DAAB0C4B-3565-4631-84E6-7A2E5D4127AA",
+                  "frame": { "x": 88, "y": 20, "width": 247, "height": 40 },
+                  "name": "提莫家宠粉节宠物外出用品超级抵用券",
+                  "selected": false,
+                  "hidden": false,
+                  "locked": false,
+                  "exportFormats": [],
+                  "transform": {
+                    "rotation": 0,
+                    "flippedHorizontally": false,
+                    "flippedVertically": false
+                  },
+                  "style": {
+                    "type": "Style",
+                    "id": "D7BE2580-6C23-4701-938D-A19256A1DB75",
+                    "opacity": 1,
+                    "blendingMode": "Normal",
+                    "borderOptions": {
+                      "startArrowhead": "None",
+                      "endArrowhead": "None",
+                      "dashPattern": [],
+                      "lineEnd": "Butt",
+                      "lineJoin": "Miter"
+                    },
+                    "blur": {
+                      "center": { "x": 0.5, "y": 0.5 },
+                      "motionAngle": 0,
+                      "radius": 10,
+                      "enabled": false,
+                      "blurType": "Gaussian"
+                    },
+                    "fills": [],
+                    "borders": [],
+                    "shadows": [],
+                    "innerShadows": [],
+                    "styleType": "Text",
+                    "alignment": "left",
+                    "verticalAlignment": "top",
+                    "kerning": 0,
+                    "lineHeight": 20,
+                    "paragraphSpacing": 0,
+                    "textColor": "#333333ff",
+                    "fontSize": 16,
+                    "textTransform": "none",
+                    "fontFamily": "PingFang SC",
+                    "fontWeight": 5
+                  },
+                  "sharedStyleId": null,
+                  "text": "提莫家宠粉节宠物外出用品超级抵用券",
+                  "lineSpacing": "constantBaseline",
+                  "fixedWidth": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Text",
+          "id": "C8D4D81B-DF2F-439F-BA72-BBBFCB818C77",
+          "frame": { "x": 87, "y": 640, "width": 201, "height": 12 },
+          "name": "————＞ω＜我是有底线的————",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "A1E29FE7-25DB-4962-852D-D361376F7F30",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": { "x": 0.5, "y": 0.5 },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "center",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 12,
+            "paragraphSpacing": 0,
+            "textColor": "#a3a3a3ff",
+            "fontSize": 12,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "————＞ω＜我是有底线的————",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        }
+      ],
+      "flowStartPoint": false,
+      "background": {
+        "enabled": true,
+        "includedInExport": true,
+        "color": "#ffffffff"
+      }
+    }
+  ],
+  "length": 1,
+  "isEmpty": false
+}

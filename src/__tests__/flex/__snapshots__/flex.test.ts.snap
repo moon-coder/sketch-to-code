@@ -104,6 +104,96 @@ Object {
 }
 `;
 
+exports[`券使用说明: flex7 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [],
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "¥",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "30",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                          ],
+                          "type": "Block",
+                        },
+                        Object {
+                          "attrs": Object {
+                            "text": "满150可用",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                      ],
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "提莫家宠粉节宠物外出用品超级抵用券",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                  ],
+                  "type": "Block",
+                },
+              ],
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {
+                "text": "2019.11.01至2019.11.02，以下商品可使用该优惠券",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+      ],
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [],
+      "type": "Block",
+    },
+  ],
+  "type": "Block",
+}
+`;
+
 exports[`单行图文混排: flex3 1`] = `
 Object {
   "attrs": Object {},

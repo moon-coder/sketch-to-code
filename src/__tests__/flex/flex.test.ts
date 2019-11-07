@@ -71,9 +71,18 @@ it('列图标生成', function () {
 
 
 it('首页生成', function () {
+  //TODO 组件包围的情况产生;
   testOrigin('flex6');
 });
 
+
+it('券使用说明', function () {
+  testOrigin('flex7');
+});
+
+it('券详情页面', function () {
+  testOrigin('flex8');
+});
 
 let getCompSrc=(dom:string)=>`
 import * as React from 'react';

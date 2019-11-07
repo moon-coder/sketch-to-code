@@ -105,7 +105,7 @@ const renameClassName = (node: INode) => {
  * @returns {INode}
  */
 export default (nodes: INode[]): INode => {
-  debugger;
+
   let rootNode = preDeal(nodes);
 
   walk(rootNode,(node) => {
@@ -129,7 +129,6 @@ export default (nodes: INode[]): INode => {
     }
   })
   // 3.去掉同行同列
-  debugger;
   mergeLineRow(rootNode);
   // fixme 这边逻辑摆放位置还要考虑
   if (rootNode.children.length == 1) {

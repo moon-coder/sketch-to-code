@@ -404,6 +404,7 @@ export interface IStyle {
   backgroundColor?: string;
   backgroundImage?: string;
   lines?: number;
+  opacity?: number;
   [s: string]: any;
 }
 
