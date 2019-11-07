@@ -17,6 +17,9 @@ export default function(nodes: INode[]): INode {
     return nodes[0];
   }
 
+  //TODO 检查元素是否存在互相覆盖的情况;
+
+
   do {
     //area
     const nodesByArea: INode[] = sortByArea(nodes);

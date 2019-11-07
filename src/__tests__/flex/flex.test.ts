@@ -66,8 +66,12 @@ it('多行重复文字', function () {
 
 
 it('列图标生成', function () {
-  //TODO 这个是失败的. 前三个是一组的为什么会拆分出去; 而且生成的页面不是一个
   testOrigin('flex5');
+});
+
+
+it('首页生成', function () {
+  testOrigin('flex6');
 });
 
 
