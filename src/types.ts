@@ -69,10 +69,13 @@ export interface INode {
   style: IStyle;
   attrs: IAttrs;
   children: INode[];
-  extraInfo?:{
-    sameNode:boolean;
+  extraInfo?:IExtraInfo;
+}
+export interface IExtraInfo{
+  sameNode?:boolean;
+  isComp?:boolean;
+  compInfo?:{
   }
-
 }
 
 export interface IFrame {

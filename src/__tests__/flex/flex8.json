@@ -683,60 +683,6 @@
           ]
         },
         {
-          "type": "Text",
-          "id": "1164FA6E-4AEE-457D-B477-ACC27706604B",
-          "frame": { "x": 12, "y": 112, "width": 56, "height": 14 },
-          "name": "当前位置",
-          "selected": false,
-          "hidden": false,
-          "locked": false,
-          "exportFormats": [],
-          "transform": {
-            "rotation": 0,
-            "flippedHorizontally": false,
-            "flippedVertically": false
-          },
-          "style": {
-            "type": "Style",
-            "id": "8F3FA547-E0A2-498B-A977-118E28BFD22D",
-            "opacity": 1,
-            "blendingMode": "Normal",
-            "borderOptions": {
-              "startArrowhead": "None",
-              "endArrowhead": "None",
-              "dashPattern": [],
-              "lineEnd": "Butt",
-              "lineJoin": "Miter"
-            },
-            "blur": {
-              "center": { "x": 0.5, "y": 0.5 },
-              "motionAngle": 0,
-              "radius": 10,
-              "enabled": false,
-              "blurType": "Gaussian"
-            },
-            "fills": [],
-            "borders": [],
-            "shadows": [],
-            "innerShadows": [],
-            "styleType": "Text",
-            "alignment": "left",
-            "verticalAlignment": "top",
-            "kerning": 0,
-            "lineHeight": 14,
-            "paragraphSpacing": 0,
-            "textColor": "#ffffffff",
-            "fontSize": 14,
-            "textTransform": "none",
-            "fontFamily": "PingFang SC",
-            "fontWeight": 5
-          },
-          "sharedStyleId": null,
-          "text": "当前位置",
-          "lineSpacing": "constantBaseline",
-          "fixedWidth": false
-        },
-        {
           "type": "SymbolInstance",
           "id": "F0AC892E-0AB2-4468-B085-59B23B7C6124",
           "frame": { "x": 0, "y": 778, "width": 375, "height": 34 },

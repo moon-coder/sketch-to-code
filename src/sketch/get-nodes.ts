@@ -7,7 +7,7 @@ import {
   Container,
   Group,
 } from './types-sketch';
-import {IFrame, INode} from '../types';
+import {IExtraInfo, IFrame, INode} from '../types';
 import * as uuid from 'uuid';
 import { exportImg } from './util';
 import { OutPutPath } from '../util';
@@ -83,12 +83,17 @@ export default (layer?: Layer): INode[] => {
       layerImgSrc = exportImg(layer);
     }
 
-    if (!['Artboard', 'Group'].includes(layer.type) || layerImgSrc) {
+    if (!['Artboard'].includes(layer.type) || layerImgSrc) {
+
       const node: INode = toNode(layer,nodeRepo[pPath]);
       if (layerImgSrc) {
         node.attrs.src = layerImgSrc;
         node.type = 'Image';
       }
+      resultNodes.push(node);
+    } else if(layer.name.includes("M:comp") && layer.type ==='group') {
+      const node: INode = toNode(layer,nodeRepo[pPath]);
+
       resultNodes.push(node);
     } else {
       (layer as Container).layers.forEach((layer, layrerIndex) => {
@@ -146,11 +151,26 @@ const layerToNode = (layer: Layer, absFrame: IFrame): INode => {
   };
   node.type = layerType(layer);
   layerStyle(layer, node);
+  node.extraInfo=layerExtraInfo(layer);
   node.frame = absFrame;
   node.points = calcNodeCoords(node);
   node.children = [];
   return node;
 };
+
+
+/**
+ * 从name中提取 命令信息;
+ * @param {Layer} layer
+ * @returns {IExtraInfo}
+ */
+function layerExtraInfo(layer: Layer):IExtraInfo{
+  let extraInfo:IExtraInfo={};
+  if(layer.name.includes("M:comp")){
+    extraInfo.isComp=true;
+  }
+  return extraInfo;
+}
 
 /**
  * 类型映射

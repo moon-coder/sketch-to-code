@@ -185,6 +185,9 @@ function getMergeableNodes(
     unMergeable: INode[] = [];
 
   restNodes.forEach(node => {
+    if(restNodes.length===4){
+      debugger;
+    }
     if (isOverLapThird(targetNode, node, restNodes)) {
       unMergeable.push(node);
     } else {
