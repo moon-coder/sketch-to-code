@@ -134,12 +134,20 @@ const transVal = (key: string, val: any) => {
   return val;
 };
 
+/**
+ * 转换线性变化部分;
+ * @param {IGradient} gradient
+ * @returns {string[]}
+ */
 function transGradient(gradient: IGradient): string[] {
   let lines: string[] = [];
 
   let colors = gradient.stops
     .map((item: {position: number; color: string}) => item.color)
     .join(',');
+
+  //已知三角形边长求夹角的公式 https://zhidao.baidu.com/question/239320646.html
+//TODO  这里要计算出来
 
   lines.push(`background-image:linear-gradient(to left, ${colors});`);
   return lines;
