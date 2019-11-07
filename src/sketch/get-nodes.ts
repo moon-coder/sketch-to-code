@@ -217,6 +217,10 @@ const layerStyle = (layer: Layer, node: INode) => {
     // let attrs = { src: '', text:'' };
   }
 
+  if(layer.style.opacity) {
+    style.opacity=layer.style.opacity;
+  }
+
   if (layer.type === 'Text') {
     // 文本 fontSize/fontWeight/lineHeight/letterSpacing/color/textShadow
     style.fontSize = layer.style.fontSize;
