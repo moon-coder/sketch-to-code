@@ -106,16 +106,13 @@ const renameClassName = (node: INode) => {
  */
 export default (nodes: INode[]): INode => {
 
+  debugger;
   let rootNode = preDeal(nodes);
 
   walk(rootNode,(node) => {
+    debugger
     if(node.children && node.children.length >0) {
       if(node.children.length > 1) {
-        if(node && node.__layer && node.__layer.name.endsWith("M#List")) {
-            //带命令说明 下边都是一致的.
-          node.extraInfo = Object.assign({},node.extraInfo,{sameNode:true});
-        }
-
         node.children = rowMerge(node.children,node);
       }
       // TODO 这边只是临时写法

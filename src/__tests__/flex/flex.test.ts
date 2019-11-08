@@ -28,17 +28,19 @@ const test = (caseName: string) => {
 
 const testOrigin = (caseName: string) => {
   let layers = loadeOrigin(join(__dirname,caseName+".json"));
+  debugger;
   const nodes: INode[] = getNodes(layers.layers[0]);
 
   //
   // const nodes: INode[] = readJSONSync(join(__dirname, caseName + ".json"));
 
   const node: INode = layout(nodes);
+  debugger;
   // 代码生成
   const code: ICompData = h5Generrator(node);
   fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
   fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
-  // debugger;
+  // debugger;ååååå
   const result = toJSON(node);
   expect(result).toMatchSnapshot(caseName);
 }
@@ -77,6 +79,7 @@ it('首页生成', function () {
 
 
 it('券使用说明', function () {
+  //TODO 顶部布局有问题
   testOrigin('flex7');
 });
 
@@ -87,7 +90,6 @@ it('券详情页面', function () {
 let getCompSrc=(dom:string)=>`
 import * as React from 'react';
 import * as T from '../types';
-import './search.less';
 import './demo.less'
 import actions from '../actions/index';
 import {connect} from 'react-redux';

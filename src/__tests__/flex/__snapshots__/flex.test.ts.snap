@@ -194,6 +194,53 @@ Object {
 }
 `;
 
+exports[`券详情页面: flex8 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {
+        "src": "./img/img1.png",
+      },
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Image",
+    },
+    Object {
+      "attrs": Object {
+        "text": "当前位置",
+      },
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "text": "————＞ω＜我是有底线的————",
+      },
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Text",
+    },
+    Object {
+      "attrs": Object {
+        "src": "./img/img2.png",
+      },
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Image",
+    },
+  ],
+  "type": "Block",
+}
+`;
+
 exports[`单行图文混排: flex3 1`] = `
 Object {
   "attrs": Object {},

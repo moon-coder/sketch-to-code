@@ -36,7 +36,8 @@ export default function calcRowLayout(node: INode) {
   const children = node.children;
   const boundaryBox = calcBoundaryBox(node.children);
 
-  node.style.width = (nodeWidth/50)+"rem";
+  // node.style.width = (nodeWidth/50)+"rem";
+  node.style.width = (nodeWidth/20)+"rem";
   // node.style.height = (height/50)+"rem";
 
   // 1.计算justifyContent

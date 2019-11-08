@@ -83,7 +83,7 @@ export default (layer?: Layer): INode[] => {
       layerImgSrc = exportImg(layer);
     }
 
-    if (!['Artboard'].includes(layer.type) || layerImgSrc) {
+    if (!['Artboard','Group'].includes(layer.type) || layerImgSrc) {
 
       const node: INode = toNode(layer,nodeRepo[pPath]);
       if (layerImgSrc) {
@@ -91,10 +91,21 @@ export default (layer?: Layer): INode[] => {
         node.type = 'Image';
       }
       resultNodes.push(node);
-    } else if(layer.name.includes("M:comp") && layer.type ==='group') {
+    } else if(layer.name.includes("M#") && layer.type === 'Group') {
+      //把带指令的group添加过来
+      debugger;
       const node: INode = toNode(layer,nodeRepo[pPath]);
-
       resultNodes.push(node);
+
+      (layer as Container).layers.forEach((layer, layrerIndex) => {
+        walk(layer, {
+          lv: lv + 1,
+          pPath:`${currentNodePath}`,
+          relPath:`.layers[${layrerIndex}]`,
+          nodeRepo,
+        });
+      });
+
     } else {
       (layer as Container).layers.forEach((layer, layrerIndex) => {
         walk(layer, {
@@ -166,8 +177,12 @@ const layerToNode = (layer: Layer, absFrame: IFrame): INode => {
  */
 function layerExtraInfo(layer: Layer):IExtraInfo{
   let extraInfo:IExtraInfo={};
-  if(layer.name.includes("M:comp")){
+  if(layer.name.includes("M#comp")){
+
     extraInfo.isComp=true;
+  } else if(layer.name.includes("M#list")){
+
+    extraInfo.sameNode=true;
   }
   return extraInfo;
 }

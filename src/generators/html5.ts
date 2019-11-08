@@ -127,7 +127,9 @@ const transKey = (str: string) => {
 
 const transVal = (key: string, val: any) => {
   val = val ? val : 0;
-  if (typeof val === 'number' && !(key === 'lineHeight' && val < 5)) {
+  if(key==='opacity'){
+    return val;
+  } else if (typeof val === 'number' && !(key === 'lineHeight' && val < 5)) {
     val = val / 50 + 'rem';
   }
 
