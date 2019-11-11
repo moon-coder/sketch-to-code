@@ -14,6 +14,10 @@ export default function calcColLayout(node: INode) {
 
   if (node.style.flexDirection !== 'column') return;
 
+  //是创建的包含节点时,不需要额外的style计算了.
+  if(node.extraInfo?.isTempContainerNode ===true){
+    return
+  }
   const { width: nodeWidth, height } = node.frame;
   // node.style.width = (nodeWidth/50)+"rem";
   node.style.width = (nodeWidth/20)+"rem";
