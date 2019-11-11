@@ -141,9 +141,9 @@ export default (nodes: INode[]): INode => {
   // 4.重新排列
   reSort(rootNode);
 
-  debugger;
+
   renameClassName(rootNode);
-  debugger;
+
   // 计算宽高
   // fixme 这边逻辑摆放位置还要考虑
   walk(rootNode, (node) => {

@@ -94,8 +94,10 @@ export function createContainerNode(frame:{
     extraInfo:{
       isTempContainerNode:true
     },
-    style,
-    // style:Object.assign({},style,{ display:"block"}),
+    style:Object.assign({},style,{
+      // display:"block"
+      height: "100%"
+    }),
     attrs: {className: uuid.v1()},
     children:[children],
   };

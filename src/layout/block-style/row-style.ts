@@ -17,11 +17,12 @@ export default function calcRowLayout(node: INode) {
 
   if (node.style.flexDirection !== 'row') return;
 
-  node.style.display = 'flex';
   //是创建的包含节点时,不需要额外的style计算了.
   if(node.extraInfo?.isTempContainerNode ===true){
     return
   }
+
+  node.style.display = 'flex';
 
   // 子结点是否为等分分布
   const isNDivide = (node: INode) => {
