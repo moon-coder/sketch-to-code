@@ -109,6 +109,7 @@ export default (nodes: INode[]): INode => {
 
 
   let rootNode = preDeal(nodes);
+  debugger;
 
   walk(rootNode,(node) => {
 

@@ -119,15 +119,7 @@ export function mergeNode(node1: INode, node2: INode): INode {
     newNode.style.flexDirection = 'column';
     return newNode;
   // } else if (flag === 'right-contained::right') {
-  // } else if (flag === 'left::left-contained') {
-  // } else if (flag === 'left::right-contained') {
-  // } else if (flag === 'right::left-contained') {
-  // } else if (flag === 'right::right-contained') {
-  // } else if (flag === 'left-overlap::left') {
-  // } else if (flag === 'left-overlap::right') {
-  // } else if (flag === 'left::left') {
-  // } else if (flag === 'left::right') {
-  } else if (flag === 'left::contained') {
+  } else if (flag === 'left::left-contained' || flag === 'left::contained') {
     //添加辅助节点;
     let tempNode = createContainerNode(
       {x: node1.frame.x, y: node2.frame.y, width: node1.frame.width, height: node2.frame.height},
@@ -142,6 +134,13 @@ export function mergeNode(node1: INode, node2: INode): INode {
     return newNode;
 
 
+    // } else if (flag === 'left::right-contained') {
+  // } else if (flag === 'right::left-contained') {
+  // } else if (flag === 'right::right-contained') {
+  // } else if (flag === 'left-overlap::left') {
+  // } else if (flag === 'left-overlap::right') {
+  // } else if (flag === 'left::left') {
+  // } else if (flag === 'left::right') {
   // } else if (flag === 'left::right-contain') {
   // } else if (flag === 'left::contain') {
   } else if (flag === 'left::left-contain') {
@@ -159,8 +158,22 @@ export function mergeNode(node1: INode, node2: INode): INode {
   // } else if (flag === 'left::left-overlap') {
   // } else if (flag === 'left::right-overlap') {
   // } else if (flag === 'right::left-overlap') {
-  // } else if (flag === 'contained::left') {
-  // } else if (flag === 'right::left') {
+  } else if (flag === 'contained::left') {
+
+    //添加辅助节点;
+    let tempNode = createContainerNode(
+      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      node1,
+      {
+        "padding-left":Math.abs(x1-x2)
+      },
+    );
+    //把一级节点与此临时节点关联
+    let newNode = calcBoundaryNode([node2, tempNode]);
+    newNode.style.flexDirection = 'column';
+    return newNode;
+
+    // } else if (flag === 'right::left') {
   // } else if (flag === 'right::right') {
   // } else if (flag === 'right::right-contain') {
   } else if (flag === 'right::contain') {

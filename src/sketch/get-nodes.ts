@@ -177,11 +177,9 @@ const layerToNode = (layer: Layer, absFrame: IFrame): INode => {
  */
 function layerExtraInfo(layer: Layer):IExtraInfo{
   let extraInfo:IExtraInfo={};
-  if(layer.name.includes("M#comp")){
-
+  if(layer.name.toUpperCase().includes("M#COMP")){
     extraInfo.isComp=true;
-  } else if(layer.name.includes("M#list")){
-
+  } else if(layer.name.toUpperCase().includes("M#LIST")){
     extraInfo.sameNode=true;
   }
   return extraInfo;
