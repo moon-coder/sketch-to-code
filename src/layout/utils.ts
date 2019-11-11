@@ -72,6 +72,8 @@ export function createContainerNode(frame:{
 },children:INode,style:{
   "padding-top"?:number;
   "padding-left"?:number;
+  "margin-top"?:number;
+  "margin-left"?:number;
 }={
 }):INode {
   let {x,y,width,height}  =frame;

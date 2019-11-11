@@ -87,7 +87,6 @@ it('首页生成', function () {
 
 
 it('券使用说明', function () {
-  //TODO 顶部布局有问题
   testOrigin('flex7');
 });
 

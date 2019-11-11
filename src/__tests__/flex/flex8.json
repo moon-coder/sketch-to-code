@@ -2199,7 +2199,7 @@
         {
           "type": "Group",
           "id": "3F4DEA51-DDA4-46AA-8207-C524F71ECD9F",
-          "frame": { "x": -1, "y": 88, "width": 375, "height": 184 },
+          "frame": { "x": 0, "y": 88, "width": 375, "height": 184 },
           "name": "编组M#comp",
           "selected": false,
           "hidden": false,
@@ -2463,7 +2463,7 @@
             {
               "type": "Text",
               "id": "D698FCE9-EA7A-4C9F-B6F0-41EE5357EABE",
-              "frame": { "x": 12, "y": 110, "width": 351, "height": 40 },
+              "frame": { "x": 13, "y": 110, "width": 351, "height": 40 },
               "name": "2019.11.01至2019.11.0",
               "selected": false,
               "hidden": false,

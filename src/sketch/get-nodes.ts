@@ -93,7 +93,6 @@ export default (layer?: Layer): INode[] => {
       resultNodes.push(node);
     } else if(layer.name.includes("M#") && layer.type === 'Group') {
       //把带指令的group添加过来
-      debugger;
       const node: INode = toNode(layer,nodeRepo[pPath]);
       resultNodes.push(node);
 
