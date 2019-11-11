@@ -70,11 +70,10 @@ export function createContainerNode(frame:{
   width:number;
   height:number;
 },children:INode,style:{
-  flexDirection?:"row"|"column";
   "padding-top"?:number;
   "padding-left"?:number;
-}={}):INode {
-
+}={
+}):INode {
   let {x,y,width,height}  =frame;
 
   let xMin =x,xMax=x +width, yMin=y,yMax=y+height;
@@ -86,16 +85,17 @@ export function createContainerNode(frame:{
     {x: (xMin + xMax) / 2, y: (yMin + yMax) / 2},
   ];
 
+
   return {
     id: uuid.v1(),
     type: 'Block',
     frame,
     points: points,
     extraInfo:{
-      //@ts-ignore
       isTempContainerNode:true
     },
     style,
+    // style:Object.assign({},style,{ display:"block"}),
     attrs: {className: uuid.v1()},
     children:[children],
   };

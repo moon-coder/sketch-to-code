@@ -73,6 +73,7 @@ export interface INode {
 }
 export interface IExtraInfo{
   sameNode?:boolean;
+  isTempContainerNode?:boolean;
   isComp?:boolean;
   compInfo?:{
   }

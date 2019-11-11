@@ -9,6 +9,7 @@ import {INode} from "../../types";
 
 /**
  * 行布局计算
+ * //TODO 这里的逻辑说明下呢.
  */
 export default function calcRowLayout(node: INode) {
 
@@ -17,6 +18,10 @@ export default function calcRowLayout(node: INode) {
   if (node.style.flexDirection !== 'row') return;
 
   node.style.display = 'flex';
+  //是创建的包含节点时,不需要额外的style计算了.
+  if(node.extraInfo?.isTempContainerNode ===true){
+    return
+  }
 
   // 子结点是否为等分分布
   const isNDivide = (node: INode) => {
@@ -40,6 +45,7 @@ export default function calcRowLayout(node: INode) {
   node.style.width = (nodeWidth/20)+"rem";
   // node.style.height = (height/50)+"rem";
 
+  debugger;
   // 1.计算justifyContent
   if (children.length == 1 && rateEqual(children[0].points[4].x, node.points[4].x, node.frame.width)) {
     // 1.1.单节点、外框中点，center
