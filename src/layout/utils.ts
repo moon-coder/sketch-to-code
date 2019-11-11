@@ -69,8 +69,10 @@ export function createContainerNode(frame:{
   y:number;
   width:number;
   height:number;
-},children:INode[],style:{
-  flexDirecion?:"row"|"column";
+},children:INode,style:{
+  flexDirection?:"row"|"column";
+  "padding-top"?:number;
+  "padding-left"?:number;
 }={}):INode {
 
   let {x,y,width,height}  =frame;
@@ -91,7 +93,7 @@ export function createContainerNode(frame:{
     points: points,
     style,
     attrs: {className: uuid.v1()},
-    children,
+    children:[children],
   };
 }
 /**

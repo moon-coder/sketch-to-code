@@ -106,11 +106,11 @@ const renameClassName = (node: INode) => {
  */
 export default (nodes: INode[]): INode => {
 
-  debugger;
+
   let rootNode = preDeal(nodes);
 
   walk(rootNode,(node) => {
-    debugger
+
     if(node.children && node.children.length >0) {
       if(node.children.length > 1) {
         node.children = rowMerge(node.children,node);

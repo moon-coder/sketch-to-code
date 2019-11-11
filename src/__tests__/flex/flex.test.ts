@@ -17,8 +17,13 @@ const test = (caseName: string) => {
   const node: INode = layout(nodes);
   // 代码生成
   const code: ICompData = h5Generrator(node);
-  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
-  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
+  let targetDir  =join(__dirname,'../../../',"play-ground/src/pages/api/manager/components");
+
+  fs.writeFileSync(join(targetDir,"demo.tsx"), getCompSrc(code.vdom));
+  fs.writeFileSync(join(targetDir,"demo.less"), code.style);
+  //
+  // fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
+  // fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
   // debugger;
   const result = toJSON(node);
   expect(result).toMatchSnapshot(caseName);
@@ -37,7 +42,7 @@ const testOrigin = (caseName: string) => {
   debugger;
   // 代码生成
   const code: ICompData = h5Generrator(node);
-  let targetDir  =join(__dirname,'../../../../',"play-ground/src/pages/api/manager/components");
+  let targetDir  =join(__dirname,'../../../',"play-ground/src/pages/api/manager/components");
   fs.writeFileSync(join(targetDir,"demo.tsx"), getCompSrc(code.vdom));
   fs.writeFileSync(join(targetDir,"demo.less"), code.style);
   // debugger;ååååå
@@ -49,6 +54,10 @@ it('单行文本', function () {
   test('flex0');
 });
 
+
+it('单行文本1.1', function () {
+  testOrigin('flex1.1');
+});
 it('多行文本', function () {
   test('flex1');
 });

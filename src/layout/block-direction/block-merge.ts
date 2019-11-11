@@ -1,6 +1,6 @@
 import {INode} from '../../types';
 import {calcBoundaryNode, isOverlap} from '../utils';
-import {getRelPosition} from "./merge-util";
+import {getRelPosition, mergeNode} from "./merge-util";
 
 /**
  * @desc
@@ -29,18 +29,20 @@ export default function(nodes: INode[]): INode {
     let [minNode, ...restNode] = nodesByArea;
     let {mergeable, unMergeable} = getMergeableNodes(minNode, restNode);
 
+    debugger;
     if (mergeable.length === 0) {
-      debugger;
       console.log('无合适节点进行合并,请检查对应结构');
     } else if (mergeable.length === 1) {
-      let newNode = calcBoundaryNode([minNode, mergeable[0]]);
-      newNode.style.flexDirection = getRelPosition(minNode, mergeable[0]);
-      nodes = [newNode, ...unMergeable];
+
+      // let newNode = calcBoundaryNode([minNode, mergeable[0]]);
+      // newNode.style.flexDirection = getRelPosition(minNode, mergeable[0]);
+      nodes = [mergeNode(minNode, mergeable[0]), ...unMergeable];
     } else {
       let {adapterNode, others} = getMinAreaMergeNode(minNode, mergeable);
-      let newNode = calcBoundaryNode([minNode, adapterNode]);
-      newNode.style.flexDirection = getRelPosition(minNode, adapterNode);
-      nodes = [newNode, ...others, ...unMergeable];
+
+      // let newNode = calcBoundaryNode([minNode, adapterNode]);
+      // newNode.style.flexDirection = getRelPosition(minNode, adapterNode);
+      nodes = [mergeNode(minNode, adapterNode), ...others, ...unMergeable];
     }
   } while (nodes.length >= 2);
 

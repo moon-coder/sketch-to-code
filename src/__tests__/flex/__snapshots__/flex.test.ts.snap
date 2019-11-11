@@ -365,6 +365,72 @@ Object {
 }
 `;
 
+exports[`单行文本1.1: flex1.1 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [],
+          "extraInfo": Object {},
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "¥",
+                  },
+                  "children": Array [],
+                  "extraInfo": Object {},
+                  "type": "Text",
+                },
+                Object {
+                  "attrs": Object {
+                    "text": "30",
+                  },
+                  "children": Array [],
+                  "extraInfo": Object {},
+                  "type": "Text",
+                },
+              ],
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {
+                "text": "满150可用",
+              },
+              "children": Array [],
+              "extraInfo": Object {},
+              "type": "Text",
+            },
+          ],
+          "type": "Block",
+        },
+      ],
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {
+        "text": "提莫家宠粉节宠物外出用品超级抵用券",
+      },
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Text",
+    },
+  ],
+  "extraInfo": Object {},
+  "type": "Block",
+}
+`;
+
 exports[`多行图文列表: flex2 1`] = `
 Object {
   "attrs": Object {},
