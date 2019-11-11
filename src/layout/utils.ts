@@ -91,6 +91,10 @@ export function createContainerNode(frame:{
     type: 'Block',
     frame,
     points: points,
+    extraInfo:{
+      //@ts-ignore
+      isTempContainerNode:true
+    },
     style,
     attrs: {className: uuid.v1()},
     children:[children],
@@ -277,6 +281,10 @@ const blockVisualKeys = [
   'backgroundImg',
   'border',
   // 'color',
+  "padding-top",
+  "padding-left",
+  "margin-left",
+  "margin-top",
   'gradient',
   'boxShadow'
 ];

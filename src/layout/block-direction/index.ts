@@ -59,9 +59,10 @@ const mergeLineRow = (node: INode) => {
 
   if (node.parent
       && (
-          (node.parent.style.flexDirection && node.parent.style.flexDirection == node.style.flexDirection )
+          (node.parent.style.flexDirection && node.parent.style.flexDirection == node.style.flexDirection && !hasVisualKey(node))
           || (node.children.length == 1 && !hasVisualKey(node)))
   ) {
+    debugger;
     node.parent.children.splice(node.parent.children.indexOf(node), 1, ...node.children);
     node.children.forEach(child => child.parent = node.parent);
   }
@@ -119,6 +120,7 @@ export default (nodes: INode[]): INode => {
       walk(node, (node) => {
         if(node.children.length > 1) {
           //一个节点只有一个子节点, 则这个关系 可以去除
+          debugger;
           node.children = [ blockMerge(node.children) ];
         }
       });
@@ -126,6 +128,7 @@ export default (nodes: INode[]): INode => {
     }
   })
   // 3.去掉同行同列
+  debugger;
   mergeLineRow(rootNode);
   // fixme 这边逻辑摆放位置还要考虑
   if (rootNode.children.length == 1) {

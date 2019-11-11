@@ -34,6 +34,7 @@ export function mergeNode(node1: INode, node2: INode): INode {
 
   let flag = `${xRel}::${yRel}`;
 
+  // debugger;
   //TODO 算法可以调整,减少类似的判断, 前期没找到规律,硬写吧.
   if (flag === 'equals::left') {
     //下

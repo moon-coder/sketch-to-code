@@ -29,7 +29,7 @@ export default function(nodes: INode[]): INode {
     let [minNode, ...restNode] = nodesByArea;
     let {mergeable, unMergeable} = getMergeableNodes(minNode, restNode);
 
-    debugger;
+
     if (mergeable.length === 0) {
       console.log('无合适节点进行合并,请检查对应结构');
     } else if (mergeable.length === 1) {

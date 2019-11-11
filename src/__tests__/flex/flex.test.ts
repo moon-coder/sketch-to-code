@@ -32,14 +32,12 @@ const test = (caseName: string) => {
 
 const testOrigin = (caseName: string) => {
   let layers = loadeOrigin(join(__dirname,caseName+".json"));
-  debugger;
   const nodes: INode[] = getNodes(layers.layers[0]);
 
   //
   // const nodes: INode[] = readJSONSync(join(__dirname, caseName + ".json"));
 
   const node: INode = layout(nodes);
-  debugger;
   // 代码生成
   const code: ICompData = h5Generrator(node);
   let targetDir  =join(__dirname,'../../../',"play-ground/src/pages/api/manager/components");
