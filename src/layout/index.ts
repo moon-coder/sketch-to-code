@@ -8,8 +8,10 @@ export default (nodes: INode[]): INode => {
 
   const rootNode: INode = blockDirection(nodes);
 
+  debugger;
   blockStyle(rootNode);
 
+  debugger;
   const processNode = (node: INode) => {
     processors.forEach(visitor => {
       if (visitor.test(node)) visitor.enter(node);

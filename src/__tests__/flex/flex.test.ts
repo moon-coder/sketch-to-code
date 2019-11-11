@@ -1,12 +1,13 @@
-import {ICompData, INode} from "../../types";
-import layout from "../../layout";
-import {readJSONSync} from  'fs-extra';
+
 import {join} from 'path';
-import {toJSON} from "../../util";
-import h5Generrator from "../../generators/html5";
 import * as fs from "fs";
+import layout from "../../layout";
+import {toJSON} from "../../util";
 import {loadeOrigin} from "../util";
+import {readJSONSync} from  'fs-extra';
+import {ICompData, INode} from "../../types";
 import getNodes from "../../sketch/get-nodes";
+import h5Generrator from "../../generators/html5";
 
 jest.mock('../../outer/sketch');
 

@@ -137,8 +137,30 @@ export function mergeNode(node1: INode, node2: INode): INode {
     // } else if (flag === 'left::right-contained') {
   // } else if (flag === 'right::left-contained') {
   // } else if (flag === 'right::right-contained') {
-  // } else if (flag === 'left-overlap::left') {
-  //   debugger;
+  } else if (flag === 'left-overlap::left') {
+    let width = Math.abs(node1.frame.x+node1.frame.width-node2.frame.x);
+    //添加辅助节点;
+    let tempNode1 = createContainerNode(
+      {x: node2.frame.x, y: node1.frame.y, width , height: node2.frame.height},
+      node1,
+      {
+        "padding-left":Math.abs(x1-x2)
+      },
+    );
+
+    //添加辅助节点;
+    let tempNode2 = createContainerNode(
+      {x: node2.frame.x, y: node2.frame.y, width , height: node2.frame.height},
+      node2,
+      {
+        // "padding-left":Math.abs(x1-x2)
+      },
+    );
+    //把一级节点与此临时节点关联
+    let newNode = calcBoundaryNode([tempNode1, tempNode2]);
+    newNode.style.flexDirection = 'column';
+    return newNode;
+
 
   } else if (flag === 'left-overlap::right') {
     debugger;

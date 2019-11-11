@@ -104,7 +104,19 @@ export default (layer?: Layer): INode[] => {
           nodeRepo,
         });
       });
+    } else if(lv==0 &&( layer.type === 'Group' ||layer.type ==="Artboard")) {
+      //首个外部的group要添加进来.
+      const node: INode = toNode(layer,nodeRepo[pPath]);
+      resultNodes.push(node);
 
+      (layer as Container).layers.forEach((layer, layrerIndex) => {
+        walk(layer, {
+          lv: lv + 1,
+          pPath:`${currentNodePath}`,
+          relPath:`.layers[${layrerIndex}]`,
+          nodeRepo,
+        });
+      });
     } else {
       (layer as Container).layers.forEach((layer, layrerIndex) => {
         walk(layer, {
@@ -136,6 +148,37 @@ export default (layer?: Layer): INode[] => {
       relPath:"#",
       nodeRepo: {},
     });
+  }
+
+
+
+  //group 与 ShapePath (x,y width,height)一致时, 把group去掉,如果有指令,把指令赋给 shapePath上面
+  resultNodes.sort(
+    (a:INode, b:INode):number => {
+      let result =  a.frame.width * a.frame.height - b.frame.width * b.frame.height;
+      if (result === 0) {
+        if(a.__layer?.type==='Group'){
+          return 1
+        }
+        if(b.__layer?.type==='Group'){
+          return -1
+        }
+        return 0;
+      }else{
+        return result;
+      }
+    },
+  );
+
+  for (let i = resultNodes.length-1; i > 0; i--) {
+    let nodeItem = resultNodes[i];
+    let LastNodeItem = resultNodes[i-1];
+
+    let {x,y,height,width}  = nodeItem.frame ;
+    let {x:x0,y:y0,height:height0,width:width0}  = LastNodeItem.frame;
+    if(x===x0  && y ===y0 && height===height0 && width===width0) {
+      resultNodes.splice(i,1);
+    }
   }
 
   return resultNodes;
@@ -208,62 +251,65 @@ const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
 const layerStyle = (layer: Layer, node: INode) => {
   let style: IStyle = {};
   // 1.边框
-  const border: Border = layer.style.borders[0];
-  if (border) {
-    style.borderColor = border.color;
-    style.borderWidth = border.thickness;
-    // 位置
-    switch (border.position.toLowerCase()) {
-      case 'center':
-        node.frame.x = node.frame.x - border.thickness / 2;
-        node.frame.y = node.frame.y - border.thickness / 2;
-        node.frame.width = node.frame.width + border.thickness;
-        node.frame.height = node.frame.height + border.thickness;
-        break;
-      case 'outside':
-        node.frame.x = node.frame.x - border.thickness;
-        node.frame.y = node.frame.y - border.thickness;
-        node.frame.width = node.frame.width + border.thickness * 2;
-        node.frame.height = node.frame.height + border.thickness * 2;
-        break;
-      case 'inside':
-        break;
-    }
-  }
-  // 2.填充处理
-  const fill: Fill = layer.style.fills[0];
-  if (fill) {
-    // 'Color' | 'Gradient' | 'Pattern';
-    if (fill.fillType === 'Color') {
-      // 颜色填充
-      style.backgroundColor = fill.color;
-    }
-    if (fill.fillType === 'Gradient') {
-      // 渐变，不能多点、只能边到边~
-      style.gradient = fill.gradient;
-    }
-    if (fill.fillType === 'Pattern') {
-      // 图片
-      style.pattern = fill.pattern;
-    }
-    // let attrs = { src: '', text:'' };
-  }
+  if(layer.style){
 
-  if(layer.style.opacity) {
-    style.opacity=layer.style.opacity;
-  }
+    const border: Border = layer.style.borders[0];
+    if (border) {
+      style.borderColor = border.color;
+      style.borderWidth = border.thickness;
+      // 位置
+      switch (border.position.toLowerCase()) {
+        case 'center':
+          node.frame.x = node.frame.x - border.thickness / 2;
+          node.frame.y = node.frame.y - border.thickness / 2;
+          node.frame.width = node.frame.width + border.thickness;
+          node.frame.height = node.frame.height + border.thickness;
+          break;
+        case 'outside':
+          node.frame.x = node.frame.x - border.thickness;
+          node.frame.y = node.frame.y - border.thickness;
+          node.frame.width = node.frame.width + border.thickness * 2;
+          node.frame.height = node.frame.height + border.thickness * 2;
+          break;
+        case 'inside':
+          break;
+      }
+    }
+    // 2.填充处理
+    const fill: Fill = layer.style.fills[0];
+    if (fill) {
+      // 'Color' | 'Gradient' | 'Pattern';
+      if (fill.fillType === 'Color') {
+        // 颜色填充
+        style.backgroundColor = fill.color;
+      }
+      if (fill.fillType === 'Gradient') {
+        // 渐变，不能多点、只能边到边~
+        style.gradient = fill.gradient;
+      }
+      if (fill.fillType === 'Pattern') {
+        // 图片
+        style.pattern = fill.pattern;
+      }
+      // let attrs = { src: '', text:'' };
+    }
 
-  if (layer.type === 'Text') {
-    // 文本 fontSize/fontWeight/lineHeight/letterSpacing/color/textShadow
-    style.fontSize = layer.style.fontSize;
-    // style.lineHeight = layer.style.lineHeight ? layer.style.lineHeight : 0;
-    style.color = layer.style.textColor;
-    node.attrs.text = (layer as Text).text;
-    // style.fontWeight = layer.style.fontWeight;
-    // style.letterSpacing = layer.style.kerning ? layer.style.kerning : 0;
-    // if (layer.style.shadows[0]) style.textShadow = layer.style.shadows[0];
-  } else {
-    // 非文本 boxShadow(shadows/innerShadows)
+    if(layer.style.opacity) {
+      style.opacity=layer.style.opacity;
+    }
+
+    if (layer.type === 'Text') {
+      // 文本 fontSize/fontWeight/lineHeight/letterSpacing/color/textShadow
+      style.fontSize = layer.style.fontSize;
+      // style.lineHeight = layer.style.lineHeight ? layer.style.lineHeight : 0;
+      style.color = layer.style.textColor;
+      node.attrs.text = (layer as Text).text;
+      // style.fontWeight = layer.style.fontWeight;
+      // style.letterSpacing = layer.style.kerning ? layer.style.kerning : 0;
+      // if (layer.style.shadows[0]) style.textShadow = layer.style.shadows[0];
+    } else {
+      // 非文本 boxShadow(shadows/innerShadows)
+    }
   }
 
   node.style = style;
