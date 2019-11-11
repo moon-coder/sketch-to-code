@@ -152,7 +152,7 @@ export default (layer?: Layer): INode[] => {
 
 
 
-  //group 与 ShapePath (x,y width,height)一致时, 把group去掉,如果有指令,把指令赋给 shapePath上面
+  //beg group 与 ShapePath (x,y width,height)一致时, 把group去掉,如果有指令,把指令赋给 shapePath上面
   resultNodes.sort(
     (a:INode, b:INode):number => {
       let result =  a.frame.width * a.frame.height - b.frame.width * b.frame.height;
@@ -164,7 +164,7 @@ export default (layer?: Layer): INode[] => {
           return -1
         }
         return 0;
-      }else{
+      } else {
         return result;
       }
     },
@@ -176,10 +176,12 @@ export default (layer?: Layer): INode[] => {
 
     let {x,y,height,width}  = nodeItem.frame ;
     let {x:x0,y:y0,height:height0,width:width0}  = LastNodeItem.frame;
+    LastNodeItem.extraInfo  =  Object.assign({},LastNodeItem.extraInfo,nodeItem.extraInfo);
     if(x===x0  && y ===y0 && height===height0 && width===width0) {
       resultNodes.splice(i,1);
     }
   }
+  //beg
 
   return resultNodes;
 };

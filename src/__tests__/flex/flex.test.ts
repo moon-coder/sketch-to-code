@@ -92,6 +92,7 @@ it('券使用说明', function () {
 });
 
 it('券详情页面', function () {
+  //TODO 图片尺寸是对的. 为什么没有填满呢 ?
   testOrigin('flex8');
 });
 
