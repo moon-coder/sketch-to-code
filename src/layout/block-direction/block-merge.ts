@@ -1,5 +1,6 @@
 import {INode} from '../../types';
 import {calcBoundaryNode, isOverlap} from '../utils';
+import {getRelPosition} from "./merge-util";
 
 /**
  * @desc
@@ -46,76 +47,8 @@ export default function(nodes: INode[]): INode {
   return nodes[0];
 }
 
-function getRelPosition(node1: INode, node2: INode) {
-  let {x: x1, y: y1, width: width1, height: height1} = node1.frame;
-  let {x: x2, y: y2, width: width2, height: height2} = node2.frame;
-
-  let xRel = lineCompare(
-    {beg: x1, end: x1 + width1},
-    {beg: x2, end: x2 + width2},
-  );
-  let yRel = lineCompare(
-    {beg: y1, end: y1 + height1},
-    {beg: y2, end: y2 + height2},
-  );
-
-  //TODO 先有一个大概的.
-  if (xRel === 'right' || xRel === 'left') {
-    return 'row';
-  } else {
-    return 'column';
-  }
-}
-
 //第二个节点被 第一个节点 XXXX
-const LineResult: {[key: string]: string} = {
-  '0::-1::0::1': 'equals', //相等重合
-  '0::-1::-1::1': 'left-contain', //左包含
-  '0::-1::1::1': 'left-contained', //左被包含
-  '-1::-1::0::1': 'right-contained', //右被包含
-  '-1::-1::-1::0': 'left-overlap', //左重合
-  '-1::-1::-1::-1': 'left', //左
-  '-1::-1::-1::1': 'left-overlap', //左重合
 
-  '-1::-1::1::1': 'contained', //被包含
-  '1::0::1::1': 'right', //右侧
-  '1::-1::0::1': 'right-contain', //右包含
-  '1::-1::-1::1': 'contain', //包含
-  '1::-1::1::1': 'right-overlap', //右重合
-  '1::1::1::1': 'right', //右
-};
-
-interface ILine {
-  beg: number;
-  end: number;
-}
-
-/**
- * 线段比较
- *
- * @param {ILine} lineOne
- * @param {ILine} lineTwo
- */
-function lineCompare(lineOne: ILine, lineTwo: ILine) {
-  let begbegCompare = lineTwo.beg - lineOne.beg;
-  let endendCompare = lineTwo.end - lineOne.end;
-  let begendCompare = lineTwo.beg - lineOne.end;
-  let endbegCompare = lineTwo.end - lineOne.beg;
-
-  let begbegFlag = begbegCompare === 0 ? '0' : begbegCompare > 0 ? '1' : '-1';
-  let begendFlag = begendCompare === 0 ? '0' : begendCompare > 0 ? '1' : '-1';
-  let endendFlag = endendCompare === 0 ? '0' : endendCompare > 0 ? '1' : '-1';
-  let endbegFlag = endbegCompare === 0 ? '0' : endbegCompare > 0 ? '1' : '-1';
-  let flag = `${begbegFlag}::${begendFlag}::${endendFlag}::${endbegFlag}`;
-
-  let result = LineResult[flag];
-
-  if (result) {
-    return result;
-  } else {
-    throw new Error('未识别出位置关系' + lineOne + lineTwo + '==' + flag);
-  }
-}
 
 /**
  * 获取后成后面积最小的节点;

@@ -1,7 +1,6 @@
 import {ICompData, INode} from "../../types";
 import layout from "../../layout";
 import {readJSONSync} from  'fs-extra';
-
 import {join} from 'path';
 import {toJSON} from "../../util";
 import h5Generrator from "../../generators/html5";
@@ -38,8 +37,9 @@ const testOrigin = (caseName: string) => {
   debugger;
   // 代码生成
   const code: ICompData = h5Generrator(node);
-  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.tsx`, getCompSrc(code.vdom));
-  fs.writeFileSync(`/Users/dong/yzfworkbench/cloud-pulse/src/pages/api/manager/components/demo.less`, code.style);
+  let targetDir  =join(__dirname,'../../../../',"play-ground/src/pages/api/manager/components");
+  fs.writeFileSync(join(targetDir,"demo.tsx"), getCompSrc(code.vdom));
+  fs.writeFileSync(join(targetDir,"demo.less"), code.style);
   // debugger;ååååå
   const result = toJSON(node);
   expect(result).toMatchSnapshot(caseName);
