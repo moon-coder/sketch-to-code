@@ -39,12 +39,11 @@ const testOrigin = (caseName: string) => {
 
   const node: INode = layout(nodes);
   // 代码生成
-  debugger;
   const code: ICompData = h5Generrator(node);
   let targetDir  =join(__dirname,'../../../',"play-ground/src/pages/api/manager/components");
   fs.writeFileSync(join(targetDir,"demo.tsx"), getCompSrc(code.vdom));
   fs.writeFileSync(join(targetDir,"demo.less"), code.style);
-  // debugger;ååååå
+
   const result = toJSON(node);
   expect(result).toMatchSnapshot(caseName);
 }

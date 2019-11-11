@@ -46,9 +46,8 @@ export default function calcRowLayout(node: INode) {
   node.style.width = (nodeWidth/20)+"rem";
   // node.style.height = (height/50)+"rem";
 
-  debugger;
   // 1.计算justifyContent
-  if (children.length == 1 && rateEqual(children[0].points[4].x, node.points[4].x, node.frame.width)) {
+  if (children.length == 1 && rateEqual(children[0].points[4].x, node.points[4].x, node.frame.width,0.02)) {
     // 1.1.单节点、外框中点，center
     node.style.justifyContent = 'center';
   } else {

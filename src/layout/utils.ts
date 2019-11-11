@@ -130,6 +130,9 @@ export function calcBoundaryNode(nodes: INode[]): INode {
     id: uuid.v1(),
     type: 'Block',
     frame,
+    extraInfo:{
+      isMergeNode:true
+    },
     points: points,
     style: {},
     attrs: {className: uuid.v1()},
@@ -219,7 +222,6 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
   }
 
   //如果面积误差在 TODO 这里还要再完善.
-
 
   return false;
 }

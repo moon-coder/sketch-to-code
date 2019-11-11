@@ -38,7 +38,6 @@ ${dom}
 export default (data: INode): ICompData => {
   renameClassname(data);
 
-  debugger;
   const {printer, utils} = helper;
   const line = (content: any, level: any) =>
     utils.line(content, {indent: {space: level * 2}});
@@ -99,7 +98,6 @@ export default (data: INode): ICompData => {
       lines.push(line(`.c${item.className} {`, 1));
       Object.keys(item.style).forEach(key => {
         if (key === 'gradient') {
-          debugger;
           transGradient(item.style[key]).forEach(item =>
             lines.push(line(item, 2)),
           );
