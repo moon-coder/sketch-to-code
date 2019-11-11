@@ -49,12 +49,12 @@ export function mergeNode(node1: INode, node2: INode): INode {
   } else if (flag === 'left::equals') {
     //左
     let newNode = calcBoundaryNode([node1, node2]);
-    newNode.style.flexDirection = 'column';
+    newNode.style.flexDirection = 'row';
     return newNode;
   } else if (flag === 'right::equals') {
     //右
     let newNode = calcBoundaryNode([node1, node2]);
-    newNode.style.flexDirection = 'column';
+    newNode.style.flexDirection = 'row';
     return newNode;
   } else if (flag === 'left-contained::left' || flag === 'left-contained::right') {
     let tempNode = createContainerNode(
@@ -168,7 +168,7 @@ export function mergeNode(node1: INode, node2: INode): INode {
   // } else if (flag === 'left-contain::left') {
   } else if (flag === 'left-contain::right') {
 
-    debugger;
+
     //添加辅助节点;
     let tempNode = createContainerNode(
       {x: node2.frame.x, y: node2.frame.y, width: node1.frame.width, height: node2.frame.height},

@@ -17,6 +17,7 @@ export default function(nodes: INode[]): INode {
   if (nodes.length === 1) {
     return nodes[0];
   }
+  debugger;
 
   //TODO 检查元素是否存在互相覆盖的情况;
 
@@ -120,9 +121,6 @@ function getMergeableNodes(
     unMergeable: INode[] = [];
 
   restNodes.forEach(node => {
-    if(restNodes.length===4){
-      debugger;
-    }
     if (isOverLapThird(targetNode, node, restNodes)) {
       unMergeable.push(node);
     } else {

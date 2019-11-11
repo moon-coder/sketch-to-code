@@ -120,7 +120,6 @@ export default (nodes: INode[]): INode => {
       walk(node, (node) => {
         if(node.children.length > 1) {
           //一个节点只有一个子节点, 则这个关系 可以去除
-
           node.children = [ blockMerge(node.children) ];
         }
       });

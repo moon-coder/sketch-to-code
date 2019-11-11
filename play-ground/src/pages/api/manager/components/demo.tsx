@@ -33,15 +33,30 @@ export default class Search extends React.Component<
       <div className="search">
         <div className="cblock0">
   <div className="cblock1">
+    <div className="cblock2">
+    </div>
+    <span className="ctext0">卡项权益</span>
   </div>
-  <div className="cblock2">
-    <div className="cblock3">
-      <span className="ctext0">¥</span>
-      <span className="ctext1">30</span>
+  <div className="cblock3">
+    <div className="cblock4">
+      <span className="ctext7">美容服务</span>
+      <span className="ctext7">×10</span>
+    </div>
+    <div className="cblock5">
+      <span className="ctext3">凶悍大叔洗澡</span>
+      <span className="ctext4">温柔小姐姐做造型</span>
+      <span className="ctext8">精油美毛</span>
     </div>
     <span className="ctext2">满150可用</span>
   </div>
-  <span className="ctext3">提莫家宠粉节宠物外出用品超级抵用券</span>
+  <div className="cblock6">
+    <span className="ctext7">清洁服务</span>
+    <span className="ctext7">×10</span>
+  </div>
+  <div className="cblock7">
+    <span className="ctext8">凶悍大叔洗澡</span>
+    <span className="ctext9">温柔小姐姐做造型</span>
+  </div>
 </div>
       </div>
     );

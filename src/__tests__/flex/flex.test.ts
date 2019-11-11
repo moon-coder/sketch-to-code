@@ -57,6 +57,7 @@ it('单行文本', function () {
 it('单行文本1.1', function () {
   testOrigin('flex1.1');
 });
+
 it('多行文本', function () {
   test('flex1');
 });
