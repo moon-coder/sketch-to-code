@@ -56,44 +56,6 @@ export function isOverlap(first: INode, second: INode) {
     return false;
   }
 }
-
-/**
- * 创建一个包含节点, 把flexdirection padding等属性设置起来.
- * @param {{x: number; y: number; width: number; height: number}} frame
- * @param {INode[]} children
- * @param {{}} style
- * @returns {INode}
- */
-export function createContainerNode(frame:{
-  x:number;
-  y:number;
-  width:number;
-  height:number;
-},children:INode[],style:{
-  flexDirecion?:"row"|"column";
-}={}):INode {
-
-  let {x,y,width,height}  =frame;
-
-  let xMin =x,xMax=x +width, yMin=y,yMax=y+height;
-  const points = [
-    {x: xMin, y: yMin},
-    {x: xMax, y: yMin},
-    {x: xMax, y: yMax},
-    {x: xMin, y: yMax},
-    {x: (xMin + xMax) / 2, y: (yMin + yMax) / 2},
-  ];
-
-  return {
-    id: uuid.v1(),
-    type: 'Block',
-    frame,
-    points: points,
-    style,
-    attrs: {className: uuid.v1()},
-    children,
-  };
-}
 /**
  * 计算一组结点的外框结点
  * 即能包含所有元素的最小矩形框;

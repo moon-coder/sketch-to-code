@@ -12,7 +12,7 @@
  **/
 
 import {INode} from '../../types';
-import {calcBoundaryNode, createContainerNode} from '../utils';
+import {calcBoundaryNode} from '../utils';
 
 /**
  * 将两个节点 合并为一个.
@@ -57,7 +57,6 @@ export function mergeNode(node1: INode, node2: INode): INode {
   } else if (flag === 'left-contained::left') {
     //添加辅助节点;
 
-    createContainerNode()
 
 
   } else if (flag === 'left-contained::right') {
