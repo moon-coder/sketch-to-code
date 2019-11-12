@@ -802,6 +802,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "left-overlap::left",
           },
           "type": "Block",
         },

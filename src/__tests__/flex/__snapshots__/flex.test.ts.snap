@@ -33,6 +33,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "contained::left",
           },
           "type": "Block",
         },
@@ -71,6 +72,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "contained::left",
           },
           "type": "Block",
         },
@@ -109,6 +111,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "contained::left",
           },
           "type": "Block",
         },
@@ -140,6 +143,7 @@ Object {
               ],
               "extraInfo": Object {
                 "isTempContainerNode": true,
+                "tempCnntainerFlag": "contain::left",
               },
               "type": "Block",
             },
@@ -162,6 +166,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "left::left-contained",
       },
       "type": "Block",
     },
@@ -221,6 +226,7 @@ Object {
                                       ],
                                       "extraInfo": Object {
                                         "isTempContainerNode": true,
+                                        "tempCnntainerFlag": "right::contained",
                                       },
                                       "type": "Block",
                                     },
@@ -241,6 +247,7 @@ Object {
                               ],
                               "extraInfo": Object {
                                 "isTempContainerNode": true,
+                                "tempCnntainerFlag": "contain::left",
                               },
                               "type": "Block",
                             },
@@ -261,6 +268,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -278,6 +286,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -392,6 +401,7 @@ Object {
                                               ],
                                               "extraInfo": Object {
                                                 "isTempContainerNode": true,
+                                                "tempCnntainerFlag": "right::contained",
                                               },
                                               "type": "Block",
                                             },
@@ -415,6 +425,7 @@ Object {
                                       ],
                                       "extraInfo": Object {
                                         "isTempContainerNode": true,
+                                        "tempCnntainerFlag": "contain::left",
                                       },
                                       "type": "Block",
                                     },
@@ -438,6 +449,7 @@ Object {
                               ],
                               "extraInfo": Object {
                                 "isTempContainerNode": true,
+                                "tempCnntainerFlag": "right::contain",
                               },
                               "type": "Block",
                             },
@@ -458,6 +470,7 @@ Object {
                               ],
                               "extraInfo": Object {
                                 "isTempContainerNode": true,
+                                "tempCnntainerFlag": "right::contain",
                               },
                               "type": "Block",
                             },
@@ -491,6 +504,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "left-overlap::left",
                       },
                       "type": "Block",
                     },
@@ -579,6 +593,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -639,6 +654,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -699,6 +715,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -759,6 +776,7 @@ Object {
                                   ],
                                   "extraInfo": Object {
                                     "isTempContainerNode": true,
+                                    "tempCnntainerFlag": "contained::left",
                                   },
                                   "type": "Block",
                                 },
@@ -771,6 +789,7 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isTempContainerNode": true,
+                            "tempCnntainerFlag": "right::contain",
                           },
                           "type": "Block",
                         },
@@ -783,6 +802,7 @@ Object {
                   ],
                   "extraInfo": Object {
                     "isTempContainerNode": true,
+                    "tempCnntainerFlag": "contained::left",
                   },
                   "type": "Block",
                 },
@@ -795,6 +815,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "contain::right-overlap",
           },
           "type": "Block",
         },
@@ -821,6 +842,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "contained::right",
       },
       "type": "Block",
     },
@@ -906,6 +928,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "left::left-contain",
                       },
                       "type": "Block",
                     },
@@ -932,6 +955,7 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isTempContainerNode": true,
+                            "tempCnntainerFlag": "right-contained::left",
                           },
                           "type": "Block",
                         },
@@ -963,6 +987,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "right::contain",
           },
           "type": "Block",
         },
@@ -985,6 +1010,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "right-contained::left",
       },
       "type": "Block",
     },
@@ -1052,6 +1078,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contained",
                       },
                       "type": "Block",
                     },
@@ -1072,6 +1099,7 @@ Object {
               ],
               "extraInfo": Object {
                 "isTempContainerNode": true,
+                "tempCnntainerFlag": "contain::left",
               },
               "type": "Block",
             },
@@ -1092,6 +1120,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "right::contain",
       },
       "type": "Block",
     },
@@ -1109,6 +1138,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "right::contain",
       },
       "type": "Block",
     },
@@ -1177,6 +1207,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -1225,6 +1256,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -1273,6 +1305,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -1321,6 +1354,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -1358,6 +1392,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "contain::right",
       },
       "type": "Block",
     },
@@ -1547,6 +1582,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "left::contained",
                       },
                       "type": "Block",
                     },
@@ -1559,6 +1595,7 @@ Object {
               ],
               "extraInfo": Object {
                 "isTempContainerNode": true,
+                "tempCnntainerFlag": "right::contain",
               },
               "type": "Block",
             },
@@ -1676,6 +1713,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "contain::right",
       },
       "type": "Block",
     },
@@ -1704,7 +1742,6 @@ Object {
                   "children": Array [],
                   "extraInfo": Object {
                     "isBgImage": true,
-                    "isComp": true,
                     "sameNode": true,
                   },
                   "type": "Image",
@@ -1722,7 +1759,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Text",
@@ -1734,7 +1770,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Text",
@@ -1748,6 +1783,7 @@ Object {
                   ],
                   "extraInfo": Object {
                     "isTempContainerNode": true,
+                    "tempCnntainerFlag": "right::contain",
                   },
                   "type": "Block",
                 },
@@ -1760,7 +1796,7 @@ Object {
           ],
           "extraInfo": Object {
             "isBgImage": true,
-            "isComp": true,
+            "sameNode": true,
           },
           "type": "Block",
         },
@@ -1783,7 +1819,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Image",
@@ -1798,7 +1833,6 @@ Object {
                               "children": Array [],
                               "extraInfo": Object {
                                 "isBgImage": true,
-                                "isComp": true,
                                 "sameNode": true,
                               },
                               "type": "Text",
@@ -1806,6 +1840,7 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isTempContainerNode": true,
+                            "tempCnntainerFlag": "contained::left",
                           },
                           "type": "Block",
                         },
@@ -1825,7 +1860,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Image",
@@ -1840,7 +1874,6 @@ Object {
                               "children": Array [],
                               "extraInfo": Object {
                                 "isBgImage": true,
-                                "isComp": true,
                                 "sameNode": true,
                               },
                               "type": "Text",
@@ -1848,6 +1881,7 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isTempContainerNode": true,
+                            "tempCnntainerFlag": "contained::left",
                           },
                           "type": "Block",
                         },
@@ -1867,7 +1901,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Image",
@@ -1882,7 +1915,6 @@ Object {
                               "children": Array [],
                               "extraInfo": Object {
                                 "isBgImage": true,
-                                "isComp": true,
                                 "sameNode": true,
                               },
                               "type": "Text",
@@ -1890,6 +1922,7 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isTempContainerNode": true,
+                            "tempCnntainerFlag": "contained::left",
                           },
                           "type": "Block",
                         },
@@ -1915,7 +1948,6 @@ Object {
                                   "children": Array [],
                                   "extraInfo": Object {
                                     "isBgImage": true,
-                                    "isComp": true,
                                     "sameNode": true,
                                   },
                                   "type": "Image",
@@ -1923,6 +1955,7 @@ Object {
                               ],
                               "extraInfo": Object {
                                 "isTempContainerNode": true,
+                                "tempCnntainerFlag": "contain::left",
                               },
                               "type": "Block",
                             },
@@ -1933,7 +1966,6 @@ Object {
                               "children": Array [],
                               "extraInfo": Object {
                                 "isBgImage": true,
-                                "isComp": true,
                                 "sameNode": true,
                               },
                               "type": "Text",
@@ -1947,6 +1979,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "left::left-contained",
                       },
                       "type": "Block",
                     },
@@ -1959,7 +1992,6 @@ Object {
               ],
               "extraInfo": Object {
                 "isBgImage": true,
-                "isComp": true,
                 "sameNode": true,
               },
               "type": "Block",
@@ -1967,6 +1999,7 @@ Object {
           ],
           "extraInfo": Object {
             "isTempContainerNode": true,
+            "tempCnntainerFlag": "contained::left-overlap",
           },
           "type": "Block",
         },
@@ -1998,7 +2031,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Text",
@@ -2016,7 +2048,6 @@ Object {
                                   "children": Array [],
                                   "extraInfo": Object {
                                     "isBgImage": true,
-                                    "isComp": true,
                                     "sameNode": true,
                                   },
                                   "type": "Text",
@@ -2031,7 +2062,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Image",
@@ -2039,6 +2069,7 @@ Object {
                                   ],
                                   "extraInfo": Object {
                                     "isTempContainerNode": true,
+                                    "tempCnntainerFlag": "left::contained",
                                   },
                                   "type": "Block",
                                 },
@@ -2051,6 +2082,7 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isTempContainerNode": true,
+                            "tempCnntainerFlag": "right::contain",
                           },
                           "type": "Block",
                         },
@@ -2063,7 +2095,6 @@ Object {
                   ],
                   "extraInfo": Object {
                     "isBgImage": true,
-                    "isComp": true,
                     "sameNode": true,
                   },
                   "type": "Block",
@@ -2087,7 +2118,6 @@ Object {
                                   "children": Array [],
                                   "extraInfo": Object {
                                     "isBgImage": true,
-                                    "isComp": true,
                                     "sameNode": true,
                                   },
                                   "type": "Text",
@@ -2102,7 +2132,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Text",
@@ -2114,7 +2143,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Text",
@@ -2134,7 +2162,6 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Block",
@@ -2152,7 +2179,6 @@ Object {
                                   "children": Array [],
                                   "extraInfo": Object {
                                     "isBgImage": true,
-                                    "isComp": true,
                                     "sameNode": true,
                                   },
                                   "type": "Text",
@@ -2167,7 +2193,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Text",
@@ -2179,7 +2204,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Text",
@@ -2199,7 +2223,6 @@ Object {
                           ],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Block",
@@ -2213,6 +2236,7 @@ Object {
                   ],
                   "extraInfo": Object {
                     "isTempContainerNode": true,
+                    "tempCnntainerFlag": "contain::right",
                   },
                   "type": "Block",
                 },
@@ -2223,12 +2247,15 @@ Object {
               "type": "Block",
             },
           ],
-          "extraInfo": Object {},
+          "extraInfo": Object {
+            "sameNode": true,
+          },
           "type": "Block",
         },
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "contained::left",
       },
       "type": "Block",
     },
@@ -2254,7 +2281,6 @@ Object {
                           "children": Array [],
                           "extraInfo": Object {
                             "isBgImage": true,
-                            "isComp": true,
                             "sameNode": true,
                           },
                           "type": "Text",
@@ -2262,7 +2288,6 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isBgImage": true,
-                        "isComp": true,
                         "sameNode": true,
                       },
                       "type": "Block",
@@ -2286,7 +2311,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Image",
@@ -2304,7 +2328,6 @@ Object {
                                               "children": Array [],
                                               "extraInfo": Object {
                                                 "isBgImage": true,
-                                                "isComp": true,
                                                 "sameNode": true,
                                               },
                                               "type": "Text",
@@ -2316,7 +2339,6 @@ Object {
                                               "children": Array [],
                                               "extraInfo": Object {
                                                 "isBgImage": true,
-                                                "isComp": true,
                                                 "sameNode": true,
                                               },
                                               "type": "Text",
@@ -2330,6 +2352,7 @@ Object {
                                       ],
                                       "extraInfo": Object {
                                         "isTempContainerNode": true,
+                                        "tempCnntainerFlag": "right::contain",
                                       },
                                       "type": "Block",
                                     },
@@ -2349,7 +2372,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Image",
@@ -2367,7 +2389,6 @@ Object {
                                               "children": Array [],
                                               "extraInfo": Object {
                                                 "isBgImage": true,
-                                                "isComp": true,
                                                 "sameNode": true,
                                               },
                                               "type": "Text",
@@ -2379,7 +2400,6 @@ Object {
                                               "children": Array [],
                                               "extraInfo": Object {
                                                 "isBgImage": true,
-                                                "isComp": true,
                                                 "sameNode": true,
                                               },
                                               "type": "Text",
@@ -2393,6 +2413,7 @@ Object {
                                       ],
                                       "extraInfo": Object {
                                         "isTempContainerNode": true,
+                                        "tempCnntainerFlag": "right::contain",
                                       },
                                       "type": "Block",
                                     },
@@ -2412,7 +2433,6 @@ Object {
                                       "children": Array [],
                                       "extraInfo": Object {
                                         "isBgImage": true,
-                                        "isComp": true,
                                         "sameNode": true,
                                       },
                                       "type": "Image",
@@ -2430,7 +2450,6 @@ Object {
                                               "children": Array [],
                                               "extraInfo": Object {
                                                 "isBgImage": true,
-                                                "isComp": true,
                                                 "sameNode": true,
                                               },
                                               "type": "Text",
@@ -2442,7 +2461,6 @@ Object {
                                               "children": Array [],
                                               "extraInfo": Object {
                                                 "isBgImage": true,
-                                                "isComp": true,
                                                 "sameNode": true,
                                               },
                                               "type": "Text",
@@ -2456,6 +2474,7 @@ Object {
                                       ],
                                       "extraInfo": Object {
                                         "isTempContainerNode": true,
+                                        "tempCnntainerFlag": "right::contain",
                                       },
                                       "type": "Block",
                                     },
@@ -2478,7 +2497,6 @@ Object {
                                           "children": Array [],
                                           "extraInfo": Object {
                                             "isBgImage": true,
-                                            "isComp": true,
                                             "sameNode": true,
                                           },
                                           "type": "Image",
@@ -2496,7 +2514,6 @@ Object {
                                                   "children": Array [],
                                                   "extraInfo": Object {
                                                     "isBgImage": true,
-                                                    "isComp": true,
                                                     "sameNode": true,
                                                   },
                                                   "type": "Text",
@@ -2508,7 +2525,6 @@ Object {
                                                   "children": Array [],
                                                   "extraInfo": Object {
                                                     "isBgImage": true,
-                                                    "isComp": true,
                                                     "sameNode": true,
                                                   },
                                                   "type": "Text",
@@ -2522,6 +2538,7 @@ Object {
                                           ],
                                           "extraInfo": Object {
                                             "isTempContainerNode": true,
+                                            "tempCnntainerFlag": "right::contain",
                                           },
                                           "type": "Block",
                                         },
@@ -2534,12 +2551,13 @@ Object {
                                   ],
                                   "extraInfo": Object {
                                     "isTempContainerNode": true,
+                                    "tempCnntainerFlag": "right-contained::left",
                                   },
                                   "type": "Block",
                                 },
                               ],
                               "extraInfo": Object {
-                                "sameNode": true,
+                                "isMergeNode": true,
                               },
                               "type": "Block",
                             },
@@ -2553,7 +2571,6 @@ Object {
                                   "children": Array [],
                                   "extraInfo": Object {
                                     "isBgImage": true,
-                                    "isComp": true,
                                     "sameNode": true,
                                   },
                                   "type": "Text",
@@ -2561,7 +2578,6 @@ Object {
                               ],
                               "extraInfo": Object {
                                 "isBgImage": true,
-                                "isComp": true,
                                 "sameNode": true,
                               },
                               "type": "Block",
@@ -2575,6 +2591,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "contain::right",
                       },
                       "type": "Block",
                     },
@@ -2598,7 +2615,6 @@ Object {
                   "children": Array [],
                   "extraInfo": Object {
                     "isBgImage": true,
-                    "isComp": true,
                     "sameNode": true,
                   },
                   "type": "Text",
@@ -2606,6 +2622,7 @@ Object {
               ],
               "extraInfo": Object {
                 "isTempContainerNode": true,
+                "tempCnntainerFlag": "contained::left",
               },
               "type": "Block",
             },
@@ -2618,6 +2635,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "contain::right",
       },
       "type": "Block",
     },

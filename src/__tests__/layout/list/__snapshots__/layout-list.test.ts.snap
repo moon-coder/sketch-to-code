@@ -43,6 +43,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "right::contain",
       },
       "type": "Block",
     },
@@ -122,6 +123,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -173,6 +175,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -224,6 +227,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -275,6 +279,7 @@ Object {
                       ],
                       "extraInfo": Object {
                         "isTempContainerNode": true,
+                        "tempCnntainerFlag": "right::contain",
                       },
                       "type": "Block",
                     },
@@ -314,6 +319,7 @@ Object {
       ],
       "extraInfo": Object {
         "isTempContainerNode": true,
+        "tempCnntainerFlag": "contain::right",
       },
       "type": "Block",
     },
