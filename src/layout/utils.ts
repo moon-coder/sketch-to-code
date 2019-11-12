@@ -75,7 +75,7 @@ export function createContainerNode(frame:{
   "margin-top"?:number;
   "margin-left"?:number;
 }={
-}):INode {
+},extraInfo={}):INode {
   let {x,y,width,height}  =frame;
 
   let xMin =x,xMax=x +width, yMin=y,yMax=y+height;
@@ -98,7 +98,7 @@ export function createContainerNode(frame:{
     },
     style:Object.assign({},style,{
       // display:"block"
-      height: "100%"
+      // height: "100%"
     }),
     attrs: {className: uuid.v1()},
     children:[children],
@@ -224,7 +224,6 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
   }
 
   //如果面积误差在 TODO 这里还要再完善.
-
   return false;
 }
 

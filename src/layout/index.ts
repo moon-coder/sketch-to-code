@@ -10,7 +10,6 @@ export default (nodes: INode[]): INode => {
 
   debugger;
   blockStyle(rootNode);
-
   debugger;
   const processNode = (node: INode) => {
     processors.forEach(visitor => {
