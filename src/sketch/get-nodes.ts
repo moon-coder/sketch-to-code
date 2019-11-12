@@ -87,8 +87,13 @@ export default (layer?: Layer): INode[] => {
 
       const node: INode = toNode(layer,nodeRepo[pPath]);
       if (layerImgSrc) {
-        node.attrs.src = layerImgSrc;
-        node.type = 'Image';
+        if(node.extraInfo?.isBgImage) {
+          debugger;
+          node.style.backgroundImage=layerImgSrc;
+        } else {
+          node.attrs.src = layerImgSrc;
+          node.type = 'Image';
+        }
       }
       resultNodes.push(node);
     } else if(layer.name.includes("M#") && layer.type === 'Group') {
@@ -149,8 +154,6 @@ export default (layer?: Layer): INode[] => {
       nodeRepo: {},
     });
   }
-
-
 
   //beg group 与 ShapePath (x,y width,height)一致时, 把group去掉,如果有指令,把指令赋给 shapePath上面
   resultNodes.sort(
@@ -223,6 +226,8 @@ function layerExtraInfo(layer: Layer):IExtraInfo{
   let extraInfo:IExtraInfo={};
   if(layer.name.toUpperCase().includes("M#COMP")){
     extraInfo.isComp=true;
+  } else if(layer.name.toUpperCase().includes("M#BACKGROUND-IMAGE")){
+    extraInfo.isBgImage=true;
   } else if(layer.name.toUpperCase().includes("M#LIST")){
     extraInfo.sameNode=true;
   }

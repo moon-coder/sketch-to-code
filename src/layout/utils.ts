@@ -285,6 +285,7 @@ export function getNodeStr(node: INode): string {
 const blockVisualKeys = [
   'backgroundColor',
   'backgroundImg',
+  'backgroundImage',
   'border',
   // 'color',
   "padding-top",

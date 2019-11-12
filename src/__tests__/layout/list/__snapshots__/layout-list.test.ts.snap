@@ -9,29 +9,45 @@ Object {
         "src": "./img/img1.png",
       },
       "children": Array [],
+      "extraInfo": Object {},
       "type": "Image",
     },
     Object {
       "attrs": Object {},
       "children": Array [
         Object {
-          "attrs": Object {
-            "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+              },
+              "children": Array [],
+              "extraInfo": Object {},
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "¥20～¥160",
+              },
+              "children": Array [],
+              "extraInfo": Object {},
+              "type": "Text",
+            },
+          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
           },
-          "children": Array [],
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "¥20～¥160",
-          },
-          "children": Array [],
-          "type": "Text",
+          "type": "Block",
         },
       ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
       "type": "Block",
     },
   ],
+  "extraInfo": Object {},
   "type": "Block",
 }
 `;
@@ -48,9 +64,11 @@ Object {
             "text": "为您推荐",
           },
           "children": Array [],
+          "extraInfo": Object {},
           "type": "Text",
         },
       ],
+      "extraInfo": Object {},
       "type": "Block",
     },
     Object {
@@ -60,154 +78,247 @@ Object {
           "attrs": Object {},
           "children": Array [
             Object {
-              "attrs": Object {
-                "src": "./img/img3.png",
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img3.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {},
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥160",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img5.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {},
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬野兽派洗剪吹A套餐",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥75",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img4.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {},
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥160",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img6.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {},
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "小型犬洗剪吹B套餐",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥75",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {},
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {
+                "sameNode": true,
               },
-              "children": Array [],
-              "type": "Image",
+              "type": "Block",
             },
             Object {
               "attrs": Object {},
               "children": Array [
                 Object {
                   "attrs": Object {
-                    "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+                    "text": "更多服务/商品",
                   },
                   "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥160",
-                  },
-                  "children": Array [],
+                  "extraInfo": Object {},
                   "type": "Text",
                 },
               ],
+              "extraInfo": Object {},
               "type": "Block",
             },
           ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img5.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "大型犬野兽派洗剪吹A套餐",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥75",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img4.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥160",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img6.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "小型犬洗剪吹B套餐",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥75",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
           "type": "Block",
         },
       ],
       "extraInfo": Object {
-        "sameNode": true,
+        "isTempContainerNode": true,
       },
       "type": "Block",
     },
-    Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "更多服务/商品",
-          },
-          "children": Array [],
-          "type": "Text",
-        },
-      ],
-      "type": "Block",
-    },
   ],
+  "extraInfo": Object {},
   "type": "Block",
 }
 `;

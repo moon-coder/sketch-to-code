@@ -72,10 +72,17 @@ export interface INode {
   extraInfo?:IExtraInfo;
 }
 export interface IExtraInfo{
+  //根据指令下面节点是否是一致的节点
   sameNode?:boolean;
+  //是否是为了对齐生成 的临时容器节点
   isTempContainerNode?:boolean;
+  //是否是合并生成的节点
   isMergeNode?:boolean;
+  //是否是背景图片
+  isBgImage?:boolean;
+  //指令: 是否是一个组件
   isComp?:boolean;
+  //指令信息: 组件相关信息
   compInfo?:{
   }
 }

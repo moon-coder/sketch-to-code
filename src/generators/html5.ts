@@ -1,5 +1,6 @@
 import {ICompData, IStyle} from '../types';
 import {INode} from '../types';
+import {join} from 'path';
 const helper = require('@imgcook/dsl-helper');
 import renameClassname from './rename-classname';
 
@@ -35,8 +36,10 @@ ${dom}
   `;
 };
 
-export default (data: INode): ICompData => {
-  renameClassname(data);
+let ImageStaticServer ="/";
+
+export default (node: INode): ICompData => {
+  renameClassname(node);
 
   const {printer, utils} = helper;
   const line = (content: any, level: any) =>
@@ -62,7 +65,7 @@ export default (data: INode): ICompData => {
       });
     }
     let attrStr = '';
-    attrStr += node.attrs.src ? ` src='${node.attrs.src}'` : '';
+    attrStr += node.attrs.src ? ` src='${join(ImageStaticServer,node.attrs.src)}'` : '';
     attrStr += node.attrs.className ? ` class="c${node.attrs.className}"` : '';
 
     if (node.attrs.text) {
@@ -81,7 +84,7 @@ export default (data: INode): ICompData => {
     }
     return lines;
   };
-  const vdom = printer(parseVdom(data, 0));
+  const vdom = printer(parseVdom(node, 0));
 
   // 生成style
   let lines: string[] = [];
@@ -89,6 +92,7 @@ export default (data: INode): ICompData => {
   styleArr.forEach(item => delete item.style.lines);
   lines.push(line(`.c${styleArr[0].className} {`, 0));
   Object.keys(styleArr[0].style).forEach(key => {
+
     lines.push(
       line(`${transKey(key)}: ${transVal(key, styleArr[0].style[key])};`, 1),
     );
@@ -127,10 +131,11 @@ const transVal = (key: string, val: any) => {
   val = val ? val : 0;
   if(key==='opacity'){
     return val;
+  } else if (key === 'backgroundImage' &&typeof val === 'string' ) {
+    return  `url("${join(ImageStaticServer,val)}")`;
   } else if (typeof val === 'number' && !(key === 'lineHeight' && val < 5)) {
     val = val / 50 + 'rem';
   }
-
   return val;
 };
 

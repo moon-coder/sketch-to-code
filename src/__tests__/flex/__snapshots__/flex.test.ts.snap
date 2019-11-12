@@ -8,74 +8,75 @@ Object {
       "attrs": Object {},
       "children": Array [
         Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img1.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {
-                "text": "优惠券",
-              },
-              "children": Array [],
-              "type": "Text",
-            },
-          ],
-          "type": "Block",
+          "attrs": Object {
+            "src": "./img/img2.png",
+          },
+          "children": Array [],
+          "extraInfo": Object {
+            "sameNode": true,
+          },
+          "type": "Image",
         },
         Object {
           "attrs": Object {},
           "children": Array [
             Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "src": "./img/img3.png",
-                  },
-                  "children": Array [],
-                  "type": "Image",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "充值卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "src": "./img/img2.png",
-                  },
-                  "children": Array [],
-                  "type": "Image",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "计次卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
+              "attrs": Object {
+                "text": "优惠券",
+              },
+              "children": Array [],
+              "extraInfo": Object {
+                "sameNode": true,
+              },
+              "type": "Text",
             },
           ],
+          "extraInfo": Object {
+            "isTempContainerNode": true,
+          },
           "type": "Block",
         },
       ],
       "extraInfo": Object {
-        "sameNode": true,
+        "isMergeNode": true,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "src": "./img/img3.png",
+          },
+          "children": Array [],
+          "extraInfo": Object {
+            "sameNode": true,
+          },
+          "type": "Image",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "计次卡",
+              },
+              "children": Array [],
+              "extraInfo": Object {
+                "sameNode": true,
+              },
+              "type": "Text",
+            },
+          ],
+          "extraInfo": Object {
+            "isTempContainerNode": true,
+          },
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "isMergeNode": true,
       },
       "type": "Block",
     },
@@ -87,19 +88,87 @@ Object {
             "src": "./img/img4.png",
           },
           "children": Array [],
+          "extraInfo": Object {
+            "sameNode": true,
+          },
           "type": "Image",
         },
         Object {
-          "attrs": Object {
-            "text": "服务/商品",
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "充值卡",
+              },
+              "children": Array [],
+              "extraInfo": Object {
+                "sameNode": true,
+              },
+              "type": "Text",
+            },
+          ],
+          "extraInfo": Object {
+            "isTempContainerNode": true,
           },
-          "children": Array [],
-          "type": "Text",
+          "type": "Block",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "src": "./img/img5.png",
+                  },
+                  "children": Array [],
+                  "extraInfo": Object {
+                    "sameNode": true,
+                  },
+                  "type": "Image",
+                },
+              ],
+              "extraInfo": Object {
+                "isTempContainerNode": true,
+              },
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {
+                "text": "服务/商品",
+              },
+              "children": Array [],
+              "extraInfo": Object {
+                "sameNode": true,
+              },
+              "type": "Text",
+            },
+          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
       "type": "Block",
     },
   ],
+  "extraInfo": Object {
+    "sameNode": true,
+  },
   "type": "Block",
 }
 `;
@@ -123,6 +192,7 @@ Object {
                     Object {
                       "attrs": Object {},
                       "children": Array [],
+                      "extraInfo": Object {},
                       "type": "Block",
                     },
                     Object {
@@ -132,43 +202,93 @@ Object {
                           "attrs": Object {},
                           "children": Array [
                             Object {
-                              "attrs": Object {
-                                "text": "¥",
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {},
+                                      "children": Array [
+                                        Object {
+                                          "attrs": Object {
+                                            "text": "¥",
+                                          },
+                                          "children": Array [],
+                                          "extraInfo": Object {},
+                                          "type": "Text",
+                                        },
+                                      ],
+                                      "extraInfo": Object {
+                                        "isTempContainerNode": true,
+                                      },
+                                      "type": "Block",
+                                    },
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "30",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {},
+                                      "type": "Text",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isTempContainerNode": true,
                               },
-                              "children": Array [],
-                              "type": "Text",
+                              "type": "Block",
                             },
                             Object {
                               "attrs": Object {
-                                "text": "30",
+                                "text": "满150可用",
                               },
                               "children": Array [],
+                              "extraInfo": Object {},
                               "type": "Text",
                             },
                           ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
                           "type": "Block",
                         },
-                        Object {
-                          "attrs": Object {
-                            "text": "满150可用",
-                          },
-                          "children": Array [],
-                          "type": "Text",
-                        },
                       ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
                       "type": "Block",
                     },
                     Object {
-                      "attrs": Object {
-                        "text": "提莫家宠粉节宠物外出用品超级抵用券",
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "提莫家宠粉节宠物外出用品超级抵用券",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {},
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
                       },
-                      "children": Array [],
-                      "type": "Text",
+                      "type": "Block",
                     },
                   ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
                   "type": "Block",
                 },
               ],
+              "extraInfo": Object {},
               "type": "Block",
             },
             Object {
@@ -176,20 +296,27 @@ Object {
                 "text": "2019.11.01至2019.11.02，以下商品可使用该优惠券",
               },
               "children": Array [],
+              "extraInfo": Object {},
               "type": "Text",
             },
           ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
           "type": "Block",
         },
       ],
+      "extraInfo": Object {},
       "type": "Block",
     },
     Object {
       "attrs": Object {},
       "children": Array [],
+      "extraInfo": Object {},
       "type": "Block",
     },
   ],
+  "extraInfo": Object {},
   "type": "Block",
 }
 `;
@@ -200,43 +327,516 @@ Object {
   "children": Array [
     Object {
       "attrs": Object {
-        "src": "./img/img1.png",
+        "src": "./img/img20.png",
       },
       "children": Array [],
-      "extraInfo": Object {},
+      "extraInfo": Object {
+        "isComp": true,
+        "sameNode": true,
+      },
       "type": "Image",
     },
     Object {
-      "attrs": Object {
-        "text": "当前位置",
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Block",
+                            },
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {},
+                                      "children": Array [
+                                        Object {
+                                          "attrs": Object {},
+                                          "children": Array [
+                                            Object {
+                                              "attrs": Object {},
+                                              "children": Array [
+                                                Object {
+                                                  "attrs": Object {
+                                                    "text": "¥",
+                                                  },
+                                                  "children": Array [],
+                                                  "extraInfo": Object {
+                                                    "isComp": true,
+                                                    "sameNode": true,
+                                                  },
+                                                  "type": "Text",
+                                                },
+                                              ],
+                                              "extraInfo": Object {
+                                                "isTempContainerNode": true,
+                                              },
+                                              "type": "Block",
+                                            },
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "30",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                          ],
+                                          "extraInfo": Object {
+                                            "isMergeNode": true,
+                                          },
+                                          "type": "Block",
+                                        },
+                                      ],
+                                      "extraInfo": Object {
+                                        "isTempContainerNode": true,
+                                      },
+                                      "type": "Block",
+                                    },
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "满150可用",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Text",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isTempContainerNode": true,
+                              },
+                              "type": "Block",
+                            },
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "text": "提莫家宠粉节宠物外出用品超级抵用券",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Text",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isTempContainerNode": true,
+                              },
+                              "type": "Block",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isComp": true,
+                        "sameNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "2019.11.01至2019.11.02，以下商品可使用该优惠券",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {
+                "isComp": true,
+                "sameNode": true,
+              },
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [],
+              "extraInfo": Object {
+                "isComp": true,
+                "sameNode": true,
+              },
+              "type": "Block",
+            },
+          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
+          "type": "Block",
+        },
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img22.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {
+                        "isComp": true,
+                        "sameNode": true,
+                      },
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗…",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥160",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img24.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {
+                        "isComp": true,
+                        "sameNode": true,
+                      },
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬野兽派洗剪吹A套餐",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥75",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img23.png",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {
+                        "isComp": true,
+                        "sameNode": true,
+                      },
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥160",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "src": "./img/img25.png",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Image",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "text": "小型犬洗剪吹B套餐",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Text",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "¥20～¥75",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Text",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isTempContainerNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isMergeNode": true,
+                              },
+                              "type": "Block",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isTempContainerNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isTempContainerNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {
+                "isMergeNode": true,
+              },
+              "type": "Block",
+            },
+          ],
+          "extraInfo": Object {
+            "isTempContainerNode": true,
+          },
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "isMergeNode": true,
       },
-      "children": Array [],
-      "extraInfo": Object {},
-      "type": "Text",
+      "type": "Block",
     },
     Object {
       "attrs": Object {},
-      "children": Array [],
-      "extraInfo": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "————＞ω＜我是有底线的————",
+          },
+          "children": Array [],
+          "extraInfo": Object {
+            "isComp": true,
+            "sameNode": true,
+          },
+          "type": "Text",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
       "type": "Block",
     },
     Object {
       "attrs": Object {
-        "text": "————＞ω＜我是有底线的————",
+        "src": "./img/img21.png",
       },
       "children": Array [],
-      "extraInfo": Object {},
-      "type": "Text",
-    },
-    Object {
-      "attrs": Object {
-        "src": "./img/img2.png",
+      "extraInfo": Object {
+        "isComp": true,
+        "sameNode": true,
       },
-      "children": Array [],
-      "extraInfo": Object {},
       "type": "Image",
     },
   ],
+  "extraInfo": Object {},
   "type": "Block",
 }
 `;
@@ -263,6 +863,9 @@ Object {
           "type": "Text",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
       "type": "Block",
     },
     Object {
@@ -288,54 +891,102 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "超值三周年充值卡",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "¥1000",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "×1",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isTempContainerNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
                   "attrs": Object {
-                    "text": "超值三周年充值卡",
+                    "text": "鸡肉 400g",
                   },
                   "children": Array [],
                   "type": "Text",
                 },
-                Object {
-                  "attrs": Object {},
-                  "children": Array [
-                    Object {
-                      "attrs": Object {
-                        "text": "¥1000",
-                      },
-                      "children": Array [],
-                      "type": "Text",
-                    },
-                    Object {
-                      "attrs": Object {
-                        "text": "×1",
-                      },
-                      "children": Array [],
-                      "type": "Text",
-                    },
-                  ],
-                  "type": "Block",
-                },
               ],
+              "extraInfo": Object {
+                "isMergeNode": true,
+              },
               "type": "Block",
             },
-            Object {
-              "attrs": Object {
-                "text": "鸡肉 400g",
-              },
-              "children": Array [],
-              "type": "Text",
-            },
           ],
+          "extraInfo": Object {
+            "isTempContainerNode": true,
+          },
           "type": "Block",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
       "type": "Block",
     },
     Object {
-      "attrs": Object {
-        "text": "共1件商品，实付¥1000",
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "共1件商品，实付¥1000",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
       },
-      "children": Array [],
-      "type": "Text",
+      "type": "Block",
     },
   ],
   "type": "Block",
@@ -371,13 +1022,13 @@ Object {
   "children": Array [
     Object {
       "attrs": Object {},
+      "children": Array [],
+      "extraInfo": Object {},
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
       "children": Array [
-        Object {
-          "attrs": Object {},
-          "children": Array [],
-          "extraInfo": Object {},
-          "type": "Block",
-        },
         Object {
           "attrs": Object {},
           "children": Array [
@@ -385,22 +1036,43 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "¥",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "¥",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {},
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {
+                        "text": "30",
+                      },
+                      "children": Array [],
+                      "extraInfo": Object {},
+                      "type": "Text",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
                   },
-                  "children": Array [],
-                  "extraInfo": Object {},
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "30",
-                  },
-                  "children": Array [],
-                  "extraInfo": Object {},
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
+              "extraInfo": Object {
+                "isTempContainerNode": true,
+              },
               "type": "Block",
             },
             Object {
@@ -412,18 +1084,33 @@ Object {
               "type": "Text",
             },
           ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
           "type": "Block",
         },
       ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
       "type": "Block",
     },
     Object {
-      "attrs": Object {
-        "text": "提莫家宠粉节宠物外出用品超级抵用券",
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "提莫家宠粉节宠物外出用品超级抵用券",
+          },
+          "children": Array [],
+          "extraInfo": Object {},
+          "type": "Text",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
       },
-      "children": Array [],
-      "extraInfo": Object {},
-      "type": "Text",
+      "type": "Block",
     },
   ],
   "extraInfo": Object {},
@@ -449,25 +1136,212 @@ Object {
           "attrs": Object {},
           "children": Array [
             Object {
-              "attrs": Object {
-                "src": "./img/img1.png",
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img1.png",
+                      },
+                      "children": Array [],
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥160",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img3.png",
+                      },
+                      "children": Array [],
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬野兽派洗剪吹A套餐",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥75",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img2.png",
+                      },
+                      "children": Array [],
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥160",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "src": "./img/img4.png",
+                      },
+                      "children": Array [],
+                      "type": "Image",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "小型犬洗剪吹B套餐",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "¥20～¥75",
+                              },
+                              "children": Array [],
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {
+                "sameNode": true,
               },
-              "children": Array [],
-              "type": "Image",
+              "type": "Block",
             },
             Object {
               "attrs": Object {},
               "children": Array [
                 Object {
                   "attrs": Object {
-                    "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥160",
+                    "text": "更多服务/商品",
                   },
                   "children": Array [],
                   "type": "Text",
@@ -476,124 +1350,15 @@ Object {
               "type": "Block",
             },
           ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img3.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "大型犬野兽派洗剪吹A套餐",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥75",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img2.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥160",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
-          "type": "Block",
-        },
-        Object {
-          "attrs": Object {},
-          "children": Array [
-            Object {
-              "attrs": Object {
-                "src": "./img/img4.png",
-              },
-              "children": Array [],
-              "type": "Image",
-            },
-            Object {
-              "attrs": Object {},
-              "children": Array [
-                Object {
-                  "attrs": Object {
-                    "text": "小型犬洗剪吹B套餐",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥20～¥75",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-              ],
-              "type": "Block",
-            },
-          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
           "type": "Block",
         },
       ],
       "extraInfo": Object {
-        "sameNode": true,
+        "isTempContainerNode": true,
       },
-      "type": "Block",
-    },
-    Object {
-      "attrs": Object {},
-      "children": Array [
-        Object {
-          "attrs": Object {
-            "text": "更多服务/商品",
-          },
-          "children": Array [],
-          "type": "Text",
-        },
-      ],
       "type": "Block",
     },
   ],
@@ -621,6 +1386,9 @@ Object {
           "type": "Text",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
       "type": "Block",
     },
     Object {
@@ -644,30 +1412,45 @@ Object {
               "type": "Text",
             },
           ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
           "type": "Block",
         },
         Object {
-          "attrs": Object {
-            "text": "凶悍大叔洗澡",
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {
+                "text": "凶悍大叔洗澡",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "温柔小姐姐做造型",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+            Object {
+              "attrs": Object {
+                "text": "精油美毛",
+              },
+              "children": Array [],
+              "type": "Text",
+            },
+          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
           },
-          "children": Array [],
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "温柔小姐姐做造型",
-          },
-          "children": Array [],
-          "type": "Text",
-        },
-        Object {
-          "attrs": Object {
-            "text": "精油美毛",
-          },
-          "children": Array [],
-          "type": "Text",
+          "type": "Block",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
       "type": "Block",
     },
     Object {
@@ -688,21 +1471,33 @@ Object {
           "type": "Text",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
       "type": "Block",
     },
     Object {
-      "attrs": Object {
-        "text": "凶悍大叔洗澡",
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {
+            "text": "凶悍大叔洗澡",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+        Object {
+          "attrs": Object {
+            "text": "温柔小姐姐做造型",
+          },
+          "children": Array [],
+          "type": "Text",
+        },
+      ],
+      "extraInfo": Object {
+        "isMergeNode": true,
       },
-      "children": Array [],
-      "type": "Text",
-    },
-    Object {
-      "attrs": Object {
-        "text": "温柔小姐姐做造型",
-      },
-      "children": Array [],
-      "type": "Text",
+      "type": "Block",
     },
   ],
   "type": "Block",
@@ -730,23 +1525,47 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "src": "./img/img1.png",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "更多充值卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "src": "./img/img1.png",
+                          },
+                          "children": Array [],
+                          "type": "Image",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
                   },
-                  "children": Array [],
-                  "type": "Image",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "更多充值卡",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
+              "extraInfo": Object {
+                "isTempContainerNode": true,
+              },
               "type": "Block",
             },
           ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
           "type": "Block",
         },
       ],
@@ -762,30 +1581,187 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "黑金VIP黄金卡",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "黑金VIP黄金卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "¥8848",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {
+                            "text": "永久有效",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
                   },
-                  "children": Array [],
-                  "type": "Text",
+                  "type": "Block",
                 },
+              ],
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "¥8848",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {
+                        "text": "粉丝珍爱卡",
+                      },
+                      "children": Array [],
+                      "type": "Text",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "¥800",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {
+                            "text": "365天内有效",
+                          },
+                          "children": Array [],
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
                   },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "永久有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
               "type": "Block",
             },
           ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
+      "type": "Block",
+    },
+  ],
+  "type": "Block",
+}
+`;
+
+exports[`首页生成: flex6 1`] = `
+Object {
+  "attrs": Object {},
+  "children": Array [
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "src": "./img/img13.png",
+                  },
+                  "children": Array [],
+                  "extraInfo": Object {
+                    "isBgImage": true,
+                    "isComp": true,
+                    "sameNode": true,
+                  },
+                  "type": "Image",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "提莫的蘑菇摊儿",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {
+                            "text": "南京市玄武区龙蟠路618号毛孩子广场F1-1001",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isTempContainerNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {
+                "isMergeNode": true,
+              },
+              "type": "Block",
+            },
+          ],
+          "extraInfo": Object {
+            "isBgImage": true,
+            "isComp": true,
+          },
           "type": "Block",
         },
         Object {
@@ -795,36 +1771,858 @@ Object {
               "attrs": Object {},
               "children": Array [
                 Object {
-                  "attrs": Object {
-                    "text": "粉丝珍爱卡",
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "src": "./img/img14.png",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Image",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "优惠券",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isBgImage": true,
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isTempContainerNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "src": "./img/img15.png",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Image",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "计次卡",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isBgImage": true,
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isTempContainerNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "src": "./img/img16.png",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Image",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {
+                                "text": "充值卡",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isBgImage": true,
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isTempContainerNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "src": "./img/img17.png",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isBgImage": true,
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Image",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isTempContainerNode": true,
+                              },
+                              "type": "Block",
+                            },
+                            Object {
+                              "attrs": Object {
+                                "text": "服务/商品",
+                              },
+                              "children": Array [],
+                              "extraInfo": Object {
+                                "isBgImage": true,
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Text",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
                   },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "¥800",
-                  },
-                  "children": Array [],
-                  "type": "Text",
-                },
-                Object {
-                  "attrs": Object {
-                    "text": "365天内有效",
-                  },
-                  "children": Array [],
-                  "type": "Text",
+                  "type": "Block",
                 },
               ],
+              "extraInfo": Object {
+                "isBgImage": true,
+                "isComp": true,
+                "sameNode": true,
+              },
               "type": "Block",
             },
           ],
+          "extraInfo": Object {
+            "isTempContainerNode": true,
+          },
           "type": "Block",
         },
       ],
+      "extraInfo": Object {
+        "isMergeNode": true,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "充值卡",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Text",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "text": "更多充值卡",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isBgImage": true,
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Text",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "src": "./img/img11.png",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Image",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isTempContainerNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isMergeNode": true,
+                              },
+                              "type": "Block",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isTempContainerNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isBgImage": true,
+                    "isComp": true,
+                    "sameNode": true,
+                  },
+                  "type": "Block",
+                },
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "text": "黑金VIP黄金卡",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isBgImage": true,
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Text",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "¥8848",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Text",
+                                    },
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "永久有效",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Text",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isMergeNode": true,
+                              },
+                              "type": "Block",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Block",
+                        },
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "text": "粉丝珍爱卡",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isBgImage": true,
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Text",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "¥800",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Text",
+                                    },
+                                    Object {
+                                      "attrs": Object {
+                                        "text": "365天内有效",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Text",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isMergeNode": true,
+                              },
+                              "type": "Block",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isMergeNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isTempContainerNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {
+                "isMergeNode": true,
+              },
+              "type": "Block",
+            },
+          ],
+          "extraInfo": Object {},
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
+      "type": "Block",
+    },
+    Object {
+      "attrs": Object {},
+      "children": Array [
+        Object {
+          "attrs": Object {},
+          "children": Array [
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {},
+                  "children": Array [
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {
+                            "text": "为您推荐",
+                          },
+                          "children": Array [],
+                          "extraInfo": Object {
+                            "isBgImage": true,
+                            "isComp": true,
+                            "sameNode": true,
+                          },
+                          "type": "Text",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isBgImage": true,
+                        "isComp": true,
+                        "sameNode": true,
+                      },
+                      "type": "Block",
+                    },
+                    Object {
+                      "attrs": Object {},
+                      "children": Array [
+                        Object {
+                          "attrs": Object {},
+                          "children": Array [
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "src": "./img/img7.png",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Image",
+                                    },
+                                    Object {
+                                      "attrs": Object {},
+                                      "children": Array [
+                                        Object {
+                                          "attrs": Object {},
+                                          "children": Array [
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isBgImage": true,
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "¥20～¥160",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isBgImage": true,
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                          ],
+                                          "extraInfo": Object {
+                                            "isMergeNode": true,
+                                          },
+                                          "type": "Block",
+                                        },
+                                      ],
+                                      "extraInfo": Object {
+                                        "isTempContainerNode": true,
+                                      },
+                                      "type": "Block",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "src": "./img/img9.png",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Image",
+                                    },
+                                    Object {
+                                      "attrs": Object {},
+                                      "children": Array [
+                                        Object {
+                                          "attrs": Object {},
+                                          "children": Array [
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "大型犬野兽派洗剪吹A套餐",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isBgImage": true,
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "¥20～¥75",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isBgImage": true,
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                          ],
+                                          "extraInfo": Object {
+                                            "isMergeNode": true,
+                                          },
+                                          "type": "Block",
+                                        },
+                                      ],
+                                      "extraInfo": Object {
+                                        "isTempContainerNode": true,
+                                      },
+                                      "type": "Block",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {
+                                        "src": "./img/img8.png",
+                                      },
+                                      "children": Array [],
+                                      "extraInfo": Object {
+                                        "isBgImage": true,
+                                        "isComp": true,
+                                        "sameNode": true,
+                                      },
+                                      "type": "Image",
+                                    },
+                                    Object {
+                                      "attrs": Object {},
+                                      "children": Array [
+                                        Object {
+                                          "attrs": Object {},
+                                          "children": Array [
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isBgImage": true,
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                            Object {
+                                              "attrs": Object {
+                                                "text": "¥20～¥160",
+                                              },
+                                              "children": Array [],
+                                              "extraInfo": Object {
+                                                "isBgImage": true,
+                                                "isComp": true,
+                                                "sameNode": true,
+                                              },
+                                              "type": "Text",
+                                            },
+                                          ],
+                                          "extraInfo": Object {
+                                            "isMergeNode": true,
+                                          },
+                                          "type": "Block",
+                                        },
+                                      ],
+                                      "extraInfo": Object {
+                                        "isTempContainerNode": true,
+                                      },
+                                      "type": "Block",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isMergeNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                                Object {
+                                  "attrs": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attrs": Object {},
+                                      "children": Array [
+                                        Object {
+                                          "attrs": Object {
+                                            "src": "./img/img10.png",
+                                          },
+                                          "children": Array [],
+                                          "extraInfo": Object {
+                                            "isBgImage": true,
+                                            "isComp": true,
+                                            "sameNode": true,
+                                          },
+                                          "type": "Image",
+                                        },
+                                        Object {
+                                          "attrs": Object {},
+                                          "children": Array [
+                                            Object {
+                                              "attrs": Object {},
+                                              "children": Array [
+                                                Object {
+                                                  "attrs": Object {
+                                                    "text": "小型犬洗剪吹B套餐",
+                                                  },
+                                                  "children": Array [],
+                                                  "extraInfo": Object {
+                                                    "isBgImage": true,
+                                                    "isComp": true,
+                                                    "sameNode": true,
+                                                  },
+                                                  "type": "Text",
+                                                },
+                                                Object {
+                                                  "attrs": Object {
+                                                    "text": "¥20～¥75",
+                                                  },
+                                                  "children": Array [],
+                                                  "extraInfo": Object {
+                                                    "isBgImage": true,
+                                                    "isComp": true,
+                                                    "sameNode": true,
+                                                  },
+                                                  "type": "Text",
+                                                },
+                                              ],
+                                              "extraInfo": Object {
+                                                "isMergeNode": true,
+                                              },
+                                              "type": "Block",
+                                            },
+                                          ],
+                                          "extraInfo": Object {
+                                            "isTempContainerNode": true,
+                                          },
+                                          "type": "Block",
+                                        },
+                                      ],
+                                      "extraInfo": Object {
+                                        "isMergeNode": true,
+                                      },
+                                      "type": "Block",
+                                    },
+                                  ],
+                                  "extraInfo": Object {
+                                    "isTempContainerNode": true,
+                                  },
+                                  "type": "Block",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "sameNode": true,
+                              },
+                              "type": "Block",
+                            },
+                            Object {
+                              "attrs": Object {},
+                              "children": Array [
+                                Object {
+                                  "attrs": Object {
+                                    "text": "更多服务/商品",
+                                  },
+                                  "children": Array [],
+                                  "extraInfo": Object {
+                                    "isBgImage": true,
+                                    "isComp": true,
+                                    "sameNode": true,
+                                  },
+                                  "type": "Text",
+                                },
+                              ],
+                              "extraInfo": Object {
+                                "isBgImage": true,
+                                "isComp": true,
+                                "sameNode": true,
+                              },
+                              "type": "Block",
+                            },
+                          ],
+                          "extraInfo": Object {
+                            "isMergeNode": true,
+                          },
+                          "type": "Block",
+                        },
+                      ],
+                      "extraInfo": Object {
+                        "isTempContainerNode": true,
+                      },
+                      "type": "Block",
+                    },
+                  ],
+                  "extraInfo": Object {
+                    "isMergeNode": true,
+                  },
+                  "type": "Block",
+                },
+              ],
+              "extraInfo": Object {},
+              "type": "Block",
+            },
+            Object {
+              "attrs": Object {},
+              "children": Array [
+                Object {
+                  "attrs": Object {
+                    "text": "————＞ω＜我是有底线的————",
+                  },
+                  "children": Array [],
+                  "extraInfo": Object {
+                    "isBgImage": true,
+                    "isComp": true,
+                    "sameNode": true,
+                  },
+                  "type": "Text",
+                },
+              ],
+              "extraInfo": Object {
+                "isTempContainerNode": true,
+              },
+              "type": "Block",
+            },
+          ],
+          "extraInfo": Object {
+            "isMergeNode": true,
+          },
+          "type": "Block",
+        },
+      ],
+      "extraInfo": Object {
+        "isTempContainerNode": true,
+      },
       "type": "Block",
     },
   ],
+  "extraInfo": Object {},
   "type": "Block",
 }
 `;

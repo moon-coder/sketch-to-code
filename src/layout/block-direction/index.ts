@@ -137,7 +137,6 @@ export default (nodes: INode[]): INode => {
   debugger;
 
   walk(rootNode, node => {
-    debugger;
 
     if (node.children && node.children.length > 0) {
       if (node.children.length > 1) {
