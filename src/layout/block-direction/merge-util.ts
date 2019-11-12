@@ -12,7 +12,7 @@
  **/
 
 import {INode} from '../../types';
-import {calcBoundaryNode, createContainerNode} from '../utils';
+import {calcBoundaryNode, createContainerNode, rateEqual} from '../utils';
 
 /**
  * 将两个节点 合并为一个.
@@ -35,6 +35,7 @@ export function mergeNode(node1: INode, node2: INode): INode {
   let flag = `${xRel}::${yRel}`;
 
   //TODO 算法可以调整,减少类似的判断, 前期没找到规律,硬写吧.
+
   if (flag === 'equals::left') {
     //下
     let newNode = calcBoundaryNode([node1, node2]);
@@ -67,6 +68,9 @@ export function mergeNode(node1: INode, node2: INode): INode {
         height: node1.frame.height,
       },
       node1,
+      {
+        extraInfo: {tempCnntainerFlag:flag},
+      },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
@@ -82,6 +86,9 @@ export function mergeNode(node1: INode, node2: INode): INode {
         height: node1.frame.height,
       },
       node1,
+      {
+        extraInfo: {tempCnntainerFlag:flag},
+      },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
@@ -195,6 +202,9 @@ export function mergeNode(node1: INode, node2: INode): INode {
     let tempNode2 = createContainerNode(
       {x: node2.frame.x, y: node2.frame.y, width, height: node2.frame.height},
       node2,
+      {
+        extraInfo: {tempCnntainerFlag:flag},
+      },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([tempNode1, tempNode2]);
@@ -366,14 +376,16 @@ export function mergeNode(node1: INode, node2: INode): INode {
     // } else if (flag === 'contained::left-contained') {
     // } else if (flag === 'contained::right-contained') {
   } else if (flag === 'contained::left-overlap') {
+
     //如果两边对齐就居中的方式
     //如果不对齐就padding-left
-
     let _style:any = {};
-    if((x1-x2)=== (x2+width2-(x1+width1))) {
+
+    if(rateEqual((x1-x2),(x2+width2-(x1+width1)),width2,0.05)) {
       //这样是不是在布局阶段已经确定flex了 ??  要抽出来  TODO
       // node1.style.justifyContent="center"
       _style.justifyContent="center";
+      _style.display="flex";
     } else {
       _style.marginLeft =x1-x2;
     }

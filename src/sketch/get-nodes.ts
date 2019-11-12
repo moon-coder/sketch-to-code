@@ -88,7 +88,6 @@ export default (layer?: Layer): INode[] => {
       const node: INode = toNode(layer,nodeRepo[pPath]);
       if (layerImgSrc) {
         if(node.extraInfo?.isBgImage) {
-          debugger;
           node.style.backgroundImage=layerImgSrc;
         } else {
           node.attrs.src = layerImgSrc;
