@@ -318,6 +318,14 @@ const layerStyle = (layer: Layer, node: INode) => {
       // 非文本 boxShadow(shadows/innerShadows)
     }
   }
+  //取圆角取值;
+  if(layer.points) {
+    style.borderRadius= layer.points[0].cornerRadius;
+  }
+
+  if(layer.background?.enabled && layer.background.color) {
+    style.backgroundColor=layer.background.color;
+  }
 
   node.style = style;
 };

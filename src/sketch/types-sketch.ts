@@ -109,6 +109,13 @@ export interface Layer {
   style: Style;
   sharedStyleId: string | null;
 
+  background?:{
+    enabled:boolean;
+    includedInExport:boolean;
+    color:string;
+  };
+  points?:IPoints[];
+
   // The index of this layer in its parent.
   index: number;
 
@@ -128,19 +135,21 @@ export interface Group extends Layer {
   layers: Layer[];
 }
 
+interface IPoints {
+  point: Point;
+  curveFrom: Point;
+  curveTo: Point;
+  cornerRadius: number;
+  pointType: 'Undefined' | 'Straight' | 'Mirrored' | 'Asymmetric' | 'Disconnected';
+}
+
 export interface Shape extends Layer {}
 
 export interface ShapePath extends Layer {
   // The type of the Shape Path. It can only be set when creating a new ShapePath
   shapeType: 'Rectangle' | 'Oval' | 'Triangle' | 'Polygon' | 'Star' | 'Custom';
   // The points defining the Shape Path
-  points: {
-    point: Point;
-    curveFrom: Point;
-    curveTo: Point;
-    cornerRadius: number;
-    pointType: 'Undefined' | 'Straight' | 'Mirrored' | 'Asymmetric' | 'Disconnected';
-  }[];
+  points: IPoints[];
   // If the Path is closed
   closed: boolean;
 }
