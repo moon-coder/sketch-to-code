@@ -85,6 +85,8 @@ export interface IExtraInfo{
   //指令信息: 组件相关信息
   compInfo?:{
   }
+
+  [key:string]:any;
 }
 
 export interface IFrame {

@@ -24,12 +24,12 @@ export function mergeNode(node1: INode, node2: INode): INode {
   let {x: x2, y: y2, width: width2, height: height2} = node2.frame;
 
   let xRel = lineCompare(
-    {beg: x1, end: x1 + width1-1},
-    {beg: x2, end: x2 + width2-1},
+    {beg: x1, end: x1 + width1 - 1},
+    {beg: x2, end: x2 + width2 - 1},
   );
   let yRel = lineCompare(
-    {beg: y1, end: y1 + height1-1},
-    {beg: y2, end: y2 + height2-1},
+    {beg: y1, end: y1 + height1 - 1},
+    {beg: y2, end: y2 + height2 - 1},
   );
 
   let flag = `${xRel}::${yRel}`;
@@ -55,76 +55,118 @@ export function mergeNode(node1: INode, node2: INode): INode {
     let newNode = calcBoundaryNode([node1, node2]);
     newNode.style.flexDirection = 'row';
     return newNode;
-  } else if (flag === 'left-contained::left' || flag === 'left-contained::right') {
+  } else if (
+    flag === 'left-contained::left' ||
+    flag === 'left-contained::right'
+  ) {
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
-      node1
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
+      node1,
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
     newNode.style.flexDirection = 'column';
     return newNode;
-
   } else if (flag === 'left-contained::right') {
-    debugger;
     //添加辅助节点;
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
-      node1
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
+      node1,
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
     newNode.style.flexDirection = 'column';
     return newNode;
-
-    } else if (flag === 'right::contained') {
+  } else if (flag === 'right::contained') {
     // debugger;
     let tempNode = createContainerNode(
-      {x: node1.frame.x, y: node2.frame.y, width: node1.frame.width, height: node2.frame.height},
+      {
+        x: node1.frame.x,
+        y: node2.frame.y,
+        width: node1.frame.width,
+        height: node2.frame.height,
+      },
       node1,
       {
-        "padding-top":Math.abs(y1-y2)
+        style: {
+          paddingTop: Math.abs(y1 - y2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
+
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
     newNode.style.flexDirection = 'row';
     return newNode;
-    } else if (flag === 'contained::right') {
+  } else if (flag === 'contained::right') {
     //添加辅助节点;
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
       node1,
       {
-        "padding-left":Math.abs(x1-x2)
+        style: {
+          paddingLeft: Math.abs(x1 - x2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
     newNode.style.flexDirection = 'column';
     return newNode;
-
   } else if (flag === 'right-contained::left') {
     //添加辅助节点;
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
       node1,
       {
-        "padding-left":Math.abs(x1-x2)
+        style: {
+          paddingLeft: Math.abs(x1 - x2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node2, tempNode]);
     newNode.style.flexDirection = 'column';
     return newNode;
-  // } else if (flag === 'right-contained::right') {
+    // } else if (flag === 'right-contained::right') {
   } else if (flag === 'left::left-contained' || flag === 'left::contained') {
     //添加辅助节点;
     let tempNode = createContainerNode(
-      {x: node1.frame.x, y: node2.frame.y, width: node1.frame.width, height: node2.frame.height},
+      {
+        x: node1.frame.x,
+        y: node2.frame.y,
+        width: node1.frame.width,
+        height: node2.frame.height,
+      },
       node1,
       {
-        "padding-top":Math.abs(y1-y2)
+        style: {
+          paddingTop: Math.abs(y1 - y2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -132,61 +174,75 @@ export function mergeNode(node1: INode, node2: INode): INode {
     newNode.style.flexDirection = 'row';
     return newNode;
 
-
     // } else if (flag === 'left::right-contained') {
-  // } else if (flag === 'right::left-contained') {
-  // } else if (flag === 'right::right-contained') {
+    // } else if (flag === 'right::left-contained') {
+    // } else if (flag === 'right::right-contained') {
   } else if (flag === 'left-overlap::left' || flag === 'left-overlap::right') {
-    let width = Math.abs(node1.frame.x+node1.frame.width-node2.frame.x);
+    let width = Math.abs(node1.frame.x + node1.frame.width - node2.frame.x);
     //添加辅助节点;
     let tempNode1 = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width , height: node1.frame.height},
+      {x: node2.frame.x, y: node1.frame.y, width, height: node1.frame.height},
       node1,
       {
-        "padding-left":Math.abs(x1-x2)
+        style: {
+          paddingLeft: Math.abs(x1 - x2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
 
     //添加辅助节点;
     let tempNode2 = createContainerNode(
-      {x: node2.frame.x, y: node2.frame.y, width , height: node2.frame.height},
+      {x: node2.frame.x, y: node2.frame.y, width, height: node2.frame.height},
       node2,
-      {
-        // "padding-left":Math.abs(x1-x2)
-      },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([tempNode1, tempNode2]);
     newNode.style.flexDirection = 'column';
     return newNode;
 
-  // } else if (flag === 'left::left') {
-  // } else if (flag === 'left::right') {
-  // } else if (flag === 'left::right-contain') {
-  // } else if (flag === 'left::contain') {
+    // } else if (flag === 'left::left') {
+    // } else if (flag === 'left::right') {
+    // } else if (flag === 'left::right-contain') {
+    // } else if (flag === 'left::contain') {
   } else if (flag === 'left::left-contain') {
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
       node2,
       {
-        "padding-top":Math.abs(y1-y2)
+        style: {
+          paddingTop: Math.abs(y1 - y2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
     let newNode = calcBoundaryNode([node1, tempNode]);
     newNode.style.flexDirection = 'row';
     return newNode;
-  // } else if (flag === 'left::left-overlap') {
-  // } else if (flag === 'left::right-overlap') {
-  // } else if (flag === 'right::left-overlap') {
+    // } else if (flag === 'left::left-overlap') {
+    // } else if (flag === 'left::right-overlap') {
+    // } else if (flag === 'right::left-overlap') {
   } else if (flag === 'contained::left') {
-
     //添加辅助节点;
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
       node1,
       {
-        "padding-left":Math.abs(x1-x2)
+        style: {
+          paddingLeft: Math.abs(x1 - x2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -195,14 +251,22 @@ export function mergeNode(node1: INode, node2: INode): INode {
     return newNode;
 
     // } else if (flag === 'right::left') {
-  // } else if (flag === 'right::right') {
-  // } else if (flag === 'right::right-contain') {
+    // } else if (flag === 'right::right') {
+    // } else if (flag === 'right::right-contain') {
   } else if (flag === 'right::contain') {
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
       node2,
       {
-        "padding-top":Math.abs(y1-y2)
+        style: {
+          paddingTop: Math.abs(y1 - y2),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -210,17 +274,25 @@ export function mergeNode(node1: INode, node2: INode): INode {
     newNode.style.flexDirection = 'row';
     return newNode;
 
-  // } else if (flag === 'right::right-overlap') {
-  // } else if (flag === 'right::left-contain') {
-  // } else if (flag === 'right-contain::left') {
-  // } else if (flag === 'right-contain::right') {
-  } else if (flag === 'contain::left' ||flag === 'contain::right') {
+    // } else if (flag === 'right::right-overlap') {
+    // } else if (flag === 'right::left-contain') {
+    // } else if (flag === 'right-contain::left') {
+    // } else if (flag === 'right-contain::right') {
+  } else if (flag === 'contain::left' || flag === 'contain::right') {
     //添加辅助节点;
     let tempNode = createContainerNode(
-      {x: node1.frame.x, y: node2.frame.y, width: node1.frame.width, height: node2.frame.height},
+      {
+        x: node1.frame.x,
+        y: node2.frame.y,
+        width: node1.frame.width,
+        height: node2.frame.height,
+      },
       node2,
       {
-        "padding-left":Math.abs(x2-x1)
+        style: {
+          paddingLeft: Math.abs(x2 - x1),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -228,16 +300,20 @@ export function mergeNode(node1: INode, node2: INode): INode {
     newNode.style.flexDirection = 'column';
     return newNode;
 
-
     // } else if (flag === 'right-overlap::left') {
-  // } else if (flag === 'right-overlap::right') {
-  // } else if (flag === 'left-contain::left') {
+    // } else if (flag === 'right-overlap::right') {
+    // } else if (flag === 'left-contain::left') {
   } else if (flag === 'left-contain::right') {
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node2.frame.y, width: node1.frame.width, height: node2.frame.height},
+      {
+        x: node2.frame.x,
+        y: node2.frame.y,
+        width: node1.frame.width,
+        height: node2.frame.height,
+      },
       node2,
       {
-        // flexDirection: 'column',
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -246,55 +322,76 @@ export function mergeNode(node1: INode, node2: INode): INode {
     return newNode;
 
     // } else if (flag === 'equals::equals') {
-  //   //重合的流程
-  // } else if (flag === 'equals::left-contained') {
-  // } else if (flag === 'equals::right-contained') {
-  // } else if (flag === 'equals::left-overlap') {
-  //   debugger;
-  // } else if (flag === 'equals::contained') {
-  //   debugger;
+    //   //重合的流程
+    // } else if (flag === 'equals::left-contained') {
+    // } else if (flag === 'equals::right-contained') {
+    // } else if (flag === 'equals::left-overlap') {
+    //   debugger;
+    // } else if (flag === 'equals::contained') {
+    //   debugger;
 
-  // } else if (flag === 'equals::right-contain') {
-  // } else if (flag === 'equals::contain') {
-  // } else if (flag === 'equals::right-overlap') {
-  // } else if (flag === 'equals::left-contain') {
-  // } else if (flag === 'left-contained::equals') {
-  // } else if (flag === 'left-contained::left-contained') {
-  // } else if (flag === 'left-contained::right-contained') {
-  // } else if (flag === 'left-contained::left-overlap') {
-  // } else if (flag === 'left-contained::contained') {
-  // } else if (flag === 'left-contained::right-contain') {
-  // } else if (flag === 'left-contained::contain') {
-  // } else if (flag === 'left-contained::right-overlap') {
-  // } else if (flag === 'left-contained::left-contain') {
-  // } else if (flag === 'right-contained::equals') {
-  // } else if (flag === 'right-contained::left-contained') {
-  // } else if (flag === 'right-contained::right-contained') {
-  // } else if (flag === 'right-contained::left-overlap') {
-  // } else if (flag === 'right-contained::contained') {
-  // } else if (flag === 'right-contained::right-contain') {
-  // } else if (flag === 'right-contained::contain') {
-  // } else if (flag === 'right-contained::right-overlap') {
-  // } else if (flag === 'right-contained::left-contain') {
-  // } else if (flag === 'left-overlap::equals') {
+    // } else if (flag === 'equals::right-contain') {
+    // } else if (flag === 'equals::contain') {
+    // } else if (flag === 'equals::right-overlap') {
+    // } else if (flag === 'equals::left-contain') {
+    // } else if (flag === 'left-contained::equals') {
+    // } else if (flag === 'left-contained::left-contained') {
+    // } else if (flag === 'left-contained::right-contained') {
+    // } else if (flag === 'left-contained::left-overlap') {
+    // } else if (flag === 'left-contained::contained') {
+    // } else if (flag === 'left-contained::right-contain') {
+    // } else if (flag === 'left-contained::contain') {
+    // } else if (flag === 'left-contained::right-overlap') {
+    // } else if (flag === 'left-contained::left-contain') {
+    // } else if (flag === 'right-contained::equals') {
+    // } else if (flag === 'right-contained::left-contained') {
+    // } else if (flag === 'right-contained::right-contained') {
+    // } else if (flag === 'right-contained::left-overlap') {
+    // } else if (flag === 'right-contained::contained') {
+    // } else if (flag === 'right-contained::right-contain') {
+    // } else if (flag === 'right-contained::contain') {
+    // } else if (flag === 'right-contained::right-overlap') {
+    // } else if (flag === 'right-contained::left-contain') {
+    // } else if (flag === 'left-overlap::equals') {
   } else if (flag === 'left-overlap::left-contained') {
     debugger;
-  // } else if (flag === 'left-overlap::right-contained') {
-  // } else if (flag === 'left-overlap::left-overlap') {
-  // } else if (flag === 'left-overlap::contained') {
-  // } else if (flag === 'left-overlap::right-contain') {
-  // } else if (flag === 'left-overlap::contain') {
-  // } else if (flag === 'left-overlap::right-overlap') {
-  // } else if (flag === 'left-overlap::left-contain') {
-  // } else if (flag === 'contained::equals') {
-  // } else if (flag === 'contained::left-contained') {
-  // } else if (flag === 'contained::right-contained') {
+    // } else if (flag === 'left-overlap::right-contained') {
+    // } else if (flag === 'left-overlap::left-overlap') {
+    // } else if (flag === 'left-overlap::contained') {
+    // } else if (flag === 'left-overlap::right-contain') {
+    // } else if (flag === 'left-overlap::contain') {
+    // } else if (flag === 'left-overlap::right-overlap') {
+    // } else if (flag === 'left-overlap::left-contain') {
+    // } else if (flag === 'contained::equals') {
+    // } else if (flag === 'contained::left-contained') {
+    // } else if (flag === 'contained::right-contained') {
   } else if (flag === 'contained::left-overlap') {
+    //如果两边对齐就居中的方式
+    //如果不对齐就padding-left
+
+    let _style:any = {};
+    if((x1-x2)=== (x2+width2-(x1+width1))) {
+      //这样是不是在布局阶段已经确定flex了 ??  要抽出来  TODO
+      // node1.style.justifyContent="center"
+      _style.justifyContent="center";
+    } else {
+      _style.marginLeft =x1-x2;
+    }
+
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node1.frame.y, width: node2.frame.width, height: node1.frame.height},
+      {
+        x: node2.frame.x,
+        y: node1.frame.y,
+        width: node2.frame.width,
+        height: node1.frame.height,
+      },
       node1,
       {
-        "margin-top":y1-(y2+node2.frame.height)
+        style: {
+          marginTop: y1 - (y2 + node2.frame.height),
+          ..._style
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -303,32 +400,40 @@ export function mergeNode(node1: INode, node2: INode): INode {
     return newNode;
 
     // } else if (flag === 'contained::contained') {
-  // } else if (flag === 'contained::right-contain') {
-  // } else if (flag === 'contained::contain') {
-  // } else if (flag === 'contained::right-overlap') {
-  // } else if (flag === 'contained::left-contain') {
-  // } else if (flag === 'right-contain::equals') {
-  // } else if (flag === 'right-contain::left-contained') {
-  // } else if (flag === 'right-contain::right-contained') {
-  // } else if (flag === 'right-contain::left-overlap') {
-  // } else if (flag === 'right-contain::contained') {
-  // } else if (flag === 'right-contain::right-contain') {
-  // } else if (flag === 'right-contain::contain') {
-  // } else if (flag === 'right-contain::right-overlap') {
-  // } else if (flag === 'right-contain::left-contain') {
-  // } else if (flag === 'contain::equals') {
-  // } else if (flag === 'contain::left-contained') {
-  // } else if (flag === 'contain::right-contained') {
-  // } else if (flag === 'contain::left-overlap') {
-  // } else if (flag === 'contain::contained') {
-  // } else if (flag === 'contain::right-contain') {
-  // } else if (flag === 'contain::contain') {
+    // } else if (flag === 'contained::right-contain') {
+    // } else if (flag === 'contained::contain') {
+    // } else if (flag === 'contained::right-overlap') {
+    // } else if (flag === 'contained::left-contain') {
+    // } else if (flag === 'right-contain::equals') {
+    // } else if (flag === 'right-contain::left-contained') {
+    // } else if (flag === 'right-contain::right-contained') {
+    // } else if (flag === 'right-contain::left-overlap') {
+    // } else if (flag === 'right-contain::contained') {
+    // } else if (flag === 'right-contain::right-contain') {
+    // } else if (flag === 'right-contain::contain') {
+    // } else if (flag === 'right-contain::right-overlap') {
+    // } else if (flag === 'right-contain::left-contain') {
+    // } else if (flag === 'contain::equals') {
+    // } else if (flag === 'contain::left-contained') {
+    // } else if (flag === 'contain::right-contained') {
+    // } else if (flag === 'contain::left-overlap') {
+    // } else if (flag === 'contain::contained') {
+    // } else if (flag === 'contain::right-contain') {
+    // } else if (flag === 'contain::contain') {
   } else if (flag === 'contain::right-overlap') {
     let tempNode = createContainerNode(
-      {x: node2.frame.x, y: node2.frame.y, width: node2.frame.width, height: node2.frame.height},
+      {
+        x: node2.frame.x,
+        y: node2.frame.y,
+        width: node2.frame.width,
+        height: node2.frame.height,
+      },
       node2,
       {
-        "margin-top": y2-(y1 + height1)
+        style: {
+          marginTop: y2 - (y1 + height1),
+        },
+        extraInfo: {tempCnntainerFlag:flag},
       },
     );
     //把一级节点与此临时节点关联
@@ -336,29 +441,28 @@ export function mergeNode(node1: INode, node2: INode): INode {
     newNode.style.flexDirection = 'column';
     return newNode;
 
-
-  // } else if (flag === 'contain::left-contain') {
-  // } else if (flag === 'right-overlap::equals') {
-  // } else if (flag === 'right-overlap::left-contained') {
-  // } else if (flag === 'right-overlap::right-contained') {
-  // } else if (flag === 'right-overlap::left-overlap') {
-  // } else if (flag === 'right-overlap::contained') {
-  // } else if (flag === 'right-overlap::right-contain') {
-  // } else if (flag === 'right-overlap::contain') {
-  // } else if (flag === 'right-overlap::right-overlap') {
-  // } else if (flag === 'right-overlap::left-contain') {
-  // } else if (flag === 'left-contain::equals') {
-  // } else if (flag === 'left-contain::left-contained') {
-  // } else if (flag === 'left-contain::right-contained') {
-  // } else if (flag === 'left-contain::left-overlap') {
-  // } else if (flag === 'left-contain::contained') {
-  // } else if (flag === 'left-contain::right-contain') {
-  // } else if (flag === 'left-contain::contain') {
-  // } else if (flag === 'left-contain::right-overlap') {
-  // } else if (flag === 'left-contain::left-contain') {
+    // } else if (flag === 'contain::left-contain') {
+    // } else if (flag === 'right-overlap::equals') {
+    // } else if (flag === 'right-overlap::left-contained') {
+    // } else if (flag === 'right-overlap::right-contained') {
+    // } else if (flag === 'right-overlap::left-overlap') {
+    // } else if (flag === 'right-overlap::contained') {
+    // } else if (flag === 'right-overlap::right-contain') {
+    // } else if (flag === 'right-overlap::contain') {
+    // } else if (flag === 'right-overlap::right-overlap') {
+    // } else if (flag === 'right-overlap::left-contain') {
+    // } else if (flag === 'left-contain::equals') {
+    // } else if (flag === 'left-contain::left-contained') {
+    // } else if (flag === 'left-contain::right-contained') {
+    // } else if (flag === 'left-contain::left-overlap') {
+    // } else if (flag === 'left-contain::contained') {
+    // } else if (flag === 'left-contain::right-contain') {
+    // } else if (flag === 'left-contain::contain') {
+    // } else if (flag === 'left-contain::right-overlap') {
+    // } else if (flag === 'left-contain::left-contain') {
   }
 
-  throw new Error('暂未处理的节点合并关系:'+flag);
+  throw new Error('暂未处理的节点合并关系:' + flag);
 }
 
 /**

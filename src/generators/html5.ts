@@ -3,6 +3,7 @@ import {INode} from '../types';
 import {join} from 'path';
 const helper = require('@imgcook/dsl-helper');
 import renameClassname from './rename-classname';
+import config from '../config';
 
 const domWapper = (dom: string) => {
   return `
@@ -68,6 +69,9 @@ export default (node: INode): ICompData => {
     attrStr += node.attrs.src ? ` src='${join(ImageStaticServer,node.attrs.src)}'` : '';
     attrStr += node.attrs.className ? ` class="c${node.attrs.className}"` : '';
 
+    if(config.isDebug) {
+      attrStr+=` extraInfo='${JSON.stringify(node.extraInfo)}'`
+    }
     if (node.attrs.text) {
       console.log('NODE: ' + JSON.stringify(node.attrs));
       lines.push(
@@ -97,6 +101,7 @@ export default (node: INode): ICompData => {
       line(`${transKey(key)}: ${transVal(key, styleArr[0].style[key])};`, 1),
     );
   });
+
   styleArr.forEach((item, idx) => {
     if (idx > 0) {
       lines.push(line(`.c${item.className} {`, 1));

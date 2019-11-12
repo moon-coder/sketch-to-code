@@ -1,4 +1,4 @@
-import {Coords, INode, IWalkHandle} from '../types';
+import {Coords, IExtraInfo, INode, IWalkHandle} from '../types';
 import * as uuid from 'uuid';
 
 /**
@@ -38,7 +38,7 @@ export function isContainer(inner: INode, outer: INode): boolean {
   );
 }
 
-const defautlRate=0.95
+const defautlRate = 0.95;
 /**
  * 判断两个区块是否重合
  */
@@ -46,10 +46,10 @@ export function isOverlap(first: INode, second: INode) {
   const fp = first.frame;
   const sp = second.frame;
   if (
-    fp.x + fp.width* defautlRate > sp.x &&
-    sp.x + sp.width* defautlRate > fp.x &&
-    fp.y + fp.height* defautlRate> sp.y &&
-    sp.y + sp.height* defautlRate > fp.y
+    fp.x + fp.width * defautlRate > sp.x &&
+    sp.x + sp.width * defautlRate > fp.x &&
+    fp.y + fp.height * defautlRate > sp.y &&
+    sp.y + sp.height * defautlRate > fp.y
   ) {
     return true;
   } else {
@@ -64,21 +64,31 @@ export function isOverlap(first: INode, second: INode) {
  * @param {{}} style
  * @returns {INode}
  */
-export function createContainerNode(frame:{
-  x:number;
-  y:number;
-  width:number;
-  height:number;
-},children:INode,style:{
-  "padding-top"?:number;
-  "padding-left"?:number;
-  "margin-top"?:number;
-  "margin-left"?:number;
-}={
-},extraInfo={}):INode {
-  let {x,y,width,height}  =frame;
+export function createContainerNode(
+  frame: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  },
+  children: INode,
+  nodeInfo: {
+    style?: {
+      paddingTop?: number;
+      paddingLeft?: number;
+      marginTop?: number;
+      marginLeft?: number;
+      justifyContent?: string;
+    };
+    extraInfo?: IExtraInfo;
+  } = {style: {}, extraInfo: {}},
+): INode {
+  let {x, y, width, height} = frame;
 
-  let xMin =x,xMax=x +width, yMin=y,yMax=y+height;
+  let xMin = x,
+    xMax = x + width,
+    yMin = y,
+    yMax = y + height;
   const points = [
     {x: xMin, y: yMin},
     {x: xMax, y: yMin},
@@ -87,21 +97,22 @@ export function createContainerNode(frame:{
     {x: (xMin + xMax) / 2, y: (yMin + yMax) / 2},
   ];
 
-
   return {
     id: uuid.v1(),
     type: 'Block',
     frame,
     points: points,
-    extraInfo:{
-      isTempContainerNode:true
+    extraInfo: {
+      ...nodeInfo.extraInfo,
+      isTempContainerNode: true,
     },
-    style:Object.assign({},style,{
+    style: {
+      ...nodeInfo.style,
       // display:"block"
       // height: "100%"
-    }),
+    },
     attrs: {className: uuid.v1()},
-    children:[children],
+    children: [children],
   };
 }
 /**
@@ -132,8 +143,8 @@ export function calcBoundaryNode(nodes: INode[]): INode {
     id: uuid.v1(),
     type: 'Block',
     frame,
-    extraInfo:{
-      isMergeNode:true
+    extraInfo: {
+      isMergeNode: true,
     },
     points: points,
     style: {},
@@ -196,10 +207,14 @@ export function mergeLog(source: INode, target: INode) {
   return `${sourceStr}、${targetStr}`;
 }
 
-export function walk(rootNode: INode, callBack: IWalkHandle,{lv=1}:any={}) {
+export function walk(
+  rootNode: INode,
+  callBack: IWalkHandle,
+  {lv = 1}: any = {},
+) {
   if (rootNode.children && rootNode.children.length > 0) {
     rootNode.children.forEach((childrenNode, index) => {
-      walk(childrenNode,callBack,{lv:lv+1});
+      walk(childrenNode, callBack, {lv: lv + 1});
     });
 
     callBack(rootNode);
@@ -212,13 +227,15 @@ export function walk(rootNode: INode, callBack: IWalkHandle,{lv=1}:any={}) {
  *  TODO 这里的策略可以想办法 改为配置模式的. 应对复杂的情况
  * 看两块代码相似程度
  */
-export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
-
+export function isSameSchema(a: INode, b: INode, rate: number = 0.95): boolean {
   //长度都接近的.
-  if(isEquealNum(a.frame.width,b.frame.width,rate) && isEquealNum(a.frame.height,b.frame.height,rate)) {
+  if (
+    isEquealNum(a.frame.width, b.frame.width, rate) &&
+    isEquealNum(a.frame.height, b.frame.height, rate)
+  ) {
     //形状是一样的. 就可以判断两者一致的.
     //不同类型的元素数量;
-    if(isEquealNum(a.children.length,b.children.length,rate)) {
+    if (isEquealNum(a.children.length, b.children.length, rate)) {
       return true;
     }
   }
@@ -232,10 +249,10 @@ export function isSameSchema(a: INode, b: INode,rate:number=0.95):boolean {
  * @param {INode[]} nodes
  * @returns {INode[]}
  */
-export function sortNodesByLayout(nodes:INode[]):INode[]{
-  return nodes.sort((a:INode,b)=>{
-      return (a.frame.y*1000+a.frame.x)-(b.frame.y*1000+b.frame.x)
-  })
+export function sortNodesByLayout(nodes: INode[]): INode[] {
+  return nodes.sort((a: INode, b) => {
+    return a.frame.y * 1000 + a.frame.x - (b.frame.y * 1000 + b.frame.x);
+  });
 }
 
 /**
@@ -244,9 +261,12 @@ export function sortNodesByLayout(nodes:INode[]):INode[]{
  * @param b
  * @param rate
  */
-export function isEquealNum(a:number,b:number,rate:number=0.95):boolean {
-
-  return Math.abs(a-b)<=(a+b)/2*(1-rate);
+export function isEquealNum(
+  a: number,
+  b: number,
+  rate: number = 0.95,
+): boolean {
+  return Math.abs(a - b) <= ((a + b) / 2) * (1 - rate);
 }
 
 /**
@@ -287,12 +307,12 @@ const blockVisualKeys = [
   'backgroundImage',
   'border',
   // 'color',
-  "padding-top",
-  "padding-left",
-  "margin-left",
-  "margin-top",
+  'padding-top',
+  'padding-left',
+  'margin-left',
+  'margin-top',
   'gradient',
-  'boxShadow'
+  'boxShadow',
 ];
 /**
  * 结点是否为可视化盒子(无子结点，但有可视化样式)
@@ -311,7 +331,6 @@ export function hasVisualKey(node: INode) {
   return Object.keys(node.style).some(key => blockVisualKeys.includes(key));
 }
 
-
 /**
  * 考虑误差后的相等判断
  * @param source 第一个比较数
@@ -320,10 +339,11 @@ export function hasVisualKey(node: INode) {
  * @param rate 误差比例
  */
 export const rateEqual = (
-    source: number,
-    target: number,
-    baseVal: number,
-    rate: number = 0.05): boolean => {
+  source: number,
+  target: number,
+  baseVal: number,
+  rate: number = 0.05,
+): boolean => {
   const rateVal = baseVal * rate;
   return Math.abs(target - source) <= rateVal;
 };
