@@ -21,5 +21,5 @@ export function toJSON(node: INode) {
   },2))
 }
 
-// fixme 这边还要优化
+// fixme 这边还要优化 TODO
 export const OutPutPath = '/Users/dong/Falcon/sketch-to-code';

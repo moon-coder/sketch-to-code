@@ -15,6 +15,7 @@ let sketch = require('sketch');
 const fs = require('@skpm/fs');
 
 interface NodeExtraInfo {
+  //TODO 对应的imagePath也要记录下来;
   __absFrame: {x: number; y: number};
   [others: string]: any;
 }
@@ -36,12 +37,15 @@ export default (layer?: Layer): INode[] => {
       sketch.UI.message(msg);
       throw new Error(msg);
     }
-    fs.writeFileSync(`${OutPutPath}/src/__tests__/temp/origin.json`, JSON.stringify(layers));
+    //TODO 图片是怎么对应起来的
+    console.log(123123123123);
+    fs.writeFileSync(`${OutPutPath}/temp/origin.json`, JSON.stringify(layers));
+    console.log(123123123123);
     layer = layers.layers[0];
   }
 
   // 整体截图
-  if(layer ){
+  if(layer ) {
     exportImg(layer);
   }
 
