@@ -1,0 +1,62 @@
+{
+  "type": "Block",
+  "frame": {
+    "x": 0,
+    "y": 272,
+    "width": 375,
+    "height": 48
+  },
+  "style": {
+    "backgroundColor": "#ffffffff",
+    "opacity": 1,
+    "flexDirection": "row",
+    "display": "flex",
+    "justifyContent": "space-between",
+    "paddingLeft": 12,
+    "paddingRight": 12,
+    "alignItems": "center",
+    "height": 48
+  },
+  "children": [
+    {
+      "type": "Text",
+      "frame": {
+        "x": 12,
+        "y": 289,
+        "width": 42,
+        "height": 14
+      },
+      "style": {
+        "opacity": 1,
+        "fontSize": 14,
+        "color": "#333333ff"
+      },
+      "children": [],
+      "attrs": {
+        "text": "有效期"
+      },
+      "extraInfo": {}
+    },
+    {
+      "type": "Text",
+      "frame": {
+        "x": 239,
+        "y": 289,
+        "width": 124,
+        "height": 14
+      },
+      "style": {
+        "opacity": 1,
+        "fontSize": 14,
+        "color": "#ff6600ff"
+      },
+      "children": [],
+      "attrs": {
+        "text": "购买后365天内有效"
+      },
+      "extraInfo": {}
+    }
+  ],
+  "attrs": {},
+  "extraInfo": {}
+}
