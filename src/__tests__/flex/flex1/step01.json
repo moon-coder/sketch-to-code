@@ -1,1 +1,198 @@
-[{"type":"Block","frame":{"x":0,"y":332,"width":375,"height":218},"style":{"backgroundColor":"#ffffffff","opacity":1},"children":[],"attrs":{},"extraInfo":{}},{"type":"Text","frame":{"x":22,"y":348,"width":64,"height":16},"style":{"opacity":1,"fontSize":16,"color":"#333333ff"},"children":[],"attrs":{"text":"卡项权益"},"extraInfo":{}},{"type":"Block","frame":{"x":12,"y":348,"width":2,"height":16},"style":{"backgroundColor":"#ff6600ff","opacity":1},"children":[],"attrs":{},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":402,"width":84,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#a3a3a3ff"},"children":[],"attrs":{"text":"凶悍大叔洗澡"},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":498,"width":84,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#a3a3a3ff"},"children":[],"attrs":{"text":"凶悍大叔洗澡"},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":380,"width":56,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#333333ff"},"children":[],"attrs":{"text":"美容服务"},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":476,"width":56,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#333333ff"},"children":[],"attrs":{"text":"清洁服务"},"extraInfo":{}},{"type":"Text","frame":{"x":340,"y":380,"width":23,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#333333ff"},"children":[],"attrs":{"text":"×10"},"extraInfo":{}},{"type":"Text","frame":{"x":340,"y":476,"width":23,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#333333ff"},"children":[],"attrs":{"text":"×10"},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":446,"width":56,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#a3a3a3ff"},"children":[],"attrs":{"text":"精油美毛"},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":424,"width":112,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#a3a3a3ff"},"children":[],"attrs":{"text":"温柔小姐姐做造型"},"extraInfo":{}},{"type":"Text","frame":{"x":12,"y":520,"width":112,"height":14},"style":{"opacity":1,"fontSize":14,"color":"#a3a3a3ff"},"children":[],"attrs":{"text":"温柔小姐姐做造型"},"extraInfo":{}}]
+[
+  {
+    "type": "Block",
+    "frame": {
+      "x": 0,
+      "y": 332,
+      "width": 375,
+      "height": 218
+    },
+    "style": {
+      "backgroundColor": "#ffffffff",
+      "opacity": 1
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 22,
+      "y": 348,
+      "width": 64,
+      "height": 16
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 16,
+      "color": "#333333ff"
+    },
+    "attrs": {
+      "text": "卡项权益"
+    },
+  },
+  {
+    "type": "Block",
+    "frame": {
+      "x": 12,
+      "y": 348,
+      "width": 2,
+      "height": 16
+    },
+    "style": {
+      "backgroundColor": "#ff6600ff",
+      "opacity": 1
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 402,
+      "width": 84,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "attrs": {
+      "text": "凶悍大叔洗澡"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 498,
+      "width": 84,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "attrs": {
+      "text": "凶悍大叔洗澡"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 380,
+      "width": 56,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "attrs": {
+      "text": "美容服务"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 476,
+      "width": 56,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "attrs": {
+      "text": "清洁服务"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 340,
+      "y": 380,
+      "width": 23,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "attrs": {
+      "text": "×10"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 340,
+      "y": 476,
+      "width": 23,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#333333ff"
+    },
+    "attrs": {
+      "text": "×10"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 446,
+      "width": 56,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "attrs": {
+      "text": "精油美毛"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 424,
+      "width": 112,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "attrs": {
+      "text": "温柔小姐姐做造型"
+    }
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 12,
+      "y": 520,
+      "width": 112,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#a3a3a3ff"
+    },
+    "attrs": {
+      "text": "温柔小姐姐做造型"
+    }
+  }
+]
