@@ -68,6 +68,7 @@
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": { "x": 24, "y": 284, "width": 327, "height": 96},
         "children": [
           {
             "type": "Block",
