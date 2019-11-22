@@ -81,10 +81,11 @@
     },
     "frame": { "x": 12, "y": 404, "width": 351, "height": 464},
     "children": [
-      { "type": "Text", "attrs": { "text": "为您推荐" }, "frame": { "x": 24, "y": 420, "width": 64, "height": 16}},
+      { "type": "Text", "attrs": { "text": "为您推荐" }, "frame": { "x": 24, "y": 420, "width": 64, "height": 16}, "style": { "fontSize": 16, "color": "#333333ff"}},
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": {"x": 24, "y": 452, "width": 327, "height": 80},
         "children": [
           { "type": "Image", "attrs": { "src": "./img/img1.png"}, "frame": {"x": 24, "y": 452, "width": 80, "height": 80}},
           {
@@ -101,6 +102,7 @@
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": {"x": 24, "y": 544, "width": 327, "height": 80},
         "children": [
           { "type": "Image", "attrs": { "src": "./img/img3.png"}, "frame": {"x": 24, "y": 544, "width": 80, "height": 80}},
           {
@@ -117,6 +119,7 @@
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": {"x": 24, "y": 636, "width": 327, "height": 80},
         "children": [
           { "type": "Image", "attrs": { "src": "./img/img2.png"}, "frame": {"x": 24, "y": 636, "width": 80, "height": 80}},
           {
@@ -133,6 +136,7 @@
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": {"x": 24, "y": 728, "width": 327, "height": 80},
         "children": [
           { "type": "Image", "attrs": { "src": "./img/img4.png"}, "frame": {"x": 24, "y": 728, "width": 80, "height": 80}},
           {
