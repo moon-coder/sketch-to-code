@@ -1,0 +1,277 @@
+[
+  {
+    "type": "Block",
+    "frame": {
+      "x": 12,
+      "y": 236,
+      "width": 351,
+      "height": 156
+    },
+    "style": {
+      "backgroundColor": "#ffffffff",
+      "opacity": 1
+    },
+    "children": [],
+    "attrs": {},
+    "extraInfo": {}
+  },
+  {
+    "type": "Block",
+    "frame": {
+      "x": 12,
+      "y": 236,
+      "width": 351,
+      "height": 48
+    },
+    "style": {
+      "backgroundColor": "#ffffffff",
+      "opacity": 1
+    },
+    "children": [],
+    "attrs": {},
+    "extraInfo": {}
+  },
+  {
+    "type": "Block",
+    "frame": {
+      "x": 24,
+      "y": 284,
+      "width": 160,
+      "height": 96
+    },
+    "style": {
+      "gradient": {
+        "gradientType": "Linear",
+        "from": {
+          "x": 0.9999999999999998,
+          "y": 0.49999999999999983
+        },
+        "to": {
+          "x": -2.220446049250313e-16,
+          "y": 0.5000000000000002
+        },
+        "aspectRatio": 0,
+        "stops": [
+          {
+            "position": 0,
+            "color": "#5bacfcff"
+          },
+          {
+            "position": 1,
+            "color": "#3c75faff"
+          }
+        ]
+      },
+      "opacity": 1
+    },
+    "children": [],
+    "attrs": {},
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 36,
+      "y": 300,
+      "width": 146,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#ffffffff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "黑金VIP黄金卡"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 36,
+      "y": 322,
+      "width": 48,
+      "height": 16
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 16,
+      "color": "#fff684ff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "¥8848"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 36,
+      "y": 356,
+      "width": 48,
+      "height": 12
+    },
+    "style": {
+      "opacity": 0.5,
+      "fontSize": 12,
+      "color": "#ffffffff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "永久有效"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Block",
+    "frame": {
+      "x": 191,
+      "y": 284,
+      "width": 160,
+      "height": 96
+    },
+    "style": {
+      "gradient": {
+        "gradientType": "Linear",
+        "from": {
+          "x": 0.9999999999999998,
+          "y": 0.49999999999999983
+        },
+        "to": {
+          "x": -2.220446049250313e-16,
+          "y": 0.5000000000000002
+        },
+        "aspectRatio": 0,
+        "stops": [
+          {
+            "position": 0,
+            "color": "#5bacfcff"
+          },
+          {
+            "position": 1,
+            "color": "#3c75faff"
+          }
+        ]
+      },
+      "opacity": 1
+    },
+    "children": [],
+    "attrs": {},
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 203,
+      "y": 300,
+      "width": 146,
+      "height": 14
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 14,
+      "color": "#ffffffff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "粉丝珍爱卡"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 203,
+      "y": 322,
+      "width": 39,
+      "height": 16
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 16,
+      "color": "#fff684ff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "¥800"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 203,
+      "y": 356,
+      "width": 70,
+      "height": 12
+    },
+    "style": {
+      "opacity": 0.5,
+      "fontSize": 12,
+      "color": "#ffffffff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "365天内有效"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 24,
+      "y": 252,
+      "width": 48,
+      "height": 16
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 16,
+      "color": "#333333ff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "充值卡"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Text",
+    "frame": {
+      "x": 281,
+      "y": 254,
+      "width": 60,
+      "height": 12
+    },
+    "style": {
+      "opacity": 1,
+      "fontSize": 12,
+      "color": "#b3b3b3ff"
+    },
+    "children": [],
+    "attrs": {
+      "text": "更多充值卡"
+    },
+    "extraInfo": {}
+  },
+  {
+    "type": "Image",
+    "frame": {
+      "x": 347,
+      "y": 255,
+      "width": 4,
+      "height": 10
+    },
+    "style": {
+      "opacity": 1
+    },
+    "children": [],
+    "attrs": {
+      "src": "./img/img1.png"
+    },
+    "extraInfo": {}
+  }
+]

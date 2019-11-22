@@ -1,0 +1,1418 @@
+{
+  "type": "Group",
+  "id": "A078078C-38DC-4681-9885-DDB48CCE41C6",
+  "frame": {
+    "x": 12,
+    "y": 236,
+    "width": 351,
+    "height": 156
+  },
+  "name": "编组 3",
+  "selected": true,
+  "hidden": false,
+  "locked": false,
+  "exportFormats": [],
+  "transform": {
+    "rotation": 0,
+    "flippedHorizontally": false,
+    "flippedVertically": false
+  },
+  "style": {
+    "type": "Style",
+    "id": "351F7818-B149-44C6-80E2-555C1805CCB0",
+    "opacity": 1,
+    "blendingMode": "Normal",
+    "borderOptions": {
+      "startArrowhead": "None",
+      "endArrowhead": "None",
+      "dashPattern": [],
+      "lineEnd": "Butt",
+      "lineJoin": "Miter"
+    },
+    "blur": {
+      "center": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "motionAngle": 0,
+      "radius": 10,
+      "enabled": false,
+      "blurType": "Gaussian"
+    },
+    "fills": [],
+    "borders": [],
+    "shadows": [],
+    "innerShadows": [],
+    "styleType": "Layer"
+  },
+  "sharedStyleId": null,
+  "layers": [
+    {
+      "type": "ShapePath",
+      "id": "A7583913-BA50-4757-B2DA-3C188532EF94",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 351,
+        "height": 156
+      },
+      "name": "矩形",
+      "selected": false,
+      "hidden": false,
+      "locked": false,
+      "exportFormats": [],
+      "transform": {
+        "rotation": 0,
+        "flippedHorizontally": false,
+        "flippedVertically": false
+      },
+      "style": {
+        "type": "Style",
+        "id": "E9F5A32F-C299-473C-BE70-B080379D290B",
+        "opacity": 1,
+        "blendingMode": "Normal",
+        "borderOptions": {
+          "startArrowhead": "None",
+          "endArrowhead": "None",
+          "dashPattern": [],
+          "lineEnd": "Butt",
+          "lineJoin": "Miter"
+        },
+        "blur": {
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "motionAngle": 0,
+          "radius": 10,
+          "enabled": false,
+          "blurType": "Gaussian"
+        },
+        "fills": [
+          {
+            "fillType": "Color",
+            "color": "#ffffffff",
+            "gradient": {
+              "gradientType": "Linear",
+              "from": {
+                "x": 0.5,
+                "y": 0
+              },
+              "to": {
+                "x": 0.5,
+                "y": 1
+              },
+              "aspectRatio": 0,
+              "stops": [
+                {
+                  "position": 0,
+                  "color": "#ffffffff"
+                },
+                {
+                  "position": 1,
+                  "color": "#000000ff"
+                }
+              ]
+            },
+            "pattern": {
+              "patternType": "Fill",
+              "image": null,
+              "tileScale": 1
+            },
+            "enabled": true
+          }
+        ],
+        "borders": [],
+        "shadows": [],
+        "innerShadows": [],
+        "styleType": "Layer"
+      },
+      "sharedStyleId": null,
+      "shapeType": "Rectangle",
+      "points": [
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 6,
+          "curveFrom": {
+            "x": 0,
+            "y": 0
+          },
+          "curveTo": {
+            "x": 0,
+            "y": 0
+          },
+          "point": {
+            "x": 0,
+            "y": 0
+          },
+          "pointType": "Straight"
+        },
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 6,
+          "curveFrom": {
+            "x": 1,
+            "y": 0
+          },
+          "curveTo": {
+            "x": 1,
+            "y": 0
+          },
+          "point": {
+            "x": 1,
+            "y": 0
+          },
+          "pointType": "Straight"
+        },
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 6,
+          "curveFrom": {
+            "x": 1,
+            "y": 1
+          },
+          "curveTo": {
+            "x": 1,
+            "y": 1
+          },
+          "point": {
+            "x": 1,
+            "y": 1
+          },
+          "pointType": "Straight"
+        },
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 6,
+          "curveFrom": {
+            "x": 0,
+            "y": 1
+          },
+          "curveTo": {
+            "x": 0,
+            "y": 1
+          },
+          "point": {
+            "x": 0,
+            "y": 1
+          },
+          "pointType": "Straight"
+        }
+      ],
+      "closed": true
+    },
+    {
+      "type": "ShapePath",
+      "id": "4ADD9D02-7EAB-4B0E-B274-042DF68E7C16",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 351,
+        "height": 48
+      },
+      "name": "矩形",
+      "selected": false,
+      "hidden": false,
+      "locked": false,
+      "exportFormats": [],
+      "transform": {
+        "rotation": 0,
+        "flippedHorizontally": false,
+        "flippedVertically": false
+      },
+      "style": {
+        "type": "Style",
+        "id": "67522757-31AF-4BA9-8B2B-FA26D0789F26",
+        "opacity": 1,
+        "blendingMode": "Normal",
+        "borderOptions": {
+          "startArrowhead": "None",
+          "endArrowhead": "None",
+          "dashPattern": [],
+          "lineEnd": "Butt",
+          "lineJoin": "Miter"
+        },
+        "blur": {
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "motionAngle": 0,
+          "radius": 10,
+          "enabled": false,
+          "blurType": "Gaussian"
+        },
+        "fills": [
+          {
+            "fillType": "Color",
+            "color": "#ffffffff",
+            "gradient": {
+              "gradientType": "Linear",
+              "from": {
+                "x": 0.5,
+                "y": 0
+              },
+              "to": {
+                "x": 0.5,
+                "y": 1
+              },
+              "aspectRatio": 0,
+              "stops": [
+                {
+                  "position": 0,
+                  "color": "#ffffffff"
+                },
+                {
+                  "position": 1,
+                  "color": "#000000ff"
+                }
+              ]
+            },
+            "pattern": {
+              "patternType": "Fill",
+              "image": null,
+              "tileScale": 1
+            },
+            "enabled": false
+          }
+        ],
+        "borders": [],
+        "shadows": [],
+        "innerShadows": [],
+        "styleType": "Layer"
+      },
+      "sharedStyleId": null,
+      "shapeType": "Rectangle",
+      "points": [
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 0,
+          "curveFrom": {
+            "x": 0,
+            "y": 0
+          },
+          "curveTo": {
+            "x": 0,
+            "y": 0
+          },
+          "point": {
+            "x": 0,
+            "y": 0
+          },
+          "pointType": "Straight"
+        },
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 0,
+          "curveFrom": {
+            "x": 1,
+            "y": 0
+          },
+          "curveTo": {
+            "x": 1,
+            "y": 0
+          },
+          "point": {
+            "x": 1,
+            "y": 0
+          },
+          "pointType": "Straight"
+        },
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 0,
+          "curveFrom": {
+            "x": 1,
+            "y": 1
+          },
+          "curveTo": {
+            "x": 1,
+            "y": 1
+          },
+          "point": {
+            "x": 1,
+            "y": 1
+          },
+          "pointType": "Straight"
+        },
+        {
+          "type": "CurvePoint",
+          "cornerRadius": 0,
+          "curveFrom": {
+            "x": 0,
+            "y": 1
+          },
+          "curveTo": {
+            "x": 0,
+            "y": 1
+          },
+          "point": {
+            "x": 0,
+            "y": 1
+          },
+          "pointType": "Straight"
+        }
+      ],
+      "closed": true
+    },
+    {
+      "type": "Group",
+      "id": "F707BFEC-147D-421E-9357-3C40B2796334",
+      "frame": {
+        "x": 12,
+        "y": 48,
+        "width": 160,
+        "height": 96
+      },
+      "name": "编组 3备份 2",
+      "selected": false,
+      "hidden": false,
+      "locked": false,
+      "exportFormats": [],
+      "transform": {
+        "rotation": 0,
+        "flippedHorizontally": false,
+        "flippedVertically": false
+      },
+      "style": {
+        "type": "Style",
+        "id": "29BDBD3E-F5A5-457D-A453-ED5DFEFB74F7",
+        "opacity": 1,
+        "blendingMode": "Normal",
+        "borderOptions": {
+          "startArrowhead": "None",
+          "endArrowhead": "None",
+          "dashPattern": [],
+          "lineEnd": "Butt",
+          "lineJoin": "Miter"
+        },
+        "blur": {
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "motionAngle": 0,
+          "radius": 10,
+          "enabled": false,
+          "blurType": "Gaussian"
+        },
+        "fills": [],
+        "borders": [],
+        "shadows": [],
+        "innerShadows": [],
+        "styleType": "Layer"
+      },
+      "sharedStyleId": null,
+      "layers": [
+        {
+          "type": "ShapePath",
+          "id": "06253B61-2B17-4B14-991B-A315EF3AAB9E",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 160,
+            "height": 96
+          },
+          "name": "矩形",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "DD0FDE34-9D42-4684-BA6D-FF3EF8197558",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [
+              {
+                "fillType": "Gradient",
+                "color": "#3276ffff",
+                "gradient": {
+                  "gradientType": "Linear",
+                  "from": {
+                    "x": 0.9999999999999998,
+                    "y": 0.49999999999999983
+                  },
+                  "to": {
+                    "x": -2.220446049250313e-16,
+                    "y": 0.5000000000000002
+                  },
+                  "aspectRatio": 0,
+                  "stops": [
+                    {
+                      "position": 0,
+                      "color": "#5bacfcff"
+                    },
+                    {
+                      "position": 1,
+                      "color": "#3c75faff"
+                    }
+                  ]
+                },
+                "pattern": {
+                  "patternType": "Fill",
+                  "image": null,
+                  "tileScale": 1
+                },
+                "enabled": true
+              }
+            ],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": "14AFF8B2-5D68-4B71-80F7-8CB5B399E124",
+          "shapeType": "Rectangle",
+          "points": [
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 0,
+                "y": 0
+              },
+              "curveTo": {
+                "x": 0,
+                "y": 0
+              },
+              "point": {
+                "x": 0,
+                "y": 0
+              },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 1,
+                "y": 0
+              },
+              "curveTo": {
+                "x": 1,
+                "y": 0
+              },
+              "point": {
+                "x": 1,
+                "y": 0
+              },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 1,
+                "y": 1
+              },
+              "curveTo": {
+                "x": 1,
+                "y": 1
+              },
+              "point": {
+                "x": 1,
+                "y": 1
+              },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 0,
+                "y": 1
+              },
+              "curveTo": {
+                "x": 0,
+                "y": 1
+              },
+              "point": {
+                "x": 0,
+                "y": 1
+              },
+              "pointType": "Straight"
+            }
+          ],
+          "closed": true
+        },
+        {
+          "type": "Text",
+          "id": "34A14BA0-C054-40EE-9612-A0441ACB03BD",
+          "frame": {
+            "x": 12,
+            "y": 16,
+            "width": 146,
+            "height": 14
+          },
+          "name": "黑金VIP黄金卡",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "89C91249-9163-4952-A023-13DCF477ED79",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 14,
+            "paragraphSpacing": 0,
+            "textColor": "#ffffffff",
+            "fontSize": 14,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "黑金VIP黄金卡",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": true
+        },
+        {
+          "type": "Text",
+          "id": "FA5D3307-4A90-4A79-A1AC-3FD880B2F114",
+          "frame": {
+            "x": 12,
+            "y": 38,
+            "width": 48,
+            "height": 16
+          },
+          "name": "¥8848",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "5846F6D6-54DA-4A9F-87F4-E665F19FE877",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 16,
+            "paragraphSpacing": 0,
+            "textColor": "#fff684ff",
+            "fontSize": 16,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "¥8848",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        },
+        {
+          "type": "Text",
+          "id": "2DD452F3-5A72-4AF5-9D54-4459D11CD21D",
+          "frame": {
+            "x": 12,
+            "y": 72,
+            "width": 48,
+            "height": 12
+          },
+          "name": "永久有效",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "17975749-2012-4E45-A71F-62ECDEA0FDA7",
+            "opacity": 0.5,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 12,
+            "paragraphSpacing": 0,
+            "textColor": "#ffffffff",
+            "fontSize": 12,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "永久有效",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "8F6E5983-D001-4306-9687-E4EF1E528136",
+      "frame": {
+        "x": 179,
+        "y": 48,
+        "width": 160,
+        "height": 96
+      },
+      "name": "编组 3备份 10",
+      "selected": false,
+      "hidden": false,
+      "locked": false,
+      "exportFormats": [],
+      "transform": {
+        "rotation": 0,
+        "flippedHorizontally": false,
+        "flippedVertically": false
+      },
+      "style": {
+        "type": "Style",
+        "id": "A90A6C72-6FE2-4579-BBFE-1E615DD82331",
+        "opacity": 1,
+        "blendingMode": "Normal",
+        "borderOptions": {
+          "startArrowhead": "None",
+          "endArrowhead": "None",
+          "dashPattern": [],
+          "lineEnd": "Butt",
+          "lineJoin": "Miter"
+        },
+        "blur": {
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "motionAngle": 0,
+          "radius": 10,
+          "enabled": false,
+          "blurType": "Gaussian"
+        },
+        "fills": [],
+        "borders": [],
+        "shadows": [],
+        "innerShadows": [],
+        "styleType": "Layer"
+      },
+      "sharedStyleId": null,
+      "layers": [
+        {
+          "type": "ShapePath",
+          "id": "F20876B4-4A4F-46BD-B47D-9E2105BA0AB2",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 160,
+            "height": 96
+          },
+          "name": "矩形",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "CD0FD68B-B7EA-46A1-B0D2-B7DAA928BA4B",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [
+              {
+                "fillType": "Gradient",
+                "color": "#3276ffff",
+                "gradient": {
+                  "gradientType": "Linear",
+                  "from": {
+                    "x": 0.9999999999999998,
+                    "y": 0.49999999999999983
+                  },
+                  "to": {
+                    "x": -2.220446049250313e-16,
+                    "y": 0.5000000000000002
+                  },
+                  "aspectRatio": 0,
+                  "stops": [
+                    {
+                      "position": 0,
+                      "color": "#5bacfcff"
+                    },
+                    {
+                      "position": 1,
+                      "color": "#3c75faff"
+                    }
+                  ]
+                },
+                "pattern": {
+                  "patternType": "Fill",
+                  "image": null,
+                  "tileScale": 1
+                },
+                "enabled": true
+              }
+            ],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": "14AFF8B2-5D68-4B71-80F7-8CB5B399E124",
+          "shapeType": "Rectangle",
+          "points": [
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 0,
+                "y": 0
+              },
+              "curveTo": {
+                "x": 0,
+                "y": 0
+              },
+              "point": {
+                "x": 0,
+                "y": 0
+              },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 1,
+                "y": 0
+              },
+              "curveTo": {
+                "x": 1,
+                "y": 0
+              },
+              "point": {
+                "x": 1,
+                "y": 0
+              },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 1,
+                "y": 1
+              },
+              "curveTo": {
+                "x": 1,
+                "y": 1
+              },
+              "point": {
+                "x": 1,
+                "y": 1
+              },
+              "pointType": "Straight"
+            },
+            {
+              "type": "CurvePoint",
+              "cornerRadius": 6,
+              "curveFrom": {
+                "x": 0,
+                "y": 1
+              },
+              "curveTo": {
+                "x": 0,
+                "y": 1
+              },
+              "point": {
+                "x": 0,
+                "y": 1
+              },
+              "pointType": "Straight"
+            }
+          ],
+          "closed": true
+        },
+        {
+          "type": "Text",
+          "id": "5E9B4C13-5C07-45D6-9207-69F8104B17EA",
+          "frame": {
+            "x": 12,
+            "y": 16,
+            "width": 146,
+            "height": 14
+          },
+          "name": "粉丝珍爱卡",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "45A43734-2253-48B9-953D-3A6398B55C44",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 14,
+            "paragraphSpacing": 0,
+            "textColor": "#ffffffff",
+            "fontSize": 14,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "粉丝珍爱卡",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": true
+        },
+        {
+          "type": "Text",
+          "id": "D9AD56A6-73B8-4264-8E3E-DC976A78D728",
+          "frame": {
+            "x": 12,
+            "y": 38,
+            "width": 39,
+            "height": 16
+          },
+          "name": "¥800",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "34A1B283-1F9E-4BCF-A5FC-3A9269ACAC1A",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 16,
+            "paragraphSpacing": 0,
+            "textColor": "#fff684ff",
+            "fontSize": 16,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "¥800",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        },
+        {
+          "type": "Text",
+          "id": "E6A972A0-655A-4F2C-ADDE-43FA6B7714BF",
+          "frame": {
+            "x": 12,
+            "y": 72,
+            "width": 70,
+            "height": 12
+          },
+          "name": "365天内有效",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "225ACC8F-6D21-4124-9EA4-D7B6996BBC2A",
+            "opacity": 0.5,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": 0,
+            "lineHeight": 12,
+            "paragraphSpacing": 0,
+            "textColor": "#ffffffff",
+            "fontSize": 12,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "365天内有效",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "B89849EC-366A-4541-9D95-D3F7C249185B",
+      "frame": {
+        "x": 12,
+        "y": 16,
+        "width": 327,
+        "height": 16
+      },
+      "name": "编组 5备份 3",
+      "selected": false,
+      "hidden": false,
+      "locked": false,
+      "exportFormats": [],
+      "transform": {
+        "rotation": 0,
+        "flippedHorizontally": false,
+        "flippedVertically": false
+      },
+      "style": {
+        "type": "Style",
+        "id": "3E2601F4-B9EA-4C27-A6BA-E7E5D0123724",
+        "opacity": 1,
+        "blendingMode": "Normal",
+        "borderOptions": {
+          "startArrowhead": "None",
+          "endArrowhead": "None",
+          "dashPattern": [],
+          "lineEnd": "Butt",
+          "lineJoin": "Miter"
+        },
+        "blur": {
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "motionAngle": 0,
+          "radius": 10,
+          "enabled": false,
+          "blurType": "Gaussian"
+        },
+        "fills": [],
+        "borders": [],
+        "shadows": [],
+        "innerShadows": [],
+        "styleType": "Layer"
+      },
+      "sharedStyleId": null,
+      "layers": [
+        {
+          "type": "Text",
+          "id": "5A4443D1-4B3E-48A3-9731-725F999BC74B",
+          "frame": {
+            "x": 0,
+            "y": 0,
+            "width": 48,
+            "height": 16
+          },
+          "name": "充值卡",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "2501A1C5-6046-4C26-BAFC-FDDE156CACC0",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Text",
+            "alignment": "left",
+            "verticalAlignment": "top",
+            "kerning": null,
+            "lineHeight": 16,
+            "paragraphSpacing": 0,
+            "textColor": "#333333ff",
+            "fontSize": 16,
+            "textTransform": "none",
+            "fontFamily": "PingFang SC",
+            "fontWeight": 5
+          },
+          "sharedStyleId": null,
+          "text": "充值卡",
+          "lineSpacing": "constantBaseline",
+          "fixedWidth": false
+        },
+        {
+          "type": "Group",
+          "id": "D0D48107-47E0-4A32-8C09-336A367B8BBA",
+          "frame": {
+            "x": 257,
+            "y": 2,
+            "width": 70,
+            "height": 12
+          },
+          "name": "编组 4",
+          "selected": false,
+          "hidden": false,
+          "locked": false,
+          "exportFormats": [],
+          "transform": {
+            "rotation": 0,
+            "flippedHorizontally": false,
+            "flippedVertically": false
+          },
+          "style": {
+            "type": "Style",
+            "id": "CFBB225C-F1BC-4069-9396-6B43CA32D27B",
+            "opacity": 1,
+            "blendingMode": "Normal",
+            "borderOptions": {
+              "startArrowhead": "None",
+              "endArrowhead": "None",
+              "dashPattern": [],
+              "lineEnd": "Butt",
+              "lineJoin": "Miter"
+            },
+            "blur": {
+              "center": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "motionAngle": 0,
+              "radius": 10,
+              "enabled": false,
+              "blurType": "Gaussian"
+            },
+            "fills": [],
+            "borders": [],
+            "shadows": [],
+            "innerShadows": [],
+            "styleType": "Layer"
+          },
+          "sharedStyleId": null,
+          "layers": [
+            {
+              "type": "Text",
+              "id": "F3D96222-0184-4CF5-ACDF-EB146E4AC92F",
+              "frame": {
+                "x": 0,
+                "y": 0,
+                "width": 60,
+                "height": 12
+              },
+              "name": "更多充值卡",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "CB9E4CDC-5FDC-481F-80CB-CFC6B6BBD58E",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Text",
+                "alignment": "right",
+                "verticalAlignment": "top",
+                "kerning": null,
+                "lineHeight": 12,
+                "paragraphSpacing": 0,
+                "textColor": "#b3b3b3ff",
+                "fontSize": 12,
+                "textTransform": "none",
+                "fontFamily": "PingFang SC",
+                "fontWeight": 5
+              },
+              "sharedStyleId": null,
+              "text": "更多充值卡",
+              "lineSpacing": "constantBaseline",
+              "fixedWidth": false
+            },
+            {
+              "type": "SymbolInstance",
+              "id": "EDFB5968-CB0E-41AC-81AD-1871EE155300",
+              "frame": {
+                "x": 66,
+                "y": 1,
+                "width": 4,
+                "height": 10
+              },
+              "name": "right_arrow",
+              "selected": false,
+              "hidden": false,
+              "locked": false,
+              "exportFormats": [],
+              "transform": {
+                "rotation": 0,
+                "flippedHorizontally": false,
+                "flippedVertically": false
+              },
+              "style": {
+                "type": "Style",
+                "id": "F99FEB87-E3CD-4957-9F4E-14C68E9D6EF8",
+                "opacity": 1,
+                "blendingMode": "Normal",
+                "borderOptions": {
+                  "startArrowhead": "None",
+                  "endArrowhead": "None",
+                  "dashPattern": [],
+                  "lineEnd": "Butt",
+                  "lineJoin": "Miter"
+                },
+                "blur": {
+                  "center": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "motionAngle": 0,
+                  "radius": 10,
+                  "enabled": false,
+                  "blurType": "Gaussian"
+                },
+                "fills": [],
+                "borders": [],
+                "shadows": [],
+                "innerShadows": [],
+                "styleType": "Layer"
+              },
+              "sharedStyleId": null,
+              "symbolId": "6EC0EAE6-9D95-4409-86D6-C3500FEB0C91",
+              "overrides": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

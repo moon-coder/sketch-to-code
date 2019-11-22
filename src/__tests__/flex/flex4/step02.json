@@ -1,0 +1,95 @@
+{
+  "compare": {
+    "type": "Block",
+    "style": { "flexDirection": "column" },
+    "children": [
+      {
+        "type": "Block",
+        "style": { "flexDirection": "row" },
+        "children": [
+          { "type": "Text", "attrs": { "text": "充值卡" }},
+          {
+            "type": "Block",
+            "style": { "flexDirection": "row" },
+            "children": [
+              { "type": "Text", "attrs": { "text": "更多充值卡" }},
+              { "type": "Image"}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Block",
+        "style": { "flexDirection": "row" },
+        "children": [
+          {
+            "type": "Block",
+            "style": { "flexDirection": "column" },
+            "children": [
+              { "type": "Text", "attrs": { "text": "黑金VIP黄金卡" }},
+              { "type": "Text", "attrs": { "text": "¥8848" }},
+              { "type": "Text", "attrs": { "text": "永久有效" }}
+            ]},
+          {
+            "type": "Block",
+            "style": { "flexDirection": "column" },
+            "children": [
+              { "type": "Text", "attrs": { "text": "粉丝珍爱卡" }},
+              { "type": "Text", "attrs": { "text": "¥800" }},
+              { "type": "Text", "attrs": { "text": "365天内有效" }}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "full": {
+    "type": "Block",
+    "style": { "flexDirection": "column" },
+    "frame": { "x": 12, "y": 236, "width": 351, "height": 156},
+    "children": [
+      {
+        "type": "Block",
+        "style": { "flexDirection": "row" },
+        "frame": { "x": 12, "y": 236, "width": 351, "height": 48},
+        "children": [
+          { "type": "Text", "attrs": { "text": "充值卡" }, "frame": { "x": 24, "y": 252, "width": 48, "height": 16}, "style": { "fontSize": 16, "color": "#333333ff"}},
+          {
+            "type": "Block",
+            "style": { "flexDirection": "row" },
+            "frame": { "x": 281, "y": 254, "width": 70, "height": 12},
+            "children": [
+              { "type": "Text", "attrs": { "text": "更多充值卡" }, "frame": { "x": 281, "y": 254, "width": 60, "height": 12}, "style": { "fontSize": 12, "color": "#b3b3b3ff"}},
+              { "type": "Image", "attrs": { "src": "./img/img1.png"}, "frame": { "x": 347, "y": 255, "width": 4, "height": 10}, "style": { "width": 4, "height": 10 }}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Block",
+        "style": { "flexDirection": "row" },
+        "children": [
+          {
+            "type": "Block",
+            "style": { "flexDirection": "column", "backgroundColor": "#5BACFC" },
+            "frame": { "x": 24, "y": 284, "width": 160, "height": 96},
+            "children": [
+              { "type": "Text", "attrs": { "text": "黑金VIP黄金卡" }, "frame": { "x": 36, "y": 300, "width": 146, "height": 14}, "style": { "fontSize": 14, "color": "#ffffffff"}},
+              { "type": "Text", "attrs": { "text": "¥8848" }, "frame": {"x": 36, "y": 322, "width": 48, "height": 16}, "style": {"fontSize": 16, "color": "#fff684ff"}},
+              { "type": "Text", "attrs": { "text": "永久有效" }, "frame": { "x": 36, "y": 356, "width": 48, "height": 12}, "style": { "opacity": 0.5, "fontSize": 12, "color": "#ffffffff" }}
+            ]},
+          {
+            "type": "Block",
+            "style": { "flexDirection": "column", "backgroundColor": "#5BACFC" },
+            "frame": { "x": 191, "y": 284, "width": 160, "height": 96},
+            "children": [
+              { "type": "Text", "attrs": { "text": "粉丝珍爱卡" }, "frame": { "x": 203, "y": 300, "width": 146, "height": 14}, "style": { "fontSize": 14, "color": "#ffffffff"}},
+              { "type": "Text", "attrs": { "text": "¥800" }, "frame": {"x": 203, "y": 322, "width": 39, "height": 16 }, "style": { "fontSize": 16, "color": "#fff684ff"}},
+              { "type": "Text", "attrs": { "text": "365天内有效" }, "frame": { "x": 203, "y": 356, "width": 70, "height": 12}, "style": { "opacity": 0.5, "fontSize": 12, "color": "#ffffffff"}}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
