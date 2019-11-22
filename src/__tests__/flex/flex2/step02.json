@@ -1,0 +1,532 @@
+{
+  "type": "Block",
+  "frame": {
+    "x": 12,
+    "y": 404,
+    "width": 351,
+    "height": 464
+  },
+  "style": {
+    "borderColor": "#979797ff",
+    "borderWidth": 1,
+    "backgroundColor": "#ffffffff",
+    "opacity": 1,
+    "flexDirection": "column"
+  },
+  "children": [
+    {
+      "type": "Block",
+      "frame": {
+        "x": 12,
+        "y": 404,
+        "width": 351,
+        "height": 48
+      },
+      "style": {
+        "flexDirection": "row"
+      },
+      "attrs": {},
+      "children": [
+        {
+          "type": "Block",
+          "frame": {
+            "x": 12,
+            "y": 404,
+            "width": 351,
+            "height": 48
+          },
+          "style": {
+            "backgroundColor": "#ffffffff",
+            "opacity": 1,
+            "flexDirection": "row"
+          },
+          "children": [
+            {
+              "type": "Text",
+              "frame": {
+                "x": 24,
+                "y": 420,
+                "width": 64,
+                "height": 16
+              },
+              "style": {
+                "opacity": 1,
+                "fontSize": 16,
+                "color": "#333333ff"
+              },
+              "children": [],
+              "attrs": {
+                "text": "为您推荐"
+              },
+              "extraInfo": {}
+            }
+          ],
+          "attrs": {},
+          "extraInfo": {}
+        }
+      ]
+    },
+    {
+      "type": "Block",
+      "frame": {
+        "x": 24,
+        "y": 452,
+        "width": 327,
+        "height": 404
+      },
+      "style": {
+        "flexDirection": "column"
+      },
+      "attrs": {},
+      "children": [
+        {
+          "type": "Block",
+          "frame": {
+            "x": 24,
+            "y": 452,
+            "width": 327,
+            "height": 356
+          },
+          "style": {
+            "flexDirection": "column"
+          },
+          "attrs": {},
+          "children": [
+            {
+              "type": "Block",
+              "frame": {
+                "x": 24,
+                "y": 452,
+                "width": 327,
+                "height": 172
+              },
+              "style": {
+                "flexDirection": "column"
+              },
+              "attrs": {},
+              "children": [
+                {
+                  "type": "Block",
+                  "frame": {
+                    "x": 24,
+                    "y": 452,
+                    "width": 327,
+                    "height": 80
+                  },
+                  "style": {
+                    "flexDirection": "row"
+                  },
+                  "attrs": {},
+                  "children": [
+                    {
+                      "type": "Image",
+                      "frame": {
+                        "x": 24,
+                        "y": 452,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "style": {
+                        "opacity": 1,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "children": [],
+                      "attrs": {
+                        "src": "./img/img1.png"
+                      },
+                      "extraInfo": {}
+                    },
+                    {
+                      "type": "Block",
+                      "frame": {
+                        "x": 116,
+                        "y": 456,
+                        "width": 235,
+                        "height": 72
+                      },
+                      "style": {
+                        "flexDirection": "column"
+                      },
+                      "attrs": {},
+                      "children": [
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 456,
+                            "width": 235,
+                            "height": 36
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 14,
+                            "color": "#333333ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下无敌狗啦啦…"
+                          },
+                          "extraInfo": {}
+                        },
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 512,
+                            "width": 81,
+                            "height": 16
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 16,
+                            "color": "#ff6600ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "¥20～¥160"
+                          },
+                          "extraInfo": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Block",
+                  "frame": {
+                    "x": 24,
+                    "y": 544,
+                    "width": 327,
+                    "height": 80
+                  },
+                  "style": {
+                    "flexDirection": "row"
+                  },
+                  "attrs": {},
+                  "children": [
+                    {
+                      "type": "Image",
+                      "frame": {
+                        "x": 24,
+                        "y": 544,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "style": {
+                        "opacity": 1,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "children": [],
+                      "attrs": {
+                        "src": "./img/img3.png"
+                      },
+                      "extraInfo": {}
+                    },
+                    {
+                      "type": "Block",
+                      "frame": {
+                        "x": 116,
+                        "y": 548,
+                        "width": 235,
+                        "height": 72
+                      },
+                      "style": {
+                        "flexDirection": "column"
+                      },
+                      "attrs": {},
+                      "children": [
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 548,
+                            "width": 235,
+                            "height": 18
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 14,
+                            "color": "#333333ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "大型犬野兽派洗剪吹A套餐"
+                          },
+                          "extraInfo": {}
+                        },
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 604,
+                            "width": 73,
+                            "height": 16
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 16,
+                            "color": "#ff6600ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "¥20～¥75"
+                          },
+                          "extraInfo": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Block",
+              "frame": {
+                "x": 24,
+                "y": 636,
+                "width": 327,
+                "height": 172
+              },
+              "style": {
+                "flexDirection": "column"
+              },
+              "attrs": {},
+              "children": [
+                {
+                  "type": "Block",
+                  "frame": {
+                    "x": 24,
+                    "y": 636,
+                    "width": 327,
+                    "height": 80
+                  },
+                  "style": {
+                    "flexDirection": "row"
+                  },
+                  "attrs": {},
+                  "children": [
+                    {
+                      "type": "Image",
+                      "frame": {
+                        "x": 24,
+                        "y": 636,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "style": {
+                        "opacity": 1,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "children": [],
+                      "attrs": {
+                        "src": "./img/img2.png"
+                      },
+                      "extraInfo": {}
+                    },
+                    {
+                      "type": "Block",
+                      "frame": {
+                        "x": 116,
+                        "y": 640,
+                        "width": 235,
+                        "height": 72
+                      },
+                      "style": {
+                        "flexDirection": "column"
+                      },
+                      "attrs": {},
+                      "children": [
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 640,
+                            "width": 235,
+                            "height": 36
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 14,
+                            "color": "#333333ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "大型犬只野兽派洗剪吹，凶悍大叔专业洗狗12年，洗遍天下狗"
+                          },
+                          "extraInfo": {}
+                        },
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 696,
+                            "width": 81,
+                            "height": 16
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 16,
+                            "color": "#ff6600ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "¥20～¥160"
+                          },
+                          "extraInfo": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Block",
+                  "frame": {
+                    "x": 24,
+                    "y": 728,
+                    "width": 327,
+                    "height": 80
+                  },
+                  "style": {
+                    "flexDirection": "row"
+                  },
+                  "attrs": {},
+                  "children": [
+                    {
+                      "type": "Image",
+                      "frame": {
+                        "x": 24,
+                        "y": 728,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "style": {
+                        "opacity": 1,
+                        "width": 80,
+                        "height": 80
+                      },
+                      "children": [],
+                      "attrs": {
+                        "src": "./img/img4.png"
+                      },
+                      "extraInfo": {}
+                    },
+                    {
+                      "type": "Block",
+                      "frame": {
+                        "x": 116,
+                        "y": 732,
+                        "width": 235,
+                        "height": 72
+                      },
+                      "style": {
+                        "flexDirection": "column"
+                      },
+                      "attrs": {},
+                      "children": [
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 732,
+                            "width": 235,
+                            "height": 18
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 14,
+                            "color": "#333333ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "小型犬洗剪吹B套餐"
+                          },
+                          "extraInfo": {}
+                        },
+                        {
+                          "type": "Text",
+                          "frame": {
+                            "x": 116,
+                            "y": 788,
+                            "width": 73,
+                            "height": 16
+                          },
+                          "style": {
+                            "opacity": 1,
+                            "fontSize": 16,
+                            "color": "#ff6600ff"
+                          },
+                          "children": [],
+                          "attrs": {
+                            "text": "¥20～¥75"
+                          },
+                          "extraInfo": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Block",
+          "frame": {
+            "x": 24,
+            "y": 820,
+            "width": 327,
+            "height": 36
+          },
+          "style": {
+            "flexDirection": "row"
+          },
+          "attrs": {},
+          "children": [
+            {
+              "type": "Block",
+              "frame": {
+                "x": 24,
+                "y": 820,
+                "width": 327,
+                "height": 36
+              },
+              "style": {
+                "backgroundColor": "#fff2e7ff",
+                "opacity": 1,
+                "flexDirection": "row"
+              },
+              "children": [
+                {
+                  "type": "Text",
+                  "frame": {
+                    "x": 142.5,
+                    "y": 831,
+                    "width": 91,
+                    "height": 14
+                  },
+                  "style": {
+                    "opacity": 1,
+                    "fontSize": 14,
+                    "color": "#ff6600ff"
+                  },
+                  "children": [],
+                  "attrs": {
+                    "text": "更多服务/商品"
+                  },
+                  "extraInfo": {}
+                }
+              ],
+              "attrs": {},
+              "extraInfo": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "attrs": {},
+  "extraInfo": {}
+}
