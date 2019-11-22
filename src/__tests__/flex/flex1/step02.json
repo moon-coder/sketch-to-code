@@ -7,7 +7,7 @@
         "type": "Block",
         "style": { "flexDirection": "row" },
         "children": [
-          { "type": "Block" },
+          { "type": "Block"},
           { "type": "Text", "attrs": { "text": "卡项权益" }}
         ]
       },
@@ -45,6 +45,7 @@
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": { "x": 12, "y": 348, "width": 74, "height": 16},
         "children": [
           { "type": "Block", "frame": { "x": 12, "y": 348, "width": 2, "height": 16}, "style": {"flexDirection": "row", "backgroundColor": "#ff6600ff", "width": 2, "height": 16 }},
           { "type": "Text", "attrs": { "text": "卡项权益" }, "frame": { "x": 22, "y": 348, "width": 64, "height": 16 }, "style": { "fontSize": 16, "color": "#333333ff"}}
@@ -53,17 +54,19 @@
       {
         "type": "Block",
         "style": { "flexDirection": "row" },
+        "frame": { "x": 12, "y": 380, "width": 351, "height": 14},
         "children": [
           { "type": "Text", "attrs": { "text": "美容服务" }, "frame": { "x": 12, "y": 380, "width": 56, "height": 14 }, "style": { "fontSize": 14, "color": "#333333ff"}},
           { "type": "Text", "attrs": { "text": "×10" }, "frame": { "x": 340, "y": 380, "width": 23, "height": 14 }, "style": { "fontSize": 14, "color": "#333333ff"}}
         ]
       },
       { "type": "Text", "attrs": { "text": "凶悍大叔洗澡" }, "frame": { "x": 12, "y": 402, "width": 84, "height": 14}, "style": { "fontSize": 14, "color": "#a3a3a3ff"}},
-      { "type": "Text", "attrs": { "text": "温柔小姐姐做造型", "frame": { "x": 12, "y": 424, "width": 112, "height": 14}, "style": { "fontSize": 14, "color": "#a3a3a3ff"}}},
+      { "type": "Text", "attrs": { "text": "温柔小姐姐做造型"}, "frame": { "x": 12, "y": 424, "width": 112, "height": 14}, "style": { "fontSize": 14, "color": "#a3a3a3ff"}},
       { "type": "Text", "attrs": { "text": "精油美毛" }, "frame": {"x": 12, "y": 446, "width": 56, "height": 14}, "style": { "fontSize": 14, "color": "#a3a3a3ff"}},
       {
         "type": "Block",
         "style": { "flexDirection": "row"},
+        "frame": { "x": 12, "y": 476, "width": 351, "height": 14},
         "children": [
           { "type": "Text", "attrs": { "text": "清洁服务" }, "frame": { "x": 12, "y": 476, "width": 56, "height": 14}, "style": { "fontSize": 14, "color": "#333333ff"}},
           { "type": "Text", "attrs": { "text": "×10" }, "frame": { "x": 340, "y": 476, "width": 23, "height": 14}, "style": { "fontSize": 14, "color": "#333333ff"}}
