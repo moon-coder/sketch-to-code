@@ -10,9 +10,11 @@ import {
 import {IExtraInfo, IFrame, INode} from '../types';
 import * as uuid from 'uuid';
 import { exportImg } from './util';
-import { OutPutPath } from '../util';
 let sketch = require('sketch');
 const fs = require('@skpm/fs');
+const os = require('@skpm/os');
+const path = require('@skpm/path');
+const dialog = require('@skpm/dialog');
 
 interface NodeExtraInfo {
   //TODO 对应的imagePath也要记录下来;
@@ -29,6 +31,9 @@ interface NodeInfoRepo {
  * @returns {INode[]}
  */
 export default (layer?: Layer): INode[] => {
+
+  let OutPutPath  = path.join(os.tmpdir(),"moon-"+Date.now());
+
   if (!layer) {
     // 视觉元素提取
     const layers = sketch.getSelectedDocument().selectedLayers;
@@ -38,18 +43,32 @@ export default (layer?: Layer): INode[] => {
       throw new Error(msg);
     }
     //TODO 图片是怎么对应起来的
-    console.log(123123123123);
-    fs.writeFileSync(`${OutPutPath}/temp/origin.json`, JSON.stringify(layers));
-    console.log(123123123123);
+    fs.writeFileSync(`${OutPutPath}/origin.json`, JSON.stringify(layers));
     layer = layers.layers[0];
   }
 
   // 整体截图
   if(layer ) {
-    exportImg(layer);
+    exportImg(layer,OutPutPath);
   }
 
   const resultNodes: INode[] = [];
+
+  interface INodeInfo{
+    imageUrl?:string;
+    [name:string]:any;
+  }
+  //供页面生成使用的额外信息
+  let nodeInfoRepo:{[nodeId:string]:INodeInfo} ={
+  };
+
+  function setNodeInfo(nodeId:string,nodeInfo:Partial<INodeInfo>){
+      if(!nodeInfoRepo[nodeId]){
+        nodeInfoRepo[nodeId]={}
+      }
+
+    nodeInfoRepo[nodeId]={...nodeInfoRepo[nodeId],...nodeInfo}
+  }
 
   const walk = (
     layer: Layer,
@@ -84,7 +103,8 @@ export default (layer?: Layer): INode[] => {
         || layer.type === 'Group' && layer.name.endsWith('-合并')
         || layer.type === 'SymbolInstance'
     ) {
-      layerImgSrc = exportImg(layer);
+      layerImgSrc = exportImg(layer,OutPutPath);
+      setNodeInfo(layer.id,{imageUrl:layerImgSrc})
     }
 
     if (!['Artboard','Group'].includes(layer.type) || layerImgSrc) {
@@ -188,7 +208,14 @@ export default (layer?: Layer): INode[] => {
     }
   }
   //beg
-
+  fs.writeFileSync(`${OutPutPath}/extraInfo.json`, JSON.stringify(nodeInfoRepo));
+  dialog.showMessageBox({
+    type:"info",
+    title:"导出成功",
+    // buttons:["nothing"],
+    detail:"使用说明:",
+    message:`输出目录:  ${ OutPutPath }`
+  })
   return resultNodes;
 };
 
@@ -211,8 +238,8 @@ const layerToNode = (layer: Layer, absFrame: IFrame): INode => {
     attrs: {className: id},
   };
   node.type = layerType(layer);
-  layerStyle(layer, node);
-  node.extraInfo=layerExtraInfo(layer);
+  // layerStyle(layer, node);
+  // node.extraInfo=layerExtraInfo(layer);
   node.frame = absFrame;
   node.points = calcNodeCoords(node);
   node.children = [];
@@ -261,7 +288,7 @@ const layerType = (layer: Layer): 'Block' | 'Image' | 'Text' => {
 const layerStyle = (layer: Layer, node: INode) => {
   let style: IStyle = {};
   // 1.边框
-  if(layer.style){
+  if(layer.style && layer.style.borders){
 
     const border: Border = layer.style.borders[0];
     if (border) {

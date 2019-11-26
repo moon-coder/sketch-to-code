@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "test": "jest -u",
-    "build": "skpm-build ",
+    "build": "tsc && skpm-build ",
     "watch": "skpm-build --watch & tsc --watch",
     "start": "skpm-build --watch --run"
   },
@@ -21,7 +21,10 @@
     "sketch-assets-file": "sketch-assets/icons.sketch"
   },
   "dependencies": {
-    "@skpm/fs": "^0.2.5"
+    "@skpm/dialog": "^0.4.0",
+    "@skpm/fs": "^0.2.5",
+    "@skpm/os": "^0.1.1",
+    "@skpm/path": "^0.1.4"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.6.0",
