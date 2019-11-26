@@ -10,29 +10,31 @@ export const exportImg = (layer: Layer,OutPutPath:string): string => {
   });
   slice.parent = layer.parent;
 
-  /**
-   * 切片导出
-   */
-  const sliceImg = ((): Function => {
-    let imgIdx = 0;
-    return (slice: Slice): string => {
-      const imgName = `img${imgIdx++}`;
-      slice.name = imgName;
-      slice.exportFormats = [
-        {
-          fileFormat: 'png',
-          prefix: imgName,
-          suffix: 'png',
-          size: '2x',
-        },
-      ];
-      Sketch.export(slice, {
-        formats: 'png',
-        output: `${OutPutPath}/img`,
-      });
-      slice.remove();
-      return `./img/${imgName}.png`;
-    };
-  })();
-  return sliceImg(slice);
+
+  return sliceImg(slice,OutPutPath);
 }
+
+/**
+ * 切片导出
+ */
+const sliceImg = ((): Function => {
+  let imgIdx = 0;
+  return (slice: Slice,OutPutPath:string): string => {
+    const imgName = `img${imgIdx++}`;
+    slice.name = imgName;
+    slice.exportFormats = [
+      {
+        fileFormat: 'png',
+        prefix: imgName,
+        suffix: 'png',
+        size: '2x',
+      },
+    ];
+    Sketch.export(slice, {
+      formats: 'png',
+      output: `${OutPutPath}/img`,
+    });
+    slice.remove();
+    return `./img/${imgName}.png`;
+  };
+})();

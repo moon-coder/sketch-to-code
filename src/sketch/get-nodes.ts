@@ -33,7 +33,7 @@ interface NodeInfoRepo {
 export default (layer?: Layer): INode[] => {
 
   let OutPutPath  = path.join(os.tmpdir(),"moon-"+Date.now());
-
+  fs.mkdirSync(OutPutPath);
   if (!layer) {
     // 视觉元素提取
     const layers = sketch.getSelectedDocument().selectedLayers;
