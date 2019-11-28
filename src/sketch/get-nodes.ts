@@ -25,6 +25,7 @@ interface NodeInfoRepo {
   [path: string]: NodeExtraInfo;
 }
 
+
 /**
  * 把节点打平, 全部以绝对定位处理
  * @param {Layer} layer
@@ -43,7 +44,7 @@ export default (layer?: Layer): INode[] => {
       throw new Error(msg);
     }
     //TODO 图片是怎么对应起来的
-    fs.writeFileSync(`${OutPutPath}/origin.json`, JSON.stringify(layers));
+    fs.writeFileSync(`${OutPutPath}/origin.json`, JSON.stringify(layers,null,2));
     layer = layers.layers[0];
   }
 
@@ -52,6 +53,7 @@ export default (layer?: Layer): INode[] => {
     exportImg(layer,OutPutPath);
   }
 
+  var document = sketch.getSelectedDocument();
   const resultNodes: INode[] = [];
 
   interface INodeInfo{
@@ -59,15 +61,15 @@ export default (layer?: Layer): INode[] => {
     [name:string]:any;
   }
   //供页面生成使用的额外信息
-  let nodeInfoRepo:{[nodeId:string]:INodeInfo} ={
+  let nodeExtraInfo:{[nodeId:string]:INodeInfo} ={
   };
 
   function setNodeInfo(nodeId:string,nodeInfo:Partial<INodeInfo>){
-      if(!nodeInfoRepo[nodeId]){
-        nodeInfoRepo[nodeId]={}
+      if(!nodeExtraInfo[nodeId]){
+        nodeExtraInfo[nodeId]={}
       }
 
-    nodeInfoRepo[nodeId]={...nodeInfoRepo[nodeId],...nodeInfo}
+    nodeExtraInfo[nodeId]={...nodeExtraInfo[nodeId],...nodeInfo}
   }
 
   const walk = (
@@ -208,7 +210,12 @@ export default (layer?: Layer): INode[] => {
     }
   }
   //beg
-  fs.writeFileSync(`${OutPutPath}/extraInfo.json`, JSON.stringify(nodeInfoRepo));
+  console.log('beg extraInfo');
+  fs.writeFileSync(`${OutPutPath}/extraInfo.json`, JSON.stringify({
+    nodeExtraInfo,
+    allSymbols:document.getSymbols()
+  },null,2));
+  console.log('end extraInfo');
   dialog.showMessageBox({
     type:"info",
     title:"导出成功",
