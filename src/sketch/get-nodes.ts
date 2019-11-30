@@ -34,9 +34,18 @@ export default (layer?: Layer): INode[] => {
 
   let OutPutPath  = path.join(os.tmpdir(),"moon-"+Date.now());
   fs.mkdirSync(OutPutPath);
+
+  let width ;
   if (!layer) {
     // 视觉元素提取
-    const layers = sketch.getSelectedDocument().selectedLayers;
+    let dom = sketch.getSelectedDocument();
+   let selectPage =  dom.selectedPage;
+   // console.log('dom::',dom)
+   // console.log('page::',!!selectPage,selectPage.name)
+   // console.log('artBoard::',selectPage.layers.length,selectPage.layers[0].frame,selectPage.layers[0].name)
+    width = selectPage.layers[0].frame;
+
+    const layers = dom.selectedLayers;
     if (layers.length == 0) {
       const msg = 'No layers are selected.';
       sketch.UI.message(msg);
